@@ -91,6 +91,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register uses block
+		acf_register_block(array(
+			'name'				=> 'uses',
+			'title'				=> __('Traditional Uses'),
+			'description'		=> __('Displays traditional uses of post type'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'media-document',
+			'keywords'			=> array( 'uses', 'traditional', 'information' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
