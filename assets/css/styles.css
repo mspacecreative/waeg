@@ -368,11 +368,11 @@ h4,
 h5,
 h6 {
   font-family: var(--wp--preset--font-family--montserrat);
+  line-height: 1.4;
 }
 
 .page-title.wp-block-post-title {
   padding: 15px 0;
-  border: 1px solid var(--wp--preset--color--light-gray);
-  border-right: none;
-  border-left: none;
+  border-top: 1px solid var(--wp--preset--color--light-gray);
+  border-bottom: 1px solid var(--wp--preset--color--light-gray);
 }
