@@ -1,0 +1,67 @@
+.wp-block-post-template {
+  .wp-block-post {
+    position: relative;
+
+    .wp-block-post-featured-image {
+      overflow: hidden;
+
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        outline: 5px solid orange;
+      }
+
+      a {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, .5);
+          z-index: 1;
+        }
+
+        img {
+          transition: 0.25s ease-in-out;
+          -webkit-transition: 0.25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
+          -ms-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transition: 0.25s ease-in-out;
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -ms-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    pointer-events: none;
+    line-height: 1;
+    text-align: center;
+    z-index: 2;
+  }
+}

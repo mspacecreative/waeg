@@ -1,0 +1,24 @@
+header {
+    position: relative;
+    z-index: 999;
+}
+
+.wp-block-columns.is-not-stacked-on-mobile.logo-and-nav {
+    @media (max-width: 980px) {
+        flex-wrap: wrap !important;
+
+        >div {
+            flex-basis: 100% !important;
+        }
+
+        >div:last-of-type {
+            position: sticky;
+            top: 0;
+
+            .is-content-justification-right {
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+    }
+}

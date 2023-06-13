@@ -1,0 +1,12 @@
+/*
+Theme Name: Western Arctic Ethnobotany Garden
+Description: Ethnobotany Virtual Tour Website
+Version: 1.0
+Author: Torq IT
+Text Domain: waeg
+*/
+
+body {
+    --wp--style--root--padding-left: var(--wp--preset--spacing--30)!important;
+    background-color: #000;
+}

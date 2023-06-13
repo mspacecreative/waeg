@@ -1,0 +1,32 @@
+.full-width {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+// .max-height-600 {
+//     max-height: 600px;
+// }
+
+.line-drawing
+
+/* body .is-layout-flow>.line-drawing */
+  {
+  @media (min-width: 781px) {
+    margin-top: -100px;
+  }
+}
+
+.wp-block-post-featured-image,
+.wp-block-cover.cover--link {
+  @extend %border-radius-10px;
+  overflow: hidden;
+
+  img {
+    @extend %border-radius-10px;
+  }
+}

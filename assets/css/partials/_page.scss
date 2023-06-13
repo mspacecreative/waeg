@@ -1,0 +1,28 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    min-height: 100%;
+}
+
+.page:not(.home) {
+    background-image: url(../img/backgrounds/welcome-plant-bottom-left.jpg);
+    background-position: bottom left;
+    background-size: 35%;
+    background-repeat: no-repeat;
+
+    &::after {
+        position: absolute;
+        // background-color: #fff;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+    }
+}
