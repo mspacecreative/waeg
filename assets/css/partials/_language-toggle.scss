@@ -22,11 +22,11 @@
 
     &:last-of-type {
       border-left: none;
-      border-radius: 100px 100px 0 0;
-      -webkit-border-radius: 100px 100px 0 0;
-      -moz-border-radius: 100px 100px 0 0;
-      -ms-border-radius: 100px 100px 0 0;
-      -o-border-radius: 100px 100px 0 0;
+      border-radius: 0 100px 100px 0;
+      -webkit-border-radius: 0 100px 100px 0;
+      -moz-border-radius: 0 100px 100px 0;
+      -ms-border-radius: 0 100px 100px 0;
+      -o-border-radius: 0 100px 100px 0;
     }
   }
 }
