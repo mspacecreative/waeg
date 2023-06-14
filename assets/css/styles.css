@@ -215,9 +215,15 @@ body {
 }
 
 .page:not(.home),
-.archive,
-.single {
+.archive {
   background-image: url(../img/backgrounds/welcome-plant-bottom-right.jpg);
+  background-position: bottom right;
+  background-size: 35%;
+  background-repeat: no-repeat;
+}
+
+.single {
+  background-image: url(../img/backgrounds/single-bottom-right.jpg);
   background-position: bottom right;
   background-size: 35%;
   background-repeat: no-repeat;
