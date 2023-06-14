@@ -392,8 +392,8 @@ h6 {
 }
 
 h3 {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: var(--wp--preset--font--size--medium);
+  font-weight: 600;
   margin-bottom: 0;
   color: var(--wp--preset--color--dark-green);
 }
