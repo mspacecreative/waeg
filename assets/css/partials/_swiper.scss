@@ -23,4 +23,8 @@
     ~.swiper-pagination-bullets.swiper-pagination-horizontal {
         bottom: -25px;
     }
+
+    .swiper-pagination-bullet-active {
+        background: var(--wp--preset--color--dark-green);
+    }
 }

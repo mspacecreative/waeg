@@ -377,6 +377,9 @@ body .is-layout-constrained > * + .top-margin-40 {
 .swiper ~ .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -25px;
 }
+.swiper .swiper-pagination-bullet-active {
+  background: var(--wp--preset--color--dark-green);
+}
 
 h1,
 h2,
