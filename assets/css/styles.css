@@ -237,6 +237,10 @@ header {
   z-index: 999;
 }
 
+.botanical-names h2 {
+  margin-bottom: 0;
+}
+
 @media (max-width: 980px) {
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav {
     flex-wrap: wrap !important;
