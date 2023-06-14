@@ -7,7 +7,7 @@ if ( $notes ) {
     echo 
     '
     <div class="top-margin-40 has-medium-font-size">
-    <h3 class="has-medium-font-size">' . esc_html($postType->labels->singular_name) . ' ' . esc_html('Notes') . '</h3>';
+    <h2 class="has-medium-font-size">' . esc_html($postType->labels->singular_name) . ' ' . esc_html('Notes') . '</h2>';
     }
     echo
     '<div class="notes">' . $notes . '</div>
