@@ -235,6 +235,8 @@ body {
 header {
   position: relative;
   z-index: 999;
+}
+header:not(.home) {
   box-shadow: 0 0 15px var(--wp--preset--color--gray);
 }
 
