@@ -11,7 +11,7 @@ for (i = 0; i < navButton.length; i++) {
 
 // FIXED HEADER TOGGLE
 var lastScrollTop = 0;
-const header = document.querySelector("body:not(.home) header");
+const header = document.querySelector("header");
 
 window.addEventListener(
   "scroll",

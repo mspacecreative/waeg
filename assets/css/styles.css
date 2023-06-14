@@ -8,7 +8,7 @@
   -o-border-radius: 10px;
 }
 
-header.scroll-down, header, .cover--link:hover img, .cover--link img {
+body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover img, .cover--link img {
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -231,29 +231,28 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 999;
+}
+
+body:not(.home) header {
   position: absolute;
   z-index: 999;
   width: 100%;
+  box-shadow: 0 0 15px var(--wp--preset--color--gray);
 }
-
-header.scroll-down {
+body:not(.home) header.scroll-down {
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
 }
-
-main {
-  margin-top: 97px !important;
-}
-
-header.fixed {
+body:not(.home) header.fixed {
   position: fixed;
 }
-
-body:not(.home) header {
-  box-shadow: 0 0 15px var(--wp--preset--color--gray);
+body:not(.home) main {
+  margin-top: 97px !important;
 }
 
 .botanical-names h2 {
