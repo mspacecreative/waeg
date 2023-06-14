@@ -81,7 +81,7 @@
 
 .nav-icon > button {
   position: relative;
-  padding-left: 55px;
+  padding-left: 60px;
   align-items: center;
 }
 .nav-icon > button::before {
@@ -215,8 +215,8 @@ body {
 }
 
 .page:not(.home) {
-  background-image: url(../img/backgrounds/welcome-plant-bottom-left.jpg);
-  background-position: bottom left;
+  background-image: url(../img/backgrounds/welcome-plant-bottom-right.jpg);
+  background-position: bottom right;
   background-size: 35%;
   background-repeat: no-repeat;
 }
