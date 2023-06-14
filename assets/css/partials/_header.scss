@@ -1,8 +1,10 @@
 header {
   position: relative;
   z-index: 999;
+}
 
-  &:not(.home) {
+body:not(.home) {
+  header {
     box-shadow: 0 0 15px var(--wp--preset--color--gray);
   }
 }
