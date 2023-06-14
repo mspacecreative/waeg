@@ -1,19 +1,32 @@
 .language-toggle {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-    .btn {
-        background-color: transparent;
-        border: 2px solid var(--wp--preset--color--dark-green);
-        padding: 10px 15px;
-        line-height: 1;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 14px;
+  .btn {
+    background-color: transparent;
+    border: 2px solid var(--wp--preset--color--dark-green);
+    padding: 8px 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
 
-        &:last-of-type {
-            border-left: none;
-            margin-right: 30px;
-        }
+    &:first-of-type {
+      border-radius: 100px 0 0 100px;
+      -webkit-border-radius: 100px 0 0 100px;
+      -moz-border-radius: 100px 0 0 100px;
+      -ms-border-radius: 100px 0 0 100px;
+      -o-border-radius: 100px 0 0 100px;
     }
+
+    &:last-of-type {
+      border-left: none;
+      border-radius: 100px 100px 0 0;
+      -webkit-border-radius: 100px 100px 0 0;
+      -moz-border-radius: 100px 100px 0 0;
+      -ms-border-radius: 100px 100px 0 0;
+      -o-border-radius: 100px 100px 0 0;
+    }
+  }
 }

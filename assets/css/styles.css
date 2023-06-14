@@ -88,7 +88,7 @@
   position: absolute;
   left: 0;
   content: "MENU";
-  top: -1px;
+  top: 0;
   font-size: 18px;
   line-height: 24px;
 }
@@ -132,15 +132,27 @@
 .language-toggle .btn {
   background-color: transparent;
   border: 2px solid var(--wp--preset--color--dark-green);
-  padding: 10px 15px;
+  padding: 8px 12px;
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.language-toggle .btn:first-of-type {
+  border-radius: 100px 0 0 100px;
+  -webkit-border-radius: 100px 0 0 100px;
+  -moz-border-radius: 100px 0 0 100px;
+  -ms-border-radius: 100px 0 0 100px;
+  -o-border-radius: 100px 0 0 100px;
 }
 .language-toggle .btn:last-of-type {
   border-left: none;
-  margin-right: 30px;
+  border-radius: 100px 100px 0 0;
+  -webkit-border-radius: 100px 100px 0 0;
+  -moz-border-radius: 100px 100px 0 0;
+  -ms-border-radius: 100px 100px 0 0;
+  -o-border-radius: 100px 100px 0 0;
 }
 
 .cover--link a:where(:not(.wp-element-button)) {
@@ -373,6 +385,6 @@ h6 {
 
 .page-title.wp-block-post-title {
   padding: 15px 0;
-  border-top: 1px solid var(--wp--preset--color--light-gray);
-  border-bottom: 1px solid var(--wp--preset--color--light-gray);
+  border-top: 1px solid var(--wp--preset--color--light-green);
+  border-bottom: 1px solid var(--wp--preset--color--light-green);
 }
