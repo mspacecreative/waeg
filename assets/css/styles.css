@@ -332,7 +332,7 @@ body .is-layout-constrained > * + .top-margin-40 {
 .boxed h4,
 .boxed h5,
 .boxed h6 {
-  margin: -30px -30px 20px;
+  margin: -30px -30px 30px;
   padding: 15px 30px;
   border-bottom: 5px solid var(--wp--preset--color--base);
   line-height: 1;
