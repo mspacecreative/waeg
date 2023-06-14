@@ -214,22 +214,12 @@ body {
   min-height: 100%;
 }
 
-.page:not(.home) {
+.page:not(.home),
+.archive {
   background-image: url(../img/backgrounds/welcome-plant-bottom-right.jpg);
   background-position: bottom right;
   background-size: 35%;
   background-repeat: no-repeat;
-}
-.page:not(.home)::after {
-  position: absolute;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  content: "";
 }
 
 header {
