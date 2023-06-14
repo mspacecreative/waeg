@@ -90,7 +90,7 @@
   content: "MENU";
   top: 0;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 25.5px;
 }
 
 .splash-header {
@@ -118,6 +118,7 @@
   position: absolute;
   bottom: 2em;
   left: var(--wp--preset--spacing--30);
+  width: calc(100% - var(--wp--preset--spacing--30));
 }
 
 .aurora-college-logo {

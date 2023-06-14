@@ -2,6 +2,7 @@
   position: absolute;
   bottom: 2em;
   left: var(--wp--preset--spacing--30);
+  width: calc(100% - var(--wp--preset--spacing--30));
 }
 
 .aurora-college-logo {
