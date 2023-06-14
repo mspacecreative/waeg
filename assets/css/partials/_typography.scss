@@ -18,6 +18,10 @@ h6 {
 h3 {
   font-size: var(--wp--preset--font--size--medium);
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   color: var(--wp--preset--color--dark-green);
+}
+
+p {
+  margin-block-start: 0;
 }
