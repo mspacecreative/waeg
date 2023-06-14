@@ -8,3 +8,32 @@ for (i = 0; i < navButton.length; i++) {
     navModal.classList.remove("is-menu-open");
   });
 }
+
+// FIXED HEADER TOGGLE
+var lastScrollTop = 0;
+const header = document.querySelector("body:not(.home) header");
+
+window.addEventListener(
+  "scroll",
+  function () {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+      header.classList.add("scroll-down");
+      header.classList.remove("fixed", "scroll-up", "reset");
+    } else if (st < lastScrollTop) {
+      header.classList.add("fixed", "scroll-up");
+      header.classList.remove("scroll-down");
+      if (window.pageYOffset == 20) {
+        header.classList.add("reset");
+      }
+    } // else was horizontal scroll
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  },
+  false
+);
+
+window.onscroll = function () {
+  if (window.pageYOffset <= 150) {
+    header.classList.add("reset");
+  }
+};

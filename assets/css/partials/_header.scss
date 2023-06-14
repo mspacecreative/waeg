@@ -1,12 +1,32 @@
 header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 999;
 }
 
 body:not(.home) {
   header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    @extend %smooth-transition-25s;
     box-shadow: 0 0 15px var(--wp--preset--color--gray);
+  }
+
+  header.scroll-down {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    @extend %smooth-transition-25s;
+  }
+
+  main {
+    margin-top: 97px !important;
+  }
+
+  header.fixed {
+    position: fixed;
   }
 }
 
