@@ -271,9 +271,12 @@ body:not(.home) main {
     position: sticky;
     top: 0;
   }
-  .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div:last-of-type .is-content-justification-right {
+  .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div:last-of-type .wp-block-column {
     justify-content: center;
     margin-top: 10px;
+  }
+  .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div:last-of-type .wp-block-column > div {
+    justify-content: center;
   }
 }
 

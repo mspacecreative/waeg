@@ -49,9 +49,13 @@ body:not(.home) {
       position: sticky;
       top: 0;
 
-      .is-content-justification-right {
+      .wp-block-column {
         justify-content: center;
         margin-top: 10px;
+
+        >div {
+          justify-content: center;
+        }
       }
     }
   }
