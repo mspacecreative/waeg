@@ -138,6 +138,7 @@
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
+  white-space: nowrap;
 }
 .language-toggle .btn:first-of-type {
   border-radius: 100px 0 0 100px;
