@@ -1,4 +1,4 @@
-.swiper, .boxed, .wp-block-post-featured-image img,
+.swiper img, .swiper, .boxed, .wp-block-post-featured-image img,
 .wp-block-cover.cover--link img, .wp-block-post-featured-image,
 .wp-block-cover.cover--link {
   border-radius: 10px;
