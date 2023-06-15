@@ -388,6 +388,7 @@ body .is-layout-constrained > * + .top-margin-40 {
 .swiper img {
   max-width: 100%;
   width: 100%;
+  display: block;
 }
 .swiper .swiper-slide {
   width: 100% !important;
