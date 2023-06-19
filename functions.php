@@ -20,4 +20,3 @@ include 'functions/remove-post.php';
 include 'functions/acf.php';
 include 'functions/styles-scripts.php';
 include 'functions/thumbnails.php';
-include 'functions/rewrite-rules.php';
