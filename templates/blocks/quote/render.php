@@ -7,8 +7,8 @@ if (have_rows('people_and_plants', get_the_ID())) {
         if ( $quote ) {
             echo
             '
-            <h2 class="has-large-font-size">' . esc_html('People and Plants') . '</h2>
-            <div class="quote people-and-plants">' 
+            <div class="quote people-and-plants">
+                <h2 class="has-large-font-size">' . esc_html('People and Plants') . '</h2>' 
                 . $quote . 
                 '<div class="author">' . $author . '</div>
             </div>';
