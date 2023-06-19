@@ -16,6 +16,13 @@ function body_custom_class( $classes ) {
 }
 add_filter( 'body_class', 'body_custom_class' );
 
+// VERIFICAITON META TAG
+function verify_with_google() {
+  echo'
+  <meta name="google-site-verification" content="zNYtBveGMupjeguHk0SNV0r5nn3YiG1qlGDJxpcnZHw" />';
+}
+add_action( 'wp_head', 'verify_with_google', 0 );
+
 include 'functions/remove-post.php';
 include 'functions/acf.php';
 include 'functions/styles-scripts.php';
