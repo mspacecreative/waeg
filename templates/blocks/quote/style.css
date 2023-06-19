@@ -20,6 +20,10 @@ body .is-layout-constrained > .quote-container blockquote {
   color: palegoldenrod;
   font-weight: 700;
   position: relative;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
 }
 body .is-layout-constrained > .quote-container blockquote::before {
   position: absolute;

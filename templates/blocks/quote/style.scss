@@ -19,6 +19,8 @@ body .is-layout-constrained>.quote-container {
         color: palegoldenrod;
         font-weight: 700;
         position: relative;
+        margin-inline-start: 0;
+        padding-inline-start: 40px;
 
         &::before {
             position: absolute;
