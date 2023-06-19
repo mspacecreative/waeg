@@ -1,7 +1,18 @@
-.quote {
+.quote-container {
   padding: var(--wp--preset--spacing--30);
   background-color: var(--wp--preset--color--light-gray);
+  -webkit-margin-before: var(--wp--preset--spacing--30);
+          margin-block-start: var(--wp--preset--spacing--30);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.quote h3 {
-  margin-top: 0;
+.quote-container h2 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+.quote-container .quote {
+  font-style: italic;
 }
