@@ -1,0 +1,34 @@
+{
+    "name": "test",
+    "title": "Quote Block",
+    "description": "",
+    "style": "file:./style.css",
+    "script": "",
+    "category": "design",
+    "icon": "quote",
+    "apiVersion": 2,
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+	"renderTemplate": "render.php"
+    },
+    "styles": [],
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+            "text": false,
+            "background": true,
+            "link": false
+        },
+        "alignText": false,
+        "fullHeight": false
+    },
+    "attributes": {
+        "backgroundColor": {
+            "type": "string",
+            "default": "tertiary"
+        }
+    }
+}

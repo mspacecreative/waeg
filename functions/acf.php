@@ -1,6 +1,13 @@
 <?php
 
 /* REGISTER ACF BLOCKS */
+
+// REGISTER JSON BLOCKS
+function load_json_blocks() {
+	register_block_type( get_theme_file_path('/templates/blocks/quote/block.json') );
+}
+add_action( 'acf/init', 'load_json_blocks' );
+
 function my_acf_init() {
 	
 	// check function exists
