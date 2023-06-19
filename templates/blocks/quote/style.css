@@ -19,4 +19,13 @@ body .is-layout-constrained > .quote-container blockquote {
   font-style: italic;
   color: palegoldenrod;
   font-weight: 700;
+  position: relative;
+}
+body .is-layout-constrained > .quote-container blockquote::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  font-family: fontAwesome;
+  content: "\f10d";
 }
