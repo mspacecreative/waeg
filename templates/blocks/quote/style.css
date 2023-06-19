@@ -1,4 +1,7 @@
 .quote {
-  padding: 2em;
+  padding: var(--wp--preset--spacing--30);
   background-color: var(--wp--preset--color--light-gray);
+}
+.quote h3 {
+  margin-top: 0;
 }
