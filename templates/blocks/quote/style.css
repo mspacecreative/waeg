@@ -34,4 +34,5 @@ body .is-layout-constrained > .quote-container blockquote::before {
   width: 40px;
   height: 40px;
   line-height: 1;
+  font-style: normal;
 }
