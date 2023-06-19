@@ -19,8 +19,8 @@ body .is-layout-constrained>.quote-container {
         color: palegoldenrod;
         font-weight: 700;
         position: relative;
-        margin-inline-start: 0;
-        padding-inline-start: 40px;
+        padding-inline-start: var(--wp--preset--spacing--40);
+        margin-left: var(--wp--preset--spacing--30);
 
         &::before {
             position: absolute;
@@ -29,6 +29,9 @@ body .is-layout-constrained>.quote-container {
             font-size: 40px;
             font-family: fontAwesome;
             content: "\f10d";
+            width: 40px;
+            height: 40px;
+            line-height: 1;
         }
     }
 }
