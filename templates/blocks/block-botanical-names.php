@@ -2,8 +2,8 @@
 if (have_rows('botanical_names', get_the_ID())) {
     while (have_rows('botanical_names', get_the_ID())) {
         the_row();
-        $botanical_names = get_sub_field('botanical_names');
-        $designation = get_sub_field('designation') ? get_field('designation') : '';
+        $botanical_names = get_sub_field('botanical_name');
+        $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
         if ( $botanical_names ) {
             echo
             '<div class="botanical-names bottom-margin-40">
