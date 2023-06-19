@@ -7,7 +7,7 @@ if (have_rows('botanical_names', get_the_ID())) {
         if ( $botanical_names ) {
             echo
             '<div class="botanical-names bottom-margin-40">
-                <h2 class="has-medium-font-size"><strong>Botanical name(s):</strong> ' . '<span style="font-style: italic;">' . $botanical_names . '</span>' . $designation . '</h2>
+                <h2 class="has-medium-font-size"><strong>Botanical name(s):</strong> ' . '<span style="font-style: italic;">' . $botanical_names . '</span>' . esc_html(' ') . $designation . '</h2>
             </div>';
         }
     }
