@@ -15,12 +15,10 @@ body .is-layout-constrained .quote-container h2 {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
-body .is-layout-constrained .quote-container h3 {
-  color: var(--wp--preset--color--pale-gold);
-}
 body .is-layout-constrained .quote-container blockquote {
   font-style: italic;
   position: relative;
+  color: var(--wp--preset--color--pale-gold);
   -webkit-padding-start: var(--wp--preset--spacing--40);
           padding-inline-start: var(--wp--preset--spacing--40);
   margin-left: var(--wp--preset--spacing--30);
@@ -42,7 +40,7 @@ body .is-layout-constrained .quote-container blockquote .author {
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
   font-style: normal;
-  color: var(--wp--preset--color--pale-gold);
+  color: var(--wp--preset--color--base);
 }
 body .is-layout-constrained .quote-container blockquote .font-style--normal {
   font-style: normal;

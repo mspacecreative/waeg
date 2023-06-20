@@ -14,13 +14,14 @@ body .is-layout-constrained .quote-container {
         margin-block-start: 0;
     }
 
-    h3 {
-        color: var(--wp--preset--color--pale-gold);
-    }
+    // h3 {
+    //     color: var(--wp--preset--color--pale-gold);
+    // }
 
     blockquote {
         font-style: italic;
         position: relative;
+        color: var(--wp--preset--color--pale-gold);
         padding-inline-start: var(--wp--preset--spacing--40);
         margin-left: var(--wp--preset--spacing--30);
 
@@ -41,7 +42,7 @@ body .is-layout-constrained .quote-container {
             display: block;
             margin-block-start: 10px;
             font-style: normal;
-            color: var(--wp--preset--color--pale-gold);
+            color: var(--wp--preset--color--base);
         }
 
         .font-style--normal {
