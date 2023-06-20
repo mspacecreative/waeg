@@ -21,7 +21,6 @@ body .is-layout-constrained .quote-container {
     blockquote {
         font-style: italic;
         color: palegoldenrod;
-        font-weight: 700;
         position: relative;
         padding-inline-start: var(--wp--preset--spacing--40);
         margin-left: var(--wp--preset--spacing--30);
@@ -37,6 +36,11 @@ body .is-layout-constrained .quote-container {
             height: 30px;
             line-height: 1;
             font-style: normal;
+        }
+
+        .author {
+            display: block;
+            margin-block-start: 10px;
         }
     }
 }

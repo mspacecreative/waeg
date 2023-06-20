@@ -21,7 +21,6 @@ body .is-layout-constrained .quote-container h3 {
 body .is-layout-constrained .quote-container blockquote {
   font-style: italic;
   color: palegoldenrod;
-  font-weight: 700;
   position: relative;
   -webkit-padding-start: var(--wp--preset--spacing--40);
           padding-inline-start: var(--wp--preset--spacing--40);
@@ -38,4 +37,9 @@ body .is-layout-constrained .quote-container blockquote::before {
   height: 30px;
   line-height: 1;
   font-style: normal;
+}
+body .is-layout-constrained .quote-container blockquote .author {
+  display: block;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
 }
