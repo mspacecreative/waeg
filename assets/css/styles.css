@@ -392,8 +392,8 @@ body .is-layout-constrained > * + .top-margin-40 {
   width: 100%;
   display: block;
 }
-.swiper .swiper-slide.swiper-slide {
-  width: 100%;
+.swiper .swiper-slide {
+  width: 100% !important;
 }
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
