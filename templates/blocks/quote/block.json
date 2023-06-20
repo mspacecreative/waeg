@@ -1,7 +1,7 @@
 {
-    "name": "test",
+    "name": "quote-block",
     "title": "Quote Block",
-    "description": "",
+    "description": "Renders people and plants content field",
     "style": "file:./style.css",
     "script": "",
     "category": "design",
