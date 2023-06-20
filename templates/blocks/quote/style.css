@@ -42,7 +42,8 @@ body .is-layout-constrained .quote-container blockquote .author {
   display: block;
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
+  font-style: normal;
 }
-body .is-layout-constrained .quote-container blockquote .normal-text {
+body .is-layout-constrained .quote-container blockquote .font-style--normal {
   font-style: normal;
 }

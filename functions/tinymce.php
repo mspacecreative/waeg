@@ -8,7 +8,7 @@ function my_custom_styles( $init_array ) {
         array(  
             'title' => 'Normal Text Style',  
             'inline' => 'span',  
-            'classes' => 'normal-text',
+            'classes' => 'font-style--normal',
             'wrapper' => true,
         ),
         array(  

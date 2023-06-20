@@ -41,9 +41,10 @@ body .is-layout-constrained .quote-container {
         .author {
             display: block;
             margin-block-start: 10px;
+            font-style: normal;
         }
 
-        .normal-text {
+        .font-style--normal {
             font-style: normal;
         }
     }
