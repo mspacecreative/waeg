@@ -210,6 +210,11 @@ body {
 .wp-block-cover.cover--link {
   overflow: hidden;
 }
+.wp-block-post-featured-image *,
+.wp-block-cover.cover--link * {
+  white-space: nowrap;
+}
+
 html {
   min-height: 100%;
   position: relative;
