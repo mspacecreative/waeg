@@ -1,6 +1,6 @@
-body .is-layout-constrained>div>div.quote-container {
+body .is-layout-constrained .quote-container {
     padding: var(--wp--preset--spacing--30);
-    background-color: var(--wp--preset--color--dark-green);
+    background-color: var(--wp--preset--color--dark-green) !important;
     margin-block-start: var(--wp--preset--spacing--30);
     color: var(--wp--preset--color--base);
     border-left: 10px solid var(--wp--preset--color--light-green);
