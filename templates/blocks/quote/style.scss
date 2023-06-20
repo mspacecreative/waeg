@@ -14,9 +14,9 @@ body .is-layout-constrained .quote-container {
         margin-block-start: 0;
     }
 
-    // h3 {
-    //     color: var(--wp--preset--color--pale-gold);
-    // }
+    h3 {
+        color: var(--wp--preset--color--base);
+    }
 
     blockquote {
         font-style: italic;

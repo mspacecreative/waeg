@@ -15,6 +15,9 @@ body .is-layout-constrained .quote-container h2 {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
+body .is-layout-constrained .quote-container h3 {
+  color: var(--wp--preset--color--base);
+}
 body .is-layout-constrained .quote-container blockquote {
   font-style: italic;
   position: relative;
