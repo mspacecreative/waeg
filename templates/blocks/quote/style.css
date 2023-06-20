@@ -20,7 +20,6 @@ body .is-layout-constrained .quote-container h3 {
 }
 body .is-layout-constrained .quote-container blockquote {
   font-style: italic;
-  color: palegoldenrod;
   position: relative;
   -webkit-padding-start: var(--wp--preset--spacing--40);
           padding-inline-start: var(--wp--preset--spacing--40);
