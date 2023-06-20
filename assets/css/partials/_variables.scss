@@ -16,3 +16,7 @@ $darkGreen: var(--wp--preset--color--light-green);
   -ms-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
 }
+
+body {
+  --wp--preset--color--pale-gold: palegoldenrod;
+}

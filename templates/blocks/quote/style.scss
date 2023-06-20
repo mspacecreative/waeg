@@ -15,7 +15,7 @@ body .is-layout-constrained .quote-container {
     }
 
     h3 {
-        color: var(--wp--preset--color--base);
+        color: var(--wp--preset--color--pale-gold);
     }
 
     blockquote {
@@ -42,6 +42,7 @@ body .is-layout-constrained .quote-container {
             display: block;
             margin-block-start: 10px;
             font-style: normal;
+            color: var(--wp--preset--color--pale-gold);
         }
 
         .font-style--normal {
