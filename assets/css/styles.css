@@ -210,8 +210,8 @@ body {
 .wp-block-cover.cover--link {
   overflow: hidden;
 }
-.wp-block-post-featured-image *,
-.wp-block-cover.cover--link * {
+.wp-block-post-featured-image > *,
+.wp-block-cover.cover--link > * {
   white-space: nowrap;
 }
 
