@@ -9,8 +9,8 @@
     @extend %border-radius-10px;
   }
 
-  .swiper-slide {
-    width: 100% !important;
+  .swiper-slide.swiper-slide {
+    width: 100%;
   }
 
   .swiper-button-next,

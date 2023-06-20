@@ -16,6 +16,10 @@ body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover i
   -o-transition: 0.25s ease-in-out;
 }
 
+body {
+  --wp--preset--color--pale-gold: palegoldenrod;
+}
+
 .wp-block-post-template .wp-block-post {
   position: relative;
 }
@@ -388,8 +392,8 @@ body .is-layout-constrained > * + .top-margin-40 {
   width: 100%;
   display: block;
 }
-.swiper .swiper-slide {
-  width: 100% !important;
+.swiper .swiper-slide.swiper-slide {
+  width: 100%;
 }
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
