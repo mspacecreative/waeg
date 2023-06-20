@@ -73,6 +73,7 @@ body {
   line-height: 1;
   text-align: center;
   z-index: 2;
+  white-space: nowrap;
 }
 
 .wp-block-navigation .wp-block-navigation-item:last-of-type {
@@ -210,21 +211,6 @@ body {
 .wp-block-cover.cover--link {
   overflow: hidden;
 }
-.wp-block-post-featured-image ~ h1,
-.wp-block-post-featured-image h2,
-.wp-block-post-featured-image h3,
-.wp-block-post-featured-image h4,
-.wp-block-post-featured-image h5,
-.wp-block-post-featured-image h6,
-.wp-block-cover.cover--link ~ h1,
-.wp-block-cover.cover--link h2,
-.wp-block-cover.cover--link h3,
-.wp-block-cover.cover--link h4,
-.wp-block-cover.cover--link h5,
-.wp-block-cover.cover--link h6 {
-  white-space: nowrap;
-}
-
 html {
   min-height: 100%;
   position: relative;
