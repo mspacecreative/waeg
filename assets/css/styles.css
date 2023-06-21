@@ -162,6 +162,10 @@ body {
   -o-border-radius: 0 100px 100px 0;
 }
 
+body [data-wpml=language-item]:first-of-type {
+  margin-top: 0px !important;
+}
+
 .cover--link a:where(:not(.wp-element-button)) {
   color: inherit;
 }

@@ -31,3 +31,7 @@
     }
   }
 }
+
+body [data-wpml='language-item']:first-of-type {
+  margin-top: 0px !important;
+}
