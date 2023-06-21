@@ -3,6 +3,7 @@
 }
 .editor-styles-wrapper .wp-block-post-template .wp-block-post .wp-block-post-featured-image {
   overflow: hidden;
+  margin-bottom: 0;
 }
 .editor-styles-wrapper .wp-block-post-template .wp-block-post .wp-block-post-featured-image:focus, .editor-styles-wrapper .wp-block-post-template .wp-block-post .wp-block-post-featured-image:focus-visible, .editor-styles-wrapper .wp-block-post-template .wp-block-post .wp-block-post-featured-image:focus-within {
   outline: 5px solid orange;
