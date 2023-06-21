@@ -2,6 +2,7 @@
 .wpml-language-switcher-block ul.horizontal-list {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 
   .btn,
   li {
@@ -35,7 +36,6 @@
 
     &[data-wpml="current-language-item"] {
       padding: 0 12px;
-      height: calc(100% - 3.5px);
       display: flex;
       align-items: center;
       justify-content: center;
