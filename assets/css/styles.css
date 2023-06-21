@@ -186,6 +186,10 @@ body .wpml-language-switcher-block ul.horizontal-list {
   gap: 0px !important;
 }
 
+body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child) {
+  margin-right: 0px !important;
+}
+
 .horizontal-list {
   justify-content: flex-end;
 }
