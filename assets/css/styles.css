@@ -340,6 +340,10 @@ body .is-layout-constrained > * + .top-margin-40 {
           margin-block-start: var(--wp--preset--spacing--40);
 }
 
+.wp-site-blocks {
+  padding: 0;
+}
+
 .no-bullets {
   padding-left: 0;
   list-style: none;

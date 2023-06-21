@@ -24,3 +24,7 @@ body .is-layout-constrained>*+.bottom-margin-40 {
 body .is-layout-constrained>*+.top-margin-40 {
     margin-block-start: var(--wp--preset--spacing--40);
 }
+
+.wp-site-blocks {
+    padding: 0;
+}
