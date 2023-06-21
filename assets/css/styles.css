@@ -8,7 +8,12 @@
   -o-border-radius: 10px;
 }
 
-body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover img, .cover--link img {
+body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover img, .cover--link img, .language-toggle .btn a:hover,
+.language-toggle li a:hover,
+.wpml-language-switcher-block ul.horizontal-list li a:hover, .language-toggle .btn a,
+.language-toggle li a,
+.wpml-language-switcher-block ul.horizontal-list .btn a,
+.wpml-language-switcher-block ul.horizontal-list li a {
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -193,6 +198,13 @@ body {
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
+}
+.language-toggle .btn a:hover,
+.language-toggle li a:hover,
+.wpml-language-switcher-block ul.horizontal-list .btn a:hover,
+.wpml-language-switcher-block ul.horizontal-list li a:hover {
+  color: #fff;
+  background-color: var(--wp--preset--color--dark-green);
 }
 
 body [data-wpml=language-item]:first-of-type {

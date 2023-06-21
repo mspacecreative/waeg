@@ -48,6 +48,13 @@
       font-size: 13px;
       font-weight: 600;
       white-space: nowrap;
+      @extend %smooth-transition-25;
+
+      &:hover {
+        @extend %smooth-transition-25;
+        color: #fff;
+        background-color: var(--wp--preset--color--dark-green);
+      }
     }
   }
 }
