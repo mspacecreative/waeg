@@ -4,7 +4,7 @@
   justify-content: flex-end;
 
   .btn,
-  li {
+  li a {
     background-color: transparent;
     border: 2px solid var(--wp--preset--color--dark-green);
     padding: 8px 12px;
@@ -36,6 +36,10 @@
 
 body [data-wpml='language-item']:first-of-type {
   margin-top: 0px !important;
+}
+
+body .wpml-language-switcher-block ul.horizontal-list {
+  gap: 0px !important;
 }
 
 .horizontal-list {
