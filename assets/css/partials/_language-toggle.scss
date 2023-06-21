@@ -27,6 +27,14 @@
     }
 
     &:not([data-wpml="current-language-item"]) {
+      padding: 0 12px;
+      height: calc(100% - 3.5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
       padding: 8px 12px;
       line-height: 1;
       text-transform: uppercase;
@@ -34,14 +42,6 @@
       font-size: 13px;
       font-weight: 600;
       white-space: nowrap;
-    }
-
-    a {
-      padding: 0 12px;
-      height: calc(100% - 3.5px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }

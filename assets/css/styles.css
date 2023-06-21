@@ -170,6 +170,16 @@ body {
 .language-toggle li:not([data-wpml=current-language-item]),
 .wpml-language-switcher-block ul.horizontal-list .btn:not([data-wpml=current-language-item]),
 .wpml-language-switcher-block ul.horizontal-list li:not([data-wpml=current-language-item]) {
+  padding: 0 12px;
+  height: calc(100% - 3.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-toggle .btn a,
+.language-toggle li a,
+.wpml-language-switcher-block ul.horizontal-list .btn a,
+.wpml-language-switcher-block ul.horizontal-list li a {
   padding: 8px 12px;
   line-height: 1;
   text-transform: uppercase;
@@ -177,16 +187,6 @@ body {
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
-}
-.language-toggle .btn a,
-.language-toggle li a,
-.wpml-language-switcher-block ul.horizontal-list .btn a,
-.wpml-language-switcher-block ul.horizontal-list li a {
-  padding: 0 12px;
-  height: calc(100% - 3.5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 body [data-wpml=language-item]:first-of-type {
