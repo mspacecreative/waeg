@@ -3,6 +3,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  height: 33px;
+
+  >div {
+    height: 33px;
+  }
 
   .btn,
   li {

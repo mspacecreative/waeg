@@ -142,6 +142,11 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  height: 33px;
+}
+.language-toggle > div,
+.wpml-language-switcher-block ul.horizontal-list > div {
+  height: 33px;
 }
 .language-toggle .btn,
 .language-toggle li,
