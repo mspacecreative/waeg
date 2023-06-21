@@ -140,6 +140,7 @@ body {
 .language-toggle li,
 .horizontal-list .btn,
 .horizontal-list li {
+  margin-right: 0;
   border: 2px solid var(--wp--preset--color--dark-green);
   background-color: transparent;
 }
