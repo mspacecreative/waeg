@@ -4,16 +4,10 @@
   justify-content: flex-end;
 
   .btn,
-  li>div {
-    background-color: transparent;
+  li {
+
     border: 2px solid var(--wp--preset--color--dark-green);
-    padding: 8px 12px;
-    line-height: 1;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-    white-space: nowrap;
+    background-color: transparent;
 
     &:first-of-type {
       border-radius: 100px 0 0 100px;
@@ -30,6 +24,16 @@
       -moz-border-radius: 0 100px 100px 0;
       -ms-border-radius: 0 100px 100px 0;
       -o-border-radius: 0 100px 100px 0;
+    }
+
+    >div {
+      padding: 8px 12px;
+      line-height: 1;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
     }
   }
 }
