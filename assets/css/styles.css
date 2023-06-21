@@ -166,10 +166,10 @@ body {
   -ms-border-radius: 0 100px 100px 0;
   -o-border-radius: 0 100px 100px 0;
 }
-.language-toggle .btn[data-wpml=current-language-item],
-.language-toggle li[data-wpml=current-language-item],
-.wpml-language-switcher-block ul.horizontal-list .btn[data-wpml=current-language-item],
-.wpml-language-switcher-block ul.horizontal-list li[data-wpml=current-language-item] {
+.language-toggle .btn:not([data-wpml=current-language-item]),
+.language-toggle li:not([data-wpml=current-language-item]),
+.wpml-language-switcher-block ul.horizontal-list .btn:not([data-wpml=current-language-item]),
+.wpml-language-switcher-block ul.horizontal-list li:not([data-wpml=current-language-item]) {
   padding: 8px 12px;
   line-height: 1;
   text-transform: uppercase;
