@@ -132,22 +132,22 @@ body {
 }
 
 .language-toggle,
-.horizontal-list {
+.wpml-language-switcher-block ul.horizontal-list {
   display: flex;
   justify-content: flex-end;
 }
 .language-toggle .btn,
 .language-toggle li,
-.horizontal-list .btn,
-.horizontal-list li {
+.wpml-language-switcher-block ul.horizontal-list .btn,
+.wpml-language-switcher-block ul.horizontal-list li {
   margin-right: 0;
   border: 2px solid var(--wp--preset--color--dark-green);
   background-color: transparent;
 }
 .language-toggle .btn:first-of-type,
 .language-toggle li:first-of-type,
-.horizontal-list .btn:first-of-type,
-.horizontal-list li:first-of-type {
+.wpml-language-switcher-block ul.horizontal-list .btn:first-of-type,
+.wpml-language-switcher-block ul.horizontal-list li:first-of-type {
   border-radius: 100px 0 0 100px;
   -webkit-border-radius: 100px 0 0 100px;
   -moz-border-radius: 100px 0 0 100px;
@@ -156,8 +156,8 @@ body {
 }
 .language-toggle .btn:last-of-type,
 .language-toggle li:last-of-type,
-.horizontal-list .btn:last-of-type,
-.horizontal-list li:last-of-type {
+.wpml-language-switcher-block ul.horizontal-list .btn:last-of-type,
+.wpml-language-switcher-block ul.horizontal-list li:last-of-type {
   border-left: none;
   border-radius: 0 100px 100px 0;
   -webkit-border-radius: 0 100px 100px 0;
@@ -167,8 +167,8 @@ body {
 }
 .language-toggle .btn > div,
 .language-toggle li > div,
-.horizontal-list .btn > div,
-.horizontal-list li > div {
+.wpml-language-switcher-block ul.horizontal-list .btn > div,
+.wpml-language-switcher-block ul.horizontal-list li > div {
   padding: 8px 12px;
   line-height: 1;
   text-transform: uppercase;
