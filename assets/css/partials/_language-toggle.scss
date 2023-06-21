@@ -31,13 +31,16 @@
       -moz-border-radius: 0 100px 100px 0;
       -ms-border-radius: 0 100px 100px 0;
       -o-border-radius: 0 100px 100px 0;
+
+      span {
+        line-height: 12px;
+      }
     }
 
     &[data-wpml="current-language-item"] {
       span {
         padding: 8px 12px;
         display: block;
-        line-height: 13px;
       }
     }
 
