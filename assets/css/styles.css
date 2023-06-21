@@ -137,9 +137,9 @@ body {
   justify-content: flex-end;
 }
 .language-toggle .btn,
-.language-toggle li a,
+.language-toggle li > div,
 .horizontal-list .btn,
-.horizontal-list li a {
+.horizontal-list li > div {
   background-color: transparent;
   border: 2px solid var(--wp--preset--color--dark-green);
   padding: 8px 12px;
@@ -151,9 +151,9 @@ body {
   white-space: nowrap;
 }
 .language-toggle .btn:first-of-type,
-.language-toggle li a:first-of-type,
+.language-toggle li > div:first-of-type,
 .horizontal-list .btn:first-of-type,
-.horizontal-list li a:first-of-type {
+.horizontal-list li > div:first-of-type {
   border-radius: 100px 0 0 100px;
   -webkit-border-radius: 100px 0 0 100px;
   -moz-border-radius: 100px 0 0 100px;
@@ -161,9 +161,9 @@ body {
   -o-border-radius: 100px 0 0 100px;
 }
 .language-toggle .btn:last-of-type,
-.language-toggle li a:last-of-type,
+.language-toggle li > div:last-of-type,
 .horizontal-list .btn:last-of-type,
-.horizontal-list li a:last-of-type {
+.horizontal-list li > div:last-of-type {
   border-left: none;
   border-radius: 0 100px 100px 0;
   -webkit-border-radius: 0 100px 100px 0;
