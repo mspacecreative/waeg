@@ -131,11 +131,15 @@ body {
   position: relative;
 }
 
-.language-toggle {
+.language-toggle,
+.horizontal-list {
   display: flex;
   justify-content: flex-end;
 }
-.language-toggle .btn {
+.language-toggle .btn,
+.language-toggle li,
+.horizontal-list .btn,
+.horizontal-list li {
   background-color: transparent;
   border: 2px solid var(--wp--preset--color--dark-green);
   padding: 8px 12px;
@@ -146,14 +150,20 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
-.language-toggle .btn:first-of-type {
+.language-toggle .btn:first-of-type,
+.language-toggle li:first-of-type,
+.horizontal-list .btn:first-of-type,
+.horizontal-list li:first-of-type {
   border-radius: 100px 0 0 100px;
   -webkit-border-radius: 100px 0 0 100px;
   -moz-border-radius: 100px 0 0 100px;
   -ms-border-radius: 100px 0 0 100px;
   -o-border-radius: 100px 0 0 100px;
 }
-.language-toggle .btn:last-of-type {
+.language-toggle .btn:last-of-type,
+.language-toggle li:last-of-type,
+.horizontal-list .btn:last-of-type,
+.horizontal-list li:last-of-type {
   border-left: none;
   border-radius: 0 100px 100px 0;
   -webkit-border-radius: 0 100px 100px 0;
@@ -164,6 +174,10 @@ body {
 
 body [data-wpml=language-item]:first-of-type {
   margin-top: 0px !important;
+}
+
+.horizontal-list {
+  justify-content: flex-end;
 }
 
 .cover--link a:where(:not(.wp-element-button)) {

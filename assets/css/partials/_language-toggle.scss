@@ -1,8 +1,10 @@
-.language-toggle {
+.language-toggle,
+.horizontal-list {
   display: flex;
   justify-content: flex-end;
 
-  .btn {
+  .btn,
+  li {
     background-color: transparent;
     border: 2px solid var(--wp--preset--color--dark-green);
     padding: 8px 12px;
@@ -34,4 +36,8 @@
 
 body [data-wpml='language-item']:first-of-type {
   margin-top: 0px !important;
+}
+
+.horizontal-list {
+  justify-content: flex-end;
 }
