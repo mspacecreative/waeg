@@ -194,7 +194,7 @@ body {
 .wpml-language-switcher-block ul.horizontal-list .btn a,
 .wpml-language-switcher-block ul.horizontal-list li a {
   padding: 8px 12px;
-  line-height: 1;
+  line-height: 29px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 13px;
