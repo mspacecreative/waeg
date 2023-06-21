@@ -53,7 +53,7 @@
 
       &:hover {
         @extend %smooth-transition-25;
-        background-color: #d0eac5;
+        background-color: var(--wp--preset--color--base);
       }
     }
   }

@@ -202,7 +202,7 @@ body {
 .language-toggle li a:hover,
 .wpml-language-switcher-block ul.horizontal-list .btn a:hover,
 .wpml-language-switcher-block ul.horizontal-list li a:hover {
-  background-color: #d0eac5;
+  background-color: var(--wp--preset--color--base);
 }
 
 body [data-wpml=language-item]:first-of-type {
