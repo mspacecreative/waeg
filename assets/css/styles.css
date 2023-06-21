@@ -142,11 +142,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 32px;
-}
-.language-toggle > div,
-.wpml-language-switcher-block ul.horizontal-list > div {
-  height: 32px;
 }
 .language-toggle .btn,
 .language-toggle li,
@@ -200,6 +195,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
+  max-height: 32px;
 }
 .language-toggle .btn a:hover,
 .language-toggle li a:hover,

@@ -3,11 +3,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 32px;
-
-  >div {
-    height: 32px;
-  }
 
   .btn,
   li {
@@ -53,6 +48,7 @@
       font-weight: 600;
       white-space: nowrap;
       @extend %smooth-transition-25;
+      max-height: 32px;
 
       &:hover {
         @extend %smooth-transition-25;
