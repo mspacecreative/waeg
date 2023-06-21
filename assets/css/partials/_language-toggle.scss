@@ -37,6 +37,7 @@
       span {
         padding: 8px 12px;
         display: block;
+        line-height: 12px;
       }
     }
 
@@ -48,7 +49,6 @@
       font-weight: 600;
       white-space: nowrap;
       @extend %smooth-transition-25;
-      max-height: 32px;
 
       &:hover {
         @extend %smooth-transition-25;
