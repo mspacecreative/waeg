@@ -184,7 +184,7 @@ body {
 .wpml-language-switcher-block ul.horizontal-list li[data-wpml=current-language-item] span {
   padding: 8px 12px;
   display: block;
-  line-height: 12px;
+  line-height: 13px;
 }
 .language-toggle .btn a,
 .language-toggle li a,
