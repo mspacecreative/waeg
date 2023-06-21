@@ -203,7 +203,7 @@ body {
 .wpml-language-switcher-block ul.horizontal-list .btn a:hover,
 .wpml-language-switcher-block ul.horizontal-list li a:hover {
   color: #fff;
-  background-color: var(--wp--preset--color--dark-green);
+  background-color: var(--wp--preset--color--light-green);
 }
 
 body [data-wpml=language-item]:first-of-type {
