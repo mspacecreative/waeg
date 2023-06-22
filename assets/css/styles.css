@@ -58,9 +58,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.wp-block-post-template .wp-block-post .wp-block-post-featured-image a:hover {
-  box-shadow: 0 10px 20px #c9c9c9;
-}
 .wp-block-post-template .wp-block-post .wp-block-post-featured-image a:hover img {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -236,6 +233,9 @@ body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child
 }
 .cover--link p {
   margin-bottom: 0;
+}
+.cover--link:hover {
+  box-shadow: 0 10px 30px var(--wp--preset--color--light-gray);
 }
 .cover--link:hover img {
   transform: scale(1.1);

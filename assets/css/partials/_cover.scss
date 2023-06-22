@@ -13,13 +13,17 @@
     margin-bottom: 0;
   }
 
-  &:hover img {
-    @extend %smooth-transition-25;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+  &:hover {
+    box-shadow: 0 10px 30px var(--wp--preset--color--light-gray);
+
+    img {
+      @extend %smooth-transition-25;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
   }
 
   .wp-block-cover__inner-container {
