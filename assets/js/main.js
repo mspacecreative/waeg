@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.onload = () => {
-  setTimeout(document.body.classList.remove("fade-out").add('fade-in');
+  setTimeout(document.body.classList.remove("fade-out").add("fade-in"), 2000);
 };
 
 // HIDE MODAL ON NAV LINK CLICK
