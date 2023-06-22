@@ -368,7 +368,7 @@ body:not(.home) .partnership-logos {
 }
 
 @media (max-width: 480px) {
-  .partnership-logos {
+  body .is-layout-flex .partnership-logos {
     gap: 20px;
   }
 }

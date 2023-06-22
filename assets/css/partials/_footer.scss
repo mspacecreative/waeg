@@ -2,7 +2,7 @@ body:not(.home) .partnership-logos {
     padding-bottom: 0 !important;
 }
 
-.partnership-logos {
+body .is-layout-flex .partnership-logos {
     @media (max-width: 480px) {
         gap: 20px;
     }
