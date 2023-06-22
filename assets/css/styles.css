@@ -8,7 +8,7 @@
   -o-border-radius: 10px;
 }
 
-body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover img, .cover--link img, .language-toggle .btn a:hover,
+body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover img, .cover--link:hover, .cover--link img, .cover--link, .language-toggle .btn a:hover,
 .language-toggle li a:hover,
 .wpml-language-switcher-block ul.horizontal-list li a:hover, .language-toggle .btn a,
 .language-toggle li a,
@@ -235,7 +235,7 @@ body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child
   margin-bottom: 0;
 }
 .cover--link:hover {
-  box-shadow: 0 10px 30px var(--wp--preset--color--light-gray);
+  box-shadow: 0 10px 30px var(--wp--preset--color--gray);
 }
 .cover--link:hover img {
   transform: scale(1.1);
