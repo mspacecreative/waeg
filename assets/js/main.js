@@ -2,7 +2,7 @@
 const mainTag = document.querySelector("main");
 let headerHeight = document.querySelector("header").offsetHeight;
 
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
   mainTag.style.height = headerHeight;
 });
 
