@@ -2,9 +2,7 @@
 const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
 
-window.addEventListener("load", () => {
-  mainTag.style.marginTop = headerHeight.clientHeight + "px";
-});
+mainTag.style.marginTop = headerHeight.clientHeight + "px";
 
 // HIDE MODAL ON NAV LINK CLICK
 const navModal = document.querySelector(
