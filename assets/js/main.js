@@ -1,6 +1,6 @@
 // DYNAMIC TOP MARGIN ON MAIN TAG
 const mainTag = document.querySelector("main");
-let headerHeight = document.querySelector("header").offsetHeight;
+let headerHeight = document.querySelector("header").style.height;
 
 mainTag.style.marginBlockStart = headerHeight;
 
