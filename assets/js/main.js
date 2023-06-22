@@ -12,7 +12,7 @@ function fadeInPage() {
 }
 
 window.onload = () => {
-  setTimeout(fadeInPage, 2000);
+  setTimeout(fadeInPage, 500);
 };
 
 // HIDE MODAL ON NAV LINK CLICK
