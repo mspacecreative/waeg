@@ -327,6 +327,10 @@ body:not(.home) header.fixed {
   margin-bottom: 0;
 }
 
+.yoast-breadcrumbs {
+  font-size: 14px;
+}
+
 @media (max-width: 980px) {
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav {
     flex-wrap: wrap !important;
