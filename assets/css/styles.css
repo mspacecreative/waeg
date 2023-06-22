@@ -30,6 +30,11 @@ body {
     width: calc(50% - 0.83333em);
   }
 }
+@media (max-width: 600px) {
+  .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li {
+    width: 100%;
+  }
+}
 .wp-block-post-template .wp-block-post {
   position: relative;
 }
@@ -84,7 +89,7 @@ body {
   line-height: 1;
   text-align: center;
   z-index: 2;
-  white-space: nowrap;
+  word-break: inherit;
 }
 
 .wp-block-navigation .wp-block-navigation-item:last-of-type {
