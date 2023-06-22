@@ -45,6 +45,11 @@ body:not(.home) {
       flex-basis: 100% !important;
     }
 
+    .custom-logo-link {
+      display: block;
+      text-align: center;
+    }
+
     .switcher-and-nav {
       margin-top: var(--wp--preset--spacing--30);
     }

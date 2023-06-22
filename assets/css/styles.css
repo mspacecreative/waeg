@@ -334,6 +334,10 @@ body:not(.home) header.fixed {
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div {
     flex-basis: 100% !important;
   }
+  .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav .custom-logo-link {
+    display: block;
+    text-align: center;
+  }
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav .switcher-and-nav {
     margin-top: var(--wp--preset--spacing--30);
   }
