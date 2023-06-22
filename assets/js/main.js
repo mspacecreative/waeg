@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 });
 
-window.onorientationchange = () => {
+window.addEventListener("orientationchange load resize", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
-};
+});
 
 function fadeInPage() {
   document.body.classList.remove("fade-out");
