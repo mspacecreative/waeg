@@ -22,8 +22,6 @@ body .is-layout-constrained .quote-container blockquote {
   font-style: italic;
   position: relative;
   color: var(--wp--preset--color--pale-gold);
-  -webkit-padding-start: var(--wp--preset--spacing--40);
-          padding-inline-start: var(--wp--preset--spacing--40);
   margin-left: var(--wp--preset--spacing--30);
 }
 body .is-layout-constrained .quote-container blockquote::before {
@@ -38,6 +36,9 @@ body .is-layout-constrained .quote-container blockquote::before {
   line-height: 1;
   font-style: normal;
 }
+body .is-layout-constrained .quote-container blockquote p {
+  margin-left: 45px;
+}
 body .is-layout-constrained .quote-container blockquote .author {
   display: block;
   -webkit-margin-before: 10px;
@@ -48,11 +49,7 @@ body .is-layout-constrained .quote-container blockquote .author {
 body .is-layout-constrained .quote-container blockquote .font-style--normal {
   font-style: normal;
 }
-body .is-layout-constrained .quote-container blockquote p:last-child {
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-}
-body .is-layout-constrained .quote-container blockquote:last-child {
+body .is-layout-constrained .quote-container blockquote p:last-child, body .is-layout-constrained .quote-container blockquote:last-child {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
