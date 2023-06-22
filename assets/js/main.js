@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
   window.setTimeout(function () {
     document.body.classList.remove("fade");
-  }, 230);
+  }, 1000);
 });
 
 // HIDE MODAL ON NAV LINK CLICK
