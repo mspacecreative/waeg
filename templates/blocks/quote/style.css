@@ -23,6 +23,7 @@ body .is-layout-constrained .quote-container blockquote {
   position: relative;
   color: var(--wp--preset--color--pale-gold);
   margin-left: var(--wp--preset--spacing--30);
+  margin-right: 0;
 }
 body .is-layout-constrained .quote-container blockquote::before {
   position: absolute;
