@@ -1,9 +1,15 @@
+// PAGE FADE TRANSITION
+document.body.classList.add("fade");
+
 // DYNAMIC TOP MARGIN ON MAIN TAG
 const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
 
 document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  window.setTimeout(function () {
+    document.body.classList.remove("fade");
+  }, 230);
 });
 
 // HIDE MODAL ON NAV LINK CLICK
