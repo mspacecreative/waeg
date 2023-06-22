@@ -1,8 +1,10 @@
 // DYNAMIC TOP MARGIN ON MAIN TAG
 const mainTag = document.querySelector("main");
-let headerHeight = document.querySelector("header").style.height;
+const headerHeight = document.querySelector("header");
 
-mainTag.style.marginBlockStart = headerHeight;
+window.addEventListener("load", () => {
+  mainTag.style.marginTop = headerHeight.clientHeight + "px";
+});
 
 // HIDE MODAL ON NAV LINK CLICK
 const navModal = document.querySelector(
