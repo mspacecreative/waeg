@@ -532,3 +532,13 @@ p {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
+
+body {
+  opacity: 1;
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 0;
+}
