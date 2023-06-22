@@ -1,3 +1,11 @@
+// DYNAMIC TOP MARGIN ON MAIN TAG
+const mainTag = document.querySelector("main");
+let headerHeight = document.querySelector("header").offsetHeight;
+
+window.addEventListener("load", (event) => {
+  mainTag.style.height = headerHeight;
+});
+
 // HIDE MODAL ON NAV LINK CLICK
 const navModal = document.querySelector(
   "nav .wp-block-navigation__responsive-container"
