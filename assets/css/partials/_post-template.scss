@@ -12,11 +12,14 @@
   }
 
   .wp-block-post {
-    box-shadow: 0 10px 30px var(--wp--preset--color--gray);
     @extend %smooth-transition-25;
+    @extend %border-radius-10px;
     position: relative;
 
     &:hover {
+      box-shadow: 0 10px 30px var(--wp--preset--color--gray);
+      @extend %smooth-transition-25;
+
       img {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
