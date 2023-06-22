@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 });
 
-window.addEventListener("orientationchange load resize", () => {
+// window.addEventListener("orientationchange load resize", () => {
+//   mainTag.style.marginTop = headerHeight.clientHeight + "px";
+// });
+
+window.addEventListener("resize", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 });
 
