@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
   window.setTimeout(function () {
     document.body.classList.remove("fade");
-  }, 1000);
+  }, 2000);
 });
 
 // HIDE MODAL ON NAV LINK CLICK
