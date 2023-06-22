@@ -1,8 +1,9 @@
 // DYNAMIC TOP MARGIN ON MAIN TAG
 const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
+const homePage = document.querySelector(".home");
 
-if (mainTag.length) {
+if (!homePage.length) {
   document.addEventListener("DOMContentLoaded", () => {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   });
