@@ -26,3 +26,9 @@ body .is-layout-flex .partnership-logos {
     top: auto;
   }
 }
+
+.copyright-line {
+  @media (max-width: 781px) {
+    justify-content: flex-start;
+  }
+}

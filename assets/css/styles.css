@@ -391,6 +391,12 @@ body:not(.home) .partnership-logos {
   }
 }
 
+@media (max-width: 781px) {
+  .copyright-line {
+    justify-content: flex-start;
+  }
+}
+
 .bottom-margin-1em,
 body .is-layout-flow > .bottom-margin-1em {
   -webkit-margin-after: var(--wp--preset--spacing--30);
