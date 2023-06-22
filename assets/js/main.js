@@ -3,7 +3,9 @@ const mainTag = document.querySelector("body:not(.home) main");
 const headerHeight = document.querySelector("header");
 
 document.addEventListener("DOMContentLoaded", () => {
-  mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  if (mainTag.length) {
+    mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  }
 });
 
 // window.addEventListener("orientationchange load resize", () => {
