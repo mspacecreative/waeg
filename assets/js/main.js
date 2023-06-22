@@ -2,11 +2,11 @@
 const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (mainTag.length) {
+if (mainTag.length) {
+  document.addEventListener("DOMContentLoaded", () => {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
-  }
-});
+  });
+}
 
 // window.addEventListener("orientationchange load resize", () => {
 //   mainTag.style.marginTop = headerHeight.clientHeight + "px";
