@@ -385,12 +385,6 @@ body:not(.home) .partnership-logos {
   }
 }
 
-@media (max-width: 480px) {
-  .aurora-college-logo {
-    top: auto;
-  }
-}
-
 @media (max-width: 781px) {
   body .copyright-line.copyright-line {
     justify-content: flex-start;
