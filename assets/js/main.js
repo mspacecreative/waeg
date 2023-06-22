@@ -1,5 +1,5 @@
 // DYNAMIC TOP MARGIN ON MAIN TAG
-const mainTag = document.querySelector("body:not(.home) main");
+const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
 
 document.addEventListener("DOMContentLoaded", () => {
