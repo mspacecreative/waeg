@@ -1,11 +1,12 @@
-// PAGE FADE TRANSITION
-
 // DYNAMIC TOP MARGIN ON MAIN TAG
 const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
 
 document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
+});
+
+window.addEventListener("load", () => {
   window.setTimeout(function () {
     document.body.classList.remove("fade");
   }, 1000);
@@ -19,6 +20,8 @@ let navButton = document.querySelectorAll(".wp-block-navigation__container a");
 for (i = 0; i < navButton.length; i++) {
   navButton[i].addEventListener("click", function () {
     navModal.classList.remove("is-menu-open");
+
+    // PAGE FADE TRANSITION
     document.body.classList.add("fade");
   });
 }
