@@ -1,4 +1,12 @@
 .wp-block-post-template {
+  &.is-flex-container.is-flex-container.columns-3 {
+    >li {
+      @media (max-width:980px) {
+        width: calc(50% - .83333em);
+      }
+    }
+  }
+
   .wp-block-post {
     position: relative;
 
