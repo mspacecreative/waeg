@@ -1,3 +1,9 @@
 body:not(.home) .partnership-logos {
     padding-bottom: 0 !important;
 }
+
+.partnership-logos {
+    @media (max-width: 480px) {
+        gap: 20px;
+    }
+}
