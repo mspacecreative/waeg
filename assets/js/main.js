@@ -4,7 +4,7 @@ const headerHeight = document.querySelector("header");
 const homePage = document.querySelector(".home");
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (!homePage.length) {
+  if (!body.classList.contains(home)) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
 });
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // });
 
 window.addEventListener("resize", () => {
-  // if (mainTag.length) {
-  mainTag.style.marginTop = headerHeight.clientHeight + "px";
-  // }
+  if (!body.classList.contains(home)) {
+    mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  }
 });
 
 function fadeInPage() {
