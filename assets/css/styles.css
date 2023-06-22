@@ -322,9 +322,6 @@ body:not(.home) header.scroll-down {
 body:not(.home) header.fixed {
   position: fixed;
 }
-body:not(.home) main {
-  margin-top: 97px !important;
-}
 
 .botanical-names h2 {
   margin-bottom: 0;
