@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 });
 
-window.addEventListener("load", () => {
+document.addEventListener("load", () => {
   window.setTimeout(function () {
     document.body.classList.remove("fade");
   }, 2000);
