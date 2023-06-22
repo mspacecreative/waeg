@@ -2,9 +2,7 @@
 const mainTag = document.querySelector("main");
 let headerHeight = document.querySelector("header").offsetHeight;
 
-window.addEventListener("load", () => {
-  mainTag.style.marginBlockStart = headerHeight;
-});
+mainTag.style.marginBlockStart = headerHeight;
 
 // HIDE MODAL ON NAV LINK CLICK
 const navModal = document.querySelector(

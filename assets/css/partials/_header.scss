@@ -24,42 +24,42 @@ body:not(.home) {
 
   header.fixed {
     position: fixed;
+    // }
+
+    // main {
+    //   margin-top: 97px !important;
+    // }
   }
 
-  main {
-    margin-top: 97px !important;
-  }
-}
-
-.botanical-names {
-  h2 {
-    margin-bottom: 0;
-  }
-}
-
-.wp-block-columns.is-not-stacked-on-mobile.logo-and-nav {
-  @media (max-width: 980px) {
-    flex-wrap: wrap !important;
-
-    >div {
-      flex-basis: 100% !important;
+  .botanical-names {
+    h2 {
+      margin-bottom: 0;
     }
+  }
 
-    .switcher-and-nav {
-      margin-top: var(--wp--preset--spacing--30);
-    }
+  .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav {
+    @media (max-width: 980px) {
+      flex-wrap: wrap !important;
 
-    >div:last-of-type {
-      position: sticky;
-      top: 0;
+      >div {
+        flex-basis: 100% !important;
+      }
 
-      .wp-block-column {
-        justify-content: center;
+      .switcher-and-nav {
+        margin-top: var(--wp--preset--spacing--30);
+      }
 
-        >div {
+      >div:last-of-type {
+        position: sticky;
+        top: 0;
+
+        .wp-block-column {
           justify-content: center;
+
+          >div {
+            justify-content: center;
+          }
         }
       }
     }
   }
-}
