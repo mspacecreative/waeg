@@ -373,6 +373,12 @@ body:not(.home) .partnership-logos {
   }
 }
 
+@media (max-width: 480px) {
+  .aurora-college-logo {
+    top: auto;
+  }
+}
+
 .bottom-margin-1em,
 body .is-layout-flow > .bottom-margin-1em {
   -webkit-margin-after: var(--wp--preset--spacing--30);

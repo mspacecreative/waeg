@@ -7,3 +7,9 @@ body .is-layout-flex .partnership-logos {
         gap: 20px;
     }
 }
+
+.aurora-college-logo {
+    @media (max-width: 480px) {
+        top: auto;
+    }
+}
