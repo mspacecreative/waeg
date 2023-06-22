@@ -3,7 +3,7 @@ const mainTag = document.querySelector("main");
 let headerHeight = document.querySelector("header").offsetHeight;
 
 window.addEventListener("load", () => {
-  mainTag.style.height = headerHeight;
+  mainTag.style.marginBlockStart = headerHeight;
 });
 
 // HIDE MODAL ON NAV LINK CLICK
