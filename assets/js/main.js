@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // });
 
 window.addEventListener("resize", () => {
-  mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  if (mainTag.length) {
+    mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  }
 });
 
 function fadeInPage() {
