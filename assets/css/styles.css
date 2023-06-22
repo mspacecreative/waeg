@@ -212,6 +212,11 @@ body [data-wpml=language-item]:first-of-type {
 body .wpml-language-switcher-block ul.horizontal-list {
   gap: 0px !important;
 }
+@media (max-width: 781px) {
+  body .wpml-language-switcher-block ul.horizontal-list {
+    justify-content: flex-start;
+  }
+}
 
 body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child) {
   margin-right: 0px !important;
