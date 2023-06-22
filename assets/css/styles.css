@@ -90,6 +90,7 @@ body {
   text-align: center;
   z-index: 2;
   word-break: inherit;
+  width: calc(100% - 2em);
 }
 
 .wp-block-navigation .wp-block-navigation-item:last-of-type {
