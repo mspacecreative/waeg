@@ -6,8 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 });
 
+function fadeInPage() {
+  document.body.classList.remove("fade-out");
+  document.body.classList.add("fade-in");
+}
+
 window.onload = () => {
-  setTimeout(document.body.classList.remove("fade-out").add("fade-in"), 2000);
+  setTimeout(fadeInPage, 2000);
 };
 
 // HIDE MODAL ON NAV LINK CLICK
