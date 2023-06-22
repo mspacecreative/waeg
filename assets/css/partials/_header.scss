@@ -45,13 +45,16 @@ body:not(.home) {
       flex-basis: 100% !important;
     }
 
+    .switcher-and-nav {
+      margin-top: var(--wp--preset--spacing--30);
+    }
+
     >div:last-of-type {
       position: sticky;
       top: 0;
 
       .wp-block-column {
         justify-content: center;
-        margin-top: 10px;
 
         >div {
           justify-content: center;

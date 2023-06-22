@@ -337,6 +337,9 @@ body:not(.home) main {
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div {
     flex-basis: 100% !important;
   }
+  .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav .switcher-and-nav {
+    margin-top: var(--wp--preset--spacing--30);
+  }
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div:last-of-type {
     position: -webkit-sticky;
     position: sticky;
@@ -344,7 +347,6 @@ body:not(.home) main {
   }
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div:last-of-type .wp-block-column {
     justify-content: center;
-    margin-top: 10px;
   }
   .wp-block-columns.is-not-stacked-on-mobile.logo-and-nav > div:last-of-type .wp-block-column > div {
     justify-content: center;
