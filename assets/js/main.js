@@ -3,20 +3,20 @@ const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
 const homePage = document.querySelector(".home");
 
-if (!homePage.length) {
-  document.addEventListener("DOMContentLoaded", () => {
-    mainTag.style.marginTop = headerHeight.clientHeight + "px";
-  });
-}
+// if (!homePage.length) {
+document.addEventListener("DOMContentLoaded", () => {
+  mainTag.style.marginTop = headerHeight.clientHeight + "px";
+});
+// }
 
 // window.addEventListener("orientationchange load resize", () => {
 //   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 // });
 
 window.addEventListener("resize", () => {
-  if (mainTag.length) {
-    mainTag.style.marginTop = headerHeight.clientHeight + "px";
-  }
+  // if (mainTag.length) {
+  mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  // }
 });
 
 function fadeInPage() {
