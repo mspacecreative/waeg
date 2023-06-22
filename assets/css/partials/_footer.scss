@@ -17,7 +17,7 @@ body .is-layout-flex .partnership-logos {
   }
 
   @media (max-width: 480px) {
-    gap: 30px;
+    gap: var(--wp--preset--spacing--30);
   }
 }
 

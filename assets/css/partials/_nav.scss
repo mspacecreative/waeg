@@ -39,6 +39,7 @@
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
     align-items: center;
     text-align: center;
+    gap: var(--wp--preset--spacing--30);
 }
 
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
