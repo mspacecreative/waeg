@@ -367,9 +367,21 @@ body:not(.home) .partnership-logos {
   padding-bottom: 0 !important;
 }
 
+@media (max-width: 781px) {
+  body .is-layout-flex .partnership-logos:not(.is-not-stacked-on-mobile) > .wp-block-column {
+    flex-basis: auto !important;
+    width: auto;
+  }
+}
+@media (max-width: 480px) {
+  body .is-layout-flex .partnership-logos:not(.is-not-stacked-on-mobile) > .wp-block-column {
+    flex-basis: 100% !important;
+    width: 100%;
+  }
+}
 @media (max-width: 480px) {
   body .is-layout-flex .partnership-logos {
-    gap: 20px;
+    gap: 30px;
   }
 }
 

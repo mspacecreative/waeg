@@ -1,15 +1,28 @@
 body:not(.home) .partnership-logos {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 body .is-layout-flex .partnership-logos {
-    @media (max-width: 480px) {
-        gap: 20px;
+
+  &:not(.is-not-stacked-on-mobile)>.wp-block-column {
+    @media (max-width: 781px) {
+      flex-basis: auto !important;
+      width: auto;
     }
+
+    @media (max-width: 480px) {
+      flex-basis: 100% !important;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 30px;
+  }
 }
 
 .aurora-college-logo {
-    @media (max-width: 480px) {
-        top: auto;
-    }
+  @media (max-width: 480px) {
+    top: auto;
+  }
 }
