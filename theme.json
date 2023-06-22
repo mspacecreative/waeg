@@ -28,7 +28,6 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
-			"custom": false,
 			"customGradient": false,
 			"defaultPalette": false,
 			"defaultGradients": false,
