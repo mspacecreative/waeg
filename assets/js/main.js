@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 });
 
-document.addEventListener("load", () => {
-  window.setTimeout(function () {
-    document.body.classList.remove("fade");
-  }, 2000);
-});
+window.onload = () => {
+  setTimeout(document.body.classList.remove("fade"), 2000);
+};
 
 // HIDE MODAL ON NAV LINK CLICK
 const navModal = document.querySelector(
