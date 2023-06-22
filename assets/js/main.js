@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.onload = () => {
-  setTimeout(document.body.classList.remove("fade"), 2000);
+  setTimeout(document.body.classList.remove("fade-out").add('fade-in');
 };
 
 // HIDE MODAL ON NAV LINK CLICK
@@ -20,7 +20,7 @@ for (i = 0; i < navButton.length; i++) {
     navModal.classList.remove("is-menu-open");
 
     // PAGE FADE TRANSITION
-    document.body.classList.add("fade");
+    document.body.classList.add("fade-out");
   });
 }
 
