@@ -1,7 +1,10 @@
 <?php
 function google_analytics() {
     echo
-    '<script id="google_gtagjs-js-after">
+    '
+    <!-- GOOGLE ANALYTICS -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-3578250-10" id="google_gtagjs-js" async=""></script>
+    <script id="google_gtagjs-js-after">
     window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
     gtag("set", "linker", {"domains":["ethnobotanygarden.com"]} );
     gtag("js", new Date());
