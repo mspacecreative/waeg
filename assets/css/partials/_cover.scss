@@ -5,6 +5,10 @@
     @extend %smooth-transition-25;
   }
 
+  &:focus-within {
+    outline: 5px solid orange;
+  }
+
   a:where(:not(.wp-element-button)) {
     color: inherit;
     text-decoration: none;
