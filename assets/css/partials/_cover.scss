@@ -5,6 +5,10 @@
     @extend %smooth-transition-25;
   }
 
+  h3 {
+    margin: 0;
+  }
+
   &:focus-within {
     outline: 5px solid orange;
   }

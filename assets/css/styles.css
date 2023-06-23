@@ -230,6 +230,9 @@ body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child
   justify-content: flex-end;
 }
 
+.cover--link h3 {
+  margin: 0;
+}
 .cover--link:focus-within {
   outline: 5px solid orange;
 }
