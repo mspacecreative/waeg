@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Default Footer
- * Slug: twentytwentythree/footer-default
+ * Slug: waeg/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer
  */
@@ -13,7 +13,11 @@
 		<!-- wp:site-title {"level":0} /-->
 		<!-- wp:paragraph {"align":"right"} -->
 		<p class="has-text-align-right">
-		Stuff
+		<?php
+		printf(
+			esc_html__( '&copy; ', 'waeg' ), date('Y '), bloginfo('name'), esc_html__('. All rights reserved.')
+		)
+		?>
 		</p>
 		<!-- /wp:paragraph -->
 	</div>
