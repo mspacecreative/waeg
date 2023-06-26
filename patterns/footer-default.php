@@ -10,6 +10,8 @@
 <div class="wp-block-group">
 	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);">
+		<!-- wp:paragraph {"align":"left"} -->
+		<!-- /wp:paragraph -->
 		<!-- wp:site-title {"level":0} /-->
 	</div>
 	<!-- /wp:group -->
