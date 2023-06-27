@@ -115,6 +115,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register habitat intro block
+		acf_register_block(array(
+			'name'				=> 'habitat-intro',
+			'title'				=> __('Habitat Intro'),
+			'description'		=> __('Displays intro blurb for habitat post type'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'media-document',
+			'keywords'			=> array( 'blurb', 'content', 'text' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
