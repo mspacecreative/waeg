@@ -22,4 +22,4 @@ include 'functions/styles-scripts.php';
 include 'functions/thumbnails.php';
 include 'functions/tinymce.php';
 // include 'functions/language-switcher.php';
-include 'functions/analytics.php';
+// include 'functions/analytics.php';
