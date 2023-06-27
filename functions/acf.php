@@ -132,6 +132,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register features block
+		acf_register_block(array(
+			'name'				=> 'features',
+			'title'				=> __('Features'),
+			'description'		=> __('Displays features in unordered list on frontend'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'editor-ul',
+			'keywords'			=> array( 'feature', 'list', 'icon' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
