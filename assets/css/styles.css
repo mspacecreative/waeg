@@ -580,3 +580,6 @@ body.fade-in {
   justify-content: space-between;
   padding: 0;
 }
+.features .feature__icon {
+  width: 50px;
+}
