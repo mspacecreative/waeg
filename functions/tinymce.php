@@ -17,6 +17,30 @@ function my_custom_styles( $init_array ) {
             'classes' => 'author',
             'wrapper' => true,
         ),
+        array(
+            'title' => 'X-Large Font', 
+            'block' => 'span',
+            'classes' => 'has-x-large-font-size',
+            'wrapper' => true,
+        ),
+        array(
+            'title' => 'Large Font', 
+            'block' => 'span',
+            'classes' => 'has-large-font-size',
+            'wrapper' => true,
+        ),
+        array(
+            'title' => 'Medium Font', 
+            'block' => 'span',
+            'classes' => 'has-medium-font-size',
+            'wrapper' => true,
+        ),
+        array(
+            'title' => 'Small Font', 
+            'block' => 'span',
+            'classes' => 'has-small-font-size',
+            'wrapper' => true,
+        )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode( $style_formats );  
