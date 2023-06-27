@@ -1,4 +1,4 @@
-.swiper img, .swiper, .boxed, .wp-block-post-featured-image img,
+.features, .swiper img, .swiper, .boxed, .wp-block-post-featured-image img,
 .wp-block-cover.cover--link img, .wp-block-post-featured-image,
 .wp-block-cover.cover--link, .wp-block-post-template .wp-block-post {
   border-radius: 10px;
@@ -578,8 +578,13 @@ body.fade-in {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding: 0;
+  padding: var(--wp--preset--spacing--30);
+  background-color: var(--wp--preset--color--light-gray);
 }
 .features .feature__icon {
   width: 50px;
+}
+.features p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
