@@ -149,6 +149,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register features block
+		acf_register_block(array(
+			'name'				=> 'habitats',
+			'title'				=> __('Other Habitats'),
+			'description'		=> __('Displays all other habitats'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'editor-ul',
+			'keywords'			=> array( 'feature', 'list', 'icon' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
