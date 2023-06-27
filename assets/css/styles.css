@@ -577,9 +577,10 @@ body.fade-in {
 .features {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: var(--wp--preset--spacing--30);
-  background-color: var(--wp--preset--color--light-gray);
+  border: 2px solid var(--wp--preset--color--light-green);
+  text-align: center;
 }
 .features .feature__icon {
   width: 50px;
