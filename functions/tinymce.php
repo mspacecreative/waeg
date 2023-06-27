@@ -20,25 +20,25 @@ function my_custom_styles( $init_array ) {
         array(
             'title' => 'X-Large Font', 
             'block' => 'span',
-            'classes' => 'has-x-large-font-size',
+            'classes' => 'has-x-large-font-size display-block',
             'wrapper' => true,
         ),
         array(
             'title' => 'Large Font', 
             'block' => 'span',
-            'classes' => 'has-large-font-size',
+            'classes' => 'has-large-font-size display-block',
             'wrapper' => true,
         ),
         array(
             'title' => 'Medium Font', 
             'block' => 'span',
-            'classes' => 'has-medium-font-size',
+            'classes' => 'has-medium-font-size display-block',
             'wrapper' => true,
         ),
         array(
             'title' => 'Small Font', 
             'block' => 'span',
-            'classes' => 'has-small-font-size',
+            'classes' => 'has-small-font-size display-block',
             'wrapper' => true,
         )
     );  

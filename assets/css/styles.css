@@ -559,6 +559,10 @@ p {
           margin-block-start: 0;
 }
 
+.display-block {
+  display: block;
+}
+
 body,
 body.fade-out {
   opacity: 0;
