@@ -578,6 +578,7 @@ body.fade-in {
   display: flex;
   list-style: none;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: var(--wp--preset--spacing--30);
   border: 2px solid var(--wp--preset--color--light-green);
   text-align: center;
