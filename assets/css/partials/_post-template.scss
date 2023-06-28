@@ -4,6 +4,7 @@
   display: flex;
   gap: 1.25em;
   flex-wrap: wrap;
+  font-weight: 700;
 
   &.is-flex-container.columns-3 {
     >li {
