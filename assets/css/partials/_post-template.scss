@@ -4,7 +4,6 @@
   display: flex;
   gap: 1.25em;
   flex-wrap: wrap;
-  font-weight: 700;
 
   &.is-flex-container.columns-3 {
     >li {
@@ -88,5 +87,6 @@
     z-index: 2;
     word-break: inherit;
     width: calc(100% - 2em);
+    font-weight: 700;
   }
 }

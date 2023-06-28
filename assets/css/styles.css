@@ -31,7 +31,6 @@ body {
   display: flex;
   gap: 1.25em;
   flex-wrap: wrap;
-  font-weight: 700;
 }
 .wp-block-post-template.is-flex-container.columns-3 > li {
   width: calc(33.33333% - 0.83333em);
@@ -93,6 +92,7 @@ body {
   z-index: 2;
   word-break: inherit;
   width: calc(100% - 2em);
+  font-weight: 700;
 }
 
 .wp-block-navigation .wp-block-navigation-item:last-of-type {
