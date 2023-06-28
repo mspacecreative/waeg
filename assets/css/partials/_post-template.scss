@@ -1,4 +1,14 @@
 .wp-block-post-template {
+  list-style: none;
+  padding: 0;
+  gap: 1.25em;
+
+  &.is-flex-container.columns-3 {
+    >li {
+      width: calc(33.33333% - 0.83333em);
+    }
+  }
+
   &.is-flex-container.is-flex-container.columns-3 {
     >li {
       @media (max-width:980px) {

@@ -25,6 +25,14 @@ body {
   --wp--preset--color--pale-gold: palegoldenrod;
 }
 
+.wp-block-post-template {
+  list-style: none;
+  padding: 0;
+  gap: 1.25em;
+}
+.wp-block-post-template.is-flex-container.columns-3 > li {
+  width: calc(33.33333% - 0.83333em);
+}
 @media (max-width: 980px) {
   .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li {
     width: calc(50% - 0.83333em);
