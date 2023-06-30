@@ -479,7 +479,7 @@ body .is-layout-flex {
   gap: 0;
 }
 
-.body .is-layout-flow > .wp-block-separator {
+body .is-layout-flow > .wp-block-separator {
   margin-block: var(--wp--preset--spacing--30);
   color: var(--wp--preset--color--light-grey);
 }
