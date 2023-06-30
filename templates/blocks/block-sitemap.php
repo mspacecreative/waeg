@@ -18,7 +18,7 @@ $value = $posttype['value'];
             //get all posts that are only listed in top level term
             $args = array(
                 'post__not_in' => $not_in,
-                'post_type' => $posttype,
+                'post_type' => $value,
                 'posts_per_page' => -1,
                 'tax_query' => array(
                     array(
