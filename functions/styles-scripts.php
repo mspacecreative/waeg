@@ -27,6 +27,12 @@ function waeg_styles() {
     wp_register_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
     wp_enqueue_style( 'fontawesome' );
 
+    if (is_admin()) {
+        // FONTAWESOME
+        wp_register_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
+        wp_enqueue_style( 'fontawesome' );
+    }
+
     wp_register_script( 'main', get_template_directory_uri() . '/assets/js/main.js?ver=' . $rand_num, array(), null, true );
 	wp_enqueue_script( 'main' );
 
