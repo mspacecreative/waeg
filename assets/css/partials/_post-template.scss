@@ -30,6 +30,7 @@
   .wp-block-post {
     @extend %border-radius-10px;
     position: relative;
+    @extend %smooth-transition-25;
 
     &:hover {
       box-shadow: 0 10px 30px var(--wp--preset--color--gray);
