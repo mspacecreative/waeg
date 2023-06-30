@@ -2,3 +2,42 @@ body {
   padding-left: 30px;
   padding-right: 30px;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: var(--wp--preset--font-family--montserrat);
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+body .page-title {
+  padding: 10px 0;
+  border-top: 1px solid var(--wp--preset--color--light-green);
+  border-bottom: 1px solid var(--wp--preset--color--light-green);
+}
+body h3 {
+  font-size: var(--wp--preset--font--size--medium);
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--wp--preset--color--dark-green);
+}
+body p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+body .display-block {
+  display: block;
+}
+body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) {
+  padding-left: 10px;
+}
+body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li {
+  padding-left: 10px;
+}
+body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li::marker {
+  font-family: fontAwesome;
+  content: "\f0da";
+  color: var(--wp--preset--color--light-green);
+}
