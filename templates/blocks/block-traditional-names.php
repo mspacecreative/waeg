@@ -30,7 +30,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                 $i = 0;
                 $arr = array();
                 foreach ($names as $key => $value) {
-                    if ($i > 2) continue;
+                    if (++$i > 2) continue;
                     if (!empty($value) ) { 
                     $field = get_sub_field_object( $key );
                     echo
