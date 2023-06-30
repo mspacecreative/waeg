@@ -9,8 +9,8 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
             $i = 0;
+            echo '<strong>' . esc_html__('Gwich&#8217;in') . '</strong>';
             foreach ($names as $key => $value) {
-                echo '<strong>' . esc_html__('Gwich&#8217;in') . '</strong>';
                 if (!empty($value) ) { 
                 $field = get_sub_field_object( $key );
                 echo
