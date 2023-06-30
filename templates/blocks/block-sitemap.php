@@ -22,7 +22,7 @@ $value = $posttype['value'];
                 'posts_per_page' => -1,
                 'tax_query' => array(
                     array(
-                        'taxonomy' => $species,
+                        'taxonomy' => 'species',
                         'field' => 'slug',
                         'terms' => $term->slug
                         )
