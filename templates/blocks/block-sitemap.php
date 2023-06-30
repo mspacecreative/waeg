@@ -5,7 +5,7 @@ $label = $posttype['label'];
 $value = $posttype['value'];
 ?>
 <h3><?php echo $label ?></h2>
-<ul class='margin-block-end: var(--wp--preset--spacing--30)'>
+<ul style='margin-block-end: var(--wp--preset--spacing--30)'>
 <?php
     $not_in = array(); //to avoid naming the same post over and over
     //get top level terms
