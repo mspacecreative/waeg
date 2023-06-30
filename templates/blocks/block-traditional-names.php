@@ -27,8 +27,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
-                $i = 0;
-                $arr = array();
+                $names = new ArrayIterator(array());
                 foreach (new LimitIterator($names, 2) as $key => $value) {
                     if (!empty($value) ) { 
                     $field = get_sub_field_object( $key );
