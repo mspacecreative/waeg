@@ -5,7 +5,7 @@ $label = $posttype['label'];
 $value = $posttype['value'];
 ?>
 <h3><?php echo $label ?></h2>
-<ul style='margin-block-end: var(--wp--preset--spacing--30)'>
+<ul>
 <?php
     $not_in = array(); //to avoid naming the same post over and over
     //get top level terms
@@ -14,7 +14,7 @@ $value = $posttype['value'];
         $species = get_terms( 'species' );
         foreach ($species as $term) {
             echo "<li><a href=" . esc_url(get_term_link($term)) . "><strong>" . $term->name . "</strong></a>";
-            echo "<ul>";
+            echo "<ul style='margin-block-end: var(--wp--preset--spacing--30)'>";
             //get all posts that are only listed in top level term
             $args = array(
                 'post__not_in' => $not_in,
