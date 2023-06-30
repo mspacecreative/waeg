@@ -42,7 +42,7 @@ $value = $posttype['value'];
             'post__not_in' => $not_in,
             'post_type' => $value,
             'posts_per_page' => -1,
-            'orderby' => 'title',
+            'orderby' => 'name',
             'order' => 'DESC'
         );
         $new = new WP_Query($args);
