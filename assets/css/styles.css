@@ -640,3 +640,7 @@ body.fade-in {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
+
+.simple-sitemap-container ul {
+  margin-left: 0;
+}
