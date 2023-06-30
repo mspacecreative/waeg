@@ -4,7 +4,7 @@ $posttype = get_field('post_type');
 $label = $posttype['label'];
 $value = $posttype['value'];
 ?>
-<h3><?php echo $label ?></h2>
+<h3 class="font-size-22"><?php echo $label ?></h2>
 <ul>
 <?php
     $not_in = array(); //to avoid naming the same post over and over
