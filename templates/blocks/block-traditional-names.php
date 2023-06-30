@@ -22,5 +22,22 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         }
         echo 
         '</ul>
+        <strong>' . esc_html__('Gwich&#8217;in') . '</strong>
+        <ul class="no-bullets no-bottom-margin">';
+        while ( have_rows('traditional_names', get_the_ID()) ) {
+            the_row();
+            if ( $names = get_row() ) {
+            foreach ($names as $key => $value) {
+                if (!empty($value) ) { 
+                if ($key > 2) continue;
+                $field = get_sub_field_object( $key );
+                echo
+                '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
+                }
+            }
+            }
+        }
+        echo 
+        '</ul>
     </div>';
 }
