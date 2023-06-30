@@ -584,13 +584,13 @@ p {
   display: block;
 }
 
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) {
   padding-left: 10px;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li {
   padding-left: 10px;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li::marker {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li::marker {
   font-family: fontAwesome;
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
