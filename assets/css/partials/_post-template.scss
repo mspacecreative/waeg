@@ -28,7 +28,6 @@
   }
 
   .wp-block-post {
-    @extend %smooth-transition-25;
     @extend %border-radius-10px;
     position: relative;
 

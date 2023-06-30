@@ -13,7 +13,7 @@ body:not(.home) header.scroll-down, body:not(.home) header, .cover--link:hover i
 .wpml-language-switcher-block ul.horizontal-list li a:hover, .language-toggle .btn a,
 .language-toggle li a,
 .wpml-language-switcher-block ul.horizontal-list .btn a,
-.wpml-language-switcher-block ul.horizontal-list li a, .wp-block-post-template .wp-block-post .wp-block-post-featured-image a img, .wp-block-post-template .wp-block-post:hover img, .wp-block-post-template .wp-block-post:hover, .wp-block-post-template .wp-block-post {
+.wpml-language-switcher-block ul.horizontal-list li a, .wp-block-post-template .wp-block-post .wp-block-post-featured-image a img, .wp-block-post-template .wp-block-post:hover img, .wp-block-post-template .wp-block-post:hover {
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
