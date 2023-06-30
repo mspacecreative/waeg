@@ -584,13 +584,13 @@ p {
   display: block;
 }
 
-ul {
+ul:not(.wp-block-post-template, .is-flex-container) {
   padding-left: 10px;
 }
-ul li {
+ul:not(.wp-block-post-template, .is-flex-container) li {
   padding-left: 10px;
 }
-ul li::marker {
+ul:not(.wp-block-post-template, .is-flex-container) li::marker {
   font-family: fontAwesome;
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
