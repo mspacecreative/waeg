@@ -1,34 +1,39 @@
 .bottom-margin-1em,
 body .is-layout-flow>.bottom-margin-1em {
-    margin-block-end: var(--wp--preset--spacing--30);
+  margin-block-end: var(--wp--preset--spacing--30);
 }
 
 .no-top-margin {
-    margin-block-start: 0;
+  margin-block-start: 0;
 }
 
 .no-bottom-margin {
-    margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 .position-relative {
-    position: relative;
+  position: relative;
 }
 
 .bottom-margin-40,
 body .is-layout-constrained>*+.bottom-margin-40 {
-    margin-block-end: var(--wp--preset--spacing--40);
+  margin-block-end: var(--wp--preset--spacing--40);
 }
 
 .top-margin-40,
 body .is-layout-constrained>*+.top-margin-40 {
-    margin-block-start: var(--wp--preset--spacing--40);
+  margin-block-start: var(--wp--preset--spacing--40);
 }
 
 .wp-site-blocks {
-    padding: 0;
+  padding: 0;
 }
 
 body .is-layout-flex {
-    gap: 0;
+  gap: 0;
+}
+
+.body .is-layout-flow>.wp-block-separator {
+  margin-block: var(--wp--preset--spacing--30);
+  color: var(--wp--preset--color--light-grey);
 }
