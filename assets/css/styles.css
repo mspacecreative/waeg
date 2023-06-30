@@ -584,13 +584,13 @@ p {
   display: block;
 }
 
-ul:not(.wp-block-post-template, .is-flex-container) {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) {
   padding-left: 10px;
 }
-ul:not(.wp-block-post-template, .is-flex-container) li {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li {
   padding-left: 10px;
 }
-ul:not(.wp-block-post-template, .is-flex-container) li::marker {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li::marker {
   font-family: fontAwesome;
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
