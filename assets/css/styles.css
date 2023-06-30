@@ -583,7 +583,7 @@ ul {
   padding-left: 10px;
 }
 ul li {
-  margin-left: var(--wp--preset--spacing--30);
+  padding-left: 10px;
 }
 ul li::marker {
   font-family: fontAwesome;
