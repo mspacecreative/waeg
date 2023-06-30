@@ -44,12 +44,12 @@ $value = $posttype['value'];
             'posts_per_page' => -1,
         );
         $new = new WP_Query($args);
-        while ($new->have_posts()) {
         echo '<ul>';
+        while ($new->have_posts()) {
             $new->the_post();
             $not_in[] = $post->ID;
             echo '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
-        echo '<ul>';
         }
+        echo '<ul>';
     } ?>
  </ul>
