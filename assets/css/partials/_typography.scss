@@ -31,12 +31,15 @@ p {
 }
 
 ul {
-  padding-left: 15px;
+  padding-left: 10px;
 
   li {
+    margin-left: var(--wp--preset--spacing--30);
+
     &::marker {
       font-family: fontAwesome;
       content: '\f0da';
+      color: var(--wp--preset--color--light-green);
     }
   }
 }
