@@ -14,7 +14,7 @@ $value = $posttype['value'];
         $species = get_terms( 'species' );
         foreach ($species as $term) {
             echo "<li><a href=" . esc_url(get_term_link($term)) . "><strong>" . $term->name . "</strong></a>";
-            echo "<ul>";
+            echo "<ul class='margin-bottom: var(--wp--preset--spacing--30)'>";
             //get all posts that are only listed in top level term
             $args = array(
                 'post__not_in' => $not_in,
