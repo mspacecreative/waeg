@@ -4,7 +4,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
     '
     <div class="boxed bg--light-gray">
         <h2 class="no-top-margin has-large-font-size bottom-margin-1em bg--light-green color--white">' . esc_html__('Traditional Names', 'waeg') . '</h2>
-        <strong>' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>
+        <strong style="color: var(--wp--preset--color--light--green);">' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>
         <ul class="no-bullets">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
@@ -22,7 +22,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         }
         echo 
         '</ul>
-        <strong>' . esc_html_x('Inuvialuktun', 'waeg') . '</strong>
+        <strong style="color: var(--wp--preset--color--light--green); margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--wp--preset--color--gray);">' . esc_html_x('Inuvialuktun', 'waeg') . '</strong>
         <ul class="no-bullets no-bottom-margin">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
