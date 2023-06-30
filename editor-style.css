@@ -41,3 +41,10 @@ body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li::m
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
 }
+body .underlined-heading {
+  color: var(--wp--preset--color--dark-green);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--wp--preset--color--gray);
+  display: block;
+}
