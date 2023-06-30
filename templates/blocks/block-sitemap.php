@@ -43,7 +43,7 @@ $value = $posttype['value'];
             'post_type' => $value,
             'posts_per_page' => -1,
             'orderby' => 'name',
-            'order' => 'DESC'
+            'order' => 'ASC'
         );
         $new = new WP_Query($args);
         while ($new->have_posts()) {
