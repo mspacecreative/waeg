@@ -579,6 +579,10 @@ p {
   display: block;
 }
 
+ul {
+  padding-left: 15px;
+}
+
 body,
 body.fade-out {
   opacity: 0;
