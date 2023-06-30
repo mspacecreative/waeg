@@ -117,13 +117,13 @@
 .editor-styles-wrapper .display-block {
   display: block;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) {
+.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
   padding-left: 10px;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li {
+.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
   padding-left: 10px;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li::marker {
+.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
   font-family: fontAwesome;
   content: "\f0da";
   color: var(--wp--preset--color--light-green);

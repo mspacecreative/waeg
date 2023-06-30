@@ -30,7 +30,7 @@ p {
   display: block;
 }
 
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
   padding-left: 10px;
 
   li {

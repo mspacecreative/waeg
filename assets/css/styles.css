@@ -584,13 +584,13 @@ p {
   display: block;
 }
 
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
   padding-left: 10px;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
   padding-left: 10px;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li::marker {
+ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
   font-family: fontAwesome;
   content: "\f0da";
   color: var(--wp--preset--color--light-green);

@@ -30,13 +30,13 @@ body p {
 body .display-block {
   display: block;
 }
-body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) {
+body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
   padding-left: 10px;
 }
-body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li {
+body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
   padding-left: 10px;
 }
-body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features) li::marker {
+body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
   font-family: fontAwesome;
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
