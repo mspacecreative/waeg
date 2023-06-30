@@ -11,7 +11,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
             foreach ($names as $key => $value) {
                 if (!empty($value) ) { 
                 $field = get_sub_field_object( $key );
-                echo $field[0];
+                echo $field['label'][0];
                 echo
                 '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
                 }
