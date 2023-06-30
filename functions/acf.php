@@ -149,7 +149,7 @@ function my_acf_init() {
 			]
 		));
 
-		// register features block
+		// register habitats block
 		acf_register_block(array(
 			'name'				=> 'habitats',
 			'title'				=> __('Other Habitats'),
@@ -158,6 +158,23 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'editor-ul',
 			'keywords'			=> array( 'feature', 'list', 'icon' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
+		// register sitemap block
+		acf_register_block(array(
+			'name'				=> 'sitemap',
+			'title'				=> __('Species Sitemap'),
+			'description'		=> __('Displays species sitemap'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'tag',
+			'keywords'			=> array( 'sitemap', 'navigation', 'species' ),
 			'supports'			=> [
 				'align' => false,
 				'anchor' => true,
