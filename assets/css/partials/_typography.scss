@@ -32,4 +32,11 @@ p {
 
 ul {
   padding-left: 15px;
+
+  li {
+    &::marker {
+      font-family: fontAwesome;
+      content: '\f0da';
+    }
+  }
 }

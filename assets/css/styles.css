@@ -582,6 +582,10 @@ p {
 ul {
   padding-left: 15px;
 }
+ul li::marker {
+  font-family: fontAwesome;
+  content: "\f0da";
+}
 
 body,
 body.fade-out {
