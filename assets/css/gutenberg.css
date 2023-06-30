@@ -135,3 +135,9 @@
   border-bottom: 1px solid var(--wp--preset--color--gray);
   display: block;
 }
+.editor-styles-wrapper .font-size-22 {
+  font-size: 22px;
+}
+.editor-styles-wrapper .font-weight-normal {
+  font-weight: normal;
+}

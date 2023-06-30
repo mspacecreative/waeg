@@ -604,6 +604,14 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list) li::marker
   display: block;
 }
 
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
 body,
 body.fade-out {
   opacity: 0;

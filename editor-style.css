@@ -48,3 +48,9 @@ body .underlined-heading {
   border-bottom: 1px solid var(--wp--preset--color--gray);
   display: block;
 }
+body .font-size-22 {
+  font-size: 22px;
+}
+body .font-weight-normal {
+  font-weight: normal;
+}
