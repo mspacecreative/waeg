@@ -15,13 +15,13 @@ switch($cols) {
         $cols = '3';
         break;
 }
-$exclude_terms = get_terms( array(
-    'slug' => array(get_queried_object()->term_slug),
-    'taxonomy' => $tax,
-    'fields' => 'ids'
-));
+// $exclude_terms = get_terms( array(
+//     'slug' => array(get_queried_object()->term_slug),
+//     'taxonomy' => $tax,
+//     'fields' => 'ids'
+// ));
 $terms = get_terms( $tax, array(
-    'exclude' => $exclude_terms
+    // 'exclude' => $exclude_terms
 ));
 
 echo
