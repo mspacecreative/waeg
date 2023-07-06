@@ -15,12 +15,14 @@ switch($cols) {
         $cols = '3';
         break;
 }
+$exclude_terms = get_terms( array(
+    'slug' => get_queried_object()->term_slug,
+    'taxonomy' => $tax,
+    'fields' => 'ids'
+));
 $terms = get_terms( $tax, array(
-    'field' => 'term_id',
-    'terms' => get_queried_object()->term_id,
-    'exclude' => array(get_the_ID())
-    )
-);
+    'exclude' => $exclude_terms
+));
 
 echo
 '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other Species', 'waeg') . '</h2>
