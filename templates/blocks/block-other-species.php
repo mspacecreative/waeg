@@ -16,7 +16,7 @@ switch($cols) {
         break;
 }
 $exclude_terms = get_terms( array(
-    'slug' => get_queried_object()->term_slug,
+    'slug' => array(get_queried_object()->term_slug),
     'taxonomy' => $tax,
     'fields' => 'ids'
 ));
