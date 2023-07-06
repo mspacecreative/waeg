@@ -1,6 +1,8 @@
 <?php
 $loop = new WP_Query( array(
     'post_type' => 'plant',
+    'orderby' => 'name',
+    'order' => 'ASC',
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
