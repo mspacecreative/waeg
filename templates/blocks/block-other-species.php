@@ -31,7 +31,7 @@ foreach( $terms as $term ) {
     if( $term->count > 0 ) {
         // echo '<a href="' . esc_url( $term_link ) . '">' . $term->name .'</a>';
        
-        $featured_img = get_the_post_thumbnail($term_id, 'swiper-thumb');
+        $featured_img = get_the_post_thumbnail($term->ID, 'swiper-thumb');
         $permalink = get_the_permalink();
 
         echo
