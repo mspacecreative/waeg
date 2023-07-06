@@ -6,7 +6,9 @@
   flex-wrap: wrap;
 
   @media (min-width: 981px) {
-    row-gap: 0;
+    &:not(.wp-block-terms) {
+      row-gap: 0;
+    }
   }
 
   &.is-flex-container.columns-3 {
@@ -58,6 +60,7 @@
 
       a {
         position: relative;
+        display: block;
 
         &::before {
           position: absolute;
@@ -75,6 +78,7 @@
           max-width: 100%;
           width: 100%;
           height: auto;
+          display: block;
         }
       }
     }

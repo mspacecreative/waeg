@@ -9,7 +9,7 @@ $loop = new WP_Query( array(
         )
     )
 ) ); ?>
-<ul class="is-flex-container columns-3 wp-block-post-template">
+<ul class="is-flex-container columns-3 wp-block-post-template wp-block-terms">
 <?php while ( $loop->have_posts() ) : $loop->the_post();
     $featured_img = get_the_post_thumbnail(get_the_ID(), 'swiper-thumb');
     $title = get_the_title();

@@ -33,7 +33,7 @@ body {
   flex-wrap: wrap;
 }
 @media (min-width: 981px) {
-  .wp-block-post-template {
+  .wp-block-post-template:not(.wp-block-terms) {
     row-gap: 0;
   }
 }
@@ -72,6 +72,7 @@ body {
 }
 .wp-block-post-template .wp-block-post .wp-block-post-featured-image a {
   position: relative;
+  display: block;
 }
 .wp-block-post-template .wp-block-post .wp-block-post-featured-image a::before {
   position: absolute;
@@ -87,6 +88,7 @@ body {
   max-width: 100%;
   width: 100%;
   height: auto;
+  display: block;
 }
 .wp-block-post-template h3 {
   position: absolute;
