@@ -18,7 +18,7 @@ switch($cols) {
 $terms = get_terms( $tax, array(
   'exclude' => array(get_the_ID())
   )
-));
+);
 
 echo
 '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other Species', 'waeg') . '</h2>
