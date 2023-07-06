@@ -21,7 +21,7 @@ switch($cols) {
 //     'fields' => 'ids'
 // ));
 $terms = get_terms( $tax, array(
-    // 'exclude' => $exclude_terms
+    'exclude' => array(get_queried_object()->term_id)
 ));
 
 echo
