@@ -17,7 +17,7 @@ switch($cols) {
 }
 $terms = get_terms( $tax, $args = array(
   'hide_empty' => true,
-  'post__not_in' => array(get_the_ID())
+  'exclude' => array(get_the_ID())
 ));
 
 echo
