@@ -16,8 +16,10 @@ switch($cols) {
         break;
 }
 $terms = get_terms( $tax, array(
-  'exclude' => array(get_the_ID())
-  )
+    'field' => 'term_id',
+    'terms' => get_queried_object()->term_id,
+    'exclude' => array(get_the_ID())
+    )
 );
 
 echo
