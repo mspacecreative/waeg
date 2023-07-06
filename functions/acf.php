@@ -183,6 +183,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register term block
+		acf_register_block(array(
+			'name'				=> 'term',
+			'title'				=> __('Term Block'),
+			'description'		=> __('Displays all posts related to term'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'tag',
+			'keywords'			=> array( 'term', 'species', 'list' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
