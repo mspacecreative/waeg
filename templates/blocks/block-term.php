@@ -1,5 +1,5 @@
 <?php
-$query = new WP_Query( array(
+$loop = new WP_Query( array(
     'post_type' => 'plant',
     'tax_query' => array(
         array(
@@ -10,7 +10,7 @@ $query = new WP_Query( array(
     )
 ) ); ?>
 <ul class="is-flex-container columns-3 wp-block-post-template">
-<?php while ( $query->have_posts() ) : $query->the_post();
+<?php while ( $loop->have_posts() ) : $loop->the_post();
     $loop->the_post();
     $featured_img = get_the_post_thumbnail(get_the_ID(), 'swiper-thumb');
     $title = get_the_title();
