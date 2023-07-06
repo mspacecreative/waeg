@@ -5,7 +5,7 @@ $query = new WP_Query( array(
         array(
             'taxonomy' => 'species',   // taxonomy name
             'field' => 'term_id',           // term_id, slug or name
-            'terms' => get_queried_object()->term_id;             // term id, term slug or term name
+            'terms' => get_queried_object()->term_id        // term id, term slug or term name
         )
     )
 ) ); ?>
