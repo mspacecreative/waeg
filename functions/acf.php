@@ -200,6 +200,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register term block
+		acf_register_block(array(
+			'name'				=> 'other-species',
+			'title'				=> __('Other Species Block'),
+			'description'		=> __('Displays all other species not related to current post'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'tag',
+			'keywords'			=> array( 'term', 'species', 'list' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
