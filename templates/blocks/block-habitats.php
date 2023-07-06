@@ -29,8 +29,7 @@ if ($posttype['value'] == 'habitat') {
         'tax_query' => array(
             array(
                 'taxonomy' => 'species',
-                'field' => 'term_id',
-                'terms' => get_queried_object()->term_id
+                'operator' => 'NOT EXISTS',
             )
         )
     );
