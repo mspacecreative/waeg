@@ -26,12 +26,6 @@ if ($posttype['value'] == 'habitat') {
     $args = array(
         'post_type' => $value,
         'post__not_in' => array(get_the_ID()),
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'species',
-                'operator' => 'NOT EXISTS',
-            )
-        )
     );
 }
 
