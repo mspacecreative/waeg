@@ -33,7 +33,7 @@ body {
   flex-wrap: wrap;
 }
 @media (min-width: 981px) {
-  .wp-block-post-template:not(.wp-block-terms) {
+  .wp-block-post-template.wp-block-other-habitats {
     row-gap: 0;
   }
 }

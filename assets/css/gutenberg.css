@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 981px) {
-  .editor-styles-wrapper .wp-block-post-template:not(.wp-block-terms) {
+  .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats {
     row-gap: 0;
   }
 }

@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 
   @media (min-width: 981px) {
-    &:not(.wp-block-terms) {
+    &.wp-block-other-habitats {
       row-gap: 0;
     }
   }
