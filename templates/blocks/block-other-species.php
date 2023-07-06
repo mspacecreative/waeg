@@ -15,9 +15,8 @@ switch($cols) {
         $cols = '3';
         break;
 }
-$terms = get_terms( $tax, $args = array(
-  'hide_empty' => true,
-  'exclude' => get_the_ID()
+$terms = get_terms( $tax, array(
+  'exclude' => array(get_the_ID())
 ));
 
 echo
