@@ -1,7 +1,7 @@
 <?php
 $posttype = get_field('post_type');
 $cols = get_field('columns');
-$label = $posttype['label'];
+$label = $posttype['label'] == 'Plants' ? $posttype['label'] : 'Species';
 $value = $posttype['value'];
 switch($cols) {
     case '1':
@@ -17,10 +17,24 @@ switch($cols) {
         $cols = '3';
         break;
 }
+if ($posttype == 'plant') {
 $args = array(
     'post_type' => $value,
     'post__not_in' => array(get_the_ID()),
 );
+} elseif ($posttype == 'habitat') {
+    $args = array(
+        'post_type' => $value,
+        'post__not_in' => array(get_the_ID()),
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'species',
+                'field' => 'term_id',
+                'terms' => get_queried_object()->term_id
+            )
+        )
+    );
+}
 
 $loop = new WP_Query($args);
 
