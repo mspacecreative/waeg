@@ -17,6 +17,7 @@ switch($cols) {
 }
 $terms = get_terms( $tax, array(
   'exclude' => array(get_the_ID())
+  )
 ));
 
 echo
