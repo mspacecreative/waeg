@@ -1,7 +1,7 @@
 <?php
 $posttype = get_field('post_type');
 $cols = get_field('columns');
-$label = $posttype['label'] == 'Plants' ? $posttype['label'] : 'Species';
+$label = $posttype == 'plant' ? $posttype['label'] : 'Species';
 $value = $posttype['value'];
 switch($cols) {
     case '1':
