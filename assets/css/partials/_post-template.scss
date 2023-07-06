@@ -40,6 +40,7 @@
     @extend %border-radius-10px;
     position: relative;
     @extend %smooth-transition-25;
+    flex-grow: 1;
 
     &:hover {
       box-shadow: 0 10px 30px var(--wp--preset--color--gray);

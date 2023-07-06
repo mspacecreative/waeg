@@ -55,6 +55,7 @@ body {
 }
 .wp-block-post-template .wp-block-post {
   position: relative;
+  flex-grow: 1;
 }
 .wp-block-post-template .wp-block-post:hover {
   box-shadow: 0 10px 30px var(--wp--preset--color--gray);
