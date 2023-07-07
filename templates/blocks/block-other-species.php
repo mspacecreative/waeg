@@ -35,7 +35,7 @@ foreach( $terms as $term ) {
 
     if( $term->count > 0 ) {
         
-        $featured_img = $term->slug == 'shrubs' ? wp_get_attachment_image( $shrubs_img, $size ) : ($term->slug == 'flowers' ? wp_get_attachment_image( $flowers_img, $size ) : $term->slug == 'berries') ? wp_get_attachment_image( $berries_img, $size ) : '';
+        $featured_img = wp_get_attachment_image( $shrubs_img, $size );
         // $permalink = get_the_permalink();
 
         echo
