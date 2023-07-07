@@ -44,8 +44,7 @@ foreach( $terms as $term ) {
                     . $featured_img . 
                 '</a>
             </figure>
-            <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>'
-            . var_dump($term->slug) . '
+            <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>
         </li>';
     }
 }
