@@ -3,7 +3,6 @@ $berries_img = get_field('berries', 'option');
 $flowers_img = get_field('flowers', 'option');
 $tax = 'species';
 $cols = get_field('columns');
-$featured_img = $shrubs_img ? wp_get_attachment_image( $shrubs_img, $size ) : '';
 switch($cols) {
     case '1':
         $cols = '1';
