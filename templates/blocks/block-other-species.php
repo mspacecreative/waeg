@@ -1,8 +1,4 @@
 <?php
-$berries_img = get_field('berries', 'options');
-$flowers_img = get_field('flowers', 'options');
-$shrubs_img = get_field('shrubs', 'options');
-$size = 'swiper-thumb';
 $tax = 'species';
 $cols = get_field('columns');
 switch($cols) {
@@ -34,6 +30,10 @@ foreach( $terms as $term ) {
 
     if( $term->count > 0 ) {
         
+        $berries_img = get_field('berries', 'options');
+        $flowers_img = get_field('flowers', 'options');
+        $shrubs_img = get_field('shrubs', 'options');
+        $size = 'swiper-thumb';
         $featured_img = $term->slug == 'shrubs' ? wp_get_attachment_image( $shrubs_img, $size ) : $term->slug == 'flowers' ? wp_get_attachment_image( $flowers_img, $size ) : $term->slug == 'berries' ? wp_get_attachment_image( $berries_img, $size ) : '';
         $permalink = get_the_permalink();
 
