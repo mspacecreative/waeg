@@ -4,7 +4,7 @@ $cols = get_field('columns');
 $heading = get_field('heading');
 
 // CUSTOM CLASS	
-$className = 'before_and_after';
+$className = '';
 if( !empty($block['className']) ) {
 	$className .= ' ' . $block['className'];
 }
