@@ -154,3 +154,6 @@
 .editor-styles-wrapper .font-weight-normal {
   font-weight: normal;
 }
+.editor-styles-wrapper .featured-img.-r0 {
+  display: none;
+}

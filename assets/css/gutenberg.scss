@@ -2,4 +2,8 @@
     @import "partials/variables";
     @import "partials/post-template";
     @import "partials/typography";
+
+    .featured-img.-r0 {
+        display: none;
+    }
 }
