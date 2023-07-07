@@ -24,7 +24,7 @@ $terms = get_terms( $tax, array(
 
 echo
 '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other Species', 'waeg') . '</h2>
-<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats">' . wp_get_attachment_image( $shrubs_img, $size );
+<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats">';
 
 foreach( $terms as $term ) {
 
