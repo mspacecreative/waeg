@@ -32,7 +32,7 @@ foreach( $terms as $term ) {
         
         $berries_img = get_field('berries', 'options');
         $flowers_img = get_field('flowers', 'options');
-        $shrubs_img = get_field('shrubs', 'options');
+        $shrubs_img = get_field('shrubs', 'options', get_the_ID());
         $size = 'swiper-thumb';
         $featured_img = $term->slug == 'shrubs' ? wp_get_attachment_image( $shrubs_img, $size ) : $term->slug == 'flowers' ? wp_get_attachment_image( $flowers_img, $size ) : $term->slug == 'berries' ? wp_get_attachment_image( $berries_img, $size ) : '';
         $permalink = get_the_permalink();
