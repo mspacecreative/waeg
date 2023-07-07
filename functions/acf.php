@@ -217,6 +217,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register term block
+		acf_register_block(array(
+			'name'				=> 'card',
+			'title'				=> __('Card Block'),
+			'description'		=> __('Displays featured image and linkable post title overlay'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'format-image',
+			'keywords'			=> array( 'page', 'page link', 'card' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
