@@ -55,7 +55,6 @@ body {
 }
 .wp-block-post-template .wp-block-post {
   position: relative;
-  flex-grow: 1;
 }
 .wp-block-post-template .wp-block-post:hover {
   box-shadow: 0 10px 30px var(--wp--preset--color--gray);
@@ -109,6 +108,10 @@ body {
   word-break: inherit;
   width: calc(100% - 2em);
   font-weight: 700;
+}
+
+.wp-block-post-template-container .wp-block-post {
+  flex-grow: 1;
 }
 
 .wp-block-navigation .wp-block-navigation-item:last-of-type {

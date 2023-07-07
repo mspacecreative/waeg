@@ -45,7 +45,6 @@
 }
 .editor-styles-wrapper .wp-block-post-template .wp-block-post {
   position: relative;
-  flex-grow: 1;
 }
 .editor-styles-wrapper .wp-block-post-template .wp-block-post:hover {
   box-shadow: 0 10px 30px var(--wp--preset--color--gray);
@@ -99,6 +98,9 @@
   word-break: inherit;
   width: calc(100% - 2em);
   font-weight: 700;
+}
+.editor-styles-wrapper .wp-block-post-template-container .wp-block-post {
+  flex-grow: 1;
 }
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,

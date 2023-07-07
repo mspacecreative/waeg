@@ -40,7 +40,6 @@
     @extend %border-radius-10px;
     position: relative;
     @extend %smooth-transition-25;
-    flex-grow: 1;
 
     &:hover {
       box-shadow: 0 10px 30px var(--wp--preset--color--gray);
@@ -107,5 +106,11 @@
     word-break: inherit;
     width: calc(100% - 2em);
     font-weight: 700;
+  }
+}
+
+.wp-block-post-template-container {
+  .wp-block-post {
+    flex-grow: 1;
   }
 }
