@@ -3,6 +3,7 @@ $berries_img = get_field('berries', 'option');
 $flowers_img = get_field('flowers', 'option');
 $tax = 'species';
 $cols = get_field('columns');
+$heading = get_field('heading');
 switch($cols) {
     case '1':
         $cols = '1';
@@ -23,7 +24,7 @@ $terms = get_terms( $tax, array(
 ));
 
 echo
-'<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other Species', 'waeg') . '</h2>
+'<h2 class="wp-block-heading has-large-font-size">' . $heading . '</h2>
 <ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats">';
 
 foreach( $terms as $term ) {
