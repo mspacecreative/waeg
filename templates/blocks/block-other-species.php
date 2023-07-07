@@ -1,4 +1,7 @@
 <?php
+$berries_img = get_field('berries', 'options');
+$flowers_img = get_field('flowers', 'options');
+$shrubs_img = get_field('shrubs', 'options');
 $tax = 'species';
 $cols = get_field('columns');
 switch($cols) {
@@ -41,7 +44,8 @@ foreach( $terms as $term ) {
                     . $featured_img . 
                 '</a>
             </figure>
-            <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>
+            <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>'
+            . var_dump($term->slug) . '
         </li>';
     }
 }
