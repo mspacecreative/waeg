@@ -24,8 +24,8 @@ if ($pages) {
     foreach( $pages as $page ) {
 
         setup_postdata($page);
-        $title = get_the_title();
-        $permalink = get_the_permalink();
+        $title = get_the_title($page->ID);
+        $permalink = get_the_permalink($page->ID);
         $featured_img = get_the_post_thumbnail( $page->ID, 'swiper-thumb' );
 
         echo
