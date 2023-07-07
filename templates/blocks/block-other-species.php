@@ -1,11 +1,8 @@
 <?php
 $berries_img = get_field('berries', 'option');
 $flowers_img = get_field('flowers', 'option');
-$shrubs_img = get_field('shrubs', 'option');
-$size = 'swiper-thumb';
 $tax = 'species';
 $cols = get_field('columns');
-$featured_img = wp_get_attachment_image( $shrubs_img, $size );
 switch($cols) {
     case '1':
         $cols = '1';
@@ -32,6 +29,9 @@ echo
 foreach( $terms as $term ) {
 
     $term_link = get_term_link( $term );
+    $shrubs_img = get_field('shrubs_img', $term);
+    $size = 'swiper-thumb';
+    $featured_img = wp_get_attachment_image( $shrubs_img, $size );
 
     if( $term->count > 0 ) {
         
