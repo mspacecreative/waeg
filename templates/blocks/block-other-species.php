@@ -41,7 +41,7 @@ foreach( $terms as $term ) {
         '<li class="wp-block-post">
             <figure class="wp-block-post-featured-image">
                 <a href="' . esc_url( $term_link ) . '">'
-                    . $featured_img . 
+                    . wp_get_attachment_image( $shrubs_img, $size ) . 
                 '</a>
             </figure>
             <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>
