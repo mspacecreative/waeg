@@ -1,10 +1,11 @@
 <?php
 $berries_img = get_field('berries', 'option');
 $flowers_img = get_field('flowers', 'option');
-$shrubs_img = get_field('shrubs', 'option', get_the_ID());
+$shrubs_img = get_field('shrubs', 'option');
 $size = 'swiper-thumb';
 $tax = 'species';
 $cols = get_field('columns');
+$featured_img = $shrubs_img ? wp_get_attachment_image( $shrubs_img, $size ) : '';
 switch($cols) {
     case '1':
         $cols = '1';
@@ -41,7 +42,7 @@ foreach( $terms as $term ) {
         '<li class="wp-block-post">
             <figure class="wp-block-post-featured-image">
                 <a href="' . esc_url( $term_link ) . '">'
-                    . wp_get_attachment_image( $shrubs_img, $size ) . 
+                    . $featured_img . 
                 '</a>
             </figure>
             <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>
