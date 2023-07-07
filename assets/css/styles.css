@@ -261,6 +261,7 @@ body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child
 
 .wp-block-cover.cover--link {
   padding: 0;
+  min-height: auto !important;
 }
 .wp-block-cover.cover--link img {
   position: relative;
