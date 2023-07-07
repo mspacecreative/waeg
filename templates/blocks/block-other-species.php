@@ -5,7 +5,7 @@ $shrubs_img = get_field('shrubs', 'option');
 $size = 'swiper-thumb';
 $tax = 'species';
 $cols = get_field('columns');
-$featured_img = $shrubs_img ? wp_get_attachment_image( $shrubs_img, $size ) : '';
+$featured_img = wp_get_attachment_image( $shrubs_img, $size );
 switch($cols) {
     case '1':
         $cols = '1';
@@ -35,7 +35,6 @@ foreach( $terms as $term ) {
 
     if( $term->count > 0 ) {
         
-        $featured_img = wp_get_attachment_image( $shrubs_img, $size );
         // $permalink = get_the_permalink();
 
         echo
