@@ -1,8 +1,6 @@
 <?php
 $berries_img = get_field('berries', 'option');
 $flowers_img = get_field('flowers', 'option');
-$shrubs_img = get_field('shrubs_img', 'option');
-$size = 'swiper-thumb';
 $tax = 'species';
 $cols = get_field('columns');
 $featured_img = $shrubs_img ? wp_get_attachment_image( $shrubs_img, $size ) : '';
@@ -35,7 +33,9 @@ foreach( $terms as $term ) {
 
     if( $term->count > 0 ) {
         
-        // $featured_img = $term->slug == 'shrubs' ? wp_get_attachment_image( $shrubs_img, $size ) : $term->slug == 'flowers' ? wp_get_attachment_image( $flowers_img, $size ) : $term->slug == 'berries' ? wp_get_attachment_image( $berries_img, $size ) : '';
+        $term = get_queried_object();
+        $size = 'swiper-thumb';
+        $featured_img = get_field('shrubs_img', $term) ? wp_get_attachment_image( get_field('shrubs_img', $term), $size ) : '';
         // $permalink = get_the_permalink();
 
         echo
