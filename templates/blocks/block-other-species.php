@@ -1,9 +1,14 @@
 <?php
-$berries_img = get_field('berries', 'option');
-$flowers_img = get_field('flowers', 'option');
 $tax = 'species';
 $cols = get_field('columns');
 $heading = get_field('heading');
+
+// CUSTOM CLASS	
+$className = 'before_and_after';
+if( !empty($block['className']) ) {
+	$className .= ' ' . $block['className'];
+}
+
 switch($cols) {
     case '1':
         $cols = '1';
@@ -23,9 +28,12 @@ $terms = get_terms( $tax, array(
     'exclude' => array(get_queried_object()->term_id)
 ));
 
+if ($heading) {
 echo
-'<h2 class="wp-block-heading has-large-font-size">' . $heading . '</h2>
-<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats">';
+'<h2 class="wp-block-heading has-large-font-size">' . $heading . '</h2>';
+}
+echo
+'<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats' . esc_attr($className) . '">';
 
 foreach( $terms as $term ) {
 
@@ -35,8 +43,6 @@ foreach( $terms as $term ) {
     $featured_img = wp_get_attachment_image( $shrubs_img, $size );
 
     if( $term->count > 0 ) {
-        
-        // $permalink = get_the_permalink();
 
         echo
         '<li class="wp-block-post">
@@ -51,4 +57,3 @@ foreach( $terms as $term ) {
 }
 echo
 '<ul>';
-?>
