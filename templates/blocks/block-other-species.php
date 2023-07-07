@@ -1,7 +1,7 @@
 <?php
-$berries_img = get_field('berries', 'options');
-$flowers_img = get_field('flowers', 'options');
-$shrubs_img = get_field('shrubs', 'options');
+$berries_img = get_field('berries', 'option');
+$flowers_img = get_field('flowers', 'option');
+$shrubs_img = get_field('shrubs', 'option');
 $size = 'swiper-thumb';
 $tax = 'species';
 $cols = get_field('columns');
