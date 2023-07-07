@@ -16,10 +16,16 @@ switch($cols) {
         break;
 }
 
+// CUSTOM CLASS	
+$className = '';
+if( !empty($block['className']) ) {
+	$className .= ' ' . $block['className'];
+}
+
 if ($pages) {
 
     echo
-    '<ul>';
+    '<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats' . esc_attr($className) . '">';
 
     foreach( $pages as $page ) {
 
