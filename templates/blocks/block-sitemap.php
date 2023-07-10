@@ -50,7 +50,7 @@ $value = $posttype['value'];
         $new = new WP_Query($args);
         while ($new->have_posts()) {
             $new->the_post();
-            $not_in[] = $post->ID;
+            $not_in[] = $new->ID;
             echo '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
         }
     } ?>
