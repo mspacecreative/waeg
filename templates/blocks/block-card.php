@@ -41,7 +41,7 @@ if ($pages) {
                     . $featured_img . 
                 '</a>
             </figure>
-            <h3 class="wp-block-post-title has-large-font-size">' . $title . '</h3>
+            <h3 class="wp-block-post-title has-large-font-size">' . esc_html_x($title, 'waeg') . '</h3>
         </li>';
     }
 
