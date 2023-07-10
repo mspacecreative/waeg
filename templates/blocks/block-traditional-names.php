@@ -21,6 +21,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                 '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
                 }
             }
+            include 'includes/audio-loop.php';
             }
         }
         echo 
@@ -41,7 +42,6 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     $field = get_sub_field_object( $key );
                     echo
                     '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
-                    audio_loop();
                     }
                 }
             }
