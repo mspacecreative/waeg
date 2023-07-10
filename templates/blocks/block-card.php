@@ -25,7 +25,7 @@ if( !empty($block['className']) ) {
 if ($pages) {
 
     echo
-    '<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats' . esc_attr($className) . '">';
+    '<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-habitats' . esc_attr($className) . '">';
 
     foreach( $pages as $page ) {
 
