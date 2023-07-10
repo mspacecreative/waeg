@@ -51,7 +51,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         the_row();
         if (!empty(get_sub_field('siglitun_name') || get_sub_field('uummarmiutun') || get_sub_field('kangiryarmiutun')))
         echo
-        '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('English &amp; French', 'waeg') . '</strong>';
+        '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('French and English', 'waeg') . '</strong>';
         }
         echo
         '<ul class="no-bullets no-bottom-margin">';
