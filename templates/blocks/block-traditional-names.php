@@ -24,9 +24,15 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
             }
         }
         echo 
-        '</ul>
-        <strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Inuvialuktun', 'waeg') . '</strong>
-        <ul class="no-bullets no-bottom-margin">';
+        '</ul>';
+        while (have_rows('traditional_names', get_the_ID()) ) {
+        the_row();
+        if (!empty(get_sub_field('siglitun_name') || get_sub_field('uummarmiutun') || get_sub_field('kangiryarmiutun')))
+        echo
+        '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Inuvialuktun', 'waeg') . '</strong>';
+        }
+        echo
+        '<ul class="no-bullets no-bottom-margin">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
