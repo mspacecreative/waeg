@@ -41,7 +41,8 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     $field = get_sub_field_object( $key );
                     echo
                     '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
-                    echo $field['label'][2];
+                    } else {
+                        echo $field;
                     }
                 }
             }
