@@ -42,7 +42,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     echo
                     '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
                     } else {
-                        echo $field;
+                        echo $field['label'];
                     }
                 }
             }
