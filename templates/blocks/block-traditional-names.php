@@ -41,8 +41,6 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     $field = get_sub_field_object( $key );
                     echo
                     '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
-                    } else {
-                        echo $field['label'];
                     }
                 }
             }
@@ -60,7 +58,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
-                foreach (array_slice($names,4) as $key => $value) {
+                foreach (array_slice($names,6) as $key => $value) {
                     if (!empty($value) ) { 
                     $field = get_sub_field_object( $key );
                     echo
