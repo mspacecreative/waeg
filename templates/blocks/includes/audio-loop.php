@@ -1,5 +1,5 @@
 <?php
-if ( have_rows('gwichya_dialect') )
+if ( have_rows('gwichya_dialect') ) {
     while (have_rows('gwichya_dialect') ) {
         the_row();
         $audiofile = get_sub_field('audio_file');
