@@ -32,7 +32,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Inuvialuktun', 'waeg') . '</strong>';
         }
         echo
-        '<ul class="no-bullets no-bottom-margin">';
+        '<ul class="no-bullets">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
