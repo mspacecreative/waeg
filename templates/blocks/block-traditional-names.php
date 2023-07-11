@@ -13,10 +13,10 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     }
                 }
             }
-            if (have_rows('gwichya_dialect')) {
+            if (have_rows('gwichya_dialect', get_the_ID())) {
                 echo
                 '<ul class="no-bullets">';
-                while (have_rows('gwichya_dialect')) {
+                while (have_rows('gwichya_dialect', get_the_ID())) {
                     the_row();
                     $name = get_sub_field('gwichya_name');
                     $audiofile = get_sub_field('audio_file');
