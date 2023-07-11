@@ -1,5 +1,5 @@
 // AUDIO TRIGGER
-let audioTrigger = querySelectorAll(".audio-trigger");
+let audioTrigger = document.querySelectorAll(".audio-trigger");
 for (i = 0; i < audioTrigger.length; i++) {
   audioTrigger[i].addEventListener("click", (e) => {
     e.preventDefault();
