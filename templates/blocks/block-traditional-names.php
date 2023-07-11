@@ -34,15 +34,15 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                 echo 
                 '</ul>';
             }
-            if ( $names = get_row() ) {
-                foreach (array_slice($names,0,2) as $key => $value) {
-                    if (!empty($value) ) { 
-                        $field = get_sub_field_object( $key );
-                        echo
-                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
-                    }
-                }
-            }
+            // if ( $names = get_row() ) {
+            //     foreach (array_slice($names,0,2) as $key => $value) {
+            //         if (!empty($value) ) { 
+            //             $field = get_sub_field_object( $key );
+            //             echo
+            //             '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
+            //         }
+            //     }
+            // }
         }
         // echo 
         // '</ul>';
