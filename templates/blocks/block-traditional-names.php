@@ -19,11 +19,17 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     the_row();
                     $name = get_sub_field('gwichya_name');
                     $audiofile = get_sub_field('audio_file');
-                    if ($name && $audiofile) {
+                    $teetlit_name = get_sub_field('teetlit_name');
+                    $audiofile_teetlit = get_sub_field('audio_file_teetlit');
+                    if ($name && $teetlit_name && $audiofile && $audiofile_teetlit) {
                         echo
                         '<li class="has-medium-font-size position-relative">' . '<strong>' . esc_html_x('Gwichya', 'waeg') . ':</strong> ' . $name . '
                             <button class="audio-trigger"><i class="fa fa-volume-up"></i></button>
                             <audio src="' . $audiofile . '"></audio>
+                        </li>
+                        <li class="has-medium-font-size position-relative">' . '<strong>' . esc_html_x('Teetł’it', 'waeg') . ':</strong> ' . $teetlit_name . '
+                            <button class="audio-trigger"><i class="fa fa-volume-up"></i></button>
+                            <audio src="' . $audiofile_teetlit . '"></audio>
                         </li>';
                     } elseif ($name) {
                         echo
