@@ -22,5 +22,6 @@ include 'functions/styles-scripts.php';
 include 'functions/thumbnails.php';
 include 'functions/tinymce.php';
 include 'functions/wpml.php';
+include 'functions/audio-loop.php';
 // include 'functions/language-switcher.php';
 // include 'functions/analytics.php';
