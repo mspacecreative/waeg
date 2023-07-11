@@ -39,7 +39,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
-                foreach (array_slice($names,1,2) as $key => $value) {
+                foreach (array_slice($names,1,3) as $key => $value) {
                     if (!empty($value) ) { 
                         $field = get_sub_field_object( $key );
                         echo
