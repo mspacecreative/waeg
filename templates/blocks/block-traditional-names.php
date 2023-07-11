@@ -5,18 +5,17 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         <h2 class="no-top-margin has-large-font-size bottom-margin-1em bg--light-green color--white">' . esc_html__('Traditional Names', 'waeg') . '</h2>';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
-            if (have_rows('gwichya_dialect')) {
-                while (have_rows('gwichya_dialect')) {
+            if ( have_rows('gwichya_dialect') ) {
+                while ( have_rows('gwichya_dialect') ) {
                     the_row();
                     if (!empty(get_sub_field('gwichya_name')))
                         echo '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>';
-                    }
                 }
             }
-            if (have_rows('gwichya_dialect', get_the_ID())) {
+            if (have_rows('gwichya_dialect')) {
                 echo
                 '<ul class="no-bullets">';
-                while (have_rows('gwichya_dialect', get_the_ID())) {
+                while ( have_rows('gwichya_dialect') ) {
                     the_row();
                     $name = get_sub_field('gwichya_name');
                     $audiofile = get_sub_field('audio_file');
@@ -34,17 +33,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                 echo 
                 '</ul>';
             }
-            // if ( $names = get_row() ) {
-            //     foreach (array_slice($names,0,2) as $key => $value) {
-            //         if (!empty($value) ) { 
-            //             $field = get_sub_field_object( $key );
-            //             echo
-            //             '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
-            //         }
-            //     }
-            // }
-        // echo 
-        // '</ul>';
+        }
         while (have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if (!empty(get_sub_field('siglitun_name') || get_sub_field('uummarmiutun') || get_sub_field('kangiryarmiutun')))
@@ -58,9 +47,9 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
             if ( $names = get_row() ) {
                 foreach (array_slice($names,2,3) as $key => $value) {
                     if (!empty($value) ) { 
-                    $field = get_sub_field_object( $key );
-                    echo
-                    '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
+                        $field = get_sub_field_object( $key );
+                        echo
+                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
                     }
                 }
             }
@@ -69,9 +58,9 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         '</ul>';
         while (have_rows('traditional_names', get_the_ID()) ) {
             the_row();
-            if (!empty(get_sub_field('siglitun_name') || get_sub_field('uummarmiutun') || get_sub_field('kangiryarmiutun')))
-            echo
-            '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('French and English', 'waeg') . '</strong>';
+            if (!empty(get_sub_field('french') || get_sub_field('common_names')))
+                echo
+                '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('French and English', 'waeg') . '</strong>';
         }
         echo
         '<ul class="no-bullets no-bottom-margin">';
