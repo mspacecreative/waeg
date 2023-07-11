@@ -11,7 +11,6 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         }
         echo
         '<ul class="no-bullets">';
-        echo audio_loop();
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
@@ -19,7 +18,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     if (!empty($value) ) { 
                         $field = get_sub_field_object( $key );
                         echo
-                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
+                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . audio_loop() . '</li>';
                     }
                 }
             }
