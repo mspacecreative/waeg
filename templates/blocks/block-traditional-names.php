@@ -11,9 +11,9 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         }
         echo
         '<ul class="no-bullets">';
+        audio_file();
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
-            echo audio_loop();
             if ( $names = get_row() ) {
                 foreach (array_slice($names,0,2) as $key => $value) {
                     if (!empty($value) ) { 
