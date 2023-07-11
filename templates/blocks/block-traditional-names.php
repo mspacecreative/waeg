@@ -39,7 +39,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     if (!empty($value) ) { 
                         $field = get_sub_field_object( $key );
                         echo
-                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . audio_loop() . '</li>';
+                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
                     }
                 }
             }
