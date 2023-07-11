@@ -8,8 +8,7 @@ for (i = 0; i < audioFile.length; i++) {
 for (i = 0; i < audioTrigger.length; i++) {
   audioTrigger[i].addEventListener("click", (e) => {
     e.preventDefault();
-    const audio = this.nextElementSibling;
-    audio.play();
+    this.nextElementSibling.play();
   });
 }
 
