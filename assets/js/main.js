@@ -1,6 +1,7 @@
 // AUDIO TRIGGER
 let audioTrigger = document.querySelectorAll(".audio-trigger");
 const audioFile = document.querySelectorAll("audio");
+const nextAudioFile = audioTrigger.nextElementSibling;
 let num = 1;
 for (i = 0; i < audioFile.length; i++) {
   audioFile[i].setAttribute("id", "audio-" + num++);
@@ -8,7 +9,7 @@ for (i = 0; i < audioFile.length; i++) {
 for (i = 0; i < audioTrigger.length; i++) {
   audioTrigger[i].addEventListener("click", (e) => {
     e.preventDefault();
-    this.nextElementSibling.play();
+    nextAudioFile.play();
   });
 }
 
