@@ -17,9 +17,9 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                 '<ul class="no-bullets">';
                 while ( have_rows('gwichya_dialect') ) {
                     the_row();
-                    $audiofile = get_sub_field('audio_file') ? '<button class="audio-trigger" title="' . esc_html_x('Click button to listen to audio track', 'waeg') . '"><i class="fa fa-volume-up"></i></button><audio src="' . get_sub_field('audio_file') . '"></audio>' : '';
+                    $audiofile = get_sub_field('audio_file') ? '<button class="audio-trigger" type="button" title="' . esc_html_x('Click button to listen to audio track', 'waeg') . '"><i class="fa fa-volume-up"></i></button><audio src="' . get_sub_field('audio_file') . '"></audio>' : '';
                     $name = get_sub_field('gwichya_name') ? '<li class="has-medium-font-size position-relative">' . '<strong>' . esc_html_x('Gwichya', 'waeg') . ':</strong> ' . get_sub_field('gwichya_name') . $audiofile . '</li>' : '';
-                    $audiofile_teetlit = get_sub_field('audio_file_teetlit') ? '<button class="audio-trigger" title="' . esc_html_x('Click button to listen to audio track', 'waeg') . '"><i class="fa fa-volume-up"></i></button><audio src="' . get_sub_field('audio_file_teetlit') . '"></audio>' : '';
+                    $audiofile_teetlit = get_sub_field('audio_file_teetlit') ? '<button class="audio-trigger" type="button" title="' . esc_html_x('Click button to listen to audio track', 'waeg') . '"><i class="fa fa-volume-up"></i></button><audio src="' . get_sub_field('audio_file_teetlit') . '"></audio>' : '';
                     $teetlit_name = get_sub_field('teetlit_name') ? '<li class="has-medium-font-size position-relative">' . '<strong>' . esc_html_x('Teetł&#8217;it', 'waeg') . ':</strong> ' . get_sub_field('teetlit_name') . $audiofile_teetlit . '</li>' : '';
                     
                     echo $name, $teetlit_name;
