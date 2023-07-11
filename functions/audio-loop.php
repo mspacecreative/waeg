@@ -6,7 +6,7 @@ function audio_loop() {
             $audiofile = get_sub_field('audio_file');
             $i = 1;
             echo
-            '<button class="audio-trigger"><i class="fa fa-volume-up"></i></button>
+            '<button class="audio-trigger" title="' . esc_html_x('Click button to listen to audio track', 'waeg') . '"><i class="fa fa-volume-up"></i></button>
             <audio src="' . $audiofile . '"></audio>';
         }
     }
