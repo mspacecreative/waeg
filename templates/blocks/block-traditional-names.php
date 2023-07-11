@@ -13,14 +13,15 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         '<ul class="no-bullets">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
+            audio_loop();
             if ( $names = get_row() ) {
-            foreach (array_slice($names,0,2) as $key => $value) {
-                if (!empty($value) ) { 
-                $field = get_sub_field_object( $key );
-                echo
-                '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . audio_loop() . '</li>';
+                foreach (array_slice($names,0,2) as $key => $value) {
+                    if (!empty($value) ) { 
+                        $field = get_sub_field_object( $key );
+                        echo
+                        '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
+                    }
                 }
-            }
             }
         }
         echo 
