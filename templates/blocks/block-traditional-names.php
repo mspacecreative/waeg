@@ -13,7 +13,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         '<ul class="no-bullets">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
-            audio_loop();
+            echo audio_loop();
             if ( $names = get_row() ) {
                 foreach (array_slice($names,0,2) as $key => $value) {
                     if (!empty($value) ) { 
