@@ -7,7 +7,7 @@ function audio_loop() {
             $i = 1;
             echo
             '<button class="audio-trigger"><i class="fa fa-volume-up"></i></button>
-            <audio id="audio-' . $i++ . '" src="' . $audiofile . '"></audio>';
+            <audio src="' . $audiofile . '"></audio>';
         }
     }
 }
