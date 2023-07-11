@@ -8,6 +8,14 @@
   -o-border-radius: 10px;
 }
 
+.audio-trigger {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 body:not(.home) header.scroll-down, body:not(.home) header, .wp-block-cover.cover--link:hover img, .wp-block-cover.cover--link:hover, .wp-block-cover.cover--link img, .wp-block-cover.cover--link, .language-toggle .btn a:hover,
 .language-toggle li a:hover,
 .wpml-language-switcher-block ul.horizontal-list li a:hover, .language-toggle .btn a,
@@ -664,4 +672,20 @@ body.fade-in {
 
 .simple-sitemap-container ul {
   margin-left: 0;
+}
+
+.audio-trigger {
+  margin-left: 10px;
+  background: var(--wp--preset--color--dark-green);
+  border: none;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.audio-trigger i {
+  color: #fff;
+  font-size: 16px;
 }

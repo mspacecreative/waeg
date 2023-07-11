@@ -9,6 +9,14 @@ $darkGreen: var(--wp--preset--color--light-green);
   -o-border-radius: 10px;
 }
 
+%border-radius-circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 %smooth-transition-25 {
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
