@@ -5,7 +5,8 @@ function audio_loop() {
             the_row();
             $audiofile = get_sub_field('audio_file');
             echo
-            '<audio src="' . $audiofile . '"></audio>';
+            '<i class="fa fa-volume-up audio-trigger"></i>
+            <audio src="' . $audiofile . '"></audio>';
         }
     }
 }

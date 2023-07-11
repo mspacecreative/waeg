@@ -1,3 +1,12 @@
+// AUDIO TRIGGER
+let audioTrigger = querySelectorAll(".audio-trigger");
+for (i = 0; i < audioTrigger.length; i++) {
+  audioTrigger[i].addEventListener("click", (e) => {
+    e.preventDefault();
+    this.nextSibling.play();
+  });
+}
+
 // DYNAMIC TOP MARGIN ON MAIN TAG
 const mainTag = document.querySelector("main");
 const headerHeight = document.querySelector("header");
