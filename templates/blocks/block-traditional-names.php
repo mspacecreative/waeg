@@ -11,7 +11,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
         }
         echo
         '<ul class="no-bullets">';
-        audio_loop();
+        echo audio_loop();
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( $names = get_row() ) {
