@@ -8,7 +8,7 @@ for (i = 0; i < audioFile.length; i++) {
 for (i = 0; i < audioTrigger.length; i++) {
   audioTrigger[i].addEventListener("click", (e) => {
     e.preventDefault();
-    audioFile.play();
+    this.nextSibling(audioFile).play();
   });
 }
 
