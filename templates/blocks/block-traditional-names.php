@@ -20,7 +20,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     the_row();
                     $name = get_sub_field('gwichya_name');
                     $audiofile = get_sub_field('audio_file');
-                    if ($name && $audio) {
+                    if ($name && $audiofile) {
                         echo
                         '<li class="has-medium-font-size position-relative">' . '<strong>' . esc_html_x('Gwichya', 'waeg') . ':</strong> ' . $name . '
                             <button class="audio-trigger"><i class="fa fa-volume-up"></i></button>
