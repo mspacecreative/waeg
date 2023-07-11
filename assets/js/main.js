@@ -8,9 +8,10 @@ for (i = 0; i < audioFile.length; i++) {
 let triggerNum = 1;
 for (i = 0; i < audioTrigger.length; i++) {
   audioTrigger[i].setAttribute("data-id", "audio-" + triggerNum++);
+  const audio = audioTrigger[i].nextElementSibling;
   audioTrigger[i].addEventListener("click", () => {
     // e.preventDefault();
-    this.nextElementSibling.play();
+    audio.play();
   });
 }
 
