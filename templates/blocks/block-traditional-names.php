@@ -55,7 +55,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
             if ( empty(get_sub_field('french')) && !empty(get_sub_field('common_names')) ) {
                 echo
                 '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('French and English', 'waeg') . '</strong>';
-            } elseif ( !empty(get_sub_field('french') || get_sub_field('common_names')) ) {
+            } elseif ( !empty(get_sub_field('french') && get_sub_field('common_names')) ) {
                 echo
                 '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('English', 'waeg') . '</strong>';
             }
