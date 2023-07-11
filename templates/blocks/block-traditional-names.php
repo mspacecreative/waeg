@@ -4,19 +4,16 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
     '
     <div class="boxed bg--light-gray">
         <h2 class="no-top-margin has-large-font-size bottom-margin-1em bg--light-green color--white">' . esc_html__('Traditional Names', 'waeg') . '</h2>';
-        while (have_rows('traditional_names', get_the_ID()) ) {
-        the_row();
-        if (have_rows('gwichya_dialect')) {
-            while (have_rows('gwichya_dialect')) {
-                if (!empty(get_sub_field('gwichya_name')))
-                    echo '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>';
-                }
-            }
-        }
-        // echo
-        // '<ul class="no-bullets">';
         while ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
+            if (have_rows('gwichya_dialect')) {
+                while (have_rows('gwichya_dialect')) {
+                    the_row();
+                    if (!empty(get_sub_field('gwichya_name')))
+                        echo '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>';
+                    }
+                }
+            }
             if (have_rows('gwichya_dialect')) {
                 echo
                 '<ul class="no-bullets">';
