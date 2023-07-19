@@ -19,14 +19,14 @@ function wpmlsupp_10867( $templates ) {
 
   function fix_archive_templates( $templates ) {
     if ( current_theme_supports( 'block-templates' ) ) {
-        $current_term = get_queried_object();
+        $current_archive = get_queried_object();
   
         do_action( 'wpml_switch_language', apply_filters( 'wpml_default_language', null ) );
-        $orignal_term = $current_term->slug;
+        $orignal_archive = get_the_ID($current_archive);
         do_action( 'wpml_switch_language', null );
   
-        if (isset($orignal_term->slug) && $orignal_term->slug !== $current_term->slug ) {
-            array_unshift($templates, 'archive-' . $orignal_term->slug);    
+        if (isset($orignal_archive->slug) && $orignal_archive->slug !== $current_archive->slug ) {
+            array_unshift($templates, 'archive-' . $orignal_archive->slug);    
         }
     }
   
