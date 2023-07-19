@@ -16,3 +16,20 @@ function wpmlsupp_10867( $templates ) {
     return $templates;
   }
   add_filter('taxonomy_template_hierarchy', 'wpmlsupp_10867');
+
+  function fix_archive_templates( $templates ) {
+    if ( current_theme_supports( 'block-templates' ) ) {
+        $current_term = get_queried_object();
+  
+        do_action( 'wpml_switch_language', apply_filters( 'wpml_default_language', null ) );
+        $orignal_term = $current_term->slug;
+        do_action( 'wpml_switch_language', null );
+  
+        if (isset($orignal_term->slug) && $orignal_term->slug !== $current_term->slug ) {
+            array_unshift($templates, 'archive-' . $orignal_term->slug);    
+        }
+    }
+  
+    return $templates;
+  }
+  add_filter('archive_template_hierarchy', 'fix_archive_templates');
