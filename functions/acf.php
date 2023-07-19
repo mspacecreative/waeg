@@ -200,6 +200,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register loop block
+		acf_register_block(array(
+			'name'				=> 'loop',
+			'title'				=> __('Loop Block'),
+			'description'		=> __('Displays all posts related to a chosen post type'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'grid-view',
+			'keywords'			=> array( 'post type', 'loop', 'list' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 		// register term block
 		acf_register_block(array(
 			'name'				=> 'other-species',
