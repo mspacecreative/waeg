@@ -615,10 +615,9 @@ p {
 
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
   padding-left: 0;
-  margin-left: 20px;
 }
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
-  text-indent: -10px;
+  position: relative;
 }
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
   display: none;
@@ -634,7 +633,9 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
   display: inline-block;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 6px;
 }
 
 .underlined-heading {
