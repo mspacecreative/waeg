@@ -41,7 +41,7 @@ body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .feat
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
   display: inline-block;
-  text-rendering: auto;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 body .underlined-heading {

@@ -141,7 +141,7 @@
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
   display: inline-block;
-  text-rendering: auto;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 .editor-styles-wrapper .underlined-heading {
