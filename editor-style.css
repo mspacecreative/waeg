@@ -47,6 +47,7 @@ body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .feat
   display: inline-block;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  margin-right: 15px;
 }
 body .underlined-heading {
   color: var(--wp--preset--color--dark-green);

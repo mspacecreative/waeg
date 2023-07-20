@@ -147,6 +147,7 @@
   display: inline-block;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  margin-right: 15px;
 }
 .editor-styles-wrapper .underlined-heading {
   color: var(--wp--preset--color--dark-green);
