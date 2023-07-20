@@ -558,6 +558,10 @@ body .is-layout-flow > .wp-block-separator {
   color: var(--wp--preset--color--base);
 }
 
+.color--dark-green {
+  color: var(--wp--preset--color--light-green);
+}
+
 .swiper {
   width: 100%;
 }
