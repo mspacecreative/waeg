@@ -24,8 +24,10 @@ function waeg_styles() {
     }
 
     // FONTAWESOME
-    wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css?ver=' . $rand_num, array(), null );
-    wp_enqueue_style( 'fontawesome' );
+    // wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css?ver=' . $rand_num, array(), null );
+    // wp_enqueue_style( 'fontawesome' );
+    wp_register_script( 'fontawesome', 'https://kit.fontawesome.com/7cf12db9b6.js?ver=' . $rand_num, array(), null, true );
+	wp_enqueue_script( 'fontawesome' );
 
     wp_register_script( 'main', get_template_directory_uri() . '/assets/js/main.js?ver=' . $rand_num, array(), null, true );
 	wp_enqueue_script( 'main' );
