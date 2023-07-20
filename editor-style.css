@@ -35,6 +35,7 @@ body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .feat
 }
 body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
   position: relative;
+  padding-left: 20px;
 }
 body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
   display: none;

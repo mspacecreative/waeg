@@ -35,6 +35,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
 
   li {
     position: relative;
+    padding-left: 20px;
 
     &::marker {
       display: none;
