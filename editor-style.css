@@ -37,16 +37,11 @@ body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .feat
   padding-left: 10px;
 }
 body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
-  content: "";
-  border-color: transparent var(--wp--preset--color--light-green);
-  border-style: solid;
-  border-width: 0.35em 0 0.35em 0.45em;
-  display: block;
-  height: 0;
-  width: 0;
-  left: -1em;
-  top: 0.98em;
-  position: relative;
+  content: "&raquo;";
+  color: var(--wp--preset--color--light-green);
+  display: inline-block;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 body .underlined-heading {
   color: var(--wp--preset--color--dark-green);
