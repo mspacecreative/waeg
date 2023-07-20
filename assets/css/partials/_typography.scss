@@ -38,7 +38,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
 
     &::marker {
       font-family: fontAwesome;
-      content: '\f0da';
+      content: $fa-var-caret-right;
       color: var(--wp--preset--color--light-green);
     }
   }
