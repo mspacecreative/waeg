@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .features, .swiper img, .swiper, .boxed, .wp-block-post-featured-image img,
 .wp-block-cover.cover--link img, .wp-block-post-featured-image,
 .wp-block-cover.cover--link, .wp-block-post-template .wp-block-post {
@@ -620,7 +621,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
   padding-left: 10px;
 }
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
-  content: "&raquo;";
+  content: "›";
   color: var(--wp--preset--color--light-green);
   display: inline-block;
   text-rendering: optimizeLegibility;
