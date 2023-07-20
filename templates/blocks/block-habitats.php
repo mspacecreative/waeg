@@ -24,6 +24,7 @@ if ($posttype['value'] == 'habitat') {
     );
 } elseif ($posttype['value'] == 'plant') {
     $args = array(
+        'posts_per_page' => 12,
         'post_type' => $value,
         'post__not_in' => array(get_the_ID()),
     );
