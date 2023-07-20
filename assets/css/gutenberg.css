@@ -131,13 +131,14 @@
   display: block;
 }
 .editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
-  padding-left: 10px;
-}
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
-  padding-left: 10px;
+  padding-left: 0;
 }
 .editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
   display: none;
+  font-size: 0;
+}
+.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li ul {
+  margin-left: 25px;
 }
 .editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::before {
   font: var(--fa-font-solid);
