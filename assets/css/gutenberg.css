@@ -147,7 +147,7 @@
 .editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::before {
   font: var(--fa-font-solid);
   content: "\f0da";
-  color: var(--wp--preset--color--light-green);
+  color: var(--wp--preset--color--dark-green);
   display: inline-block;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -157,7 +157,7 @@
   font-size: var(--wp--preset--font-size--medium);
 }
 .editor-styles-wrapper .underlined-heading {
-  color: var(--wp--preset--color--dark-green);
+  color: var(--wp--preset--color--black);
   margin-bottom: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid var(--wp--preset--color--gray);

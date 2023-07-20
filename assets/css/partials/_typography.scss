@@ -49,7 +49,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
     &::before {
       font: var(--fa-font-solid);
       content: '\f0da';
-      color: var(--wp--preset--color--light-green);
+      color: $darkGreen;
       display: inline-block;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -62,7 +62,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
 }
 
 .underlined-heading {
-  color: var(--wp--preset--color--dark-green);
+  color: var(--wp--preset--color--black);
   margin-bottom: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid var(--wp--preset--color--gray);

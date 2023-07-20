@@ -57,7 +57,7 @@ body ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .feat
   font-size: var(--wp--preset--font-size--medium);
 }
 body .underlined-heading {
-  color: var(--wp--preset--color--dark-green);
+  color: var(--wp--preset--color--black);
   margin-bottom: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid var(--wp--preset--color--gray);
