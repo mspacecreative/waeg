@@ -615,6 +615,7 @@ p {
 
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
   padding-left: 0;
+  margin-left: 20px;
 }
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
   text-indent: -10px;
