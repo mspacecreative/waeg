@@ -9,7 +9,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                 while ( have_rows('gwichya_dialect') ) {
                     the_row();
                     if (!empty(get_sub_field('gwichya_name')))
-                        echo '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>';
+                        echo '<strong class="underlined-heading font-size-22">' . esc_html_x('Gwich&#8217;in', 'waeg') . '</strong>';
                 }
             }
             if (have_rows('gwichya_dialect')) {
@@ -54,13 +54,13 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
             the_row();
             if ( empty(get_sub_field('french')) && !empty(get_sub_field('common_names')) ) {
                 echo
-                '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('English', 'waeg') . '</strong>';
+                '<strong class="underlined-heading font-size-22">' . esc_html_x('English', 'waeg') . '</strong>';
             } elseif ( !empty(get_sub_field('french')) && empty(get_sub_field('common_names')) ) {
                 echo
-                '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('French', 'waeg') . '</strong>';
+                '<strong class="underlined-heading font-size-22">' . esc_html_x('French', 'waeg') . '</strong>';
             } elseif ( !empty(get_sub_field('french') && get_sub_field('common_names')) ) {
                 echo
-                '<strong class="underlined-heading font-weight-normal font-size-22">' . esc_html_x('French and English', 'waeg') . '</strong>';
+                '<strong class="underlined-heading font-size-22">' . esc_html_x('French and English', 'waeg') . '</strong>';
             }
         }
         echo
