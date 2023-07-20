@@ -26,9 +26,14 @@ if ($posttype['value'] == 'habitat') {
     $args = array(
         'post_type' => $value,
         'post__not_in' => array(get_the_ID()),
+    );
+} elseif ($posttype['value'] == 'species') {
+    $args = array(
+        'post_type' => 'plant',
+        'post__not_in' => array(get_the_ID()),
         'tax_query' => array(
             array(
-                'taxonomy' => 'species',
+                'taxonomy' => $value,
                 'field' => 'term_id',
                 'terms' => array(get_queried_object()->term_id)
             )
