@@ -154,6 +154,7 @@
   position: absolute;
   left: 0;
   top: 6px;
+  font-size: var(--wp--preset--font-size--medium);
 }
 .editor-styles-wrapper .underlined-heading {
   color: var(--wp--preset--color--dark-green);

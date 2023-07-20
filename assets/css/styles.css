@@ -637,6 +637,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
   position: absolute;
   left: 0;
   top: 6px;
+  font-size: var(--wp--preset--font-size--medium);
 }
 
 .underlined-heading {
