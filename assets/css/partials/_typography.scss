@@ -37,9 +37,12 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
     padding-left: 10px;
 
     &::marker {
-      font-family: fontAwesome;
+      font: var(--fa-font-solid);
       content: '\f0da';
       color: var(--wp--preset--color--light-green);
+      display: inline-block;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
     }
   }
 }

@@ -620,9 +620,12 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
   padding-left: 10px;
 }
 ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
-  font-family: fontAwesome;
+  font: var(--fa-font-solid);
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .underlined-heading {

@@ -137,9 +137,12 @@
   padding-left: 10px;
 }
 .editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
-  font-family: fontAwesome;
+  font: var(--fa-font-solid);
   content: "\f0da";
   color: var(--wp--preset--color--light-green);
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 .editor-styles-wrapper .underlined-heading {
   color: var(--wp--preset--color--dark-green);
