@@ -24,7 +24,7 @@ function waeg_styles() {
     }
 
     // FONTAWESOME
-    wp_register_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=' . $rand_num, array(), null );
+    wp_register_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css?ver=' . $rand_num, array(), null );
     wp_enqueue_style( 'fontawesome' );
 
     wp_register_script( 'main', get_template_directory_uri() . '/assets/js/main.js?ver=' . $rand_num, array(), null, true );
