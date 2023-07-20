@@ -37,8 +37,12 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
     padding-left: 10px;
 
     &::marker {
-      // font: var(--fa-font-solid);
-      content: '\203A';
+      display: none;
+    }
+
+    &::before {
+      font: var(--fa-font-solid);
+      content: '\f0da';
       color: var(--wp--preset--color--light-green);
       display: inline-block;
       text-rendering: optimizeLegibility;
