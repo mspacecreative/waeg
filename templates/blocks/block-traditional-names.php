@@ -72,7 +72,7 @@ if ( have_rows('traditional_names', get_the_ID()) ) {
                     if (!empty($value) ) { 
                     $field = get_sub_field_object( $key );
                     echo
-                    '<li class="has-medium-font-size">' . '<strong>' . $field['label'] . ':</strong> ' . $value . '</li>';
+                    '<li class="has-medium-font-size">' . '<strong>' . esc_html_x($field['label'], 'waeg') . ':</strong> ' . $value . '</li>';
                     }
                 }
             }
