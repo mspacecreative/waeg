@@ -1,7 +1,7 @@
 <?php
 $posttype = get_field('post_type');
 $cols = get_field('columns');
-$label = $posttype['label'];
+$label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : $custom_term->title;
 $value = $posttype['value'];
 switch($cols) {
     case '1':
