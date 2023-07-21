@@ -1,7 +1,7 @@
 <?php
 $posttype = get_field('post_type');
 $cols = get_field('columns');
-$label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : $custom_term->title;
+$label = $posttype['label'];
 $value = $posttype['value'];
 switch($cols) {
     case '1':
@@ -68,6 +68,7 @@ if ($posttype['value'] == 'habitat') {
 $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {
+    $label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : $custom_term->title;
     echo
     '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other ', 'waeg') . $label . '</h2>
     <ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats">';
