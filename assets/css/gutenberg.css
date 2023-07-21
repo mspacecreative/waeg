@@ -25,10 +25,6 @@
 .editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts::-webkit-scrollbar {
   display: none;
 }
-.editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts > li {
-  flex-grow: inherit;
-  min-width: 300px;
-}
 @media (min-width: 981px) {
   .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats {
     row-gap: 0;
