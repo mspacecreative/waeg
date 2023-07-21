@@ -25,7 +25,7 @@ if( !empty($block['className']) ) {
 $terms = get_terms( 'species' );
 
 echo
-'<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats' . esc_attr($className) . '">';
+'<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . esc_attr($className) . '">';
 
 foreach( $terms as $term ) {
 
