@@ -21,6 +21,7 @@ foreach( $terms as $term ) {
             </figure>
             <h3 class="wp-block-post-title has-large-font-size">' . $term->name . '</h3>
         </li>';
+        
     }
 }
 echo

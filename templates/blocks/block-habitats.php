@@ -93,5 +93,5 @@ if ($loop->have_posts()) {
         </li>';
     }
     echo
-    '<ul>';
+    '</ul>';
 }

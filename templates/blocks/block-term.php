@@ -26,6 +26,7 @@ $loop = new WP_Query( array(
         </figure>
         <h3 class="wp-block-post-title has-large-font-size">' . esc_html__($title) . '</h3>
     </li>';
+    
 endwhile; ?>
 </ul>
 
