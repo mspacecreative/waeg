@@ -5,6 +5,10 @@
   gap: 1.25em;
   flex-wrap: wrap;
 
+  &.wp-block-other-term-posts {
+    flex-grow: inherit;
+  }
+
   @media (min-width: 981px) {
     &.wp-block-other-habitats {
       row-gap: 0;

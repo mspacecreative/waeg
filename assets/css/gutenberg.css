@@ -22,6 +22,9 @@
   gap: 1.25em;
   flex-wrap: wrap;
 }
+.editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts {
+  flex-grow: inherit;
+}
 @media (min-width: 981px) {
   .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats {
     row-gap: 0;
