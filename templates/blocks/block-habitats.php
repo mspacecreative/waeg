@@ -23,7 +23,7 @@ if ($posttype['value'] == 'habitat') {
         'post__not_in' => array(get_the_ID()),
     );
 } elseif ($posttype['value'] == 'plant') {
-    $custom_terms = get_the_terms(get_the_ID(), 'species');
+    $custom_terms = wp_get_post_terms(get_the_ID(), 'species');
     if( $custom_terms ){
 
         // going to hold our tax_query params
@@ -46,7 +46,7 @@ if ($posttype['value'] == 'habitat') {
     
         // put all the WP_Query args together
         $args = array( 
-            'post_type' => 'listings',
+            'post_type' => 'plant',
             'posts_per_page' => -1,
             'tax_query' => $tax_query 
         );
