@@ -24,6 +24,14 @@
     &.wp-block-other-habitats {
       row-gap: 0;
     }
+
+    &:not(.wp-block-other-habitats) {
+
+      li:nth-child(3n+1):nth-last-child(-n+3),
+      li:nth-child(3n+1):nth-last-child(-n+3)~li {
+        row-gap: 0;
+      }
+    }
   }
 
   &.is-flex-container.columns-3 {
