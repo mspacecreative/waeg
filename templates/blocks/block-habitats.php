@@ -71,10 +71,17 @@ if ($posttype['value'] == 'habitat') {
 $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {
-    $label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : ($custom_term->slug == 'des-arbres' ? ltrim($custom_term->name, 'des ') : $custom_term->name);
+    $label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : $custom_term->name;
     $cardclass = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? ' wp-block-other-habitats' : ' wp-block-other-term-posts flex-nowrap';
     echo
-    '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other ', 'waeg') . strtolower($label) . '</h2>
+    '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other ', 'waeg');
+        if ($custom_term->slug == 'des-arbres') {
+            echo ltrim(strtolower($label), 'des ');
+        } else {
+            echo strtolower($label);
+        }
+    echo
+    '</h2>
     <ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . $cardclass . '">';
     while ($loop->have_posts()) {
         $loop->the_post();
