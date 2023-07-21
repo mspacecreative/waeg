@@ -48,6 +48,8 @@ if ($posttype['value'] == 'habitat') {
         $args = array( 
             'post_type' => 'plant',
             'posts_per_page' => -1,
+            'orderby' => 'name',
+            'order' => 'ASC',
             'tax_query' => $tax_query 
         );
     }
