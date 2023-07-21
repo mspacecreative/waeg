@@ -42,6 +42,10 @@ body {
 }
 .wp-block-post-template.wp-block-other-term-posts {
   flex-wrap: nowrap;
+  overflow: auto;
+}
+.wp-block-post-template.wp-block-other-term-posts::-webkit-scrollbar {
+  display: none;
 }
 .wp-block-post-template.wp-block-other-term-posts > li {
   flex-grow: inherit;
