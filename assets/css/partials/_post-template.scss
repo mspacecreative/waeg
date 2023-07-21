@@ -6,7 +6,9 @@
   flex-wrap: wrap;
 
   &.wp-block-other-term-posts {
-    flex-grow: inherit;
+    >li {
+      flex-grow: inherit;
+    }
   }
 
   @media (min-width: 981px) {
