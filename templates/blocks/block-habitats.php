@@ -30,8 +30,8 @@ if ($posttype['value'] == 'habitat') {
         $tax_query = array();
     
         // add the relation parameter (not sure if it causes trouble if only 1 term so what the heck)
-        if( count( $custom_terms > 1 ) )
-            $tax_query['relation'] = 'OR';
+        // if( count( $custom_terms > 1 ) )
+        //     $tax_query['relation'] = 'OR';
     
         // loop through venus and build a tax query
         foreach( $custom_terms as $custom_term ) {
