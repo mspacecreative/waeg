@@ -24,4 +24,4 @@ foreach( $terms as $term ) {
     }
 }
 echo
-'<ul>';
+'</ul>';
