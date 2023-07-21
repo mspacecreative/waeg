@@ -32,6 +32,10 @@
   .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats {
     row-gap: 0;
   }
+  .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats > li:nth-last-child(-n+3) {
+    -webkit-margin-after: -1.25em;
+            margin-block-end: -1.25em;
+  }
 }
 .editor-styles-wrapper .wp-block-post-template.is-flex-container.columns-3 > li {
   width: calc(33.33333% - 0.83333em);

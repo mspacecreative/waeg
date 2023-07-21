@@ -23,6 +23,10 @@
   @media (min-width: 981px) {
     &.wp-block-other-habitats {
       row-gap: 0;
+
+      >li:nth-last-child(-n+3) {
+        margin-block-end: -1.25em;
+      }
     }
 
     // &:not(.wp-block-other-habitats) {
