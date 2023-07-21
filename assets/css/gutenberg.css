@@ -32,7 +32,7 @@
   .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats {
     row-gap: 0;
   }
-  .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats > li:nth-last-child(-n+3) {
+  .editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts > li:nth-last-child(-n+3) {
     -webkit-margin-after: -1.25em;
             margin-block-end: -1.25em;
   }
