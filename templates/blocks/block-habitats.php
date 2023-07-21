@@ -69,9 +69,10 @@ $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {
     $label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : $custom_term->name;
+    $cardclass = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? ' wp-block-other-habitats' : '';
     echo
     '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other ', 'waeg') . $label . '</h2>
-    <ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template wp-block-other-habitats">';
+    <ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . $cardclass . '">';
     while ($loop->have_posts()) {
         $loop->the_post();
         $featured_img = get_the_post_thumbnail(get_the_ID(), 'swiper-thumb');
