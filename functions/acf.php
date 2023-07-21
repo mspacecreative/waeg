@@ -251,6 +251,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register terms block
+		acf_register_block(array(
+			'name'				=> 'terms',
+			'title'				=> __('Terms Block'),
+			'description'		=> __('Displays all terms titles, links and featured images for species taxonomy'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'format-image',
+			'keywords'			=> array( 'species', 'terms', 'terms list', 'grid' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
