@@ -6,8 +6,12 @@
   flex-wrap: wrap;
 
   &.wp-block-other-term-posts {
+
+    flex-wrap: nowrap;
+
     >li {
       flex-grow: inherit;
+      min-width: 300px;
     }
   }
 

@@ -22,8 +22,12 @@
   gap: 1.25em;
   flex-wrap: wrap;
 }
+.editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts {
+  flex-wrap: nowrap;
+}
 .editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts > li {
   flex-grow: inherit;
+  min-width: 300px;
 }
 @media (min-width: 981px) {
   .editor-styles-wrapper .wp-block-post-template.wp-block-other-habitats {
