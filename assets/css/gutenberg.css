@@ -22,10 +22,6 @@
   gap: 1.25em;
   flex-wrap: wrap;
 }
-.editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts {
-  flex-wrap: nowrap;
-  overflow: auto;
-}
 .editor-styles-wrapper .wp-block-post-template.wp-block-other-term-posts::-webkit-scrollbar {
   display: none;
 }

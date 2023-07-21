@@ -40,10 +40,6 @@ body {
   gap: 1.25em;
   flex-wrap: wrap;
 }
-.wp-block-post-template.wp-block-other-term-posts {
-  flex-wrap: nowrap;
-  overflow: auto;
-}
 .wp-block-post-template.wp-block-other-term-posts::-webkit-scrollbar {
   display: none;
 }
