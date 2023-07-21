@@ -26,11 +26,7 @@
     }
 
     &:not(.wp-block-other-habitats) {
-
-      li:nth-child(3n+1):nth-last-child(-n+3),
-      li:nth-child(3n+1):nth-last-child(-n+3)~li {
-        row-gap: 0;
-      }
+      margin-block-end: -1.25em;
     }
   }
 
