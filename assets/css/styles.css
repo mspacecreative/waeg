@@ -714,6 +714,6 @@ body.fade-in {
   font-size: 16px;
 }
 
-body .fslightbox-open {
+html.fslightbox-open {
   height: auto;
 }
