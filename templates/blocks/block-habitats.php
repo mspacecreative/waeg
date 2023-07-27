@@ -26,14 +26,8 @@ if ($posttype['value'] == 'habitat') {
     $custom_terms = wp_get_post_terms(get_the_ID(), 'species');
     if( $custom_terms ){
 
-        // going to hold our tax_query params
         $tax_query = array();
     
-        // add the relation parameter (not sure if it causes trouble if only 1 term so what the heck)
-        // if( count( $custom_terms > 1 ) )
-        //     $tax_query['relation'] = 'OR';
-    
-        // loop through venus and build a tax query
         foreach( $custom_terms as $custom_term ) {
     
             $tax_query[] = array(
@@ -44,7 +38,6 @@ if ($posttype['value'] == 'habitat') {
     
         }
     
-        // put all the WP_Query args together
         $args = array( 
             'post_type' => 'plant',
             'posts_per_page' => -1,

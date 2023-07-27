@@ -713,3 +713,7 @@ body.fade-in {
   color: #fff;
   font-size: 16px;
 }
+
+body .fslightbox-open {
+  height: auto;
+}
