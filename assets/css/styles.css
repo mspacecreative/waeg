@@ -401,6 +401,10 @@ body .is-layout-flex.header-elements-container {
   flex-basis: 90px !important;
 }
 
+.wp-block-navigation {
+  font-size: inherit;
+}
+
 @media (max-width: 980px) {
   .wp-block-columns.logo-and-nav {
     flex-wrap: nowrap !important;
