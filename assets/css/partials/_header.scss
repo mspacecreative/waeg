@@ -49,6 +49,12 @@ body .is-layout-flex.header-elements-container {
   }
 }
 
+.wp-block-columns:not(.is-not-stacked-on-mobile).logo-and-nav {
+  >.wp-block-column {
+    flex-basis: auto !important;
+  }
+}
+
 .wp-block-columns.logo-and-nav {
   @media (max-width: 980px) {
     flex-wrap: nowrap !important;
