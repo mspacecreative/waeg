@@ -400,9 +400,6 @@ body .is-layout-flex.header-elements-container {
     width: 100%;
     justify-content: space-between;
   }
-  .wp-block-columns.logo-and-nav > div {
-    flex-basis: 100% !important;
-  }
   .wp-block-columns.logo-and-nav .custom-logo-link {
     display: block;
     text-align: center;
