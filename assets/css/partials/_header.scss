@@ -41,7 +41,7 @@ body:not(.home) {
   font-size: 14px;
 }
 
-.header-elements-container {
+body .is-layout-flex.header-elements-container {
   row-gap: 20px;
 
   @media (max-width: 980px) {
