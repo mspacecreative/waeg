@@ -32,3 +32,13 @@ body .copyright-line.copyright-line {
     justify-content: flex-start;
   }
 }
+
+.footer-elements-container {
+  row-gap: 20px;
+
+  @media (max-width: 980px) {
+    .copyright-text {
+      text-align: left;
+    }
+  }
+}

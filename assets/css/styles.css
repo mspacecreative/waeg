@@ -482,6 +482,15 @@ body:not(.home) .partnership-logos {
   }
 }
 
+.footer-elements-container {
+  row-gap: 20px;
+}
+@media (max-width: 980px) {
+  .footer-elements-container .copyright-text {
+    text-align: left;
+  }
+}
+
 .bottom-margin-1em,
 body .is-layout-flow > .bottom-margin-1em {
   -webkit-margin-after: var(--wp--preset--spacing--30);
