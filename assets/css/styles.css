@@ -482,11 +482,11 @@ body:not(.home) .partnership-logos {
   }
 }
 
-.footer-elements-container {
+body .is-layout-flex.footer-elements-container {
   row-gap: 20px;
 }
 @media (max-width: 980px) {
-  .footer-elements-container .copyright-text {
+  body .is-layout-flex.footer-elements-container .copyright-text {
     text-align: left;
   }
 }
