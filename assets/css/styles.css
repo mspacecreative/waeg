@@ -476,12 +476,6 @@ body:not(.home) .partnership-logos {
   }
 }
 
-@media (max-width: 781px) {
-  body .copyright-line.copyright-line {
-    justify-content: flex-start;
-  }
-}
-
 body .is-layout-flex.footer-elements-container {
   row-gap: 20px;
 }
