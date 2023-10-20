@@ -327,12 +327,6 @@ body .wpml-language-switcher-block ul.hasSpacing.isHorizontal li:not(:last-child
      object-fit: contain;
 }
 
-@media (min-width: 781px) {
-  .line-drawing {
-    margin-top: -100px;
-  }
-}
-
 .wp-block-post-featured-image,
 .wp-block-cover.cover--link {
   overflow: hidden;
