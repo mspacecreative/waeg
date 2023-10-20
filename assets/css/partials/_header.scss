@@ -53,6 +53,10 @@ body .is-layout-flex.header-elements-container {
   >.wp-block-column {
     flex-basis: unset !important;
   }
+
+  >.language-toggle-container {
+    flex-basis: 90px !important;
+  }
 }
 
 .wp-block-columns.logo-and-nav {
