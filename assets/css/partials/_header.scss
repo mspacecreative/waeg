@@ -4,7 +4,6 @@ header {
 }
 
 body:not(.home) {
-
   header {
     position: absolute;
     z-index: 999;
@@ -50,11 +49,11 @@ body .is-layout-flex.header-elements-container {
 }
 
 .wp-block-columns:not(.is-not-stacked-on-mobile).logo-and-nav {
-  >.wp-block-column {
-    flex-basis: unset !important;
-  }
+  // >.wp-block-column {
+  //   flex-basis: unset !important;
+  // }
 
-  >.menu-container {
+  > .menu-container {
     flex-basis: 90px !important;
   }
 }
@@ -83,14 +82,14 @@ body .is-layout-flex.header-elements-container {
       margin-top: var(--wp--preset--spacing--30);
     }
 
-    >div:last-of-type {
+    > div:last-of-type {
       position: sticky;
       top: 0;
 
       .wp-block-column {
         justify-content: center;
 
-        >div {
+        > div {
           justify-content: center;
         }
       }

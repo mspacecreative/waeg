@@ -394,9 +394,6 @@ body .is-layout-flex.header-elements-container {
   }
 }
 
-.wp-block-columns:not(.is-not-stacked-on-mobile).logo-and-nav > .wp-block-column {
-  flex-basis: unset !important;
-}
 .wp-block-columns:not(.is-not-stacked-on-mobile).logo-and-nav > .menu-container {
   flex-basis: 90px !important;
 }
