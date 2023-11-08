@@ -19,13 +19,13 @@ if (have_rows('botanical_names', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
-                $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
+                $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation;
+                $array = explode(", " $string);
+                $stringify = implode("; ", $array);
+                echo $stringify;
             }
         }
-            
-        echo substr($string, 0, -1);
     }
-    echo 
-        '</h2>
+            echo '</h2>
     </div>';
 }
