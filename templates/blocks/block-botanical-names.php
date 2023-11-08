@@ -23,11 +23,9 @@ if (have_rows('botanical_names', get_the_ID())) {
                     echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation;
                 }
             }
-
-            echo
-            '</h2>';
         }
     }
     echo 
-    '</div>';
+        '</h2>
+    </div>';
 }
