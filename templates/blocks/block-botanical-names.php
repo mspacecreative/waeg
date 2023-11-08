@@ -6,9 +6,9 @@ if (have_rows('botanical_names', get_the_ID())) {
         $names = get_field_object('botanical_names', get_the_ID());
         $count = count($names);
         if ($count > 1) {
-            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ': </strong>';
+            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ':</strong>';
         } else {
-            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . ': </strong>';
+            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . ':</strong>';
         }
     while (have_rows('botanical_names', get_the_ID())) {
         the_row();
@@ -19,8 +19,8 @@ if (have_rows('botanical_names', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
-                $separator = '; ';
-                $string = '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
+                $separator = ';';
+                $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
                 echo $string;
             }
         }
