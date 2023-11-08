@@ -5,7 +5,7 @@ if (have_rows('botanical_names', get_the_ID())) {
         $count = 0;    
         $names = get_field_object('botanical_names', get_the_ID());
         $count = count($names);
-        $last = array_key_last($count);
+        $last = array_key_last($names);
         if ($count > 1) {
             echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ': </strong>';
         } else {
