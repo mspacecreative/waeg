@@ -3,7 +3,7 @@ if (have_rows('botanical_names', get_the_ID())) {
     echo
     '<div class="botanical-names bottom-margin-40">';
         $count = 0;    
-        $names = get_field_object('botanical_names', get_the_ID());
+        $names = get_field('botanical_names', get_the_ID());
         $count = count($names);
         var_dump($count);
         if ($count > 0) {
