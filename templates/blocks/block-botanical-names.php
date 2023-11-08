@@ -26,10 +26,10 @@ if (have_rows('botanical_names', get_the_ID())) {
                     $designation_array = explode(", ", $designation);
                     $merge = array_combine($names_array, $designation_array);
                     foreach($merge as $key => $value) {
-                        $string = '$key $value; ';
+                        $string = "$key $value; ";
                     }
                     
-                    $string = substr($string, 0, -1);
+                    $string = substr($string, 0, -2);
                     echo $string;
                 }
             }
