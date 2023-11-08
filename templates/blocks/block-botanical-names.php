@@ -9,8 +9,8 @@ if (have_rows('botanical_names', get_the_ID())) {
         $names = get_field('botanical_names');
         if (is_array($names)) {
             $plural = count($names) > 1 ? 's' : '';
-            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $plural . ':</strong>';
         }
+        echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $plural . ':</strong>';
 
         if (have_rows('botanical_name', get_the_ID())) {
             
