@@ -26,7 +26,7 @@ if (have_rows('botanical_names', get_the_ID())) {
                     $designation_array = explode(", ", $designation);
                     $merge = array_combine($names_array, $designation_array);
                     $stringify = implode("; ", $merge);
-                    echo $stringify;
+                    var_dump($stringify);
                 }
             }
         }
