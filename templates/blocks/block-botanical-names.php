@@ -22,12 +22,11 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
                 $names_array = explode(", ", $name);
                 $designation_array = explode(", ", $designation);
-                $merge = array_combine($names_array, $designation_array);
-                $result = implode("; ", array_map('out', array_keys($merge), $merge));
-                function out($a,$b) {
-                    return $a. ' ' .$b;
+                $array = array_combine($names_array, $designation_array);
+                foreach($array as $k => $v) {
+                    $data[] = "$k $v";
                 }
-                echo $result;
+                echo implode('; ', $data);
             }
         }
     }
