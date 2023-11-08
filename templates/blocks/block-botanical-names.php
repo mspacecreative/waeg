@@ -2,13 +2,11 @@
 if (have_rows('botanical_names', get_the_ID())) {
     echo
     '<div class="botanical-names bottom-margin-40">';
-        $count = 0;
+        $names = get_field_object('botanical_names');
+        $count = count($names);
         $names = get_row('botanical_names');
-        if (is_array($names)) {
-            $count = count($names);
-            if ($count > 1) {
-                echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ': </strong>';
-            }
+        if ($count > 1) {
+            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ': </strong>';
         } else {
             echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . ': </strong>';
         }
