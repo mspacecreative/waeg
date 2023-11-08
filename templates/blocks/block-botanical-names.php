@@ -19,8 +19,9 @@ if (have_rows('botanical_names', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
+                $comma = $count > 1 ? ', ' : '';
                 if ( $name ) {
-                    echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation;
+                    echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation, $comma;
                 }
             }
         }
