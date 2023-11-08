@@ -1,11 +1,12 @@
 <?php
 if (have_rows('botanical_names', get_the_ID())) {
+    echo
+    '<div class="botanical-names bottom-margin-40">';
     while (have_rows('botanical_names', get_the_ID())) {
         the_row();
 
         if (have_rows('botanical_name', get_the_ID())) {
-            echo
-            '<div class="botanical-names bottom-margin-40">';
+        
             while (have_rows('botanical_name', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
@@ -15,8 +16,8 @@ if (have_rows('botanical_names', get_the_ID())) {
                     echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $plural . ':</strong> ' . '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . '</h2>';
                 }
             }
-            echo 
-            '</div>';
         }
     }
+    echo 
+    '</div>';
 }
