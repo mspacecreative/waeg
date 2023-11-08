@@ -24,7 +24,7 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $designation_array = explode(", ", $designation);
                 $array = array_combine($names_array, $designation_array);
                 foreach($array as $k => $v) {
-                    $data[] = "$k $v";
+                    $data[] = " $k $v";
                 }
             }
             echo implode('; ', $data);
