@@ -28,7 +28,7 @@ if (have_rows('botanical_names', get_the_ID())) {
                     // $stringify = implode("; ", $merge);
                     // var_dump($merge);
                     foreach($merge as $key => $value) {
-                        echo "$key, $value";
+                        echo "$key $value, ";
                     }
                     // echo $stringify;
                 }
