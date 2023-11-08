@@ -21,8 +21,9 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
                 $comma = $count > 1 ? '; ' : '';
                 if ( $name ) {
-                    echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation;
-                    echo explode(" ", $name);
+                    // echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation;
+                    $merge = array_merge($name, $designation);
+                    var_dump($merge);
                 }
             }
         }
