@@ -19,9 +19,9 @@ if (have_rows('botanical_names', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
-                $separator = $count > 1 ? '; ' : '';
+                $separator = '; ';
                 $string = '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
-                echo substr($string, 0,-1);
+                echo substr($string, 0,-2);
             }
         }
     }
