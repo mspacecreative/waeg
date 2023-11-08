@@ -5,7 +5,6 @@ if (have_rows('botanical_names', get_the_ID())) {
         $count = 0;    
         $names = get_field_object('botanical_names', get_the_ID());
         $count = count($names);
-        $last = array_key_last($names);
         if ($count > 1) {
             echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ': </strong>';
         } else {
@@ -20,9 +19,10 @@ if (have_rows('botanical_names', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
-                $comma = $count > 1 && !$last ? '; ' : '';
+                $comma = $count > 1 ? '; ' : '';
                 if ( $name ) {
                     echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation, $comma;
+                    echo var_dump($names);
                 }
             }
         }
