@@ -22,11 +22,15 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $comma = $count > 1 ? '; ' : '';
                 if ( $name ) {
                     // echo '<span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation;
-                    $names_array = explode(" ", $name);
-                    $designation_array = explode(" ", $designation);
-                    $merge = array_merge($names_array, $designation_array);
-                    $stringify = implode("; ", $merge);
-                    echo $stringify;
+                    // $names_array = explode(" ", $name);
+                    // $designation_array = explode(" ", $designation);
+                    // $merge = array_merge($names_array, $designation_array);
+                    // $stringify = implode("; ", $merge);
+                    // echo $stringify;
+
+                    foreach($name as $single) {
+                        echo $single;
+                    }
                 }
             }
         }
