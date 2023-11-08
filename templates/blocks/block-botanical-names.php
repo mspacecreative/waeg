@@ -14,14 +14,13 @@ if (have_rows('botanical_names', get_the_ID())) {
         the_row();
 
         if (have_rows('botanical_name', get_the_ID())) {
-            
+            $separator = ';';
             while (have_rows('botanical_name', get_the_ID())) {
                 the_row();
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
-                $separator = ';';
                 $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
-                echo $string;
+                echo substr($string, 0, -1);
             }
         }
     }
