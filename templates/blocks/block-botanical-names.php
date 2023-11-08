@@ -22,8 +22,8 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
                 $names_array = explode(", ", $name);
                 $designation_array = explode(", ", $designation);
-                // $merge = array_combine($names_array, $designation_array);
-                $string = implode("; ", array($names_array, $designation_array));
+                $merge = array_combine($names_array, $designation_array);
+                $string = implode("; ", $merge);
                 echo $string;
             }
         }
