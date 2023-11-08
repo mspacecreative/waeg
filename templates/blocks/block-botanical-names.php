@@ -24,8 +24,8 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // echo substr($string, 0, -1);
             }
         }
+        echo substr($string, 0, -1);
     }
-    echo substr($string, 0, -1);
             echo '</h2>
     </div>';
 }
