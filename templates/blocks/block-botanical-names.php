@@ -23,7 +23,11 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $names_array = explode(", ", $name);
                 $designation_array = explode(", ", $designation);
                 $merge = array_combine($names_array, $designation_array);
-                print_r($merge);
+                $result = implode("; ", array_map('out', array_keys($merge), $merge));
+                function out($a,$b) {
+                    return $a. ' ' .$b;
+                }
+                echo $result;
             }
         }
     }
