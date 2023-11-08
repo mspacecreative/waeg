@@ -23,7 +23,8 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $names_array = explode(", ", $name);
                 $designation_array = explode(", ", $designation);
                 $array = array_combine($names_array, $designation_array);
-                echo join('; ', array_keys($array));
+                $combine = explode(', ', array_keys($array));
+                print_r($combine);
                 // foreach($array as $k => $v) {
                 //     $data[] = " $k $v";
                 // }
