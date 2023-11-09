@@ -20,11 +20,11 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $name = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
                 // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
-                $names_array = explode(", ", $name);
+                $names_array = explode(" ", $name);
                 $designation_array = explode(", ", $designation);
                 $array = array_merge($names_array, $designation_array);
                 // $combine = array_combine($array);
-                print_r($name);
+                print_r($names_array);
                 // foreach($combine as $k => $v) {
                 //     $data[] = " $k $v";
                 // }
