@@ -27,3 +27,4 @@ include 'functions/audio-loop.php';
 // include 'functions/analytics.php';
 include 'functions/body-class.php';
 include 'functions/admin-styles.php';
+include 'functions/excerpt-to-post-type.php';
