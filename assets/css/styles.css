@@ -749,3 +749,14 @@ html.fslightbox-open {
   flex-basis: calc(50% - 1rem);
   box-sizing: border-box;
 }
+.plant-reindeer-lichen .plant-content__carousel .swiper-container,
+.plant-reindeer-lichen .plant-content__carousel .swiper-autoheight,
+.plant-reindeer-lichen .plant-content__carousel .swiper-wrapper,
+.plant-reindeer-lichen .plant-content__carousel .swiper-slide,
+.plant-reindeer-lichen .plant-content__carousel .swiper img {
+  height: 100% !important;
+}
+.plant-reindeer-lichen .plant-content__carousel .swiper img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}

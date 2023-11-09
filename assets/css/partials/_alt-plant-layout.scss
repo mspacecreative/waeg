@@ -13,4 +13,16 @@
     flex-basis: calc(50% - 1rem);
     box-sizing: border-box;
   }
+  .plant-content__carousel {
+    .swiper-container,
+    .swiper-autoheight,
+    .swiper-wrapper,
+    .swiper-slide,
+    .swiper img {
+      height: 100% !important;
+    }
+    .swiper img {
+      object-fit: fill;
+    }
+  }
 }
