@@ -887,6 +887,7 @@ html.fslightbox-open {
   max-width: 100%;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content {
+  position: relative;
   flex: 1;
 }
 .tour-path-wrapper .tour-path-content-container::before {
