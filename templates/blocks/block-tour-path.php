@@ -17,7 +17,7 @@ $loop = new WP_Query( array(
     // VARIABLES
     $line_drawing = get_field('drawing', get_the_ID());
     $title = get_the_title($loop->ID);
-    $excerpt = get_the_excerpt($loop->ID);
+    $excerpt = get_the_excerpt(get_the_ID());
     $permalink = get_the_permalink($loop->ID);
 
     echo 
