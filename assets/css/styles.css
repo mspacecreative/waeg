@@ -738,3 +738,13 @@ html.fslightbox-open {
 .plant-reindeer-lichen .plant-content__left-column {
   display: none;
 }
+.plant-reindeer-lichen .plant-content__right-column {
+  flex-basis: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.plant-reindeer-lichen .plant-content__traditional-names,
+.plant-reindeer-lichen .plant-content__carousel {
+  flex-basis: calc(50% - 1rem);
+}

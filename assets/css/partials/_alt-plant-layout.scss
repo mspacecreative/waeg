@@ -2,4 +2,14 @@
   .plant-content__left-column {
     display: none;
   }
+  .plant-content__right-column {
+    flex-basis: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .plant-content__traditional-names,
+  .plant-content__carousel {
+    flex-basis: calc(50% - 1rem);
+  }
 }
