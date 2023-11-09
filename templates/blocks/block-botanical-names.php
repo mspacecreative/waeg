@@ -24,14 +24,14 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // $designation_array = explode(", ", $designation);
                 // $array = array_merge($names_array, $designation_array);
                 $combine = array_combine($array, $designation);
-                // foreach($combine as $k => $v) {
-                //     $data[] = " $k $v";
-                // }
+                foreach($combine as $k => $v) {
+                    $data[] = " $k $v";
+                }
             }
         }
         // echo implode('; ', $data);
     }
-    print_r($combine);
+    echo implode('; ', $data);
             echo '</h2>
     </div>';
 }
