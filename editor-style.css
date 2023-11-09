@@ -79,8 +79,8 @@ body:not(#tinymce) ul:not(.wp-block-post-template,
   top: 5px;
   font-size: var(--wp--preset--font-size--medium);
 }
-body:not(#tinymce) .quote ul li ::before {
-  color: var(--wp--preset--color--base);
+body:not(#tinymce) .quote ul li::before {
+  color: var(--wp--preset--color--pale-gold);
 }
 body:not(#tinymce) .underlined-heading {
   color: var(--wp--preset--color--black);

@@ -70,8 +70,8 @@ ul:not(
 .quote {
   ul {
     li {
-      ::before {
-        color: var(--wp--preset--color--base);
+      &::before {
+        color: var(--wp--preset--color--pale-gold);
       }
     }
   }

@@ -178,8 +178,8 @@
   top: 5px;
   font-size: var(--wp--preset--font-size--medium);
 }
-.editor-styles-wrapper .quote ul li ::before {
-  color: var(--wp--preset--color--base);
+.editor-styles-wrapper .quote ul li::before {
+  color: var(--wp--preset--color--pale-gold);
 }
 .editor-styles-wrapper .underlined-heading {
   color: var(--wp--preset--color--black);

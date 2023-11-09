@@ -691,8 +691,8 @@ ul:not(.wp-block-post-template,
   font-size: var(--wp--preset--font-size--medium);
 }
 
-.quote ul li ::before {
-  color: var(--wp--preset--color--base);
+.quote ul li::before {
+  color: var(--wp--preset--color--pale-gold);
 }
 
 .underlined-heading {
