@@ -16,6 +16,7 @@ $loop = new WP_Query( array(
     $line_drawing = get_field('drawing', $loop->ID);
     $size = 'medium';
     $thumb = $line_drawing['sizes'][ $size ];
+    $alt = $line_drawing['alt'];
     $title = get_the_title($loop->ID);
     $excerpt = get_the_excerpt($loop->ID);
     $permalink = get_the_permalink($loop->ID);
