@@ -746,7 +746,8 @@ html.fslightbox-open {
        column-gap: 2rem;
 }
 .plant-reindeer-lichen .plant-content__traditional-names,
-.plant-reindeer-lichen .plant-content__carousel {
+.plant-reindeer-lichen .plant-content__carousel,
+.plant-reindeer-lichen .plant-content__traditional-uses {
   flex-basis: calc(50% - 1rem);
   box-sizing: border-box;
 }
