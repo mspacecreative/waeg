@@ -15,9 +15,9 @@ $loop = new WP_Query( array(
 <?php while ( $loop->have_posts() ) : $loop->the_post();
     
     // VARIABLES
-    $line_drawing = get_field('drawing', get_the_ID());
+    $line_drawing = get_field('drawing', get_the_ID);
     $title = get_the_title($loop->ID);
-    $excerpt = get_the_excerpt(get_the_ID());
+    $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
 
     echo 
@@ -38,8 +38,9 @@ $loop = new WP_Query( array(
     
     echo 
     '<div class="tour-path-content-container">
-        <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>
-    </div>';
+        <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>'
+            . $excerpt .
+    '</div>';
 
     echo
     '<a href="' . esc_url($permalink) . '">' . get_term($term)->name . '</a>';
