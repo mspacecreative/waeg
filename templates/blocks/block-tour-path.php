@@ -12,7 +12,6 @@ $loop = new WP_Query( array(
         )
     )
 ) ); ?>
-<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">
 <?php while ( $loop->have_posts() ) : $loop->the_post();
     $line_drawing = get_field('drawing', $loop->ID);
     $size = 'medium';
@@ -21,6 +20,9 @@ $loop = new WP_Query( array(
     $excerpt = get_the_excerpt($loop->ID);
     $permalink = get_the_permalink($loop->ID);
     
+    echo 
+    '<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">';
+
     if ($line_drawing) {
     echo
     '<div class="line-drawing-container">
@@ -35,8 +37,10 @@ $loop = new WP_Query( array(
 
     echo
     '<a href="' . esc_url($permalink) . '">' . get_term($term)->name . '</a>';
+
+    echo
+    '</ul>';
     
 endwhile; ?>
-</ul>
 
 <?php wp_reset_query();
