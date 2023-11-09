@@ -28,7 +28,7 @@ $loop = new WP_Query( array(
     // if ($line_drawing) {
     echo
     '<div class="line-drawing-container">
-        <img src="' . esc_url($url) . '" alt="' . esc_attr($alt) . '">
+        <img src="' . $url . '" alt="' . esc_attr($alt) . '">
     </div>';
     // }
     
