@@ -1,0 +1,42 @@
+<?php
+$term = get_field('term', get_the_ID());
+$loop = new WP_Query( array(
+    'post_type' => 'plant',
+    'orderby' => 'name',
+    'order' => 'ASC',
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'species',
+            'field' => 'slug',
+            'terms' => $term
+        )
+    )
+) ); ?>
+<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">
+<?php while ( $loop->have_posts() ) : $loop->the_post();
+    $line_drawing = get_field('drawing', $loop->ID);
+    $size = 'medium';
+    $thumb = $line_drawing['sizes'][ $size ];
+    $title = get_the_title();
+    $excerpt = get_the_excerpt();
+    $permalink = get_the_permalink();
+    
+    if ($line_drawing) {
+    echo
+    '<div class="line-drawing-container">
+        <img src="' . esc_url($thumb) . '" alt="' . esc_attr($alt) . '">
+    </div>';
+    }
+    
+    echo 
+    '<div class="tour-path-content-container">
+        <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>
+    </div>';
+
+    echo
+    '<a href="' . esc_url($permalink) . '">' . ucfirst($term) . '</a>';
+    
+endwhile; ?>
+</ul>
+
+<?php wp_reset_query();

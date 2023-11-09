@@ -173,7 +173,7 @@ function my_acf_init() {
 			'description'		=> __('Displays species sitemap'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'tag',
+			'icon'				=> 'editor-alignleft',
 			'keywords'			=> array( 'sitemap', 'navigation', 'species' ),
 			'supports'			=> [
 				'align' => false,
@@ -241,7 +241,7 @@ function my_acf_init() {
 			'description'		=> __('Displays featured image and linkable post title overlay'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'format-image',
+			'icon'				=> 'index-card',
 			'keywords'			=> array( 'page', 'page link', 'card' ),
 			'supports'			=> [
 				'align' => false,
@@ -258,7 +258,24 @@ function my_acf_init() {
 			'description'		=> __('Displays all terms titles, links and featured images for species taxonomy'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'format-image',
+			'icon'				=> 'info-outline',
+			'keywords'			=> array( 'species', 'terms', 'terms list', 'grid' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
+		// register terms block
+		acf_register_block(array(
+			'name'				=> 'tour-path',
+			'title'				=> __('Tour Path Block'),
+			'description'		=> __('Displays tour path content for a selected species type'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'location',
 			'keywords'			=> array( 'species', 'terms', 'terms list', 'grid' ),
 			'supports'			=> [
 				'align' => false,
