@@ -1,7 +1,7 @@
 @media (min-width: 981px) {
   .acf-fields > .data-content-column__offset {
     width: 60%;
-    margin-left: 40%;
+    left: 40%;
   }
 }
 .acf-fields > .data-content-column__border-left {
