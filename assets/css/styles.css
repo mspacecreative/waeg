@@ -751,6 +751,14 @@ html.fslightbox-open {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
+@media (max-width: 780px) {
+  .plant-reindeer-lichen .plant-content__right-column,
+.plant-bracket-fungi .plant-content__right-column,
+.plant-ground-cone .plant-content__right-column,
+.plant-peat-moss .plant-content__right-column {
+    row-gap: 2rem;
+  }
+}
 .plant-reindeer-lichen .plant-content__traditional-names,
 .plant-reindeer-lichen .plant-content__carousel,
 .plant-reindeer-lichen .plant-content__traditional-uses,
