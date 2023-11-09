@@ -41,7 +41,7 @@ $loop = new WP_Query( array(
         '<div class="tour-path-content">
             <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>'
             . $excerpt .
-            '<a href="' . esc_url($permalink) . '">' . get_term($term)->name . '</a>
+            '<a href="' . esc_url($permalink) . '">' . __('Berry Details') . '</a>
         </div>';
 
         echo
