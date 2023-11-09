@@ -1,7 +1,8 @@
 @media (min-width: 981px) {
   .data-content-column__offset {
     width: 60%;
-    margin-left: 40%;
+    -webkit-margin-start: 40%;
+            margin-inline-start: 40%;
   }
 }
 
