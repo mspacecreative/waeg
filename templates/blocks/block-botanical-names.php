@@ -22,7 +22,7 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
                 $names_array = explode(", ", $name);
                 $designation_array = explode(", ", $designation);
-                $array = array_combine($names_array, $designation_array);
+                $array = array_merge($names_array, $designation_array);
                 $combine = array_merge($array);
                 print_r($array);
                 // foreach($array as $k => $v) {
