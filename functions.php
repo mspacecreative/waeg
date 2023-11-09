@@ -25,3 +25,4 @@ include 'functions/tinymce.php';
 include 'functions/audio-loop.php';
 // include 'functions/language-switcher.php';
 // include 'functions/analytics.php';
+include 'functions/body-class.php';
