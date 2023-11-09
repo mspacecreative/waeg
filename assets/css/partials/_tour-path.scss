@@ -1,5 +1,6 @@
 .tour-path-wrapper {
   .tour-path-content-container {
+    position: relative;
     padding: 3rem;
     background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
     background-size: contain;
@@ -16,6 +17,16 @@
     }
     .tour-path-content {
       flex: 1;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(white, transparent);
+      opacity: 0.75;
     }
   }
   &:nth-of-type(odd) {
