@@ -13,24 +13,28 @@ $loop = new WP_Query( array(
     )
 ) ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post();
+    
+    // VARIABLES
     $line_drawing = get_field('drawing', $loop->ID);
+    $title = get_the_title($loop->ID);
+    $excerpt = get_the_excerpt($loop->ID);
+    $permalink = get_the_permalink($loop->ID);
+
+    echo 
+    '<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">';
+
+    if ($line_drawing) {
+    // DRAWING VARIABLES
     $url = $line_drawing['url'];
     $size = 'medium';
     $thumb = $line_drawing['sizes'][ $size ];
     $alt = $line_drawing['alt'];
-    $title = get_the_title($loop->ID);
-    $excerpt = get_the_excerpt($loop->ID);
-    $permalink = get_the_permalink($loop->ID);
-    
-    echo 
-    '<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">';
 
-    // if ($line_drawing) {
     echo
     '<div class="line-drawing-container">
-        <img src="' . $url . '" alt="' . esc_attr($alt) . '">
+        <img src="' . esc_url($thumb) . '" alt="' . esc_attr($alt) . '">
     </div>';
-    // }
+    }
     
     echo 
     '<div class="tour-path-content-container">
