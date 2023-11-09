@@ -1,5 +1,5 @@
 <?php
-$term = get_field('term', get_the_ID());
+$term = get_field('species_type');
 $loop = new WP_Query( array(
     'post_type' => 'plant',
     'orderby' => 'name',
@@ -7,7 +7,7 @@ $loop = new WP_Query( array(
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
-            'field' => 'slug',
+            'field' => 'term_id',
             'terms' => $term
         )
     )
@@ -34,7 +34,7 @@ $loop = new WP_Query( array(
     </div>';
 
     echo
-    '<a href="' . esc_url($permalink) . '">' . ucfirst($term) . '</a>';
+    '<a href="' . esc_url($permalink) . '">' . get_term($term)->name . '</a>';
     
 endwhile; ?>
 </ul>
