@@ -871,6 +871,7 @@ html.fslightbox-open {
 
 .tour-path-content-container {
   padding: 3rem;
+  background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

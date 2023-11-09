@@ -19,11 +19,10 @@ $loop = new WP_Query( array(
     $title = get_the_title($loop->ID);
     $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
-    $background = get_template_directory_uri() . '/assets/img/backgrounds/watercolor-green-bg.jpg';
 
     echo 
     '<div class="is-layout-flex">
-        <ul class="is-flex-container wp-block-post-template tour-path-content-container" style="background:url(' . $background . ');">';
+        <ul class="is-flex-container wp-block-post-template tour-path-content-container">';
 
         if ($line_drawing) {
         // DRAWING VARIABLES
