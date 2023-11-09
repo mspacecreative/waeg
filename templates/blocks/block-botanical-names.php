@@ -15,10 +15,9 @@ if (have_rows('botanical_names', get_the_ID())) {
 
         if (have_rows('botanical_name', get_the_ID())) {
             $separator = ';';
-            $array = [];
             while (have_rows('botanical_name', get_the_ID())) {
                 the_row();
-                $array = get_sub_field('name');
+                $array[] = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
                 // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
                 $names_array = explode(" ", $name);
