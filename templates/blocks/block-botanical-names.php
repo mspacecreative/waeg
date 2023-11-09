@@ -15,18 +15,15 @@ if (have_rows('botanical_names', get_the_ID())) {
                 the_row();
                 $array[] = get_sub_field('name');
                 $designation[] = get_sub_field('designation');
-                // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
-                $names_array = explode(" ", $name);
-                // $designation_array = explode(", ", $designation);
-                // $array = array_merge($names_array, $designation_array);
                 $combine = array_combine($array, $designation);
             }
         }
     }
+    if ($combine) {
     foreach($combine as $k => $v) {
         $data[] = " <i>$k</i> $v";
     }
-                echo implode('; ', $data);
+                echo implode('; ', $data); }
             echo '</h2>
     </div>';
 }
