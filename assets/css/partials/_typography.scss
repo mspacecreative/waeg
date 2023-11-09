@@ -30,7 +30,13 @@ p {
   display: block;
 }
 
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
+ul:not(
+    .wp-block-post-template,
+    .is-flex-container,
+    .horizontal-list,
+    .features,
+    .wp-block-navigation__container
+  ) {
   padding-left: 0;
 
   li {
@@ -48,7 +54,7 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
 
     &::before {
       font: var(--fa-font-solid);
-      content: '\f0da';
+      content: "\f0da";
       color: $darkGreen;
       display: inline-block;
       text-rendering: optimizeLegibility;
@@ -57,6 +63,16 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
       left: 0;
       top: 5px;
       font-size: var(--wp--preset--font-size--medium);
+    }
+  }
+}
+
+.quote {
+  ul {
+    li {
+      ::before {
+        color: var(--wp--preset--color--base);
+      }
     }
   }
 }

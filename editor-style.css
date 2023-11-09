@@ -33,21 +33,41 @@ body:not(#tinymce) p {
 body:not(#tinymce) .display-block {
   display: block;
 }
-body:not(#tinymce) ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
+body:not(#tinymce) ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) {
   padding-left: 0;
 }
-body:not(#tinymce) ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
+body:not(#tinymce) ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li {
   position: relative;
   padding-left: 20px;
 }
-body:not(#tinymce) ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
+body:not(#tinymce) ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li::marker {
   display: none;
   font-size: 0;
 }
-body:not(#tinymce) ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li ul {
+body:not(#tinymce) ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li ul {
   padding-left: 20px;
 }
-body:not(#tinymce) ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::before {
+body:not(#tinymce) ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li::before {
   font: var(--fa-font-solid);
   content: "\f0da";
   color: var(--wp--preset--color--dark-green);
@@ -58,6 +78,9 @@ body:not(#tinymce) ul:not(.wp-block-post-template, .is-flex-container, .horizont
   left: 0;
   top: 5px;
   font-size: var(--wp--preset--font-size--medium);
+}
+body:not(#tinymce) .quote ul li ::before {
+  color: var(--wp--preset--color--base);
 }
 body:not(#tinymce) .underlined-heading {
   color: var(--wp--preset--color--black);

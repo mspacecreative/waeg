@@ -644,21 +644,41 @@ p {
   display: block;
 }
 
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
+ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) {
   padding-left: 0;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
+ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li {
   position: relative;
   padding-left: 20px;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
+ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li::marker {
   display: none;
   font-size: 0;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li ul {
+ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li ul {
   padding-left: 20px;
 }
-ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::before {
+ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li::before {
   font: var(--fa-font-solid);
   content: "\f0da";
   color: var(--wp--preset--color--dark-green);
@@ -669,6 +689,10 @@ ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features,
   left: 0;
   top: 5px;
   font-size: var(--wp--preset--font-size--medium);
+}
+
+.quote ul li ::before {
+  color: var(--wp--preset--color--base);
 }
 
 .underlined-heading {

@@ -132,21 +132,41 @@
 .editor-styles-wrapper .display-block {
   display: block;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) {
+.editor-styles-wrapper ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) {
   padding-left: 0;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li {
+.editor-styles-wrapper ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li {
   position: relative;
   padding-left: 20px;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::marker {
+.editor-styles-wrapper ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li::marker {
   display: none;
   font-size: 0;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li ul {
+.editor-styles-wrapper ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li ul {
   padding-left: 20px;
 }
-.editor-styles-wrapper ul:not(.wp-block-post-template, .is-flex-container, .horizontal-list, .features, .wp-block-navigation__container) li::before {
+.editor-styles-wrapper ul:not(.wp-block-post-template,
+.is-flex-container,
+.horizontal-list,
+.features,
+.wp-block-navigation__container) li::before {
   font: var(--fa-font-solid);
   content: "\f0da";
   color: var(--wp--preset--color--dark-green);
@@ -157,6 +177,9 @@
   left: 0;
   top: 5px;
   font-size: var(--wp--preset--font-size--medium);
+}
+.editor-styles-wrapper .quote ul li ::before {
+  color: var(--wp--preset--color--base);
 }
 .editor-styles-wrapper .underlined-heading {
   color: var(--wp--preset--color--black);
