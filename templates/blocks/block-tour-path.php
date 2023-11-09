@@ -21,7 +21,7 @@ $loop = new WP_Query( array(
     $permalink = get_the_permalink($loop->ID);
 
     echo 
-    '<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">';
+    '<ul class="is-flex-container wp-block-post-template tour-path-content-container">';
 
     if ($line_drawing) {
     // DRAWING VARIABLES
@@ -37,7 +37,7 @@ $loop = new WP_Query( array(
     }
     
     echo 
-    '<div class="tour-path-content-container">
+    '<div class="tour-path-content">
         <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>'
             . $excerpt .
     '</div>';

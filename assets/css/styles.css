@@ -868,3 +868,14 @@ html.fslightbox-open {
 .plant-peat-moss .people-and-plants {
   max-width: 750px;
 }
+
+.tour-path-content-container {
+  flex-basis: calc(50% - 1rem);
+  gap: 2rem;
+}
+.tour-path-content-container .line-drawing-container {
+  flex-basis: 250px;
+}
+.tour-path-content-container .tour-path-content {
+  flex-grow: 1;
+}
