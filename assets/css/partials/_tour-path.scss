@@ -2,7 +2,10 @@
   flex-basis: calc(50% - 1rem);
   gap: 2rem;
   .line-drawing-container {
-    flex-basis: 250px;
+    flex-basis: 150px;
+    img {
+      max-width: 100%;
+    }
   }
   .tour-path-content {
     flex: 1;

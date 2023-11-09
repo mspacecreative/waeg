@@ -874,7 +874,10 @@ html.fslightbox-open {
   gap: 2rem;
 }
 .tour-path-content-container .line-drawing-container {
-  flex-basis: 250px;
+  flex-basis: 150px;
+}
+.tour-path-content-container .line-drawing-container img {
+  max-width: 100%;
 }
 .tour-path-content-container .tour-path-content {
   flex: 1;
