@@ -24,7 +24,6 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // $designation_array = explode(", ", $designation);
                 // $array = array_merge($names_array, $designation_array);
                 $combine = array_combine($array, $designation);
-                print_r($combine);
                 // foreach($combine as $k => $v) {
                 //     $data[] = " $k $v";
                 // }
@@ -32,6 +31,7 @@ if (have_rows('botanical_names', get_the_ID())) {
         }
         // echo implode('; ', $data);
     }
+    print_r($combine);
             echo '</h2>
     </div>';
 }
