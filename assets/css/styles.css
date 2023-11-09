@@ -456,7 +456,7 @@ body .is-layout-flex.header-elements-container {
 }
 
 @media (max-width: 800px) {
-  .botanical-names-container {
+  .wp-container-12.wp-container-12.botanical-names-container {
     justify-content: flex-start;
   }
 }
