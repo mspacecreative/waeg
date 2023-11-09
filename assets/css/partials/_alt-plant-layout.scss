@@ -15,7 +15,9 @@
   .plant-content__carousel,
   .plant-content__traditional-uses,
   .plant-content__notes {
-    flex-basis: calc(50% - 1rem);
+    @media (min-width: 781px) {
+      flex-basis: calc(50% - 1rem);
+    }
     box-sizing: border-box;
   }
   .plant-content__carousel {

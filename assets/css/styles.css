@@ -767,8 +767,27 @@ html.fslightbox-open {
 .plant-peat-moss .plant-content__carousel,
 .plant-peat-moss .plant-content__traditional-uses,
 .plant-peat-moss .plant-content__notes {
-  flex-basis: calc(50% - 1rem);
   box-sizing: border-box;
+}
+@media (min-width: 781px) {
+  .plant-reindeer-lichen .plant-content__traditional-names,
+.plant-reindeer-lichen .plant-content__carousel,
+.plant-reindeer-lichen .plant-content__traditional-uses,
+.plant-reindeer-lichen .plant-content__notes,
+.plant-bracket-fungi .plant-content__traditional-names,
+.plant-bracket-fungi .plant-content__carousel,
+.plant-bracket-fungi .plant-content__traditional-uses,
+.plant-bracket-fungi .plant-content__notes,
+.plant-ground-cone .plant-content__traditional-names,
+.plant-ground-cone .plant-content__carousel,
+.plant-ground-cone .plant-content__traditional-uses,
+.plant-ground-cone .plant-content__notes,
+.plant-peat-moss .plant-content__traditional-names,
+.plant-peat-moss .plant-content__carousel,
+.plant-peat-moss .plant-content__traditional-uses,
+.plant-peat-moss .plant-content__notes {
+    flex-basis: calc(50% - 1rem);
+  }
 }
 .plant-reindeer-lichen .plant-content__carousel,
 .plant-bracket-fungi .plant-content__carousel,
