@@ -21,32 +21,32 @@ $loop = new WP_Query( array(
     $permalink = get_the_permalink($loop->ID);
 
     echo 
-    '<ul class="is-flex-container wp-block-post-template tour-path-content-container">';
+    '<div class="is-layout-flex">
+        <ul class="is-flex-container wp-block-post-template tour-path-content-container">';
 
-    if ($line_drawing) {
-    // DRAWING VARIABLES
-    $url = $line_drawing['url'];
-    $size = 'medium';
-    $thumb = $line_drawing['sizes'][ $size ];
-    $alt = $line_drawing['alt'];
+        if ($line_drawing) {
+        // DRAWING VARIABLES
+        $url = $line_drawing['url'];
+        $size = 'medium';
+        $thumb = $line_drawing['sizes'][ $size ];
+        $alt = $line_drawing['alt'];
 
-    echo
-    '<div class="line-drawing-container">
-        <img src="' . esc_url($thumb) . '" alt="' . esc_attr($alt) . '">
-    </div>';
-    }
-    
-    echo 
-    '<div class="tour-path-content">
-        <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>'
+        echo
+        '<div class="line-drawing-container">
+            <img src="' . esc_url($thumb) . '" alt="' . esc_attr($alt) . '">
+        </div>';
+        }
+        
+        echo 
+        '<div class="tour-path-content">
+            <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>'
             . $excerpt .
-    '</div>';
+            '<a href="' . esc_url($permalink) . '">' . get_term($term)->name . '</a>
+        </div>';
 
-    echo
-    '<a href="' . esc_url($permalink) . '">' . get_term($term)->name . '</a>';
-
-    echo
-    '</ul>';
+        echo
+        '</ul>
+    </div>';
     
 endwhile; ?>
 
