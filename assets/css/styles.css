@@ -775,6 +775,7 @@ html.fslightbox-open {
 .plant-peat-moss .plant-content__carousel,
 .plant-peat-moss .plant-content__traditional-uses,
 .plant-peat-moss .plant-content__notes {
+  width: 100%;
   box-sizing: border-box;
 }
 @media (min-width: 781px) {
