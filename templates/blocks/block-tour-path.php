@@ -11,8 +11,11 @@ $loop = new WP_Query( array(
             'terms' => $term
         )
     )
-) ); ?>
-<?php while ( $loop->have_posts() ) : $loop->the_post();
+) );
+
+echo 
+'<div class="is-layout-flex">';
+while ( $loop->have_posts() ) : $loop->the_post();
     
     // VARIABLES
     $line_drawing = get_field('drawing', get_the_ID());
@@ -21,8 +24,7 @@ $loop = new WP_Query( array(
     $permalink = get_the_permalink($loop->ID);
 
     echo 
-    '<div class="is-layout-flex">
-        <ul class="is-flex-container wp-block-post-template tour-path-content-container">';
+    '<ul class="is-flex-container wp-block-post-template tour-path-content-container">';
 
         if ($line_drawing) {
         // DRAWING VARIABLES
@@ -45,9 +47,8 @@ $loop = new WP_Query( array(
         </div>';
 
         echo
-        '</ul>
-    </div>';
+        '</ul>';
     
-endwhile; ?>
-
-<?php wp_reset_query();
+endwhile; wp_reset_query();
+echo 
+'</div>'; ?>
