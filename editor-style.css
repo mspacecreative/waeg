@@ -76,3 +76,14 @@ body:not(#tinymce) .font-weight-normal {
 .featured-img.-r0 {
   display: none;
 }
+
+@media (min-width: 981px) {
+  .data-content-column__offset {
+    width: 60%;
+    margin-left: 40%;
+  }
+}
+
+.data-content-column__border-left {
+  border: 1px solid #eaecf0;
+}

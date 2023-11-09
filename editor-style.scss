@@ -1,11 +1,21 @@
 body:not(#tinymce) {
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-    @import "assets/css/partials/variables";
-    @import "assets/css/partials/typography";
+  @import "assets/css/partials/variables";
+  @import "assets/css/partials/typography";
 }
 
 .featured-img.-r0 {
-    display: none;
+  display: none;
+}
+
+.data-content-column__offset {
+  @media (min-width: 981px) {
+    width: 60%;
+    margin-left: 40%;
+  }
+}
+.data-content-column__border-left {
+  border: 1px solid #eaecf0;
 }
