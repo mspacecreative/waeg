@@ -455,6 +455,11 @@ body .is-layout-flex.header-elements-container {
   }
 }
 
+@media (max-width: 800px) {
+  .botanical-names-container {
+    justify-content: flex-start;
+  }
+}
 body:not(.home) .partnership-logos {
   padding-bottom: 0 !important;
 }
