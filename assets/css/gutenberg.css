@@ -102,6 +102,7 @@
 }
 .editor-styles-wrapper .wp-block-post-template-container .wp-block-post {
   flex-grow: 1;
+  flex-grow: inherit;
 }
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,

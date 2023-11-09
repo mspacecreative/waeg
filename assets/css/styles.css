@@ -121,6 +121,7 @@ body {
 
 .wp-block-post-template-container .wp-block-post {
   flex-grow: 1;
+  flex-grow: inherit;
 }
 
 .wp-block-navigation .wp-block-navigation-item:last-of-type {
