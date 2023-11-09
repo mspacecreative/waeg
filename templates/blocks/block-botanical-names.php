@@ -30,7 +30,7 @@ if (have_rows('botanical_names', get_the_ID())) {
     foreach($combine as $k => $v) {
         $data[] = " $k $v";
     }
-    echo implode('; ', $data);
+                echo implode('; ', $data);
             echo '</h2>
     </div>';
 }
