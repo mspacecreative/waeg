@@ -21,7 +21,7 @@ $loop = new WP_Query( array(
     $permalink = get_the_permalink($loop->ID);
 
     echo 
-    '<div class="is-layout-flex">
+    '<div class="is-layout-flex tour-path-wrapper">
         <ul class="is-flex-container wp-block-post-template tour-path-content-container">';
 
         if ($line_drawing) {
