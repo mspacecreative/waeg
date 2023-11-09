@@ -4,12 +4,8 @@ if (have_rows('botanical_names', get_the_ID())) {
     '<div class="botanical-names bottom-margin-40">';
         $count = 0;    
         $names = get_field('botanical_names', get_the_ID());
-        $count = count($names);
-        if ($count > 1) {
-            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical names', 'waeg') . ':</strong>';
-        } else {
-            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . ':</strong>';
-        }
+        $count = count($names) > 1 ? 's' : '';
+        echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $count . ':</strong>';
     while (have_rows('botanical_names', get_the_ID())) {
         the_row();
 
