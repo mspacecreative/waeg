@@ -11,5 +11,6 @@
   .plant-content__traditional-names,
   .plant-content__carousel {
     flex-basis: calc(50% - 1rem);
+    box-sizing: border-box;
   }
 }
