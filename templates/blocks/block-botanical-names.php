@@ -27,9 +27,9 @@ if (have_rows('botanical_names', get_the_ID())) {
                 // print_r($array);
                 foreach($array as $k => $v) {
                     $data[] = " $k $v";
+                    echo implode('; ', $data);
                 }
             }
-            echo implode('; ', $data);
         }
     }
             echo '</h2>
