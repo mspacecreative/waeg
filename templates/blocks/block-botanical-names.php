@@ -26,11 +26,6 @@ if (have_rows('botanical_names', get_the_ID())) {
                 $combine = array_combine($array, $designation);
             }
         }
-        
-        foreach($combine as $k => $v) {
-            $data[] = " $k $v";
-        }
-        // echo implode('; ', $data);
     }
     foreach($combine as $k => $v) {
         $data[] = " $k $v";
