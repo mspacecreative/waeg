@@ -735,10 +735,16 @@ html.fslightbox-open {
   height: auto;
 }
 
-.plant-reindeer-lichen .plant-content__left-column {
+.plant-reindeer-lichen .plant-content__left-column,
+.plant-bracket-fungi .plant-content__left-column,
+.plant-ground-cone .plant-content__left-column,
+.plant-peat-moss .plant-content__left-column {
   display: none;
 }
-.plant-reindeer-lichen .plant-content__right-column {
+.plant-reindeer-lichen .plant-content__right-column,
+.plant-bracket-fungi .plant-content__right-column,
+.plant-ground-cone .plant-content__right-column,
+.plant-peat-moss .plant-content__right-column {
   flex-basis: 100% !important;
   display: flex;
   flex-wrap: wrap;
@@ -748,24 +754,60 @@ html.fslightbox-open {
 .plant-reindeer-lichen .plant-content__traditional-names,
 .plant-reindeer-lichen .plant-content__carousel,
 .plant-reindeer-lichen .plant-content__traditional-uses,
-.plant-reindeer-lichen .plant-content__notes {
+.plant-reindeer-lichen .plant-content__notes,
+.plant-bracket-fungi .plant-content__traditional-names,
+.plant-bracket-fungi .plant-content__carousel,
+.plant-bracket-fungi .plant-content__traditional-uses,
+.plant-bracket-fungi .plant-content__notes,
+.plant-ground-cone .plant-content__traditional-names,
+.plant-ground-cone .plant-content__carousel,
+.plant-ground-cone .plant-content__traditional-uses,
+.plant-ground-cone .plant-content__notes,
+.plant-peat-moss .plant-content__traditional-names,
+.plant-peat-moss .plant-content__carousel,
+.plant-peat-moss .plant-content__traditional-uses,
+.plant-peat-moss .plant-content__notes {
   flex-basis: calc(50% - 1rem);
   box-sizing: border-box;
 }
-.plant-reindeer-lichen .plant-content__carousel {
+.plant-reindeer-lichen .plant-content__carousel,
+.plant-bracket-fungi .plant-content__carousel,
+.plant-ground-cone .plant-content__carousel,
+.plant-peat-moss .plant-content__carousel {
   margin-block: 0 !important;
 }
 .plant-reindeer-lichen .plant-content__carousel .swiper-container,
 .plant-reindeer-lichen .plant-content__carousel .swiper-autoheight,
 .plant-reindeer-lichen .plant-content__carousel .swiper-wrapper,
 .plant-reindeer-lichen .plant-content__carousel .swiper-slide,
-.plant-reindeer-lichen .plant-content__carousel .swiper img {
+.plant-reindeer-lichen .plant-content__carousel .swiper img,
+.plant-bracket-fungi .plant-content__carousel .swiper-container,
+.plant-bracket-fungi .plant-content__carousel .swiper-autoheight,
+.plant-bracket-fungi .plant-content__carousel .swiper-wrapper,
+.plant-bracket-fungi .plant-content__carousel .swiper-slide,
+.plant-bracket-fungi .plant-content__carousel .swiper img,
+.plant-ground-cone .plant-content__carousel .swiper-container,
+.plant-ground-cone .plant-content__carousel .swiper-autoheight,
+.plant-ground-cone .plant-content__carousel .swiper-wrapper,
+.plant-ground-cone .plant-content__carousel .swiper-slide,
+.plant-ground-cone .plant-content__carousel .swiper img,
+.plant-peat-moss .plant-content__carousel .swiper-container,
+.plant-peat-moss .plant-content__carousel .swiper-autoheight,
+.plant-peat-moss .plant-content__carousel .swiper-wrapper,
+.plant-peat-moss .plant-content__carousel .swiper-slide,
+.plant-peat-moss .plant-content__carousel .swiper img {
   height: 100% !important;
 }
-.plant-reindeer-lichen .plant-content__carousel .swiper img {
+.plant-reindeer-lichen .plant-content__carousel .swiper img,
+.plant-bracket-fungi .plant-content__carousel .swiper img,
+.plant-ground-cone .plant-content__carousel .swiper img,
+.plant-peat-moss .plant-content__carousel .swiper img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.plant-reindeer-lichen .people-and-plants {
+.plant-reindeer-lichen .people-and-plants,
+.plant-bracket-fungi .people-and-plants,
+.plant-ground-cone .people-and-plants,
+.plant-peat-moss .people-and-plants {
   max-width: 750px;
 }
