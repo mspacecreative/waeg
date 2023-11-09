@@ -152,8 +152,8 @@ function my_acf_init() {
 		// register habitats block
 		acf_register_block(array(
 			'name'				=> 'habitats',
-			'title'				=> __('Other Habitats'),
-			'description'		=> __('Displays all other habitats'),
+			'title'				=> __('Other Posts'),
+			'description'		=> __('Displays all other posts of specific post type'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'editor-ul',
