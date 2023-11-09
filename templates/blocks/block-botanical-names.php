@@ -15,16 +15,17 @@ if (have_rows('botanical_names', get_the_ID())) {
 
         if (have_rows('botanical_name', get_the_ID())) {
             $separator = ';';
+            $array = [];
             while (have_rows('botanical_name', get_the_ID())) {
                 the_row();
-                $name = get_sub_field('name');
+                $array = get_sub_field('name');
                 $designation = get_sub_field('designation') ? get_sub_field('designation') : '';
                 // $string = ' <span style="font-style: italic;">' . $name . '</span>' . esc_html(' ') . $designation . $separator;
                 $names_array = explode(" ", $name);
                 $designation_array = explode(", ", $designation);
-                $array = array_merge($names_array, $designation_array);
+                // $array = array_merge($names_array, $designation_array);
                 // $combine = array_combine($array);
-                print_r($names_array);
+                print_r($array);
                 // foreach($combine as $k => $v) {
                 //     $data[] = " $k $v";
                 // }
