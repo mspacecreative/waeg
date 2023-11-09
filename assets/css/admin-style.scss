@@ -1,9 +1,11 @@
-.data-content-column__offset {
-  @media (min-width: 981px) {
-    width: 60%;
-    margin-inline-start: 40%;
+.acf-fields > {
+  .data-content-column__offset {
+    @media (min-width: 981px) {
+      width: 60%;
+      margin-inline-start: 40%;
+    }
   }
-}
-.data-content-column__border-left {
-  border: 1px solid #eaecf0;
+  .data-content-column__border-left {
+    border: 1px solid #eaecf0;
+  }
 }

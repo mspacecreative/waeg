@@ -1,11 +1,10 @@
 @media (min-width: 981px) {
-  .data-content-column__offset {
+  .acf-fields > .data-content-column__offset {
     width: 60%;
     -webkit-margin-start: 40%;
             margin-inline-start: 40%;
   }
 }
-
-.data-content-column__border-left {
+.acf-fields > .data-content-column__border-left {
   border: 1px solid #eaecf0;
 }
