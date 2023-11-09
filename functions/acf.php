@@ -153,7 +153,7 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'habitats',
 			'title'				=> __('Other Posts'),
-			'description'		=> __('Displays all other posts of specific post type'),
+			'description'		=> __('Displays all other posts of selected post type'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'editor-ul',
