@@ -870,11 +870,16 @@ html.fslightbox-open {
 }
 
 .tour-path-content-container {
+  padding: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   flex-basis: calc(50% - 1rem);
   gap: 2rem;
 }
 .tour-path-content-container .line-drawing-container {
   flex-basis: 150px;
+  mix-blend-mode: multiply;
 }
 .tour-path-content-container .line-drawing-container img {
   max-width: 100%;
