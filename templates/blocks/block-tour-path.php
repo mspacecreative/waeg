@@ -17,9 +17,9 @@ $loop = new WP_Query( array(
     $line_drawing = get_field('drawing', $loop->ID);
     $size = 'medium';
     $thumb = $line_drawing['sizes'][ $size ];
-    $title = get_the_title();
-    $excerpt = get_the_excerpt();
-    $permalink = get_the_permalink();
+    $title = get_the_title($loop->ID);
+    $excerpt = get_the_excerpt($loop->ID);
+    $permalink = get_the_permalink($loop->ID);
     
     if ($line_drawing) {
     echo
