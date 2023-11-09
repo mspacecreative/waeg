@@ -5,7 +5,9 @@ if (have_rows('botanical_names', get_the_ID())) {
         $count = 0;    
         $names = get_field('botanical_names', get_the_ID());
         $count = count($names) > 1 ? 's' : '';
-        echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $count . ':</strong>';
+        if ($names) {
+            echo '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $count . ':</strong>';
+        }
     while (have_rows('botanical_names', get_the_ID())) {
         the_row();
 
