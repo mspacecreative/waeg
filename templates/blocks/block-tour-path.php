@@ -23,12 +23,12 @@ $loop = new WP_Query( array(
     echo 
     '<ul class="is-flex-container columns-2 wp-block-post-template wp-block-terms">';
 
-    if ($line_drawing) {
+    // if ($line_drawing) {
     echo
     '<div class="line-drawing-container">
         <img src="' . esc_url($thumb) . '" alt="' . esc_attr($alt) . '">
     </div>';
-    }
+    // }
     
     echo 
     '<div class="tour-path-content-container">
