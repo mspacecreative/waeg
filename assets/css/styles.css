@@ -888,3 +888,6 @@ html.fslightbox-open {
 .tour-path-content-container .tour-path-content {
   flex: 1;
 }
+.tour-path-content-container:nth-of-type(odd) {
+  justify-content: flex-end;
+}
