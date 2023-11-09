@@ -11,20 +11,19 @@ $loop = new WP_Query( array(
             'terms' => $term
         )
     )
-) );
-
-echo 
-'<div class="is-layout-flex">';
-while ( $loop->have_posts() ) : $loop->the_post();
+) ); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post();
     
     // VARIABLES
     $line_drawing = get_field('drawing', get_the_ID());
     $title = get_the_title($loop->ID);
     $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
+    $background = get_template_directory_uri() . '/assets/img/backgrounds/watercolor-green-bg.jpg';
 
     echo 
-    '<ul class="is-flex-container wp-block-post-template tour-path-content-container">';
+    '<div class="is-layout-flex">
+        <ul class="is-flex-container wp-block-post-template tour-path-content-container" style="background:url(' . $background . ');">';
 
         if ($line_drawing) {
         // DRAWING VARIABLES
@@ -47,8 +46,9 @@ while ( $loop->have_posts() ) : $loop->the_post();
         </div>';
 
         echo
-        '</ul>';
+        '</ul>
+    </div>';
     
-endwhile; wp_reset_query();
-echo 
-'</div>'; ?>
+endwhile; ?>
+
+<?php wp_reset_query();
