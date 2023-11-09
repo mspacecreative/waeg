@@ -10,7 +10,8 @@
   }
   .plant-content__traditional-names,
   .plant-content__carousel,
-  .plant-content__traditional-uses {
+  .plant-content__traditional-uses,
+  .plant-content__notes {
     flex-basis: calc(50% - 1rem);
     box-sizing: border-box;
   }
@@ -26,5 +27,8 @@
     .swiper img {
       object-fit: cover;
     }
+  }
+  .people-and-plants {
+    max-width: 750px;
   }
 }
