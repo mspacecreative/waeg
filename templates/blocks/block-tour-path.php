@@ -14,6 +14,7 @@ $loop = new WP_Query( array(
 ) ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post();
     $line_drawing = get_field('drawing', $loop->ID);
+    $url = $line_drawing['url'];
     $size = 'medium';
     $thumb = $line_drawing['sizes'][ $size ];
     $alt = $line_drawing['alt'];
@@ -27,7 +28,7 @@ $loop = new WP_Query( array(
     // if ($line_drawing) {
     echo
     '<div class="line-drawing-container">
-        <img src="' . esc_url($thumb) . '" alt="' . esc_attr($alt) . '">
+        <img src="' . esc_url($url) . '" alt="' . esc_attr($alt) . '">
     </div>';
     // }
     
