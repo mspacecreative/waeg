@@ -26,3 +26,4 @@ include 'functions/audio-loop.php';
 // include 'functions/language-switcher.php';
 // include 'functions/analytics.php';
 include 'functions/body-class.php';
+include 'functions/admin-styles.php';
