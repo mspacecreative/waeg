@@ -1,5 +1,6 @@
 <?php
 $term = get_field('species_type');
+$tour_url = get_field('tour_url') ? '<a class="virtual-tour-link" href="' . esc_url(get_field('tour_url')) . '">' . esc_html_x('View Berry', 'waeg') . '</a>' : '';
 $count = 1;
 $loop = new WP_Query( array(
     'post_type' => 'plant',
@@ -42,6 +43,7 @@ $loop = new WP_Query( array(
         '<div class="tour-path-content">
             <h2 class="wp-block-post-title has-large-font-size">' . esc_html__($title) . '</h2>'
             . $excerpt .
+            . $tour_url .
             '<a class="post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
         </div>';
 
