@@ -151,3 +151,16 @@
     transform: rotate(-45deg);
   }
 }
+
+.post-modal-link {
+  padding: 10px 15px;
+  background-color: $darkGreen;
+  color: #fff;
+
+  &::before {
+    font-family: fontAwesome;
+    content: "\f0ca";
+    font-size: 25px;
+    margin-right: 10px;
+  }
+}
