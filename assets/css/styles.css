@@ -891,6 +891,24 @@ html.fslightbox-open {
   z-index: 0;
   opacity: 0.35;
 }
+.tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
+  position: absolute;
+  background-image: url(../img/backgrounds/footprints.png);
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  z-index: 0;
+  opacity: 0.35;
+  transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+}
 .tour-path-wrapper .tour-path-content-container {
   position: relative;
   background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
