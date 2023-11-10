@@ -22,16 +22,19 @@ for (i = 0; i < closeModalButton.length; i++) {
   });
 }
 
+modal.addEventListener('click', function() {
+  this.classList.remove('show');
+  modalBackdrop.classList.toggle('show');
+  for (i = 0; i < postModalContent.length; i++) {
+    if (postModalContent[i].classList.contains('show')) {
+      postModalContent[i].classList.remove('show');
+    }
+  } 
+});
+
 for (i = 0; i < postModalContent.length; i++) {
   postModalContent[i].addEventListener('click', function(e) {
     e.stopPropagation();
-  });
-  modal.addEventListener('click', function() {
-    modal.classList.remove('show');
-    modalBackdrop.classList.remove('show');
-    if (postModalContent[i].classList.contains('show')) {
-      this.classList.remove('show');
-    }
   });
 }
 
