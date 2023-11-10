@@ -104,6 +104,13 @@
   .post-content {
     flex: 1;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    h2 {
+      margin-block-start: 0;
+    }
   }
 }
 
