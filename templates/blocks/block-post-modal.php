@@ -27,6 +27,7 @@ if ($loop->have_posts()) {
             while ($loop->have_posts()) {
                 $loop->the_post();
                 $term_id = get_queried_object_id();
+                $title = get_the_title($term_id);
                 $line_drawing = get_field('drawing', get_the_ID($term_id));
                 echo
                 '<div id="bio-' . $count++ . '" class="post-modal-content">
@@ -35,6 +36,7 @@ if ($loop->have_posts()) {
                         <span style="background-color: #000;">&nbsp;</span>
                     </button>
                     <div class="is-layout-flex post-modal-content-wrapper">
+                        <h1 class="has-large-font-size">' . $title . '</h1>
                         <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">';
                         include 'includes/template-traditional-names.php';
                         include 'includes/template-carousel.php';
