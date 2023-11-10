@@ -37,6 +37,9 @@
         text-decoration: none;
         text-transform: uppercase;
         font-size: 15px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $darkGreen;
 
         &.post-modal-link {
           background-color: $darkGreen;
@@ -51,7 +54,6 @@
         }
         &.virtual-tour-link {
           color: $darkGreen;
-          border: 2px solid $darkGreen;
         }
         border-radius: 30px;
         -webkit-border-radius: 30px;
