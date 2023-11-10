@@ -108,7 +108,7 @@
   height: 20px;
   background-color: transparent;
   outline: none;
-  right: 2em;
+  right: 1em;
   top: 1em;
   cursor: pointer;
   z-index: 999;
@@ -125,13 +125,4 @@
   span:nth-child(2) {
     transform: rotate(-45deg);
   }
-}
-
-.modal_inner .closeModalButton {
-  top: 25px;
-  right: 25px;
-}
-
-.modal_inner .closeModalButton span {
-  background-color: #000;
 }
