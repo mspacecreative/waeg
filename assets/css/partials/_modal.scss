@@ -24,6 +24,10 @@
   overflow: auto;
   margin: 0;
   padding: 2rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .modal_container {
@@ -36,10 +40,6 @@
   display: none;
   overflow: auto;
   outline: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 .modal_table {

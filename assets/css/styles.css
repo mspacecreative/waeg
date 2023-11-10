@@ -930,6 +930,9 @@ html.fslightbox-open {
   margin: 0;
   padding: 2rem;
 }
+.modal::-webkit-scrollbar {
+  display: none;
+}
 
 .modal_container {
   position: fixed;
@@ -941,9 +944,6 @@ html.fslightbox-open {
   display: none;
   overflow: auto;
   outline: none;
-}
-.modal_container::-webkit-scrollbar {
-  display: none;
 }
 
 .modal_table {
