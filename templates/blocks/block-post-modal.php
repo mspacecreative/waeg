@@ -36,6 +36,7 @@ if ($loop->have_posts()) {
                     </button>
                     <div class="is-layout-flex post-modal-content-wrapper">
                         <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">';
+                        include 'includes/template-traditional-names.php';
                         include 'includes/template-carousel.php';
                         include 'includes/template-notes.php';
                     echo
