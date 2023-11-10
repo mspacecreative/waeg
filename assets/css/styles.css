@@ -876,8 +876,12 @@ html.fslightbox-open {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  flex-basis: calc(50% - 1rem);
   gap: 2rem;
+}
+@media (min-width: 981px) {
+  .tour-path-wrapper .tour-path-content-container {
+    flex-basis: calc(50% - 1rem);
+  }
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container {
   flex-basis: 150px;
@@ -900,8 +904,10 @@ html.fslightbox-open {
   background: radial-gradient(white, transparent);
   opacity: 0.75;
 }
-.tour-path-wrapper:nth-of-type(odd) {
-  justify-content: flex-end;
+@media (min-width: 981px) {
+  .tour-path-wrapper:nth-of-type(odd) {
+    justify-content: flex-end;
+  }
 }
 
 .modal-backdrop {
@@ -1059,7 +1065,6 @@ html.fslightbox-open {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
