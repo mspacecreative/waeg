@@ -1,3 +1,25 @@
+// POST MODAL
+// BIO MODAL FUNCTIONALITY
+let bioButton = document.querySelectorAll(".bios li > a");
+const modal = document.querySelector(".modal");
+const modalBackdrop = document.querySelector(".modal-backdrop");
+for (i = 0; i < bioButton.length; i++) {
+  bioButton[i].addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.classList.toggle('show');
+    const buttonId = this.getAttribute('data-id');
+    document.querySelector('.bio-container[id="' + buttonId + '"').classList.add('show');
+  });
+}
+// JQUERY Version
+// $(this).click(function (e) {
+//   e.preventDefault();
+//   $(modal).toggleClass("show");
+//   $(modalBackdrop).toggleClass("show");
+//   const buttonId = $(this).data("id");
+//   $('.bio-container[id="' + buttonId + '"').addClass("show");
+// });
+
 // AUDIO TRIGGER
 let audioTrigger = document.querySelectorAll(".audio-trigger");
 const audioFile = document.querySelectorAll("audio");

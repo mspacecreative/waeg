@@ -276,7 +276,24 @@ function my_acf_init() {
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'location',
-			'keywords'			=> array( 'species', 'terms', 'terms list', 'grid' ),
+			'keywords'			=> array( 'virtual tour', 'species', 'path' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
+		// register terms block
+		acf_register_block(array(
+			'name'				=> 'post-modal',
+			'title'				=> __('Post Modal Block'),
+			'description'		=> __('Displays post content in modal for selected species type'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'tag',
+			'keywords'			=> array( 'post content', 'species', 'terms list', 'modal' ),
 			'supports'			=> [
 				'align' => false,
 				'anchor' => true,
