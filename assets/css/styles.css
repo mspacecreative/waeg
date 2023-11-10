@@ -869,6 +869,15 @@ html.fslightbox-open {
   max-width: 750px;
 }
 
+@media (max-width: 980px) {
+  .tour-path-wrapper {
+    -webkit-margin-after: 3rem;
+            margin-block-end: 3rem;
+  }
+  .tour-path-wrapper:nth-of-type(even) .tour-path-content-container {
+    flex-flow: row-reverse;
+  }
+}
 .tour-path-wrapper .tour-path-content-container {
   position: relative;
   background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
@@ -887,9 +896,6 @@ html.fslightbox-open {
   .tour-path-wrapper .tour-path-content-container {
     -webkit-margin-after: 3rem;
             margin-block-end: 3rem;
-  }
-  .tour-path-wrapper .tour-path-content-container:nth-of-type(even) {
-    flex-flow: row-reverse;
   }
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container {
