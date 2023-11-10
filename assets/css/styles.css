@@ -911,7 +911,7 @@ html.fslightbox-open {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
-  z-index: 99;
+  z-index: 999;
   display: none;
   margin: 0;
 }
