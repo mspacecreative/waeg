@@ -4,6 +4,7 @@ let bioButton = document.querySelectorAll(".post-modal-link");
 const modal = document.querySelector(".modal");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 const closeModalButton = document.querySelectorAll('.closeModalButton');
+let postModalContent = document.querySelector('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
@@ -20,6 +21,16 @@ for (i = 0; i < closeModalButton.length; i++) {
     this.parentElement.classList.remove('show');
   });
 }
+modal.addEventListener('click', function() {
+  this.classList.remove('show');
+  modalBackdrop.classList.toggle('show');
+  postModalContent.classList.remove('show');
+});
+
+postModalContent.addEventListener('click', function(e) {
+  e.stopPropagation();
+});
+
 // JQUERY Version
 // $(this).click(function (e) {
 //   e.preventDefault();
