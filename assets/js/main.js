@@ -27,9 +27,11 @@ modal.addEventListener('click', function() {
   postModalContent.classList.remove('show');
 });
 
-postModalContent.addEventListener('click', function(e) {
+for (i = 0; i < postModalContent.length; i++) {
+postModalContent[i].addEventListener('click', function(e) {
   e.stopPropagation();
 });
+}
 
 // JQUERY Version
 // $(this).click(function (e) {
