@@ -32,6 +32,10 @@
       position: relative;
       flex: 1;
 
+      .post-modal-buttons {
+        gap: 1rem;
+      }
+
       .button {
         padding: 10px 20px;
         text-decoration: none;

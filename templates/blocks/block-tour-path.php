@@ -43,7 +43,7 @@ $loop = new WP_Query( array(
         '<div class="tour-path-content">
             <h2 class="wp-block-post-title has-large-font-size">' . esc_html__($title) . '</h2>'
             . $excerpt .
-            '<div class="is-layout-flex">'
+            '<div class="is-layout-flex post-modal-buttons">'
                 . $tour_url .
                 '<a class="button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
             </div>

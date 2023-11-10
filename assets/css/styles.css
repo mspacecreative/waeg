@@ -909,6 +909,9 @@ html.fslightbox-open {
   position: relative;
   flex: 1;
 }
+.tour-path-wrapper .tour-path-content-container .tour-path-content .post-modal-buttons {
+  gap: 1rem;
+}
 .tour-path-wrapper .tour-path-content-container .tour-path-content .button {
   padding: 10px 20px;
   text-decoration: none;
