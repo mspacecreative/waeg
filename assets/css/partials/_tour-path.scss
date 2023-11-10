@@ -20,6 +20,7 @@
         background-position: center;
         content: "";
         z-index: 0;
+        opacity: 0.35;
       }
     }
   }
@@ -29,6 +30,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    mix-blend-mode: multiply;
 
     @media (min-width: 981px) {
       flex-basis: calc(50% - 1rem);
