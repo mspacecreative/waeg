@@ -91,6 +91,13 @@
   img {
     max-width: 100%;
   }
+  .line-drawing-container {
+    flex-basis: 250px;
+  }
+  .post-content {
+    flex: 1;
+    box-sizing: border-box;
+  }
 }
 
 .modal-backdrop.show,

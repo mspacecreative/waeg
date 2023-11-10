@@ -40,13 +40,15 @@ if ($loop->have_posts()) {
                         <div class="is-layout-flex">
                             <div class="line-drawing-container">
                                 <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">
-                            </div>';
-                            include 'includes/template-traditional-names.php';
-                            include 'includes/template-carousel.php';
-                            include 'includes/template-notes.php';
-                            include 'includes/template-traditional-uses.php';
-                        echo
-                        '</div>
+                            </div>
+                            <div class="post-content">';
+                                include 'includes/template-traditional-names.php';
+                                include 'includes/template-carousel.php';
+                                include 'includes/template-notes.php';
+                                include 'includes/template-traditional-uses.php';
+                            echo
+                            '</div>
+                        </div>
                     </div>
                 </div>';
             }

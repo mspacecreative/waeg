@@ -995,6 +995,13 @@ html.fslightbox-open {
 .post-modal-content img {
   max-width: 100%;
 }
+.post-modal-content .line-drawing-container {
+  flex-basis: 250px;
+}
+.post-modal-content .post-content {
+  flex: 1;
+  box-sizing: border-box;
+}
 
 .modal-backdrop.show,
 .modal.show,
