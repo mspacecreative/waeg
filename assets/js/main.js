@@ -24,7 +24,7 @@ for (i = 0; i < closeModalButton.length; i++) {
 modal.addEventListener('click', function() {
   this.classList.remove('show');
   modalBackdrop.classList.toggle('show');
-  this.querySelectorAll('.post-modal-content').classList.remove('show');
+  this.postModalContent.classList.remove('show');
 });
 
 for (i = 0; i < postModalContent.length; i++) {
