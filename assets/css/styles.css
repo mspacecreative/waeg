@@ -982,7 +982,7 @@ html.fslightbox-open {
   padding: 3em;
 }
 
-.bio-container {
+.post-modal-content {
   background: #fff;
   max-width: 800px;
   margin: auto;
@@ -992,6 +992,7 @@ html.fslightbox-open {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  display: none;
 }
 
 .modal_inner .closeModalButton {

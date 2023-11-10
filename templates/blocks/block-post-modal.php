@@ -23,14 +23,14 @@ if ($loop->have_posts()) {
             <div class="modal_table_cell">';
             while ($loop->have_posts()) {
                 $loop->the_post();
-                $content = get_the_content($loop->ID);
+                $line_drawing = get_field('drawing', $loop->ID);
                 echo
                 '<div id="bio-' . $count++ . '" class="post-modal-content">
                     <button class="closeModalButton">
                         <span style="background-color: #000;">&nbsp;</span>
                         <span style="background-color: #000;">&nbsp;</span>
                     </button>'
-                    . $content . 
+                    . $line_drawing . 
                 '</div>';
             }
             echo

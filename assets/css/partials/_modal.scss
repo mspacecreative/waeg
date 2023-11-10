@@ -78,7 +78,7 @@
   padding: 3em;
 }
 
-.bio-container {
+.post-modal-content {
   background: #fff;
   max-width: 800px;
   margin: auto;
@@ -88,6 +88,7 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  display: none;
 }
 
 .modal_inner .closeModalButton {
