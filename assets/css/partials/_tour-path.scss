@@ -10,36 +10,14 @@
   &:nth-of-type(odd) {
     .tour-path-content-container {
       &::after {
-        position: absolute;
-        background-image: url(../img/backgrounds/footprints.png);
-        top: 50%;
         right: 50%;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        content: "";
-        z-index: 0;
-        opacity: 0.35;
       }
     }
   }
   &:nth-of-type(even) {
     .tour-path-content-container {
       &::after {
-        position: absolute;
-        background-image: url(../img/backgrounds/footprints.png);
-        top: 50%;
         left: 50%;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        content: "";
-        z-index: 0;
-        opacity: 0.2;
         transform: rotate(240deg);
         -webkit-transform: rotate(240deg);
         -moz-transform: rotate(240deg);
@@ -55,6 +33,20 @@
     background-repeat: no-repeat;
     background-position: center;
     mix-blend-mode: multiply;
+
+    &::after {
+      position: absolute;
+      background-image: url(../img/backgrounds/footprints.png);
+      top: 50%;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      content: "";
+      z-index: 0;
+      opacity: 0.2;
+    }
 
     @media (min-width: 981px) {
       flex-basis: calc(50% - 1rem);
