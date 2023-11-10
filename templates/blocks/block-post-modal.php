@@ -3,7 +3,6 @@ $term = get_field('species_type');
 $count = 1;
 $args = array(
     'post_type' => 'plant',
-    'posts_per_page' => -1,
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
@@ -13,18 +12,18 @@ $args = array(
     )
 
 );
+
 $loop = new WP_Query($args);
-global $post;
+
 if ($loop->have_posts()) {
     echo
-    '
-    <div class="modal-backdrop"></div>
+    '<div class="modal-backdrop"></div>
     <div class="modal">
         <div class="modal_table">
             <div class="modal_table_cell">';
             while ($loop->have_posts()) {
                 $loop->the_post();
-                $content = get_the_content($post->ID);
+                $content = get_the_content($loop->ID);
                 echo
                 '<div id="bio-' . $count++ . '" class="bio-container">
                     <button class="closeModalButton">
