@@ -4,7 +4,7 @@ let bioButton = document.querySelectorAll(".post-modal-link");
 const modal = document.querySelector(".modal");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 const closeModalButton = document.querySelectorAll('.closeModalButton');
-let postModalContent = document.querySelector('.post-modal-content');
+let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
