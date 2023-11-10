@@ -23,6 +23,7 @@
   outline: none;
   overflow: auto;
   margin: 0;
+  padding: 2rem;
 }
 
 .modal_container {
@@ -49,7 +50,6 @@
   max-width: 980px;
   vertical-align: middle;
   display: table-cell;
-  padding: 2em;
   outline: none;
 }
 
@@ -87,13 +87,17 @@
   background: #fff;
   max-width: 980px;
   margin: auto;
-  padding: 3em;
+  padding: 3rem;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   display: none;
+
+  @media (max-width: 780px) {
+    padding: 2rem;
+  }
 
   img {
     max-width: 100%;
