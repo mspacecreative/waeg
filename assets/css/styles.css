@@ -1053,19 +1053,21 @@ html.fslightbox-open {
   transform: rotate(-45deg);
 }
 
-.post-modal-link {
+.tour-path-content .post-modal-link {
   padding: 10px 15px;
   background-color: var(--wp--preset--color--dark-green);
   color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.post-modal-link::before {
+.tour-path-content .post-modal-link::before {
   font-family: fontAwesome;
   content: "\f0ca";
-  font-size: 25px;
+  font-size: 18px;
   margin-right: 10px;
 }

@@ -152,20 +152,24 @@
   }
 }
 
-.post-modal-link {
-  padding: 10px 15px;
-  background-color: $darkGreen;
-  color: #fff;
+.tour-path-content {
+  .post-modal-link {
+    padding: 10px 15px;
+    background-color: $darkGreen;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
 
-  &::before {
-    font-family: fontAwesome;
-    content: "\f0ca";
-    font-size: 25px;
-    margin-right: 10px;
+    &::before {
+      font-family: fontAwesome;
+      content: "\f0ca";
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
   }
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
