@@ -996,8 +996,8 @@ html.fslightbox-open {
   left: 50%;
   height: 100%;
   width: 100%;
-  background: radial-gradient(white, transparent);
-  opacity: 0.75;
+  background: radial-gradient(white 60%, transparent);
+  opacity: 0.65;
   z-index: 1;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
