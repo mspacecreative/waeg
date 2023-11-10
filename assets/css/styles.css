@@ -913,6 +913,7 @@ html.fslightbox-open {
   padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 15px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -926,7 +927,7 @@ html.fslightbox-open {
 .tour-path-wrapper .tour-path-content-container .tour-path-content .button.post-modal-link::before {
   font-family: fontAwesome;
   content: "\f0ca";
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 10px;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .button.virtual-tour-link {

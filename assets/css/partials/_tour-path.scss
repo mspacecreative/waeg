@@ -36,6 +36,7 @@
         padding: 10px 20px;
         text-decoration: none;
         text-transform: uppercase;
+        font-size: 15px;
 
         &.post-modal-link {
           background-color: $darkGreen;
@@ -45,7 +46,7 @@
         &.post-modal-link::before {
           font-family: fontAwesome;
           content: "\f0ca";
-          font-size: 18px;
+          font-size: 15px;
           margin-right: 10px;
         }
         &.virtual-tour-link {
