@@ -4,6 +4,8 @@ $count = 1;
 $args = array(
     'post_type' => 'plant',
     'posts_per_page' => -1,
+    'orderby' => 'name',
+    'order' => 'ASC',
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
