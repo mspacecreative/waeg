@@ -90,16 +90,16 @@
         border-width: 2px;
         border-style: solid;
         border-color: $darkGreen;
+        display: flex;
 
         &.post-modal-link {
           color: $darkGreen;
-        }
-
-        &.post-modal-link::before {
-          font-family: fontAwesome;
-          content: "\f0ca";
-          font-size: 15px;
-          margin-right: 10px;
+          &::before {
+            font-family: fontAwesome;
+            content: "\f0ca";
+            font-size: 15px;
+            margin-right: 10px;
+          }
         }
         &.virtual-tour-link {
           color: $fff;
@@ -110,6 +110,8 @@
             background-size: contain;
             margin-right: 10px;
             content: "";
+            width: 20px;
+            height: 20px;
           }
         }
         border-radius: 30px;
