@@ -6,7 +6,7 @@ $args = array(
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
-            'field' => 'term_id',
+            'field' => 'slug',
             'terms' => 'berries'
         )
     )
