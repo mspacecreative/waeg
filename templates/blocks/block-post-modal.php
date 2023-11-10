@@ -1,5 +1,6 @@
 <?php
 $term = get_field('species_type');
+$count = 1;
 $args = array(
     'post_type' => 'plant',
     'posts_per_page' => -1,
@@ -23,10 +24,9 @@ if ($loop->have_posts()) {
             <div class="modal_table_cell">';
             while ($loop->have_posts()) {
                 $loop->the_post();
-                $content = get_the_content($loop->ID);
-                $count = $count + 1;
+                $content = get_the_content(get_the_ID());
                 echo
-                '<div id="bio-' . $count . '" class="bio-container">
+                '<div id="bio-' . $count++ . '" class="bio-container">
                     <button class="closeModalButton">
                         <span style="background-color: #000;">&nbsp;</span>
                         <span style="background-color: #000;">&nbsp;</span>
