@@ -981,6 +981,7 @@ html.fslightbox-open {
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 10px;
+  content: "";
 }
 .tour-path-wrapper .tour-path-content-container::before {
   position: absolute;
