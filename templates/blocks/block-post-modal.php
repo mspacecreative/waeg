@@ -25,7 +25,7 @@ if ($loop->have_posts()) {
                 $loop->the_post();
                 $content = get_the_content($loop->ID);
                 echo
-                '<div id="bio-' . $count++ . '" class="bio-container">
+                '<div id="bio-' . $count++ . '" class="post-modal-content">
                     <button class="closeModalButton">
                         <span style="background-color: #000;">&nbsp;</span>
                         <span style="background-color: #000;">&nbsp;</span>

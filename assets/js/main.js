@@ -7,8 +7,9 @@ for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
     modal.classList.toggle('show');
+    modalBackdrop.classList.toggle('show');
     const buttonId = this.getAttribute('data-id');
-    document.querySelector('.bio-container[id="' + buttonId + '"').classList.add('show');
+    document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
   });
 }
 // JQUERY Version
