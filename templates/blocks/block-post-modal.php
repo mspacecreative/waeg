@@ -35,15 +35,19 @@ if ($loop->have_posts()) {
                         <span style="background-color: #000;">&nbsp;</span>
                         <span style="background-color: #000;">&nbsp;</span>
                     </button>
-                    <div class="is-layout-flex post-modal-content-wrapper">
+                    <div class="post-modal-content-wrapper">
                         <h1 class="has-large-font-size">' . $title . '</h1>
-                        <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">';
-                        include 'includes/template-traditional-names.php';
-                        include 'includes/template-carousel.php';
-                        include 'includes/template-notes.php';
-                        include 'includes/template-traditional-uses.php';
-                    echo
-                    '</div>
+                        <div class="is-layout-flex">
+                            <div class="line-drawing-container">
+                                <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">
+                            </div>';
+                            include 'includes/template-traditional-names.php';
+                            include 'includes/template-carousel.php';
+                            include 'includes/template-notes.php';
+                            include 'includes/template-traditional-uses.php';
+                        echo
+                        '</div>
+                    </div>
                 </div>';
             }
             echo
