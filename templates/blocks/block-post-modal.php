@@ -14,6 +14,7 @@ $args = array(
 
 );
 $loop = new WP_Query($args);
+global $post;
 if ($loop->have_posts()) {
     echo
     '
@@ -23,7 +24,7 @@ if ($loop->have_posts()) {
             <div class="modal_table_cell">';
             while ($loop->have_posts()) {
                 $loop->the_post();
-                $content = get_the_content(get_the_ID());
+                $content = get_the_content($post->ID);
                 echo
                 '<div id="bio-' . $count++ . '" class="bio-container">
                     <button class="closeModalButton">
