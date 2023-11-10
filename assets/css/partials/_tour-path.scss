@@ -34,6 +34,8 @@
     }
     gap: 2rem;
     .line-drawing-container {
+      position: relative;
+      z-index: 10;
       flex-basis: 25%;
       mix-blend-mode: multiply;
       img {
@@ -42,6 +44,7 @@
     }
     .tour-path-content {
       position: relative;
+      z-index: 10;
       flex: 1;
 
       .post-modal-buttons {
@@ -87,6 +90,7 @@
       width: 100%;
       background: radial-gradient(white, transparent);
       opacity: 0.75;
+      z-index: 1;
     }
   }
   &:nth-of-type(odd) {

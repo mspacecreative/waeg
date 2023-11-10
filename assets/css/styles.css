@@ -910,6 +910,8 @@ html.fslightbox-open {
   }
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container {
+  position: relative;
+  z-index: 10;
   flex-basis: 25%;
   mix-blend-mode: multiply;
 }
@@ -918,6 +920,7 @@ html.fslightbox-open {
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content {
   position: relative;
+  z-index: 10;
   flex: 1;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .post-modal-buttons {
@@ -959,6 +962,7 @@ html.fslightbox-open {
   width: 100%;
   background: radial-gradient(white, transparent);
   opacity: 0.75;
+  z-index: 1;
 }
 @media (min-width: 981px) {
   .tour-path-wrapper:nth-of-type(odd) {
