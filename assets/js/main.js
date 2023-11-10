@@ -17,6 +17,7 @@ for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
     modal.classList.remove('show');
     modalBackdrop.classList.remove('show');
+    document.querySelector('.post-modal-content').classList.remove('show');
   });
 }
 // JQUERY Version
