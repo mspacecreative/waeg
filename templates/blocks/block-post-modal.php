@@ -24,7 +24,7 @@ if ($loop->have_posts()) {
             while ($loop->have_posts()) {
                 $loop->the_post();
                 $term_id = get_queried_object_id();
-                $line_drawing = get_field('drawing', $loop);
+                $line_drawing = get_field('drawing', get_the_ID($term_id));
                 echo
                 '<div id="bio-' . $count++ . '" class="post-modal-content">
                     <button class="closeModalButton">
