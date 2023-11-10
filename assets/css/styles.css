@@ -980,6 +980,7 @@ html.fslightbox-open {
 }
 
 .post-modal-content {
+  position: relative;
   background: #fff;
   max-width: 800px;
   margin: auto;
@@ -1030,8 +1031,8 @@ html.fslightbox-open {
 }
 
 .modal_inner .closeModalButton {
-  top: 0.75em;
-  right: 0.75em;
+  top: 25px;
+  right: 25px;
 }
 
 .modal_inner .closeModalButton span {
