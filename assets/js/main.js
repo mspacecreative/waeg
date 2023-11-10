@@ -1,6 +1,6 @@
 // POST MODAL
 // BIO MODAL FUNCTIONALITY
-let bioButton = document.querySelectorAll(".tour-path-wrapper li > a");
+let bioButton = document.querySelectorAll(".post-modal-link");
 const modal = document.querySelector(".modal");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 for (i = 0; i < bioButton.length; i++) {

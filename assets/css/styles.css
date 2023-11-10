@@ -912,10 +912,7 @@ html.fslightbox-open {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 99;
-}
-
-.modal-backdrop.show {
-  display: block;
+  display: none;
 }
 
 .modal {
@@ -931,6 +928,7 @@ html.fslightbox-open {
   overflow: auto;
 }
 
+.modal.show,
 .modal.show {
   display: block;
 }
