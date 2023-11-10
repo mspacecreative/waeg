@@ -23,7 +23,7 @@ $loop = new WP_Query( array(
 
     echo 
     '<div class="is-layout-flex tour-path-wrapper">
-        <ul class="is-flex-container wp-block-post-template tour-path-content-container">';
+        <div class="is-flex-container wp-block-post-template tour-path-content-container">';
 
         if ($line_drawing) {
         // DRAWING VARIABLES
@@ -46,7 +46,7 @@ $loop = new WP_Query( array(
         </div>';
 
         echo
-        '</ul>
+        '</div>
     </div>';
     
 endwhile; ?>
