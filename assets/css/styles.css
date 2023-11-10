@@ -877,6 +877,9 @@ html.fslightbox-open {
   .tour-path-wrapper:nth-of-type(even) .tour-path-content-container {
     flex-flow: row-reverse;
   }
+  .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container {
+    position: relative;
+  }
   .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
     position: absolute;
     background-image: url(../img/backgrounds/footprints.png);
