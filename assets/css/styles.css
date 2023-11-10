@@ -1054,11 +1054,12 @@ html.fslightbox-open {
 }
 
 .tour-path-content .post-modal-link {
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: var(--wp--preset--color--dark-green);
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 500;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;

@@ -154,11 +154,12 @@
 
 .tour-path-content {
   .post-modal-link {
-    padding: 10px 15px;
+    padding: 10px 20px;
     background-color: $darkGreen;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 500;
 
     &::before {
       font-family: fontAwesome;
