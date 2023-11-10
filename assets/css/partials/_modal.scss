@@ -151,25 +151,3 @@
     transform: rotate(-45deg);
   }
 }
-
-.tour-path-content {
-  .post-modal-link {
-    padding: 10px 20px;
-    background-color: $darkGreen;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &::before {
-      font-family: fontAwesome;
-      content: "\f0ca";
-      font-size: 18px;
-      margin-right: 10px;
-    }
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-  }
-}

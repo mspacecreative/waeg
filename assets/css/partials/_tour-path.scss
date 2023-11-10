@@ -31,6 +31,33 @@
     .tour-path-content {
       position: relative;
       flex: 1;
+
+      .button {
+        padding: 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &.post-modal-link {
+          background-color: $darkGreen;
+          color: #fff;
+        }
+
+        &.post-modal-link::before {
+          font-family: fontAwesome;
+          content: "\f0ca";
+          font-size: 18px;
+          margin-right: 10px;
+        }
+        &.virtual-tour-link {
+          color: $darkGreen;
+          border: 2px solid $darkGreen;
+        }
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+      }
     }
     &::before {
       position: absolute;

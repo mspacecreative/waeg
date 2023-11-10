@@ -909,6 +909,30 @@ html.fslightbox-open {
   position: relative;
   flex: 1;
 }
+.tour-path-wrapper .tour-path-content-container .tour-path-content .button {
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.tour-path-wrapper .tour-path-content-container .tour-path-content .button.post-modal-link {
+  background-color: var(--wp--preset--color--dark-green);
+  color: #fff;
+}
+.tour-path-wrapper .tour-path-content-container .tour-path-content .button.post-modal-link::before {
+  font-family: fontAwesome;
+  content: "\f0ca";
+  font-size: 18px;
+  margin-right: 10px;
+}
+.tour-path-wrapper .tour-path-content-container .tour-path-content .button.virtual-tour-link {
+  color: var(--wp--preset--color--dark-green);
+  border: 2px solid var(--wp--preset--color--dark-green);
+}
 .tour-path-wrapper .tour-path-content-container::before {
   position: absolute;
   content: "";
@@ -1072,23 +1096,4 @@ html.fslightbox-open {
 }
 .closeModalButton span:nth-child(2) {
   transform: rotate(-45deg);
-}
-
-.tour-path-content .post-modal-link {
-  padding: 10px 20px;
-  background-color: var(--wp--preset--color--dark-green);
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-.tour-path-content .post-modal-link::before {
-  font-family: fontAwesome;
-  content: "\f0ca";
-  font-size: 18px;
-  margin-right: 10px;
 }
