@@ -5,7 +5,7 @@ function waeg_styles() {
         wp_register_style( 'main', get_template_directory_uri() . '/assets/css/styles.css?ver=' . $rand_num, array(), null );
 	    wp_enqueue_style( 'main' );
 
-    if ( is_singular(array('plant', 'habitat')) ) {
+    if ( is_singular(array('plant', 'habitat')) || is_single('virtual-tour') ) {
         // SWIPER CSS
         wp_register_style( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', array(), null );
         wp_enqueue_style( 'swiper' );
