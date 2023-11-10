@@ -7,14 +7,13 @@ $args = array(
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
-            'field' => 'slug',
-            'terms' => 'berries'
+            'field' => 'term_id',
+            'terms' => $term
         )
     )
 
 );
 $loop = new WP_Query($args);
-$count = 0;
 if ($loop->have_posts()) {
     echo
     '
