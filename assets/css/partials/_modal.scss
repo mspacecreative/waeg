@@ -75,6 +75,13 @@
   padding: 3em;
 }
 
+.post-modal-content-wrapper {
+  .is-layout-flex {
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+
 .post-modal-content {
   position: relative;
   background: #fff;
