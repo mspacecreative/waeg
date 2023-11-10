@@ -903,3 +903,104 @@ html.fslightbox-open {
 .tour-path-wrapper:nth-of-type(odd) {
   justify-content: flex-end;
 }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 99;
+}
+
+.modal-backdrop.show {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  overflow: auto;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal_container {
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  overflow: auto;
+  outline: none;
+}
+
+.modal_table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+.modal_table_cell {
+  margin: 0px auto;
+  max-width: 800px;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 2em;
+  outline: none;
+}
+
+.modal_inner.visible {
+  transition: 0.25s ease-in-out;
+  transform: translate(0, 0);
+}
+
+.modal_inner {
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  pointer-events: all;
+  background-color: #fff;
+  position: relative;
+  transition: 0.25s ease-in-out;
+  transform: translate(0, -30px);
+}
+
+.modal-content {
+  padding: 3em;
+}
+
+.bio-container {
+  background: #fff;
+  max-width: 800px;
+  margin: auto;
+  padding: 3em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.modal_inner .closeModalButton {
+  top: 0.75em;
+  right: 0.75em;
+}
+
+.modal_inner .closeModalButton span {
+  background-color: #000;
+}
