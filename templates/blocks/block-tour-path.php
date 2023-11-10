@@ -1,5 +1,6 @@
 <?php
 $term = get_field('species_type');
+$count = 1;
 $loop = new WP_Query( array(
     'post_type' => 'plant',
     'orderby' => 'name',
@@ -19,8 +20,6 @@ $loop = new WP_Query( array(
     $title = get_the_title($loop->ID);
     $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
-
-    $count = 1;
 
     echo 
     '<div class="is-layout-flex tour-path-wrapper">
