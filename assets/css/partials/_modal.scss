@@ -36,6 +36,10 @@
   display: none;
   overflow: auto;
   outline: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .modal_table {

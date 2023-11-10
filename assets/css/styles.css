@@ -942,6 +942,9 @@ html.fslightbox-open {
   overflow: auto;
   outline: none;
 }
+.modal_container::-webkit-scrollbar {
+  display: none;
+}
 
 .modal_table {
   display: table;
