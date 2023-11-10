@@ -22,6 +22,7 @@
   -webkit-overflow-scrolling: touch;
   outline: none;
   overflow: auto;
+  margin: 0;
 }
 
 .modal_container {
@@ -95,6 +96,34 @@
 .modal.show,
 .post-modal-content.show {
   display: block;
+}
+
+.closeModalButton {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  outline: none;
+  right: 2em;
+  top: 1em;
+  cursor: pointer;
+  z-index: 999;
+  span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+  }
+  span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
 }
 
 .modal_inner .closeModalButton {
