@@ -883,6 +883,15 @@ html.fslightbox-open {
     padding: 3rem;
   }
 }
+@media (max-width: 980px) {
+  .tour-path-wrapper .tour-path-content-container {
+    -webkit-margin-after: 3rem;
+            margin-block-end: 3rem;
+  }
+  .tour-path-wrapper .tour-path-content-container:nth-of-type(even) {
+    flex-flow: row-reverse;
+  }
+}
 .tour-path-wrapper .tour-path-content-container .line-drawing-container {
   flex-basis: 25%;
   mix-blend-mode: multiply;
