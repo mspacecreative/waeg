@@ -3,6 +3,7 @@
 let bioButton = document.querySelectorAll(".post-modal-link");
 const modal = document.querySelector(".modal");
 const modalBackdrop = document.querySelector(".modal-backdrop");
+const closeModalButton = document.querySelector('.closeModalButton');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
@@ -12,6 +13,10 @@ for (i = 0; i < bioButton.length; i++) {
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
   });
 }
+document.addEventListener('click', function() {
+  modal.classList.remove('show');
+  modalBackdrop.classList.remove('show');
+});
 // JQUERY Version
 // $(this).click(function (e) {
 //   e.preventDefault();
