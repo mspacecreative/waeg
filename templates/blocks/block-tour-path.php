@@ -42,7 +42,7 @@ $loop = new WP_Query( array(
         '<div class="tour-path-content">
             <h2 class="wp-block-post-title has-medium-font-size">' . esc_html__($title) . '</h2>'
             . $excerpt .
-            '<a data-id="bio-' . $count++ . '" class="modal-link" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
+            '<a data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
         </div>';
 
         echo
