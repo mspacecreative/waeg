@@ -3,6 +3,7 @@ $term = get_field('species_type');
 $count = 1;
 $args = array(
     'post_type' => 'plant',
+    'posts_per_page' => -1,
     'tax_query' => array(
         array(
             'taxonomy' => 'species',
