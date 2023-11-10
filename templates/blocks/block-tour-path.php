@@ -20,7 +20,7 @@ $loop = new WP_Query( array(
     $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
 
-    $count = 0;
+    $count = 1;
 
     echo 
     '<div class="is-layout-flex tour-path-wrapper">
