@@ -34,8 +34,10 @@ if ($loop->have_posts()) {
                         <span style="background-color: #000;">&nbsp;</span>
                         <span style="background-color: #000;">&nbsp;</span>
                     </button>
-                    <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">
-                </div>';
+                    <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">';
+                    include 'includes/template-carousel.php';
+                echo
+                '</div>';
             }
             echo
             '</div>
