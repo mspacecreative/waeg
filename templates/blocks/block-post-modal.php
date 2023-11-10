@@ -41,6 +41,7 @@ if ($loop->have_posts()) {
                         include 'includes/template-traditional-names.php';
                         include 'includes/template-carousel.php';
                         include 'includes/template-notes.php';
+                        include 'includes/template-traditional-uses.php';
                     echo
                     '</div>
                 </div>';
