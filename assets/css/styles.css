@@ -894,6 +894,7 @@ html.fslightbox-open {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
+  background-position: center;
   content: "";
   z-index: 0;
 }
