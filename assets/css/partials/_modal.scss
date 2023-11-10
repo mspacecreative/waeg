@@ -23,11 +23,6 @@
   overflow: auto;
 }
 
-.modal-backdrop.show,
-.modal.show {
-  display: block;
-}
-
 .modal_container {
   position: fixed;
   z-index: 99999999;
@@ -89,6 +84,12 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   display: none;
+}
+
+.modal-backdrop.show,
+.modal.show,
+.post-modal-content.show {
+  display: block;
 }
 
 .modal_inner .closeModalButton {
