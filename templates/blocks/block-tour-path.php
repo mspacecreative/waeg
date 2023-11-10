@@ -41,7 +41,7 @@ $loop = new WP_Query( array(
         
         echo 
         '<div class="tour-path-content">
-            <h2 class="wp-block-post-title has-large-font-size">' . esc_html__($title) . '</h2>'
+            <h2 class="wp-block-post-title has-large-font-size" style="margin-block-start: 0;">' . esc_html__($title) . '</h2>'
             . $excerpt .
             '<div class="is-layout-flex post-modal-buttons">'
                 . $tour_url .
