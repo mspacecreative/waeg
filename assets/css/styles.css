@@ -884,7 +884,7 @@ html.fslightbox-open {
   }
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container {
-  flex-basis: 25vw;
+  flex-basis: 25%;
   mix-blend-mode: multiply;
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container img {
