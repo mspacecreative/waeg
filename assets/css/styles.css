@@ -928,7 +928,7 @@ html.fslightbox-open {
   overflow: auto;
 }
 
-.modal.show,
+.modal-backdrop.show,
 .modal.show {
   display: block;
 }
