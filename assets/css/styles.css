@@ -871,7 +871,6 @@ html.fslightbox-open {
 
 .tour-path-wrapper .tour-path-content-container {
   position: relative;
-  padding: 3rem;
   background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -881,10 +880,11 @@ html.fslightbox-open {
 @media (min-width: 981px) {
   .tour-path-wrapper .tour-path-content-container {
     flex-basis: calc(50% - 1rem);
+    padding: 3rem;
   }
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container {
-  flex-basis: 150px;
+  flex-basis: 25vw;
   mix-blend-mode: multiply;
 }
 .tour-path-wrapper .tour-path-content-container .line-drawing-container img {

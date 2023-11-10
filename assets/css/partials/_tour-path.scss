@@ -1,17 +1,17 @@
 .tour-path-wrapper {
   .tour-path-content-container {
     position: relative;
-    padding: 3rem;
     background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     @media (min-width: 981px) {
       flex-basis: calc(50% - 1rem);
+      padding: 3rem;
     }
     gap: 2rem;
     .line-drawing-container {
-      flex-basis: 150px;
+      flex-basis: 25vw;
       mix-blend-mode: multiply;
       img {
         max-width: 100%;
