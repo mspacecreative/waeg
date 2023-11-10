@@ -29,9 +29,9 @@ if ($loop->have_posts()) {
                     <button class="closeModalButton">
                         <span style="background-color: #000;">&nbsp;</span>
                         <span style="background-color: #000;">&nbsp;</span>
-                    </button>'
-                    . $line_drawing . 
-                '</div>';
+                    </button>
+                    <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">
+                </div>';
             }
             echo
             '</div>
