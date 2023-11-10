@@ -13,7 +13,7 @@ for (i = 0; i < bioButton.length; i++) {
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
   });
 }
-document.addEventListener('click', function() {
+closeModalButton.addEventListener('click', function() {
   modal.classList.remove('show');
   modalBackdrop.classList.remove('show');
 });
