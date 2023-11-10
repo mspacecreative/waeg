@@ -877,21 +877,18 @@ html.fslightbox-open {
   .tour-path-wrapper:nth-of-type(even) .tour-path-content-container {
     flex-flow: row-reverse;
   }
-  .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container {
-    position: relative;
-  }
-  .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
-    position: absolute;
-    background-image: url(../img/backgrounds/footprints.png);
-    top: 50%;
-    right: 50%;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: "";
-    z-index: 0;
-  }
+}
+.tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
+  position: absolute;
+  background-image: url(../img/backgrounds/footprints.png);
+  top: 50%;
+  right: 50%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  z-index: 0;
 }
 .tour-path-wrapper .tour-path-content-container {
   position: relative;

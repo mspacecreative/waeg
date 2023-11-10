@@ -6,21 +6,20 @@
         flex-flow: row-reverse;
       }
     }
-    &:nth-of-type(odd) {
-      .tour-path-content-container {
-        position: relative;
-        &::after {
-          position: absolute;
-          background-image: url(../img/backgrounds/footprints.png);
-          top: 50%;
-          right: 50%;
-          height: 100%;
-          width: 100%;
-          background-repeat: no-repeat;
-          background-position: center;
-          content: "";
-          z-index: 0;
-        }
+  }
+  &:nth-of-type(odd) {
+    .tour-path-content-container {
+      &::after {
+        position: absolute;
+        background-image: url(../img/backgrounds/footprints.png);
+        top: 50%;
+        right: 50%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        content: "";
+        z-index: 0;
       }
     }
   }
