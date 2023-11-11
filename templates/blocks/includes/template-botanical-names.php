@@ -9,8 +9,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
-        if (have_rows('botanical_name')) {
-            while (have_rows('botanical_name')) {
+        if (have_rows('botanical_name', get_the_ID($term_id))) {
+            while (have_rows('botanical_name', get_the_ID($term_id))) {
                 the_row();
                 $array[] = get_sub_field('name');
                 $designation[] = get_sub_field('designation');
@@ -27,4 +27,4 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         echo 
         '</h2>
     </div>';
-} wp_reset_query();
+}
