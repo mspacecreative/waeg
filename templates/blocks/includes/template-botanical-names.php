@@ -1,5 +1,5 @@
 <?php
-if (have_rows('botanical_names'), get_the_ID($term_id)) {
+if (have_rows('botanical_names', get_the_ID($term_id))) {
     echo
     '<div class="botanical-names">';
         $names = get_field('botanical_names');
