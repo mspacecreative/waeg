@@ -2,7 +2,6 @@
 if (have_rows('botanical_names', get_the_ID())) {
     echo
     '<div class="botanical-names bottom-margin-40">';
-        $count = 0;    
         $names = get_field('botanical_names', get_the_ID());
         $check_plural = count($names) > 1 ? 's' : '';
         echo 
