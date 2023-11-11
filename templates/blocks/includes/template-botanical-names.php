@@ -27,4 +27,4 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         echo 
         '</h2>
     </div>';
-}
+} wp_reset_query();
