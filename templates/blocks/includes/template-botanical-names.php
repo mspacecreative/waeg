@@ -2,13 +2,13 @@
 if (have_rows('botanical_names', get_the_ID($term_id))) {
     echo
     '<div class="botanical-names">';
-        $names = get_field('botanical_names', get_the_ID($term_id));
-        $check_plural = count($names) > 1 ? 's' : '';
-        print_r(count($names));
-        echo 
-        '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
+
+        $names = get_field('botanical_names');
+        $check_plural = count($names) > 1 ? 's' : '';
+        echo 
+        '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
 
         if (have_rows('botanical_name')) {
             while (have_rows('botanical_name')) {
@@ -18,7 +18,6 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $combined_arrays = array_combine($names_array, $designation_array);
             }
         }
-    }
         if ($combined_arrays) {
         foreach($combined_arrays as $k => $v) {
             $v_check = $v ? ' ' . $v : '';
@@ -27,6 +26,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             echo implode('; ', $data); 
         }
         echo 
-        '</h2>
-    </div>';
+        '</h2>';
+    }
+    echo 
+    '</div>';
 }
