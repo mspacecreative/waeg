@@ -35,4 +35,4 @@ if ($combine) {
     }
         echo implode('; ', $data); }
     echo 
-    '</h2>
+    '</h2>';
