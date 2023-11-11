@@ -1,7 +1,7 @@
 <?php
 if (have_rows('botanical_names', get_the_ID($term_id))) {
     echo
-    '<div class="botanical-names bottom-margin-40">';
+    '<div class="botanical-names">';
         $count = 0;    
         $names = get_field('botanical_names', get_the_ID($term_id));
         $check_plural = count($names) > 1 ? 's' : '';
