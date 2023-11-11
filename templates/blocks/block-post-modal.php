@@ -36,7 +36,15 @@ if ($loop->have_posts()) {
                         <span style="background-color: #000;">&nbsp;</span>
                     </button>
                     <div class="post-modal-content-wrapper">
-                        <h1 class="has-large-font-size">' . $title . '</h1>
+                        <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title">
+                            <div class="wp-block-column">
+                                <h1 class="has-large-font-size">' . $title . '</h1>
+                            </div>
+                            <div class="wp-block-column">';
+                                include 'includes/template-botanical-names.php';
+                            echo
+                            '</div>
+                        </div>
                         <div class="is-layout-flex">
                             <div class="line-drawing-container">
                                 <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">
