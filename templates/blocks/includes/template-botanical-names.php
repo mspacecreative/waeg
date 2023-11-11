@@ -12,14 +12,14 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         if (have_rows('botanical_name')) {
             while (have_rows('botanical_name')) {
                 the_row();
-                $array[] = get_sub_field('name');
-                $designation[] = get_sub_field('designation');
-                $combine = array_combine($array, $designation);
+                $names_array[] = get_sub_field('name');
+                $designation_array[] = get_sub_field('designation');
+                $combined_arrays = array_combine($names_array, $designation_array);
             }
         }
     }
-        if ($combine) {
-        foreach($combine as $k => $v) {
+        if ($combined_arrays) {
+        foreach($combined_arrays as $k => $v) {
             $v_check = $v ? ' ' . $v : '';
             $data[] = " <i>$k</i>$v_check";
         }
@@ -27,4 +27,4 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         echo 
         '</h2>
     </div>';
-} wp_reset_postdata();
+}
