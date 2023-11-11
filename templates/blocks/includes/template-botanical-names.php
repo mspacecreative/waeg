@@ -24,10 +24,10 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     }
                 }
                 $data[] = " <i>$k</i>$v_check";
-                $result = implode('; ', $data);
             }
+            echo implode('; ', $data);
         }
-            echo $result . 
+        echo
         '</h2>';
     }
     echo
