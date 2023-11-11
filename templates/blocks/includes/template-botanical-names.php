@@ -27,9 +27,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $result = implode('; ', $data);
             }
         }
-            echo $result .
+            echo $result . rewind_posts() .
         '</h2>';
     }
     echo
     '</div>';
-} rewind_posts();
+}
