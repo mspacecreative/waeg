@@ -22,10 +22,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     foreach($combined_arrays as $k => $v) {
                         $v_check = $v ? ' ' . $v : '';
                     }
-                    $data[] = " <i>$k</i>$v_check";
-                    $result = implode('; ', $data);
                 }
-
+                $data[] = " <i>$k</i>$v_check";
+                $result = implode('; ', $data);
             }
         }
             echo $result .
