@@ -38,7 +38,7 @@ if ($loop->have_posts()) {
                     <div class="post-modal-content-wrapper">
                         <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title">
                             <div class="wp-block-column">
-                                <h1 class="has-large-font-size">' . $title . '</h1>
+                                <h1 class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
                             </div>
                             <div class="wp-block-column">';
                                 include 'includes/template-botanical-names.php';
