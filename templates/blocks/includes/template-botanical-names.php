@@ -26,8 +26,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             }
         }
         $data[] = " <i>$k</i>$v_check";
-        echo 
-        '</h2>' . implode('; ', $data) . 
+        echo implode('; ', $data) .
+        '</h2>';
     }
     echo
     '</div>';
