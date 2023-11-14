@@ -603,7 +603,7 @@
 				},
 				":hover": {
 					"color": {
-						"background": "var(--wp--preset--color--contrast)",
+						"background": "var(--wp--preset--color--light-green)",
 						"text": "var(--wp--preset--color--base)"
 					}
 				},
@@ -671,9 +671,6 @@
 					"text": "var(--wp--preset--color--contrast)"
 				},
 				":hover": {
-					"color": {
-						"background": "var(--wp--preset--color--light-green)"
-					},
 					"typography": {
 						"textDecoration": "none"
 					}
