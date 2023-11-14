@@ -425,9 +425,13 @@
 		},
 		"blocks": {
 			"core/button": {
-				"color": {
-					"background": "var(--wp--preset--color--dark-green)",
-					"text": "var(--wp--preset--color--base)"
+				"elements": {
+					"link": {
+						"color": {
+							"background": "var(--wp--preset--color--dark-green)",
+							"text": "var(--wp--preset--color--base)"
+						},
+					}
 				},
 				"variations": {
 					"outline": {
