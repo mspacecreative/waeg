@@ -1,12 +1,12 @@
 <?php
-if (have_rows('botanical_names')) {
-    while (have_rows('botanical_names')) {
+if (have_rows('botanical_names', get_the_ID($term_id))) {
+    while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
         echo
         '<div class="botanical-names">';
 
-        $names = get_field('botanical_names', get_the_ID($term_id));
+        $names = get_row_index();
         $check_plural = count($names) > 1 ? 's' : '';
             
             echo 
