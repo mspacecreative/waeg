@@ -447,6 +447,15 @@
 		},
 		"blocks": {
 			"core/button": {
+				"elements": {
+					"link": {
+						":hover": {
+							"color": {
+								"background": "var(--wp--preset--color--light-green)"
+							}
+						}
+					}
+				},
 				"color": {
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
@@ -456,17 +465,13 @@
 						"color": {
 							"background": "transparent",
 							"text": "var(--wp--preset--color--dark-green)"
-						}
-					}
-				},
-				"elements": {
-					"link": {
+						},
 						"spacing": {
 							"padding": {
-								"top": "6px",
-								"bottom": "6px",
 								"left": "16px",
-								"right": "16px"
+								"right": "16px",
+								"top": "6px",
+								"bottom": "6px"
 							}
 						}
 					}
