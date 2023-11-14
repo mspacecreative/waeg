@@ -7,7 +7,6 @@
 		},
 		"elements": {
 			"button": {
-				"css": "transition:0.25s ease-in-out",
 				"border": {
 					"radius": "50px",
 					"width": "2px",

@@ -98,8 +98,7 @@
         display: flex;
         align-items: center;
         text-transform: uppercase;
-
-        &.post-modal-link {
+        transition: 0.25s ease-in-out &.post-modal-link {
           &::before {
             font-family: fontAwesome;
             content: "\f0ca";
@@ -118,6 +117,11 @@
             height: 20px;
           }
         }
+        transition: 0.25s ease-in-out;
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -ms-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
       }
     }
     &::before {
