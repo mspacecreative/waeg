@@ -21,7 +21,10 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             if (!empty($value) ) { 
                                 $field = get_sub_field('name', $key);
                             }
+                            $names_array[] = get_sub_field('name');
+                            $designations_array[] = get_sub_field('designation');
                         }
+                        echo $names_array;
                         echo ' <i>' . $field . '</i> ' . $value . '; ';
                     }
                     // $names_array[] = get_sub_field('name', $loop->ID);
