@@ -15,19 +15,17 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         if (have_rows('botanical_name')) {
             while (have_rows('botanical_name')) {
                 the_row();
-                $array[] = get_sub_field('name');
-                $designation[] = get_sub_field('designation');
-                $combine = array_combine($array, $designation);
+                $names_array[] = get_sub_field('name', get_the_ID($term_id));
+                $designation_array[] = get_sub_field('designation', get_the_ID($term_id);
+                $combine = array_combine($names_array, $designation_array);
                 
-                if ($combine) {
-                    foreach($combine as $k => $v) {
-                        $v_check = $v ? ' ' . $v : '';
-                    }
-                    $data[] = " <i>$k</i>$v_check";
+                foreach($combine as $k => $v) {
+                    $v_check = $v ? ' ' . $v : '';
                 }
-            }
+                $data[] = " <i>$k</i>$v_check";
                 echo implode('; ', $data);
-        } reset_rows();
+            }
+        }
 
             echo 
             '</h2>';
