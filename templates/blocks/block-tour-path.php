@@ -20,7 +20,7 @@ $loop = new WP_Query( array(
     $title = get_the_title($loop->ID);
     $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
-    $tour_url = get_field('tour_url', get_the_ID()) ? '<a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a>' : '';
+    $tour_url = get_field('tour_url', get_the_ID()) ? '<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a></div>' : '';
 
     echo 
     '<div class="is-layout-flex tour-path-wrapper">
@@ -43,9 +43,9 @@ $loop = new WP_Query( array(
         '<div class="tour-path-content">
             <h2 class="wp-block-post-title has-large-font-size" style="margin-block-start: 0;">' . esc_html__($title) . '</h2>'
             . $excerpt .
-            '<div class="is-layout-flex wp-block-buttons">
-                <div class="wp-block-button is-style-fill">' . $tour_url . '</div>
-                <div class="wp-block-button is-style-outline">
+            '<div class="is-layout-flex wp-block-buttons">' 
+                . $tour_url . 
+                '<div class="wp-block-button is-style-outline">
                     <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
                 </div>
             </div>
