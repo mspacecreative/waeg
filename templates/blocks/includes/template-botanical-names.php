@@ -36,6 +36,6 @@ $result = implode('; ', $data);
 echo
 '<div class="botanical-names">
     <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
-        echo $result[1] . 
+        echo $result[2] . 
     '</h2>
 </div>';
