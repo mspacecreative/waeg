@@ -31,7 +31,7 @@ body:not(.home) header.scroll-down, body:not(.home) header, .wp-block-cover.cove
 
 body {
   --wp--preset--color--pale-gold: palegoldenrod;
-  --wp--preset--color--light-grey: #b4b4b4;
+  --wp--preset--color--light-grey: #e5e5e5;
 }
 
 .wp-block-post-template {
@@ -959,8 +959,6 @@ html.fslightbox-open {
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .is-style-outline .wp-block-button__link:hover {
   background-color: var(--wp--preset--color--light-grey);
-  border-color: var(--wp--preset--color--light-grey);
-  color: #fff;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
