@@ -336,7 +336,7 @@
 	},
 	"styles": {
 		"color": {
-			"text": "var(--wp--preset--color--dark-green)"
+			"text": "var(--wp--preset--color--contrast)"
 		},
 		"elements": {
 			"button": {
@@ -346,7 +346,7 @@
 					"color": "var(--wp--preset--color--dark-green)"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "15px"
 				},
 				"spacing": {
 					"padding": {
