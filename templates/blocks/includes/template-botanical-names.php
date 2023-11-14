@@ -1,7 +1,7 @@
 <?php
 if (have_rows('botanical_names', get_the_ID($term_id))) {
 
-    $names = get_row_index();
+    $names = get_row_index(get_the_ID($term_id));
     $check_plural = $names > 1 ? 's' : '';
 
     echo
@@ -30,7 +30,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
             }
     }
-    
+
     echo
         '</h2>
     </div>';
