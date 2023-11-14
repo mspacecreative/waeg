@@ -11,24 +11,16 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
-            if (have_rows('botanical_name', $loop->ID)) {
-                while (have_rows('botanical_name', $loop->ID)) {
+            if (have_rows('botanical_name')) {
+                while (have_rows('botanical_name')) {
                     the_row();
 
                     if ( $plant_names = get_row() ) {
-                        $names_array[] = get_sub_field('name');
-                        $designations_array[] = get_sub_field('designation');
-                        $combine = array_combine($names_array, $designations_array);
-                        // foreach ($plant_names as $name => $designation) {
-                        //     $designation = get_sub_field('designation');
-                        //     $name_array = explode(' ', get_sub_field('name', $name));
-                        //     $designation_array = explode(' ', $designation);
-                        //     $combine = array_combine($name_array, $designation_array);
-                        //     // $names_array[] = get_sub_field('name', $key);
-                        //     // $designations_array[] = get_sub_field('designation');
-                        // }
-                        print_r($combine);
-                        // echo ' <i>' . implode('; ', $combine) . '</i>';
+                        foreach ($plant_names as $name => $designation) {
+                            $designation = get_sub_field('designation');
+                            $name = get_sub_field('name', $name);
+                        }
+                        echo ' <i>' . $name . '</i>' . $designation;
                     }
                     // $names_array[] = get_sub_field('name', $loop->ID);
                     // $designations_array[] = get_sub_field('designation', $loop->ID);
