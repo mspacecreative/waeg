@@ -345,6 +345,9 @@
 					"width": "2px",
 					"color": "var(--wp--preset--color--dark-green)"
 				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				},
 				"spacing": {
 					"padding": {
 						"left": "16px",
