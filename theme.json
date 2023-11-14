@@ -337,6 +337,15 @@
 	"styles": {
 		"blocks": {
 			"core/button": {
+				"elements": {
+					"button": {
+						":hover": {
+							"color": {
+								"background": "var(--wp--preset--color--light-green)"
+							}
+						}
+					}
+				},
 				"border": {
 				  "radius": "50px",
 				  "color" : "var(--wp--preset--color--dark-green)",
@@ -346,7 +355,6 @@
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
 				},
-				"css": "float: right",
 				"spacing": {
 					"padding": {
 						"left": "16px",
