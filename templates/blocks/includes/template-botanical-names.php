@@ -12,8 +12,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             if (have_rows('botanical_name')) {
                 while (have_rows('botanical_name')) {
                     the_row();
-                    $names_array[] = get_sub_field('name');
-                    $designation_array[] = get_sub_field('designation');
+                    $row = get_row()
+                    $names_array[] = $row['name'];
+                    $designation_array[] = $row['designation'];
                     $combined_arrays = array_combine($names_array, $designation_array);
                 }
             }
