@@ -30,10 +30,10 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     // $combine = array_combine($names_array, $designations_array);
                 }
             }
-            
+
             echo
             '</h2>
-        </div>'
+        </div>';
     }
 }
 // foreach($combine as $k => $v) {
