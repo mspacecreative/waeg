@@ -449,12 +449,10 @@
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
 				},
-				"variations": {
-					"outline": {
-						"color": {
-							"background": "var(--wp--preset--color--base)",
-							"text": "var(--wp--preset--color--dark-green)"
-						}
+				"outline": {
+					"color": {
+						"background": "var(--wp--preset--color--base)",
+						"text": "var(--wp--preset--color--dark-green)"
 					}
 				}
 			  },
