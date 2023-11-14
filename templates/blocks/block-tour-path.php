@@ -44,8 +44,8 @@ $loop = new WP_Query( array(
             <h2 class="wp-block-post-title has-large-font-size" style="margin-block-start: 0;">' . esc_html__($title) . '</h2>'
             . $excerpt .
             '<div class="is-layout-flex post-modal-buttons ">
-                <div class="wp-block-button is-style-fill">' . $tour_url . '</div>
-                <div class="wp-block-button is-style-outline">
+                <div class="wp-block-button wp-element-button is-style-fill">' . $tour_url . '</div>
+                <div class="wp-block-button wp-element-button is-style-outline">
                     <a class="wp-block-button__link post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
                 </div>
             </div>
