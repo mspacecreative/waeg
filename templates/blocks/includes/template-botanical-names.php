@@ -1,8 +1,8 @@
 <?php
 if (have_rows('botanical_names', get_the_ID($term_id))) {
     
-    echo
-    '<div class="botanical-names">';
+    // echo
+    // '<div class="botanical-names">';
 
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
@@ -10,8 +10,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         $names = get_row_index();
         $check_plural = $names > 1 ? 's' : '';
             
-        echo 
-        '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
+        // echo 
+        // '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
 
         if (have_rows('botanical_name')) {
             while (have_rows('botanical_name')) {
@@ -20,16 +20,23 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $designation_array[] = get_sub_field('designation');
             }
         }
-        $combine = array_combine($names_array, $designation_array);
+        // echo 
+        // '</h2>';
+    }
+
+    // echo
+    // '</div>';
+}
+$combine = array_combine($names_array, $designation_array);
+if ($combine) {
+    echo
+    '<div class="botanical-names">
+        <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
         foreach($combine as $k => $v) {
             $v_check = $v ? ' ' . $v : '';
         }
-        $data[] = " <i>$k</i>$v_check";
-        echo implode('; ', $data);
-        echo 
-        '</h2>';
-    }
-
-    echo
-    '</div>';
+            $data[] = " <i>$k</i>$v_check";
+            echo implode('; ', $data) . 
+        '</h2>
+    </div>';
 }
