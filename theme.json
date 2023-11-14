@@ -339,7 +339,8 @@
 			"core/button": {
 				"border": {
 				  "radius": "50px",
-				  "color" : "var(--wp--preset--color--dark-green)"
+				  "color" : "var(--wp--preset--color--dark-green)",
+				  "width": "2px"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--dark-green)",
