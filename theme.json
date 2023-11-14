@@ -346,7 +346,7 @@
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
 				},
-				"css": "custom-class",
+				"css": "float: right",
 				"spacing": {
 					"padding": {
 						"left": "16px",
