@@ -352,6 +352,9 @@
 							"color": {
 								"background": "var(--wp--preset--color--light-green)"
 							}
+						},
+						"border": {
+							"width": "2px"
 						}
 					}
 				},
