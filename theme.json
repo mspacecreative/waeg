@@ -10,7 +10,7 @@
 				"border": {
 					"radius": "50px",
 					"width": "2px",
-					"color": "var(--wp--preset--color--dark-green)",
+					"color": "var(--wp--preset--color--dark-green)"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--dark-green)"
