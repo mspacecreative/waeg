@@ -16,15 +16,13 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     the_row();
 
                     if ( $plant_names = get_row() ) {
-                        foreach ($plant_names as $key => $value) {
-                            $value = get_sub_field('designation');
-                            if (!empty($value) ) { 
-                                $field = get_sub_field('name', $key);
-                            }
-                            $names_array[] = get_sub_field('name', $key);
-                            $designations_array[] = get_sub_field('designation');
+                        foreach ($plant_names as $name => $designation) {
+                            $designation = get_sub_field('designation');
+                            $name = get_sub_field('name', $name);
+                            // $names_array[] = get_sub_field('name', $key);
+                            // $designations_array[] = get_sub_field('designation');
                         }
-                        echo ' <i>' . $field . '</i> ' . $value . '; ';
+                        echo ' <i>' . $name . '</i> ' . $value . '; ';
                     }
                     
                     print_r($names_array);
