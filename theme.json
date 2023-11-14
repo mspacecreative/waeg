@@ -343,6 +343,11 @@
 				  "width": "2px"
 				},
 				"variations": {
+					"hover" {
+						"color": {
+							"background": "var(--wp--preset--color--light-green)"
+						}
+					},
 					"outline": {
 						"color": {
 							"background": "transparent",
