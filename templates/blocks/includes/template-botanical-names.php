@@ -19,13 +19,14 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $designation[] = get_sub_field('designation');
                 $combine = array_combine($array, $designation);
                 
-                foreach($combine as $k => $v) {
-                    $v_check = $v ? ' ' . $v : '';
+                if ($combine) {
+                    foreach($combine as $k => $v) {
+                        $v_check = $v ? ' ' . $v : '';
+                    }
                 }
+                $data[] = " <i>$k</i>$v_check";
             }
-        }
-        $data[] = " <i>$k</i>$v_check";
-        echo implode('; ', $data);
+        }echo implode('; ', $data);
 
             echo 
             '</h2>';
