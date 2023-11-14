@@ -671,6 +671,9 @@
 					"text": "var(--wp--preset--color--contrast)"
 				},
 				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--light-green)"
+					},
 					"typography": {
 						"textDecoration": "none"
 					}
