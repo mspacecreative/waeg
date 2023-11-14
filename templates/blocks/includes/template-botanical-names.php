@@ -8,8 +8,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         $check_plural = $names > 1 ? 's' : '';
     }
 }
-if (have_rows('botanical_name')) {
-    while (have_rows('botanical_name')) {
+if (have_rows('botanical_name', get_the_ID($term_id))) {
+    while (have_rows('botanical_name', get_the_ID($term_id))) {
         the_row();
         $names_array[] = get_sub_field('name');
         $designations_array[] = get_sub_field('designation');
