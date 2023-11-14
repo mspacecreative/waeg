@@ -18,12 +18,10 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     }
 }
 
-foreach($combine as $k => $v)
+foreach($combine as $k => $v) {
     $v_check = $v ? ' ' . $v : '';
-
-$data[] = " <i>$k</i>$v_check";
-
-print_r($check_plural);
+    $data[] = " <i>$k</i>$v_check";
+}
 
 echo
 '<div class="botanical-names">
