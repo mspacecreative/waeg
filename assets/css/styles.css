@@ -956,6 +956,10 @@ html.fslightbox-open {
   background-color: var(--wp--preset--color--base);
   color: var(--wp--preset--color--dark-green);
 }
+.tour-path-wrapper .tour-path-content-container .tour-path-content .is-style-outline .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--light-green);
+  color: #fff;
+}
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
   align-items: center;

@@ -86,6 +86,11 @@
         .wp-block-button__link {
           background-color: var(--wp--preset--color--base);
           color: $darkGreen;
+
+          &:hover {
+            background-color: $lightGreen;
+            color: #fff;
+          }
         }
       }
 
