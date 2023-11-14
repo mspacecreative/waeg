@@ -21,10 +21,10 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         foreach($combined_arrays as $k => $v) {
                             $v_check = $v ? ' ' . $v : '';
                         }
-                        $data[] = " <i>$k</i>$v_check";
                     }
-                    echo implode('; ', $data); $loop->reset_postdata();
+                    $data[] = " <i>$k</i>$v_check";
                 }
+                echo implode('; ', $data);
             }
 
             echo
