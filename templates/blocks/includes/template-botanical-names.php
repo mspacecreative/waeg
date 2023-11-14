@@ -17,13 +17,14 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     $designation_array[] = get_sub_field('designation');
                     $combined_arrays = array_combine($names_array, $designation_array);
                 }
-                if ($combined_arrays) {
-                    foreach($combined_arrays as $k => $v) {
-                        $v_check = $v ? ' ' . $v : '';
-                    }
+            }
+            
+            if ($combined_arrays) {
+                foreach($combined_arrays as $k => $v) {
+                    $v_check = $v ? ' ' . $v : '';
                 }
             }
-                
+            
             $data[] = " <i>$k</i>$v_check";
             echo implode('; ', $data);
 
