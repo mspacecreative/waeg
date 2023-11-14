@@ -425,13 +425,12 @@
 		},
 		"blocks": {
 			"core/button": {
-				"elements": {
-					"button": {
-						"color": {
-							"background": "var(--wp--preset--color--dark-green)",
-							"text": "var(--wp--preset--color--base)"
-						}
-					}
+				"color": {
+					"background": "var(--wp--preset--color--dark-green)",
+					"text": "var(--wp--preset--color--base)"
+				},
+				"typography": {
+					"fontSize": "50px"
 				},
 				"variations": {
 					"outline": {
