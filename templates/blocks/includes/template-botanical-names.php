@@ -20,10 +20,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $value = get_sub_field('designation');
                             if (!empty($value) ) { 
                                 $field = get_sub_field('name', $key);
-                                echo
-                                ' <i>' . $field . '</i> ' . $value . '; ';
                             }
                         }
+                        echo ' <i>' . $field . '</i> ' . $value . '; ';
                     }
                     // $names_array[] = get_sub_field('name', $loop->ID);
                     // $designations_array[] = get_sub_field('designation', $loop->ID);
