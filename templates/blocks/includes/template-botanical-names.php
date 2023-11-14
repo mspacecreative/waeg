@@ -36,6 +36,7 @@
 // }
 if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
+        the_row();
         if (have_rows('botanical_name')) {
             while (have_rows('botanical_name')) {
                 the_row();
