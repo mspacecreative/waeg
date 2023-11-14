@@ -19,9 +19,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         foreach ($plant_names as $name => $designation) {
                             $name = $name ? ' ' . get_sub_field('name', $name) : '';
                             $designation = $designation ? ' ' . get_sub_field('designation') : '';
-                            $data[] = "<i>$name</i>$designation";
                         }
                     }
+                    $data[] = "<i>$name</i>$designation";
                     echo implode('; ', $data);
                     // $names_array[] = get_sub_field('name', $loop->ID);
                     // $designations_array[] = get_sub_field('designation', $loop->ID);
