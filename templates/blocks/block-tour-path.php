@@ -20,7 +20,7 @@ $loop = new WP_Query( array(
     $title = get_the_title($loop->ID);
     $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
     $permalink = get_the_permalink($loop->ID);
-    $tour_url = get_field('tour_url', get_the_ID()) ? '<a class="button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a>' : '';
+    $tour_url = get_field('tour_url', get_the_ID()) ? '<a class="wp-block-button wp-block-button__link has-dark-green-background-color virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a>' : '';
 
     echo 
     '<div class="is-layout-flex tour-path-wrapper">
@@ -45,7 +45,7 @@ $loop = new WP_Query( array(
             . $excerpt .
             '<div class="is-layout-flex post-modal-buttons">'
                 . $tour_url .
-                '<a class="button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
+                '<a class="wp-block-button wp-block-button__link post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
             </div>
         </div>';
 
