@@ -346,11 +346,6 @@
 						}
 					}
 				},
-				"border": {
-				  "radius": "50px",
-				  "color" : "var(--wp--preset--color--dark-green)",
-				  "width": "2px"
-				},
 				"color": {
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
@@ -595,7 +590,9 @@
 		"elements": {
 			"button": {
 				"border": {
-					"radius": "0"
+					"radius": "50px",
+					"width": "2px",
+					"color": "var(--wp--preset--color--dark-green)"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--primary)",
