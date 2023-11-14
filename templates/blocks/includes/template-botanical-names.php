@@ -1,7 +1,7 @@
 <?php
-if (have_rows('botanical_names', get_the_ID($term_id))) {
+if (have_rows('botanical_names', get_the_ID($loop->ID))) {
     
-    while (have_rows('botanical_names', get_the_ID($term_id))) {
+    while (have_rows('botanical_names', get_the_ID($loop->ID))) {
         the_row();
 
         $names = get_row_index();
