@@ -1,14 +1,14 @@
 <?php
-if (have_rows('botanical_names', get_the_ID($loop->ID))) {
+if (have_rows('botanical_names', get_the_ID($term_id))) {
     
-    while (have_rows('botanical_names', get_the_ID($loop->ID))) {
+    while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
         $names = get_row_index();
         $check_plural = $names > 1 ? 's' : '';
             
-        if (have_rows('botanical_name', get_the_ID($term_id))) {
-            while (have_rows('botanical_name', get_the_ID($term_id))) {
+        if (have_rows('botanical_name', $loop->ID)) {
+            while (have_rows('botanical_name', $loop->ID)) {
                 the_row();
                 $names_array[] = get_sub_field('name');
                 $designations_array[] = get_sub_field('designation');
