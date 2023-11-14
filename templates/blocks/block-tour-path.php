@@ -45,7 +45,7 @@ $loop = new WP_Query( array(
             . $excerpt .
             '<div class="is-layout-flex wp-block-buttons">
                 <div class="wp-block-button is-style-fill">' . $tour_url . '</div>
-                <div class="is-style-outline wp-block-button">
+                <div class="wp-block-button is-style-outline">
                     <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('Berry Details', 'waeg') . '</a>
                 </div>
             </div>

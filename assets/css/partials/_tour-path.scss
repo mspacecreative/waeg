@@ -82,6 +82,13 @@
         gap: 1rem;
       }
 
+      .is-style-outline {
+        .wp-block-button__link {
+          background-color: var(--wp--preset--color--base);
+          color: $darkGreen;
+        }
+      }
+
       .wp-block-button__link {
         display: flex;
         align-items: center;

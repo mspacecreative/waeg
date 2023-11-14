@@ -952,6 +952,10 @@ html.fslightbox-open {
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-buttons {
   gap: 1rem;
 }
+.tour-path-wrapper .tour-path-content-container .tour-path-content .is-style-outline .wp-block-button__link {
+  background-color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--dark-green);
+}
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
   align-items: center;
