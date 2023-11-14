@@ -17,15 +17,17 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
 
                     if ( $plant_names = get_row() ) {
                         foreach ($plant_names as $name => $designation) {
-                            $name = $name ? ' ' . get_sub_field('name', $name) : '';
+                            $name = $name ? ' <i>' . get_sub_field('name', $name) . '</i>' : '';
                             $designation = $designation ? ' ' . get_sub_field('designation') : '';
                         }
+                        echo $name, $designation;
                     }
+                    // $names_array[] = get_sub_field('name', $loop->ID);
+                    // $designations_array[] = get_sub_field('designation', $loop->ID);
+                    // $combine = array_combine($names_array, $designations_array);
                 }
             }
     }
-    $data[] = "<i>$name</i>$designation";
-    echo implode('; ', $data);
 
     echo
         '</h2>
