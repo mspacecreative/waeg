@@ -41,7 +41,6 @@ if ($loop->have_posts()) {
                                 <h1 class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
                             </div>
                             <div class="wp-block-column is-layout-flex is-content-justification-right">';
-                                include 'includes/template-botanical-names.php';
                             echo
                             '</div>
                         </div>
@@ -54,14 +53,15 @@ if ($loop->have_posts()) {
                                 include 'includes/template-carousel.php';
                                 include 'includes/template-notes.php';
                                 include 'includes/template-traditional-uses.php';
+                                include 'includes/template-botanical-names.php';
                             echo
                             '</div>
                         </div>
                     </div>
                 </div>';
-            } wp_reset_query();
+            }
             echo
             '</div>
         </div>
     </div>';
-}
+} wp_reset_query();
