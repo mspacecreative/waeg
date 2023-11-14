@@ -458,6 +458,18 @@
 							"text": "var(--wp--preset--color--dark-green)"
 						}
 					}
+				},
+				"elements": {
+					"link": {
+						"spacing": {
+							"padding": {
+								"top": "6px",
+								"bottom": "6px",
+								"left": "16px",
+								"right": "16px"
+							}
+						}
+					}
 				}
 			  },
 			"core/navigation": {
