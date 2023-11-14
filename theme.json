@@ -426,7 +426,7 @@
 		"blocks": {
 			"core/button": {
 				"elements": {
-					"link": {
+					"button": {
 						"color": {
 							"background": "var(--wp--preset--color--dark-green)",
 							"text": "var(--wp--preset--color--base)"
