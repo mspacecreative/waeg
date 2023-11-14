@@ -107,6 +107,14 @@
 						"color": {
 							"background": "var(--wp--preset--color--base)",
 							"text": "var(--wp--preset--color--dark-green)"
+						},
+						"spacing": {
+							"padding": {
+								"top": "6px",
+								"bottom": "6px",
+								"left": "16px",
+								"right": "16px"
+							}
 						}
 					}
 				}
