@@ -19,7 +19,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         foreach ($plant_names as $name => $designation) {
                             $name_array = explode(' ', get_sub_field('name'));
                             $array = preg_replace('#[ -]+#', '-', $name_array);
-                            $array = ' ' . strtolower(implode(' ', $array));
+                            $array = ' ' . strtolower(implode('; ', $array));
                             $name = $name ? ' <i>' . get_sub_field('name', $name) . '</i>' : '';
                             $designation = $designation ? ' ' . get_sub_field('designation') . '; ' : '';
                         }
