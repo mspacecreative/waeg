@@ -4,6 +4,7 @@ body:not(#tinymce) {
 }
 body:not(#tinymce) body {
   --wp--preset--color--pale-gold: palegoldenrod;
+  --wp--preset--color--light-grey: #b4b4b4;
 }
 body:not(#tinymce) h1,
 body:not(#tinymce) h2,

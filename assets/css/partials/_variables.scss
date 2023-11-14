@@ -1,7 +1,3 @@
-// COLOURS
-$darkGreen: var(--wp--preset--color--dark-green);
-$lightGreen: var(--wp--preset--color--light-green);
-
 %border-radius-10px {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -28,4 +24,10 @@ $lightGreen: var(--wp--preset--color--light-green);
 
 body {
   --wp--preset--color--pale-gold: palegoldenrod;
+  --wp--preset--color--light-grey: #b4b4b4;
 }
+
+// COLOURS
+$darkGreen: var(--wp--preset--color--dark-green);
+$lightGreen: var(--wp--preset--color--light-green);
+$lightGrey: var(--wp--preset--colo--light-grey);
