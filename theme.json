@@ -344,6 +344,14 @@
 				"color": {
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
+				},
+				"spacing": {
+					"padding": {
+						"left": "15px",
+						"right": "15px",
+						"top": "8px",
+						"bottom": "8px"
+					}
 				}
 			  },
 			"core/navigation": {
