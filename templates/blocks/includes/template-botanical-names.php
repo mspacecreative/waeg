@@ -12,8 +12,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             echo 
             '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
 
-        if (have_rows('botanical_name', get_the_ID($term_id))) {
-            while (have_rows('botanical_name', get_the_ID($term_id))) {
+        if (have_rows('botanical_name')) {
+            while (have_rows('botanical_name')) {
                 the_row();
                 $array[] = get_sub_field('name');
                 $designation[] = get_sub_field('designation');
@@ -27,7 +27,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
             }
                 echo implode('; ', $data);
-        } 
+        } reset_rows();
 
             echo 
             '</h2>';
@@ -35,4 +35,4 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
         echo
         '</div>';
     }
-} acf_remove_loop();
+}
