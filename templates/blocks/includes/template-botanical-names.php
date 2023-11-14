@@ -12,8 +12,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             echo 
             '<h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
 
-        if (have_rows('botanical_name')) {
-            while (have_rows('botanical_name')) {
+        if (have_rows('botanical_name', get_the_ID($term_id))) {
+            while (have_rows('botanical_name', get_the_ID($term_id))) {
                 the_row();
                 $array[] = get_sub_field('name');
                 $designation[] = get_sub_field('designation');
