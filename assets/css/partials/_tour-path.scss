@@ -84,6 +84,8 @@
 
       .wp-block-button__link {
         display: flex;
+        align-items: center;
+        text-transform: uppercase;
 
         &.post-modal-link {
           color: $darkGreen;

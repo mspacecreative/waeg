@@ -954,6 +954,8 @@ html.fslightbox-open {
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
+  align-items: center;
+  text-transform: uppercase;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;

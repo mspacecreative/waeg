@@ -453,7 +453,7 @@
 				"variations": {
 					"outline": {
 						"color": {
-							"background": "transparent",
+							"background": "var(--wp--preset--color--base)",
 							"text": "var(--wp--preset--color--dark-green)"
 						},
 						"spacing": {
