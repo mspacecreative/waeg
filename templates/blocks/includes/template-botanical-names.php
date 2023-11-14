@@ -37,8 +37,8 @@
 if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
-        if (have_rows('botanical_name')) {
-            while (have_rows('botanical_name')) {
+        if (have_rows('botanical_name', get_the_ID($term_id))) {
+            while (have_rows('botanical_name', get_the_ID($term_id))) {
                 the_row();
                 $row = get_row();
                 $names_array[] = $row['name'];
