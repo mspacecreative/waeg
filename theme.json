@@ -343,7 +343,7 @@
 				  "width": "2px"
 				},
 				"variations": {
-					"hover" {
+					"hover": {
 						"color": {
 							"background": "var(--wp--preset--color--light-green)"
 						}
