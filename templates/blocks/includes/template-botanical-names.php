@@ -28,7 +28,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             }
         } 
            if ($combine) {
-            echo $data;
+            print_r($data);
            }
 
             echo 
