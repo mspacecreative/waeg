@@ -82,14 +82,7 @@
         gap: 1rem;
       }
 
-      .button {
-        padding: 6px 16px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 15px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: $darkGreen;
+      .wp-block-button__link {
         display: flex;
 
         &.post-modal-link {

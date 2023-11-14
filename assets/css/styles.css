@@ -952,14 +952,7 @@ html.fslightbox-open {
 .tour-path-wrapper .tour-path-content-container .tour-path-content .post-modal-buttons {
   gap: 1rem;
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .button {
-  padding: 6px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--wp--preset--color--dark-green);
+.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -967,20 +960,20 @@ html.fslightbox-open {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .button.post-modal-link {
+.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.post-modal-link {
   color: var(--wp--preset--color--dark-green);
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .button.post-modal-link::before {
+.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.post-modal-link::before {
   font-family: fontAwesome;
   content: "\f0ca";
   font-size: 15px;
   margin-right: 10px;
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .button.virtual-tour-link {
+.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.virtual-tour-link {
   color: #fff;
   background-color: var(--wp--preset--color--dark-green);
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .button.virtual-tour-link::before {
+.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.virtual-tour-link::before {
   background-image: url('data:image/svg+xml,<svg id="Group_14" data-name="Group 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.939" height="20.888" viewBox="0 0 18.939 20.888"><defs><clipPath id="clip-path"><rect id="Rectangle_4" data-name="Rectangle 4" width="18.939" height="20.888" fill="%23fff"/></clipPath></defs><g id="Group_14-2" data-name="Group 14" clip-path="url(%23clip-path)"><path id="Path_4277" data-name="Path 4277" d="M11.8,12.771c.24,0,.442,0,.644,0a.778.778,0,0,0,.85-.826c.008-1.327.024-2.656-.025-3.982a2.491,2.491,0,0,0-2.215-2.357,26.8,26.8,0,0,0-2.762-.044A2.6,2.6,0,0,0,5.661,8.2c-.019,1.234-.009,2.468,0,3.7a.794.794,0,0,0,.875.872c.2,0,.4,0,.618,0,0,.131,0,.223,0,.316,0,1.039-.005,2.078,0,3.116a.818.818,0,0,0,.941.927c.906,0,1.813-.021,2.718.008a.877.877,0,0,0,.987-.989c-.015-1.031,0-2.062,0-3.093v-.288M9.431,20.887c.716-.05,1.435-.081,2.149-.154A13.81,13.81,0,0,0,16,19.584a5.874,5.874,0,0,0,2.213-1.612,2.81,2.81,0,0,0,.032-3.734,5.577,5.577,0,0,0-2.223-1.632.952.952,0,0,0-.545-.037.719.719,0,0,0-.567.665.759.759,0,0,0,.423.836,5.221,5.221,0,0,1,1.5,1.022,1.272,1.272,0,0,1,.006,1.962,5.334,5.334,0,0,1-1.992,1.239,13.366,13.366,0,0,1-4.036.861,15.808,15.808,0,0,1-6.465-.765,5.622,5.622,0,0,1-2.253-1.34,1.268,1.268,0,0,1,0-1.944,5.031,5.031,0,0,1,1.435-1A.832.832,0,0,0,3.973,13a.806.806,0,0,0-1.132-.373A6.139,6.139,0,0,0,.924,13.95,3,3,0,0,0,.006,16.3,3.128,3.128,0,0,0,1.1,18.383a7.9,7.9,0,0,0,3.095,1.7,18.026,18.026,0,0,0,5.238.808M7.061,2.432A2.415,2.415,0,0,0,11.892,2.4,2.437,2.437,0,0,0,9.478,0,2.407,2.407,0,0,0,7.061,2.432" transform="translate(0.001 0.001)" fill="%23fff"/><path id="Path_4278" data-name="Path 4278" d="M126.712,125.618v.288c0,1.031-.011,2.062,0,3.093a.877.877,0,0,1-.987.989c-.905-.029-1.812-.006-2.718-.008a.818.818,0,0,1-.941-.927c-.009-1.039,0-2.077,0-3.116,0-.093,0-.185,0-.316-.219,0-.419,0-.618,0a.794.794,0,0,1-.875-.872c-.006-1.234-.017-2.468,0-3.7a2.6,2.6,0,0,1,2.63-2.638,26.79,26.79,0,0,1,2.762.044,2.491,2.491,0,0,1,2.215,2.357c.048,1.326.033,2.655.025,3.982a.778.778,0,0,1-.85.826c-.2,0-.4,0-.644,0" transform="translate(-114.914 -112.846)" fill="%23fff"/><path id="Path_4279" data-name="Path 4279" d="M9.431,275.769a18.025,18.025,0,0,1-5.238-.808,7.9,7.9,0,0,1-3.095-1.7A3.128,3.128,0,0,1,.006,271.18a3,3,0,0,1,.917-2.348,6.14,6.14,0,0,1,1.917-1.322.806.806,0,0,1,1.132.373.832.832,0,0,1-.447,1.11,5.032,5.032,0,0,0-1.435,1,1.268,1.268,0,0,0,0,1.944,5.622,5.622,0,0,0,2.253,1.34,15.807,15.807,0,0,0,6.465.765,13.364,13.364,0,0,0,4.036-.861,5.333,5.333,0,0,0,1.992-1.239,1.272,1.272,0,0,0-.006-1.962,5.221,5.221,0,0,0-1.5-1.022.759.759,0,0,1-.423-.836.719.719,0,0,1,.567-.665.953.953,0,0,1,.545.037,5.577,5.577,0,0,1,2.223,1.632,2.81,2.81,0,0,1-.032,3.734A5.874,5.874,0,0,1,16,274.467a13.811,13.811,0,0,1-4.419,1.148c-.714.073-1.432.1-2.149.154" transform="translate(0.001 -254.881)" fill="%23fff"/><path id="Path_4280" data-name="Path 4280" d="M150.688,2.432A2.407,2.407,0,0,1,153.1,0a2.437,2.437,0,0,1,2.414,2.4,2.415,2.415,0,0,1-4.831.036" transform="translate(-143.626 0.001)" fill="%23fff"/></g></svg>');
   background-repeat: no-repeat;
   background-size: contain;

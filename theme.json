@@ -447,15 +447,6 @@
 		},
 		"blocks": {
 			"core/button": {
-				"elements": {
-					"link": {
-						":hover": {
-							"color": {
-								"background": "var(--wp--preset--color--light-green)"
-							}
-						}
-					}
-				},
 				"color": {
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
