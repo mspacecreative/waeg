@@ -105,6 +105,7 @@
 			"core/button": {
 				"variations": {
 					"outline": {
+						"css": "float:right",
 						"color": {
 							"background": "var(--wp--preset--color--base)",
 							"text": "var(--wp--preset--color--dark-green)"
