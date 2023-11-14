@@ -13,11 +13,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $names_array[] = get_sub_field('name');
                 $designations_array[] = get_sub_field('designation');
                 $combine = array_combine($names_array, $designations_array);
-                if ($combine) {
-                    foreach($combine as $k => $v) {
-                        $v_check = $v ? ' ' . $v : '';
-                        $data[] = " <i>$k</i>$v_check";
-                    }
+                foreach($combine as $k => $v) {
+                    $v_check = $v ? ' ' . $v : '';
+                    $data[] = " <i>$k</i>$v_check";
                 }
             }
         }
