@@ -28,14 +28,14 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     // '</div>';
 }
 $combine = array_combine($names_array, $designation_array);
+foreach($combine as $k => $v) {
+    $v_check = $v ? ' ' . $v : '';
+}
+$data[] = " <i>$k</i>$v_check";
 if ($combine) {
     echo
     '<div class="botanical-names">
         <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
-        foreach($combine as $k => $v) {
-            $v_check = $v ? ' ' . $v : '';
-        }
-            $data[] = " <i>$k</i>$v_check";
             echo implode('; ', $data) . 
         '</h2>
     </div>';
