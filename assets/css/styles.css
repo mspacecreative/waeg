@@ -964,6 +964,11 @@ html.fslightbox-open {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.post-modal-link::before {
   font-family: fontAwesome;
