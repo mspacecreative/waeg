@@ -5,7 +5,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     // '<div class="botanical-names">';
 
     while (have_rows('botanical_names', get_the_ID($term_id))) {
-        the_row();
+        the_row(get_the_ID($term_id));
 
         $names = get_row_index();
         $check_plural = $names > 1 ? 's' : '';
