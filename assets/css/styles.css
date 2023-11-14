@@ -962,9 +962,6 @@ html.fslightbox-open {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.post-modal-link {
-  color: var(--wp--preset--color--dark-green);
-}
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.post-modal-link::before {
   font-family: fontAwesome;
   content: "\f0ca";
