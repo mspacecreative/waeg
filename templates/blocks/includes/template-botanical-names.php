@@ -17,7 +17,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
 
                     if ( $plant_names = get_row() ) {
                         foreach ($plant_names as $name => $designation) {
-                            $name_array = explode(' ', get_sub_field('name');
+                            $name_array = explode(' ', get_sub_field('name'));
                             $name = $name ? ' <i>' . get_sub_field('name', $name) . '</i>' : '';
                             $designation = $designation ? ' ' . get_sub_field('designation') . '; ' : '';
                         }
