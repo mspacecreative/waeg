@@ -21,8 +21,8 @@ $combine = array_combine($names_array, $designations_array);
 
 foreach($combine as $k => $v) {
     $v_check = $v ? ' ' . $v : '';
-    $data[] = " <i>$k</i>$v_check";
 }
+$data[] = " <i>$k</i>$v_check";
 
 echo
 '<div class="botanical-names">
