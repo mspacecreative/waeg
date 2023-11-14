@@ -346,18 +346,7 @@
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
 				},
-				"elements": {
-					"link": {
-						":hover": {
-							"color": {
-								"background": "var(--wp--preset--color--light-green)"
-							}
-						},
-						"border": {
-							"width": "2px"
-						}
-					}
-				},
+				"css": "custom-class",
 				"spacing": {
 					"padding": {
 						"left": "16px",
