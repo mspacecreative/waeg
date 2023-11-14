@@ -19,8 +19,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $designation_array[] = get_sub_field('designation');
                 $combine = array_combine($names_array, $designation_array);
 
-                print_r($names_array);
-                
+                print_r($combine);
+
                 foreach($combine as $k => $v) {
                     $v_check = $v ? ' ' . $v : '';
                 }
