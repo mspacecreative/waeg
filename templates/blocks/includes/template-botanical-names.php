@@ -12,11 +12,12 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 the_row();
                 $names_array[] = get_sub_field('name');
                 $designations_array[] = get_sub_field('designation');
-                $combine = array_combine($names_array, $designations_array);
             }
         }
     }
 }
+
+$combine = array_combine($names_array, $designations_array);
 
 foreach($combine as $k => $v) {
     $v_check = $v ? ' ' . $v : '';
