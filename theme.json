@@ -577,6 +577,7 @@
 					"width": "2px",
 					"color": "var(--wp--preset--color--dark-green)"
 				},
+				"css": "transition:0.25s ease-in-out",
 				"spacing": {
 					"padding": {
 						"left": "16px",
