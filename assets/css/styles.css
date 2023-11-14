@@ -949,18 +949,13 @@ html.fslightbox-open {
   z-index: 10;
   flex: 1;
 }
-.tour-path-wrapper .tour-path-content-container .tour-path-content .post-modal-buttons {
+.tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-buttons {
   gap: 1rem;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link.post-modal-link::before {
   font-family: fontAwesome;
