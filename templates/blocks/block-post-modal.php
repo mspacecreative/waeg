@@ -64,4 +64,4 @@ if ($loop->have_posts()) {
             '</div>
         </div>
     </div>';
-} wp_reset_query();
+} rewind_posts();
