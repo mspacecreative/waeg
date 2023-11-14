@@ -594,19 +594,10 @@
 					"width": "2px",
 					"color": "var(--wp--preset--color--dark-green)"
 				},
-				"color": {
-					"background": "var(--wp--preset--color--primary)",
-					"text": "var(--wp--preset--color--contrast)"
-				},
 				":hover": {
 					"color": {
 						"background": "var(--wp--preset--color--light-green)",
 						"text": "var(--wp--preset--color--base)"
-					},
-					"outline": {
-						"color": {
-							"background": "var(--wp--preset--color--light-green)"
-						}
 					}
 				},
 				":focus": {
