@@ -24,8 +24,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             // $names_array[] = get_sub_field('name', $key);
                             // $designations_array[] = get_sub_field('designation');
                         }
-                        print_r($combine);
-                        echo ' <i>' . implode('; ', $combine) . '</i>';
+                        print_r($name_array);
+                        // echo ' <i>' . implode('; ', $combine) . '</i>';
                     }
                     // $names_array[] = get_sub_field('name', $loop->ID);
                     // $designations_array[] = get_sub_field('designation', $loop->ID);
