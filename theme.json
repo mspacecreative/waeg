@@ -449,9 +449,9 @@
 					"background": "var(--wp--preset--color--dark-green)",
 					"text": "var(--wp--preset--color--base)"
 				},
+				"css": "background:transparent",
 				"variations": {
 					"outline": {
-						"css": "background:transparent",
 						"color": {
 							"background": "var(--wp--preset--color--base)",
 							"text": "var(--wp--preset--color--dark-green)"
