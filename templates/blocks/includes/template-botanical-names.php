@@ -1,6 +1,6 @@
 <?php
-if (have_rows('botanical_names', get_the_ID($term_id))) {
-    while (have_rows('botanical_names', get_the_ID($term_id))) {
+if (have_rows('botanical_names')) {
+    while (have_rows('botanical_names')) {
         the_row();
 
         echo
