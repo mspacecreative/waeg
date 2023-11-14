@@ -353,18 +353,6 @@
 					"color": {
 						"background": "var(--wp--preset--color--light-green)"
 					}
-				},
-				":focus": {
-					"color": {
-						"background": "var(--wp--preset--color--contrast)",
-						"text": "var(--wp--preset--color--base)"
-					}
-				},
-				":active": {
-					"color": {
-						"background": "var(--wp--preset--color--secondary)",
-						"text": "var(--wp--preset--color--base)"
-					}
 				}
 			},
 			"h1": {
@@ -444,9 +432,9 @@
 				"variations": {
 					"outline": {
 						"color": {
+							"background": "var(--wp--preset--color--base)",
 							"text": "var(--wp--preset--color--dark-green)"
-						},
-						"css": "background:transparent"
+						}
 					}
 				}
 			  },
