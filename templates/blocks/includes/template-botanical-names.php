@@ -16,7 +16,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             while (have_rows('botanical_name')) {
                 the_row();
                 $names_array[] = get_sub_field('name', get_the_ID($term_id));
-                $designation_array[] = get_sub_field('designation', get_the_ID($term_id);
+                $designation_array[] = get_sub_field('designation', get_the_ID($term_id));
                 $combine = array_combine($names_array, $designation_array);
                 
                 foreach($combine as $k => $v) {
