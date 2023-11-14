@@ -18,11 +18,13 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     if ( $plant_names = get_row() ) {
                         foreach ($plant_names as $name => $designation) {
                             $designation = get_sub_field('designation');
-                            $name = explode(' ', get_sub_field('name', $name));
+                            $name_array = explode(' ', get_sub_field('name', $name));
+                            $designation_array = explode(' ', $designation);
+                            $combine = array_combine($name_array, $designation_array);
                             // $names_array[] = get_sub_field('name', $key);
                             // $designations_array[] = get_sub_field('designation');
                         }
-                        echo ' <i>' . implode('; ', $name) . '</i> ' . $designation;
+                        echo ' <i>' . implode('; ', $combine) . '</i>';
                     }
                     // $names_array[] = get_sub_field('name', $loop->ID);
                     // $designations_array[] = get_sub_field('designation', $loop->ID);
