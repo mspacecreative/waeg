@@ -27,8 +27,7 @@ if ($query->have_posts()) {
         $query->the_post();
         echo
         '<li><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-    }
+    } wp_reset_postdata();
     echo
     '</ul>';
-    wp_reset_query();
 }

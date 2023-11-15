@@ -27,7 +27,6 @@ $loop = new WP_Query( array(
         <h3 class="wp-block-post-title has-large-font-size">' . esc_html__($title) . '</h3>
     </li>';
     
-endwhile; ?>
+endwhile; wp_reset_postdata(); ?>
 </ul>
 
-<?php wp_reset_query();
