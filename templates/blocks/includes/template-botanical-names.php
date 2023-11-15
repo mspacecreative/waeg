@@ -18,17 +18,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     $row_index = get_row_index();
 
                     if ( $plant_names = get_row() ) {
-                        // $name_array[] = get_sub_field('name');
-                        // $designation_array[] = get_sub_field('designation');
-                        // $combine_arrays = array_combine($name_array, $designation_array);
-                        // foreach($combine_arrays as $k => $v) {
-                        //     $v_check = $v ? ' ' . $v : '';
-                        //     $data[] = ' <i>' . $k . '</i>' . $v_check;
-                        // }
-                        // $count = count(get_sub_field('designation'));
-                        foreach ($plant_names as $name) {
-                            $name = get_sub_field('name') ? ' <i>' . get_sub_field('name') . '</i>' : '';
-                            $designation = ' ' . get_sub_field('designation') . '; ';
+                        foreach ($plant_names as $plant_name) {
+                            $name = get_sub_field('name', $plant_name) ? ' <i>' . get_sub_field('name', $plant_name) . '</i>' : '';
+                            $designation = ' ' . get_sub_field('designation', $plant_name) . '; ';
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
                     }
