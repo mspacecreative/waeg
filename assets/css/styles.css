@@ -1084,7 +1084,7 @@ html.fslightbox-open {
   padding: 3em;
 }
 
-.post-modal-content-wrapper .is-layout-flex {
+.post-modal-content-wrapper .is-layout-flex .is-layout-flex {
   gap: 2rem;
   align-items: flex-start;
 }

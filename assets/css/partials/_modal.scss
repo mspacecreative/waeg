@@ -80,7 +80,7 @@
 }
 
 .post-modal-content-wrapper {
-  .is-layout-flex {
+  .is-layout-flex .is-layout-flex {
     gap: 2rem;
     align-items: flex-start;
   }
