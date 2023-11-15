@@ -29,7 +29,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
                 // Remove from the end of a string
                 function rStringTrim($string, $trim) {
-                    if (mb_substr($str, -mb_strlen($trim)) == $trim) {
+                    if (mb_substr($string, -mb_strlen($trim)) == $trim) {
                         return mb_substr($string, 0, -strlen($trim));
                     }
                     return $string;
