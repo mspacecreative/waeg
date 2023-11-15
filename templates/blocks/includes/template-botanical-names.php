@@ -34,6 +34,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     //     '</h2>
     // </div>';
 }
+if ($loop->have_posts()) {
 
 echo
 '<div class="botanical-names">
@@ -42,4 +43,6 @@ echo
     echo
     '</h2>
 </div>';
+
+} wp_reset_query();
 
