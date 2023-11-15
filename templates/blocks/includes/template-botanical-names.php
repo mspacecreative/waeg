@@ -25,9 +25,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         $name_array[] = $name;
                         $result = $name . $designation;
                         $result_array = explode(" ", $result);
-                    }
 
-                    print_r($name_array);
+                        print_r($name_array);
+                    }
                 }
     
                 // if ($name_count > 1) {
