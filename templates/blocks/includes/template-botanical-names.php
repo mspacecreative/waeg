@@ -25,7 +25,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $designation = $designation_string;
                         }
                     }
-                    echo $name, $designation, $more_than_two_names;
+                    echo $name, $designation;
                 }
             }
     }
