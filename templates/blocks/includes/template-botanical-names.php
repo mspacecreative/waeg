@@ -29,11 +29,11 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
             }
             $combine_arrays = array_combine($name_array, $designation_array);
-            foreach($combine_arrays as $k => $v) {
-                $v_check = $v ? ' ' . $v : '';
-            }
-            $data[] = ' <i>' . $k . '</i>' . $v_check;
     }
+    foreach($combine_arrays as $k => $v) {
+        $v_check = $v ? ' ' . $v : '';
+    }
+    $data[] = ' <i>' . $k . '</i>' . $v_check;
     echo implode('; ', $data) .
         '</h2>
     </div>';
