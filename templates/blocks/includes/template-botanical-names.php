@@ -4,9 +4,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     $name_count = count(get_field('botanical_names', get_the_ID($term_id)));
     $check_plural = $name_count > 1 ? 's' : '';
 
-    // echo
-    // '<div class="botanical-names">
-    //     <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
+    echo
+    '<div class="botanical-names">
+        <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
     
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
@@ -28,21 +28,18 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
             }
     }
-    // echo implode('; ', $names_string);
+    echo implode('; ', $names_string);
 
-    // echo
-    //     '</h2>
-    // </div>';
-}
-if ($loop->have_posts()) {
-
-echo
-'<div class="botanical-names">
-    <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
-        echo implode('; ', $names_string);
     echo
-    '</h2>
-</div>';
+        '</h2>
+    </div>';
+}
 
-} wp_reset_query();
+// echo
+// '<div class="botanical-names">
+//     <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
+//         echo implode('; ', $names_string);
+//     echo
+//     '</h2>
+// </div>';
 
