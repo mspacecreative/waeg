@@ -1,5 +1,5 @@
 <?php
-if (have_rows('botanical_names', get_the_ID($term_id))) {
+if (get_field('botanical_names', get_the_ID($term_id))) {
 
     $name_count = count(get_field('botanical_names', get_the_ID($term_id)));
     $check_plural = $name_count > 1 ? 's' : '';
@@ -8,7 +8,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     '<div class="botanical-names">
         <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
     
-    while (have_rows('botanical_names', get_the_ID($term_id))) {
+    while (get_field('botanical_names', get_the_ID($term_id))) {
         the_row();
 
             if (have_rows('botanical_name')) {
