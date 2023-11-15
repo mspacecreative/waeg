@@ -16,14 +16,14 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     the_row();
 
                     if ( $plant_names = get_row() ) {
-                        foreach ($plant_names as $name) {
-                            $name = get_sub_field('name') ? get_sub_field('name') : '';
-                            $designation = get_row_index() > 1 ? get_sub_field('designation') . '; ' : get_sub_field('designation');
-                            $name_array[] = get_sub_field('name');
-                            $designation_array[] = get_sub_field('designation');
-                            $combine_arrays = array_combine($name_array, $designation_array);
-                            // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
-                        }
+                        $name_array[] = get_sub_field('name');
+                        $designation_array[] = get_sub_field('designation');
+                        $combine_arrays = array_combine($name_array, $designation_array);
+                        // foreach ($plant_names as $name) {
+                        //     $name = get_sub_field('name') ? get_sub_field('name') : '';
+                        //     $designation = get_row_index() > 1 ? get_sub_field('designation') . '; ' : get_sub_field('designation');
+                        //     // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
+                        // }
                         print_r($combine_arrays);
                         // echo $name, $designation;
                     }
