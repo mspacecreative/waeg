@@ -27,8 +27,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             // $designation = ' ' . get_sub_field('designation') . '; ';
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
+                        echo $result;
                     }
-                    echo $result;
                 }
             }
             // $combine_arrays = array_combine($name_array, $designation_array);
