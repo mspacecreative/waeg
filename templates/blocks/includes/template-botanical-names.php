@@ -26,7 +26,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $designation = ' ' . get_sub_field('designation', $plant_name) . $many_names;
                         }
                     }
-                    echo $name, $designation;
+                    echo $name;
                 }
             }
     }
