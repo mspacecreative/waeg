@@ -14,10 +14,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             if (have_rows('botanical_name')) {
                 while (have_rows('botanical_name')) {
                     the_row();
-                    
-                    $row_index = get_row_index();
 
                     if ( $plant_names = get_row() ) {
+                        $row_index = get_row_index($plant_names);
                         $name_array[] = get_sub_field('name');
                         $designation_array[] = get_sub_field('designation');
                         foreach ($plant_names as $k => $v) {
