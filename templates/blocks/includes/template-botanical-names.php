@@ -21,9 +21,11 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             // $array = preg_replace('#[ -]+#', ' ', $name_array);
                             // $array = ' ' . strtolower(implode('; ', $array));
                             $name = get_sub_field('name');
+                            $designation = get_sub_field('designation');
                             // $designation = $designation ? ' ' . get_sub_field('designation') . '; ' : '';
-                            $name = explode(" ", $name);
-                            $array = array_merge($name);
+                            $name_array = explode(" ", $name);
+                            $designation_array = explode(" ", $designation);
+                            $array = array_merge($name_array, $designation_array);
                         }
                         print_r($array);
                         // echo $name, $designation;
