@@ -11,12 +11,12 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
-            if (have_rows('botanical_name', get_the_ID($term_id))) {
-                while (have_rows('botanical_name', get_the_ID($term_id))) {
+            if (have_rows('botanical_name', $loop->ID)) {
+                while (have_rows('botanical_name', $loop->ID)) {
                     the_row();
                     $row_count = get_row_index();
-                    $name_array[] = get_sub_field('name', get_the_ID($loop));
-                    $designation_array[] = get_sub_field('designation', get_the_ID($loop));
+                    $name_array[] = get_sub_field('name');
+                    $designation_array[] = get_sub_field('designation');
                     $combine = array_combine($name_array, $designation_array);
 
                     if ($combine) {
