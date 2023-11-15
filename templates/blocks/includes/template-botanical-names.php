@@ -14,6 +14,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             if (have_rows('botanical_name')) {
                 while (have_rows('botanical_name')) {
                     the_row();
+                    $count_rows = get_row_index();
                     $name_array[] = get_sub_field('name');
                     $designation_array[] = get_sub_field('designation');
                     $combine = array_combine($name_array, $designation_array);
@@ -23,8 +24,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $v_check = $v ? ' ' . $v : '';
                             $names_string[] = " <i>$k</i>$v_check";
                         }
-                        echo implode('; ', $names_string); 
+                        // echo implode('; ', $names_string); 
                     }
+                    print_r($count_rows);
                 }
             }
     }
