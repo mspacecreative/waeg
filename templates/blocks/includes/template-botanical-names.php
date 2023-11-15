@@ -15,7 +15,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 while (have_rows('botanical_name')) {
                     the_row();
 
-                    if ( $plant_names = get_row() ) {
+                    if ( $plant_names = get_row(, get_the_ID($term_id)) ) {
                         $name_array[] = get_sub_field('name');
                         $designation_array[] = get_sub_field('designation');
                         $combine_arrays = array_combine($name_array, $designation_array);
