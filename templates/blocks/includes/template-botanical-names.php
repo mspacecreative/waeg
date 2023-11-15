@@ -8,7 +8,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     '<div class="botanical-names">
         <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
     
-    while (have_rows('botanical_names')) {
+    while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
             if (have_rows('botanical_name')) {
