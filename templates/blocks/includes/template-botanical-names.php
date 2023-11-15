@@ -27,11 +27,9 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         //     // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         // }
                     }
-                    foreach($combine_arrays as $k => $v) {
-                        $v_check = $v ? ' ' . $v : '';
-                    }
-                    // $semicolon = 
-                    // echo $name, $designation;
+                }
+                foreach($combine_arrays as $k => $v) {
+                    $v_check = $v ? ' ' . $v : '';
                 }
             }
             $data[] = ' <i>' . $k . '</i>' . $v_check;
