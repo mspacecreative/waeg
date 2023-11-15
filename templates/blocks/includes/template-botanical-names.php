@@ -22,13 +22,13 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         foreach ($plant_names as $k => $v) {
                             $k = get_sub_field('name');
                             $v = get_sub_field('designation');
-                            print_r($row_index);
                             $result = ' <i>' . $k . '</i>' . ' ' . $v . '; ';
                             // $name = get_sub_field('name') ? ' <i>' . get_sub_field('name') . '</i>' : '';
                             // $designation = ' ' . get_sub_field('designation') . '; ';
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
                     }
+                    print_r($row_index);
                 }
             }
             // $combine_arrays = array_combine($name_array, $designation_array);
