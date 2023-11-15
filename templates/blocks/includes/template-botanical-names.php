@@ -15,13 +15,17 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 while (have_rows('botanical_name')) {
                     the_row();
 
+                    $array = [];
+
                     if ( $plant_names = get_row() ) {
                         foreach ($plant_names as $name => $designation) {
                             // $name_array = explode(' ', get_sub_field('name'));
                             // $array = preg_replace('#[ -]+#', ' ', $name_array);
                             // $array = ' ' . strtolower(implode('; ', $array));
-                            $name[] = get_sub_field('name', $name);
+                            // $name = $name ? ' <i>' . get_sub_field('name', $name) . '</i>' : '';
                             // $designation = $designation ? ' ' . get_sub_field('designation') . '; ' : '';
+                            $name = $array;
+                            $name = explode("", $name);
                         }
                         print_r($name);
                         // echo $name, $designation;
