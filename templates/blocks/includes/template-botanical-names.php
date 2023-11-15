@@ -22,7 +22,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $name = get_sub_field('name', $plant_name) ? ' <i>' . get_sub_field('name', $plant_name) . '</i>' : '';
                             $designation = $name_count > 1 ? ' ' . get_sub_field('designation', $plant_name) . '; ' : (get_sub_field('designation', $plant_name) ? ' ' . get_sub_field('designation', $plant_name) : '');
                         }
-                        $result = implode('-', array($name, $designation));
+                        $result = $name;
+                        $result .= $designation;
                         // $result = $name_count > 1 ? substr_replace($result, "", -2) : $result;
                     }
                     echo $result;
