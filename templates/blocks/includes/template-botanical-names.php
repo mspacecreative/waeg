@@ -28,7 +28,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     }
                 }
                 if ($name_count > 1) {
-                    echo rtrim(preg_replace( "/\r|\n/", "", $result ), '; ');
+                    $result = rtrim($result, '; ');
+                    echo $result;
                 } else {
                     echo $result;
                 }
