@@ -33,7 +33,6 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
             }
     }
-    echo implode('; ', $data); 
 
     echo
         '</h2>
