@@ -16,6 +16,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     the_row();
 
                     if ( $plant_names = get_row() ) {
+                        $row_index = get_row_index();
                         // $name_array[] = get_sub_field('name');
                         // $designation_array[] = get_sub_field('designation');
                         // $combine_arrays = array_combine($name_array, $designation_array);
@@ -25,7 +26,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         // }
                         foreach ($plant_names as $name) {
                             $name = get_sub_field('name') ? ' <i>' . get_sub_field('name') . '</i>' : '';
-                            $designation = get_row_index() > 1 ? get_sub_field('designation') . '; ' : get_sub_field('designation');
+                            $designation = $row_index > 1 ? ' ' . get_sub_field('designation') . '; ' : ' ' . get_sub_field('designation');
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
                         echo $name, $designation;
