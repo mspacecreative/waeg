@@ -27,9 +27,15 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         // $result = $name_count > 1 ? substr_replace($result, "", -2) : $result;
                     }
                 }
+                // Remove from the end of a string
+                function rStringTrim($string, $trim) {
+                    if (mb_substr($str, -mb_strlen($trim)) == $trim) {
+                        return mb_substr($string, 0, -strlen($trim));
+                    }
+                    return $string;
+                }
                 if ($name_count > 1) {
-                    $result = rtrim($result, '; ');
-                    echo $result;
+                    echo rStringTrim($result, '; ');
                 } else {
                     echo $result;
                 }
