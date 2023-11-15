@@ -27,7 +27,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 }
     
                 if ($name_count > 1) {
-                    echo preg_replace("/;$/", '', $result);
+                    $result[strlen($result)-1] = "";
+                    echo $result;
                 } else {
                     echo $result;
                 }
