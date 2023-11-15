@@ -1,7 +1,7 @@
 <?php
 if (have_rows('botanical_names', get_the_ID($term_id))) {
 
-    $names = get_row_index(get_the_ID($term_id));
+    $names = get_row_index();
     $check_plural = $names > 1 ? 's' : '';
 
     echo
@@ -14,6 +14,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             if (have_rows('botanical_name')) {
                 while (have_rows('botanical_name')) {
                     the_row();
+
+                    print_r($names);
 
                     if ( $plant_names = get_row() ) {
                         $many_names = $names > 1 ? '; ' : '';
