@@ -1,8 +1,8 @@
 <?php
 if (have_rows('botanical_names', get_the_ID($term_id))) {
 
-    $names = count(get_field('botanical_names', get_the_ID($term_id)));
-    $check_plural = $names > 1 ? 's' : '';
+    $name_count = count(get_field('botanical_names', get_the_ID($term_id)));
+    $check_plural = $name_count > 1 ? 's' : '';
 
     echo
     '<div class="botanical-names">
@@ -11,8 +11,6 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
-        $names = get_row_index();
-
             if (have_rows('botanical_name')) {
                 while (have_rows('botanical_name')) {
                     the_row();
@@ -20,13 +18,13 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     // print_r($names);
 
                     if ( $plant_names = get_row() ) {
-                        $many_names = $names > 1 ? '; ' : '';
+                        $more_than_two_names = $name_count > 1 ? '; ' : '';
                         foreach ($plant_names as $plant_name) {
                             $name = get_sub_field('name', $plant_name) ? ' <i>' . get_sub_field('name', $plant_name) . '</i>' : '';
-                            $designation = ' ' . get_sub_field('designation', $plant_name) . $many_names;
+                            $designation = ' ' . get_sub_field('designation', $plant_name);
                         }
                     }
-                    echo $name, $designation;
+                    echo $name, $designation, $more_than_two_names;
                 }
             }
     }
