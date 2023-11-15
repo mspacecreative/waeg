@@ -20,7 +20,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             // $name_array = explode(' ', get_sub_field('name'));
                             // $array = preg_replace('#[ -]+#', ' ', $name_array);
                             // $array = ' ' . strtolower(implode('; ', $array));
-                            $name = get_sub_field('name') ? get_sub_field('name') '; ' : '';
+                            $name = get_sub_field('name') ? get_sub_field('name') . '; ' : '';
                             $designation = get_sub_field('designation');
                             // $designation = $designation ? ' ' . get_sub_field('designation') . '; ' : '';
                             $name_array = explode(" ", $name);
