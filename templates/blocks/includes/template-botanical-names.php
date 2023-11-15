@@ -23,14 +23,17 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $designation = $name_count > 1 && get_sub_field('designation', $plant_name) ? get_sub_field('designation', $plant_name) . __('; ') : (get_sub_field('designation', $plant_name) ? get_sub_field('designation', $plant_name) : '');
                         }
                         $result = $name . $designation;
+                        $result_array = explode(" ", $result);
                     }
                 }
+
+                print_r($result_array);
     
-                if ($name_count > 1) {
-                    echo preg_replace("/; $/", '', $result);
-                } else {
-                    echo $result;
-                }
+                // if ($name_count > 1) {
+                //     echo preg_replace("/; $/", '', $result);
+                // } else {
+                //     echo $result;
+                // }
             }
     }
 
