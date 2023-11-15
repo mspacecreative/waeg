@@ -18,11 +18,11 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     // print_r($names);
 
                     if ( $plant_names = get_row() ) {
-                        $more_than_two_names = $name_count > 1 ? '; ' : '';
                         foreach ($plant_names as $plant_name) {
                             $name = get_sub_field('name', $plant_name) ? ' <i>' . get_sub_field('name', $plant_name) . '</i>' : '';
-                            $designation_string = ' ' . get_sub_field('designation', $plant_name) . $more_than_two_names;
-                            $designation = $designation_string;
+                            $designation = $name_count > 1 ? substr_replace(get_sub_field('designation', $plant_name), "", -1) . '; ' : get_sub_field('designation', $plant_name);
+                            // $designation_string = ' ' . get_sub_field('designation', $plant_name) . $more_than_two_names;
+                            // $designation = $designation_string;
                         }
                     }
                     echo $name, $designation;
