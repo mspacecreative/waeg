@@ -34,12 +34,11 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 $data[] = ' <i>' . $k . '</i>' . $v_check;
             }
     }
-    echo implode('; ', $data);
 
     echo
         '</h2>
     </div>';
-}
+}echo implode('; ', $data);
 // foreach($combine as $k => $v) {
 //     $v_check = $v ? ' ' . $v : '';
 //     $data[] = " <i>$k</i>$v_check";
