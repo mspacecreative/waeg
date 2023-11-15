@@ -28,7 +28,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     }
                 }
                 if ($name_count > 1) {
-                    echo substr(trim($result), 0, -1);
+                    echo trim($result);
                 } else {
                     echo $result;
                 }
