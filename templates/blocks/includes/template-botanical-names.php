@@ -21,7 +21,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         $name_array[] = get_sub_field('name');
                         $designation_array[] = get_sub_field('designation');
                         foreach ($plant_names as $k => $v) {
-                            $plant_name = get_sub_field('name', $k);
+                            $k = get_sub_field('name');
                             $v = get_sub_field('designation');
                             $result = ' <i>' . $k . '</i>' . ' ' . $v . '; ';
                             // $name = get_sub_field('name') ? ' <i>' . get_sub_field('name') . '</i>' : '';
