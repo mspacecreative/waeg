@@ -20,20 +20,24 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                     if ( $plant_names = get_row() ) {
                         $name_array[] = get_sub_field('name');
                         $designation_array[] = get_sub_field('designation');
-                        // foreach ($plant_names as $name) {
-                        //     $name = get_sub_field('name') ? ' <i>' . get_sub_field('name') . '</i>' : '';
-                        //     $designation = ' ' . get_sub_field('designation') . '; ';
-                        //     // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
-                        // }
+                        foreach ($plant_names as $k => $v) {
+                            $plant_name = get_sub_field('name', $k);
+                            $v = get_sub_field('designation');
+                            $result = ' <i>' . $k . '</i>' . ' ' . $v . '; ';
+                            // $name = get_sub_field('name') ? ' <i>' . get_sub_field('name') . '</i>' : '';
+                            // $designation = ' ' . get_sub_field('designation') . '; ';
+                            // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
+                        }
                     }
                 }
             }
-            $combine_arrays = array_combine($name_array, $designation_array);
-            foreach($combine_arrays as $k => $v) {
-                $v_check = $v ? ' ' . $v : '';
-            }
-            $data[] = ' <i>' . $k . '</i>' . $v_check;
-            print_r($data);
+            // $combine_arrays = array_combine($name_array, $designation_array);
+            // foreach($combine_arrays as $k => $v) {
+            //     $v_check = $v ? ' ' . $v : '';
+            // }
+            // $data[] = ' <i>' . $k . '</i>' . $v_check;
+            // print_r($data);
+            echo $result;
     }
     echo 
         '</h2>
