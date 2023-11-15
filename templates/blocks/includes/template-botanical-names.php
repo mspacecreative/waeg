@@ -21,7 +21,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         $more_than_two_names = $name_count > 1 ? '; ' : '';
                         foreach ($plant_names as $plant_name) {
                             $name = get_sub_field('name', $plant_name) ? ' <i>' . get_sub_field('name', $plant_name) . '</i>' : '';
-                            $designation = ' ' . get_sub_field('designation', $plant_name);
+                            $designation_string = ' ' . get_sub_field('designation', $plant_name) . $more_than_two_names;
+                            $designation = $designation_string;
                         }
                     }
                     echo $name, $designation, $more_than_two_names;
