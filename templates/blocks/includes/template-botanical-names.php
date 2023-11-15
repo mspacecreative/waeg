@@ -30,10 +30,10 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         // }
                         // echo $name, $designation;
                     }
-                    echo implode('; ', $data); 
                 }
             }
     }
+    echo implode('; ', $data); 
 
     echo
         '</h2>
