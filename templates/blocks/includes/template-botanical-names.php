@@ -15,17 +15,18 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                 while (have_rows('botanical_name')) {
                     the_row();
                     
-                    $row_index = get_row_index();
+                    $count_names = 0;
 
                     if ( $plant_names = get_row() ) {
                         foreach ($plant_names as $plant_name) {
+                            $count_names = count($plant_names);
                             $name = get_sub_field('name', $plant_name) ? ' <i>' . get_sub_field('name', $plant_name) . '</i>' : '';
                             $designation = ' ' . get_sub_field('designation', $plant_name) . '; ';
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
                     }
                     // print_r($count);
-                    echo $name, $designation;
+                    echo $name, $designation, $count_names;
                 }
             }
     }
