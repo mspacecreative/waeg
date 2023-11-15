@@ -19,8 +19,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         foreach ($plant_names as $name) {
                             $name = get_sub_field('name') ? get_sub_field('name') : '';
                             $designation = get_row_index() > 1 ? get_sub_field('designation') . '; ' : get_sub_field('designation');
-                            $name_array = get_sub_field('name');
-                            $designation_array = get_sub_field('designation');
+                            $name_array[] = get_sub_field('name');
+                            $designation_array[] = get_sub_field('designation');
                             $combine_arrays = array_combine($name_array, $designation_array);
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
