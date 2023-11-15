@@ -11,8 +11,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
 
-            if (have_rows('botanical_name', get_the_ID($term_id))) {
-                while (have_rows('botanical_name', get_the_ID($term_id))) {
+            if (have_rows('botanical_name', get_the_ID($loop))) {
+                while (have_rows('botanical_name', get_the_ID($loop))) {
                     the_row();
                     $row_count = get_row_index();
                     $name_array[] = get_sub_field('name');
