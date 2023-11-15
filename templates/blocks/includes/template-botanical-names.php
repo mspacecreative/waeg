@@ -25,8 +25,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $result = $name;
                             $result .= $designation;
                             $result = $name_count > 1 ? substr_replace($result, "", -2) : $result;
+                            echo $result;
                         }
-                        echo $result;
                     }
                 }
             }
