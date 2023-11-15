@@ -14,15 +14,12 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             if (have_rows('botanical_name')) {
                 while (have_rows('botanical_name')) {
                     the_row();
-                    $row_count = get_row_index();
                     $name_array[] = get_sub_field('name');
                     $designation_array[] = get_sub_field('designation');
-                    $combine = array_combine($name_array, $designation_array);
+                    $combined_array = array_combine($name_array, $designation_array);
 
-                    if ($combine) {
-                        foreach($combine as $k => $v) {
-                            $v_check = $v ? ' ' . $v : '';
-                        }
+                    foreach($combined_array as $k => $v) {
+                        $v_check = $v ? ' ' . $v : '';
                     }
                 }
             }
