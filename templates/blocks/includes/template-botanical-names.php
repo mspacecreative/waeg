@@ -26,7 +26,8 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                         }
                     }
                     // print_r($count);
-                    echo $name, $designation, $count_names;
+                    echo $name, $designation;
+                    print_r($count_names);
                 }
             }
     }
