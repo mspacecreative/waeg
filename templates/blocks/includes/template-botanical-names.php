@@ -28,7 +28,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             // $array = ' <i>' . implode(' ', $name_array) . '</i> ' . implode(" ", $designation_array);
                         }
                     }
-                }
+                }echo $result;
             }
             // $combine_arrays = array_combine($name_array, $designation_array);
             // foreach($combine_arrays as $k => $v) {
@@ -36,7 +36,6 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
             // }
             // $data[] = ' <i>' . $k . '</i>' . $v_check;
             // print_r($data);
-            echo $result;
     }
     echo 
         '</h2>
