@@ -24,7 +24,7 @@ if (have_rows('botanical_names', get_the_ID($term_id))) {
                             $v_check = $v ? ' ' . $v : '';
                             $names_string[] = " <i>$k</i>$v_check";
                         }
-                    print_r($row_count);
+                    print_r($name_count);
                     echo implode('; ', $names_string);
                     }
                 }
