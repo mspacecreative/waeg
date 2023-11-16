@@ -18,7 +18,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
             foreach($combined_array as $k => $v) {
                 $v_check = $v ? ' ' . $v : '';
             }
-        } reset_rows();
+        }
 
         $names_array[] = ' <i>' . $k . '</i>' . $v_check;
 }
