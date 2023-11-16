@@ -21,7 +21,7 @@ body:not(.home) header.scroll-down, body:not(.home) header, .wp-block-cover.cove
 .wpml-language-switcher-block ul.horizontal-list li a:hover, .language-toggle .btn a,
 .language-toggle li a,
 .wpml-language-switcher-block ul.horizontal-list .btn a,
-.wpml-language-switcher-block ul.horizontal-list li a, .wp-block-post-template .wp-block-post .wp-block-post-featured-image a img, .wp-block-post-template .wp-block-post:hover img, .wp-block-post-template .wp-block-post:hover, .wp-block-post-template .wp-block-post {
+.wpml-language-switcher-block ul.horizontal-list li a, .virtual-tour__navigation .wp-block-button a, .wp-block-post-template .wp-block-post .wp-block-post-featured-image a img, .wp-block-post-template .wp-block-post:hover img, .wp-block-post-template .wp-block-post:hover, .wp-block-post-template .wp-block-post {
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -175,6 +175,7 @@ body {
 .virtual-tour__navigation .wp-block-button a {
   padding: 6px 16px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .home .partnership-logos {
