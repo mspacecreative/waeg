@@ -48,10 +48,6 @@
       opacity: 0.2;
     }
 
-    &:last-of-type::after {
-      display: none;
-    }
-
     @media (min-width: 981px) {
       flex-basis: calc(50% - 1rem);
       padding: 3rem;
@@ -143,6 +139,13 @@
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
+    }
+  }
+  &:last-of-type {
+    .tour-path-content-container {
+      &::after {
+        display: none;
+      }
     }
   }
   &:nth-of-type(odd) {
