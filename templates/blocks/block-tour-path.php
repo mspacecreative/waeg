@@ -21,7 +21,6 @@ $loop = new WP_Query( array(
     $plant_notes = get_field('notes', get_the_ID());
     $excerpt = !empty(get_the_excerpt($loop->ID)) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : $plant_notes;
     $permalink = get_the_permalink($loop->ID);
-    $tour_url = get_field('tour_url', get_the_ID()) ? '<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a></div>' : '';
     $term_id = get_term(get_the_ID(), 'species');
     $term_slug = $term_id->slug;
 
@@ -44,6 +43,8 @@ $loop = new WP_Query( array(
         default:
             $button_label = '';
     }
+
+    $tour_url = get_field('tour_url', get_the_ID()) ? '<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View ', 'waeg') . esc_html_x($button_label, 'waeg') . '</a></div>' : '';
 
     echo 
     '<div class="is-layout-flex tour-path-wrapper">
@@ -69,7 +70,7 @@ $loop = new WP_Query( array(
             '<div class="is-layout-flex wp-block-buttons">' 
                 . $tour_url . 
                 '<div class="wp-block-button is-style-outline">
-                    <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x($button_label, 'waeg') . esc_html_x(' Details', 'waeg') . '</a>
+                    <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('More Details', 'waeg') . '</a>
                 </div>
             </div>
         </div>';
