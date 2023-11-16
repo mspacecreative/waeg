@@ -26,7 +26,7 @@ if ($loop->have_posts()) {
             <div class="modal_table_cell">';
             while ($loop->have_posts()) {
                 $loop->the_post();
-                $term_id = get_queried_object()->term_id;
+                $term_id = get_queried_object_id();
                 $title = get_the_title($loop->ID);
                 $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
                 echo
@@ -59,7 +59,7 @@ if ($loop->have_posts()) {
                         </div>
                     </div>
                 </div>';
-            } wp_reset_postdata();
+            } rewind_posts();
             echo
             '</div>
         </div>
