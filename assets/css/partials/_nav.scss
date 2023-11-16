@@ -76,7 +76,10 @@
         width: 20px;
         height: 20px;
         margin-right: 10px;
+        margin-block-start: 2px;
         content: "";
+        display: inline-block;
+        vertical-align: top;
       }
     }
   }
