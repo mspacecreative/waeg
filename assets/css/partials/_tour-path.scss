@@ -14,7 +14,7 @@
       }
     }
   }
-  &:nth-of-type(even) {
+  &:not(:last-of-type):nth-of-type(even) {
     .tour-path-content-container {
       &::after {
         left: 50%;
@@ -23,13 +23,6 @@
         -moz-transform: rotate(240deg);
         -ms-transform: rotate(240deg);
         -o-transform: rotate(240deg);
-      }
-    }
-  }
-  &:last-of-type {
-    .tour-path-content-container {
-      &::after {
-        display: none;
       }
     }
   }

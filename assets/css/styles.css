@@ -931,16 +931,13 @@ html.fslightbox-open {
 .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
   right: 50%;
 }
-.tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
+.tour-path-wrapper:not(:last-of-type):nth-of-type(even) .tour-path-content-container::after {
   left: 50%;
   transform: rotate(240deg);
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
   -ms-transform: rotate(240deg);
   -o-transform: rotate(240deg);
-}
-.tour-path-wrapper:last-of-type .tour-path-content-container::after {
-  display: none;
 }
 .tour-path-wrapper .tour-path-content-container {
   position: relative;
