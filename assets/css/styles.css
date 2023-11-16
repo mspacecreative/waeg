@@ -406,6 +406,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.wp-site-blocks {
+  overflow: hidden;
+}
+
 header {
   position: relative;
   z-index: 999;
