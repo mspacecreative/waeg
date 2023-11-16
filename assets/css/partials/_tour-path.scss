@@ -18,11 +18,11 @@
     .tour-path-content-container {
       &::after {
         left: 50%;
-        transform: rotate(240deg);
-        -webkit-transform: rotate(240deg);
-        -moz-transform: rotate(240deg);
-        -ms-transform: rotate(240deg);
-        -o-transform: rotate(240deg);
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
       }
     }
   }
@@ -144,16 +144,6 @@
   &:nth-of-type(odd) {
     @media (min-width: 981px) {
       justify-content: flex-end;
-    }
-  }
-}
-
-.entry-content {
-  .tour-path-wrapper:last-of-type {
-    .tour-path-content-container {
-      &::after {
-        display: none;
-      }
     }
   }
 }
