@@ -170,6 +170,7 @@ body {
 }
 
 .virtual-tour__navigation .wp-block-button {
+  position: relative;
   margin-inline: 10px;
 }
 .virtual-tour__navigation .wp-block-button.current-menu-item {
@@ -182,6 +183,14 @@ body {
   padding: 6px 16px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.virtual-tour__navigation .wp-block-button__berries::before {
+  background-image: url(../img/icons/berry-button-icon.svg);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  content: "";
 }
 
 .home .partnership-logos {

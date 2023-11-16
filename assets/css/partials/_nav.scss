@@ -55,6 +55,7 @@
 // VIRTUAL TOUR NAVIGATION
 .virtual-tour__navigation {
   .wp-block-button {
+    position: relative;
     margin-inline: 10px;
     &.current-menu-item {
       background-color: $lightGrey;
@@ -67,6 +68,18 @@
       text-transform: uppercase;
       @extend %smooth-transition-25;
       text-decoration: none;
+    }
+  }
+
+  // ADDING ICONS TO NAV BUTTONS
+  .wp-block-button__berries {
+    &::before {
+      background-image: url(../img/icons/berry-button-icon.svg);
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      content: "";
     }
   }
 }
