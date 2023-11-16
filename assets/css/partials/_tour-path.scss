@@ -15,7 +15,7 @@
     }
   }
   &:nth-of-type(even) {
-    &:not(:last-of-type) {
+    &:not(:nth-last-of-type(even)) {
       .tour-path-content-container {
         &::after {
           left: 50%;
