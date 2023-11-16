@@ -931,7 +931,7 @@ html.fslightbox-open {
 .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
   right: 50%;
 }
-.tour-path-wrapper:nth-of-type(even):not(:nth-last-of-type(even)) .tour-path-content-container::after {
+.tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
   left: 50%;
   transform: rotate(240deg);
   -webkit-transform: rotate(240deg);
@@ -1054,6 +1054,9 @@ html.fslightbox-open {
   .tour-path-wrapper:nth-of-type(odd) {
     justify-content: flex-end;
   }
+}
+.tour-path-wrapper:last-of-type .tour-path-content-container::after {
+  display: none;
 }
 
 .modal-backdrop {

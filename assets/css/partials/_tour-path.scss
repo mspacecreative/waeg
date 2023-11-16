@@ -15,16 +15,14 @@
     }
   }
   &:nth-of-type(even) {
-    &:not(:nth-last-of-type(even)) {
-      .tour-path-content-container {
-        &::after {
-          left: 50%;
-          transform: rotate(240deg);
-          -webkit-transform: rotate(240deg);
-          -moz-transform: rotate(240deg);
-          -ms-transform: rotate(240deg);
-          -o-transform: rotate(240deg);
-        }
+    .tour-path-content-container {
+      &::after {
+        left: 50%;
+        transform: rotate(240deg);
+        -webkit-transform: rotate(240deg);
+        -moz-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        -o-transform: rotate(240deg);
       }
     }
   }
@@ -146,6 +144,13 @@
   &:nth-of-type(odd) {
     @media (min-width: 981px) {
       justify-content: flex-end;
+    }
+  }
+  &:last-of-type {
+    .tour-path-content-container {
+      &::after {
+        display: none;
+      }
     }
   }
 }
