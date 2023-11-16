@@ -173,7 +173,7 @@ body {
   margin-inline: 10px;
 }
 .virtual-tour__navigation .wp-block-button.current-menu-item {
-  background-color: var(--wp--preset--colo--light-gray);
+  background-color: var(--wp--preset--color--light-gray);
 }
 .virtual-tour__navigation .wp-block-button a {
   padding: 6px 16px;
@@ -969,7 +969,7 @@ html.fslightbox-open {
   color: var(--wp--preset--color--dark-green);
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .is-style-outline .wp-block-button__link:hover {
-  background-color: var(--wp--preset--colo--light-gray);
+  background-color: var(--wp--preset--color--light-gray);
 }
 .tour-path-wrapper .tour-path-content-container .tour-path-content .wp-block-button__link {
   display: flex;
