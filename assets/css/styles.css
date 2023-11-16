@@ -961,6 +961,9 @@ html.fslightbox-open {
   z-index: 0;
   opacity: 0.2;
 }
+.tour-path-wrapper .tour-path-content-container:last-of-type::after {
+  display: none;
+}
 @media (min-width: 981px) {
   .tour-path-wrapper .tour-path-content-container {
     flex-basis: calc(50% - 1rem);
