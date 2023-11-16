@@ -169,8 +169,8 @@ body {
   font-size: 24px;
 }
 
-.virtual-tour__navigation .wp-block-button {
-  margin-inline: 10px;
+.virtual-tour__navigation {
+  gap: 20px;
 }
 .virtual-tour__navigation .wp-block-button.current-menu-item {
   background-color: var(--wp--preset--color--light-gray);
