@@ -19,9 +19,9 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
                 $v_check = $v ? ' ' . $v : '';
             }
         }
-        
+
         $names_array[] = ' <i>' . $k . '</i>' . $v_check;
-}
+} wp_reset_postdata();
 echo implode('; ', $names_array);
 
 echo
