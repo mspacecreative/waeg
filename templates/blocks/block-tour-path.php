@@ -18,7 +18,8 @@ $loop = new WP_Query( array(
     // VARIABLES
     $line_drawing = get_field('drawing', get_the_ID());
     $title = get_the_title($loop->ID);
-    $excerpt = get_the_excerpt($loop->ID) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : '';
+    $plant_notes = get_field('notes', get_the_ID());
+    $excerpt = !empty(get_the_excerpt($loop->ID)) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : $plant_notes;
     $permalink = get_the_permalink($loop->ID);
     $tour_url = get_field('tour_url', get_the_ID()) ? '<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a></div>' : '';
 
