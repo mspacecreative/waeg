@@ -54,6 +54,7 @@
 
 // VIRTUAL TOUR NAVIGATION
 nav.virtual-tour__navigation {
+  @extend %smooth-transition-25;
   @media (min-width: 1024px) {
     position: sticky;
     top: 2em;
