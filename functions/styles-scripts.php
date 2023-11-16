@@ -4,6 +4,7 @@ function waeg_styles() {
     $rand_num = rand();
         wp_register_style( 'main', get_template_directory_uri() . '/assets/css/styles.css?ver=' . $rand_num, array(), null );
 	    wp_enqueue_style( 'main' );
+    global $post;
     $virtual_tour_page_id = '1677';
     if ( is_singular(array('plant', 'habitat')) || is_page('virtual-tour') || $post->post_parent == $virtual_tour_page_id ) {
         // SWIPER CSS
