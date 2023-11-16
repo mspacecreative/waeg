@@ -69,7 +69,7 @@ $loop = new WP_Query( array(
             '<div class="is-layout-flex wp-block-buttons">' 
                 . $tour_url . 
                 '<div class="wp-block-button is-style-outline">
-                    <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x($button_label, 'waeg') . '</a>
+                    <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x($button_label, 'waeg') . esc_html_x(' Details', 'waeg') . '</a>
                 </div>
             </div>
         </div>';
