@@ -931,7 +931,7 @@ html.fslightbox-open {
 .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
   right: 50%;
 }
-.tour-path-wrapper:not(:last-of-type):nth-of-type(even) .tour-path-content-container::after {
+.tour-path-wrapper:nth-of-type(even):not(:last-child) .tour-path-content-container::after {
   left: 50%;
   transform: rotate(240deg);
   -webkit-transform: rotate(240deg);
