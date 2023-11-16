@@ -58,6 +58,9 @@
     margin-inline: 10px;
     &.current-menu-item {
       background-color: $lightGrey;
+      > span {
+        color: var(--wp--preset--color--contrast);
+      }
     }
     a {
       padding: 6px 16px;
