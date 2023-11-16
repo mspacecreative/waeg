@@ -1098,7 +1098,8 @@ html.fslightbox-open {
     justify-content: flex-end;
   }
 }
-.tour-path-wrapper:last-of-type:nth-of-type(even) .tour-path-content-container::after {
+
+.entry-content .tour-path-wrapper:last-child .tour-path-content-container::after {
   display: none;
 }
 
