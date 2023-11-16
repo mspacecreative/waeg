@@ -56,6 +56,9 @@
 .virtual-tour__navigation {
   .wp-block-button {
     margin-inline: 10px;
+    &.current-menu-item {
+      background-color: $lightGrey;
+    }
     a {
       padding: 6px 16px;
       text-transform: uppercase;

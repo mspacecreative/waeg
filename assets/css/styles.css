@@ -172,6 +172,9 @@ body {
 .virtual-tour__navigation .wp-block-button {
   margin-inline: 10px;
 }
+.virtual-tour__navigation .wp-block-button.current-menu-item {
+  background-color: var(--wp--preset--colo--light-gray);
+}
 .virtual-tour__navigation .wp-block-button a {
   padding: 6px 16px;
   text-transform: uppercase;
