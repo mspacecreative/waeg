@@ -72,6 +72,10 @@
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
   }
+  @media (min-width: 1024px) {
+    position: sticky;
+    top: 2em;
+  }
   .wp-block-button {
     @extend %smooth-transition-25;
     &.current-menu-item {

@@ -191,6 +191,13 @@ body {
     -o-border-radius: 25px;
   }
 }
+@media (min-width: 1024px) {
+  .virtual-tour__navigation.wp-block-navigation__container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+  }
+}
 .virtual-tour__navigation.wp-block-navigation__container .wp-block-button.current-menu-item {
   background-color: var(--wp--preset--color--light-gray);
 }
@@ -432,10 +439,6 @@ body {
   background-position: bottom right;
   background-size: 20%;
   background-repeat: no-repeat;
-}
-
-.wp-site-blocks {
-  overflow: hidden;
 }
 
 header {
