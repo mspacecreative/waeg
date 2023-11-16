@@ -174,6 +174,13 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 2em;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scroll-up nav.virtual-tour__navigation {
+    top: 7em;
   }
 }
 

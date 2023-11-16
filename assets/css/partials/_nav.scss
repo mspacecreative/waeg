@@ -57,6 +57,14 @@ nav.virtual-tour__navigation {
   @media (min-width: 1024px) {
     position: sticky;
     top: 2em;
+    z-index: 1;
+  }
+}
+.scroll-up {
+  nav.virtual-tour__navigation {
+    @media (min-width: 1024px) {
+      top: 7em;
+    }
   }
 }
 .virtual-tour__navigation.wp-block-navigation__container {
