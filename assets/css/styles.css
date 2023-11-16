@@ -171,10 +171,24 @@ body {
 
 .virtual-tour__navigation {
   gap: 20px;
+  flex: 0 1 auto;
+  padding: 20px;
+  background: #e3e3e3;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 0 2px 3px #999;
 }
 @media (max-width: 780px) {
   .virtual-tour__navigation {
     justify-content: flex-start;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
   }
 }
 .virtual-tour__navigation .wp-block-button.current-menu-item {
