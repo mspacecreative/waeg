@@ -22,7 +22,7 @@ $loop = new WP_Query( array(
     $excerpt = !empty(get_the_excerpt($loop->ID)) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : $plant_notes;
     $permalink = get_the_permalink($loop->ID);
     $tour_url = get_field('tour_url', get_the_ID()) ? '<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View Berry', 'waeg') . '</a></div>' : '';
-    $term_id = get_term(get_queried_object_id(), 'species');
+    $term_id = get_term(get_the_ID(), 'species');
     $term_slug = $term_id->slug;
 
     switch($term_slug) {
