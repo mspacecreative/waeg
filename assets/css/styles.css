@@ -169,6 +169,14 @@ body {
   font-size: 24px;
 }
 
+@media (min-width: 1024px) {
+  nav.virtual-tour__navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+  }
+}
+
 .virtual-tour__navigation.wp-block-navigation__container {
   gap: 15px;
   flex: 0 1 auto;
@@ -189,13 +197,6 @@ body {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-  }
-}
-@media (min-width: 1024px) {
-  .virtual-tour__navigation.wp-block-navigation__container {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2em;
   }
 }
 .virtual-tour__navigation.wp-block-navigation__container .wp-block-button.current-menu-item {
