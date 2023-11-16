@@ -29,7 +29,7 @@ $loop = new WP_Query( array(
             $button_label = 'Berry';
             break;
         case 'flowers-and-herbs':
-            $button_label = 'Flowering Plant';
+            $button_label = 'Plant';
             break;
         case 'other-important-plants-and-species':
             $button_label = 'Species';
