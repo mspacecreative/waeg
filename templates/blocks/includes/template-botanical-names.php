@@ -11,14 +11,13 @@ while (have_rows('botanical_names', get_the_ID())) {
 
         while (have_rows('botanical_name', get_the_ID())) {
             the_row();
-            if ($row = get_row()) {
-                $name_array[] = $row['name'];
-                $designation_array[] = $row['designation'];
-                $combined_array = array_combine($name_array, $designation_array);
+            $row = get_row();
+            $name_array[] = $row['name'];
+            $designation_array[] = $row['designation'];
+            $combined_array = array_combine($name_array, $designation_array);
 
-                foreach($combined_array as $k => $v) {
-                    $v_check = $v ? ' ' . $v : '';
-                }
+            foreach($combined_array as $k => $v) {
+                $v_check = $v ? ' ' . $v : '';
             }
         }
 
