@@ -17,7 +17,9 @@
   &:nth-of-type(even) {
     .tour-path-content-container {
       &::after {
-        left: 50%;
+        @media (min-width: 1024px) {
+          left: 50%;
+        }
         transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
         -moz-transform: scaleX(-1);
