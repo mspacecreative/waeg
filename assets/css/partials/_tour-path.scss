@@ -149,7 +149,7 @@
 }
 
 .entry-content {
-  .tour-path-wrapper:last-child {
+  .tour-path-wrapper:last-of-type {
     .tour-path-content-container {
       &::after {
         display: none;
