@@ -146,7 +146,7 @@
       justify-content: flex-end;
     }
   }
-  &:last-of-type {
+  &:last-of-type:nth-of-type(even) {
     .tour-path-content-container {
       &::after {
         display: none;
