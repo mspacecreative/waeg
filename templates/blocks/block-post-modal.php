@@ -28,7 +28,7 @@ if ($loop->have_posts()) {
                 $loop->the_post();
                 $term_id = get_queried_object_id();
                 $title = get_the_title($loop->ID);
-                $line_drawing = get_field('drawing', get_the_ID($term_id));
+                $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
                 echo
                 '<div id="bio-' . $count++ . '" class="post-modal-content">
                     <button class="closeModalButton">
@@ -46,9 +46,9 @@ if ($loop->have_posts()) {
                             '</div>
                         </div>
                         <div class="is-layout-flex">
-                            <div class="line-drawing-container">
-                                <img src="' . $line_drawing['url'] . '" alt="' . $line_drawing['alt'] . '">
-                            </div>
+                            <div class="line-drawing-container">'
+                                . $line_drawing .
+                            '</div>
                             <div class="post-content">';
                                 include 'includes/template-traditional-names.php';
                                 include 'includes/template-carousel.php';
