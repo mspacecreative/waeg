@@ -21,7 +21,7 @@ $loop = new WP_Query( array(
     $plant_notes = get_field('notes', get_the_ID());
     $excerpt = !empty(get_the_excerpt($loop->ID)) ? '<p class="text__small">' . get_the_excerpt($loop->ID) . '</p>' : $plant_notes;
     $permalink = get_the_permalink($loop->ID);
-    $term_id = get_term($loop->ID, 'species');
+    $term_id = get_term(get_queried_object_id(), 'species');
     $term_slug = $term_id->slug;
 
     switch($term_slug) {
