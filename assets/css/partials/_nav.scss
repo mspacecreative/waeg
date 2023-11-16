@@ -58,7 +58,7 @@
     margin-inline: 10px;
     &.current-menu-item {
       background-color: $lightGrey;
-      > span {
+      .wp-block-navigation-item__label {
         color: var(--wp--preset--color--contrast);
       }
     }

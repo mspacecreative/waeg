@@ -175,7 +175,7 @@ body {
 .virtual-tour__navigation .wp-block-button.current-menu-item {
   background-color: var(--wp--preset--color--light-gray);
 }
-.virtual-tour__navigation .wp-block-button.current-menu-item > span {
+.virtual-tour__navigation .wp-block-button.current-menu-item .wp-block-navigation-item__label {
   color: var(--wp--preset--color--contrast);
 }
 .virtual-tour__navigation .wp-block-button a {
