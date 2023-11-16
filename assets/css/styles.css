@@ -179,7 +179,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .scroll-up nav.virtual-tour__navigation {
+  .scroll-up ~ main nav.virtual-tour__navigation {
     top: 7em;
   }
 }

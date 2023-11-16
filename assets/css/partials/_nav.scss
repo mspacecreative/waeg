@@ -60,7 +60,7 @@ nav.virtual-tour__navigation {
     z-index: 1;
   }
 }
-.scroll-up {
+.scroll-up ~ main {
   nav.virtual-tour__navigation {
     @media (min-width: 1024px) {
       top: 7em;
