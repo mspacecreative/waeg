@@ -54,6 +54,9 @@
 
 // VIRTUAL TOUR NAVIGATION
 .virtual-tour__navigation {
+  @media (max-width: 780px) {
+    justify-content: flex-start;
+  }
   gap: 20px;
   .wp-block-button {
     @extend %smooth-transition-25;

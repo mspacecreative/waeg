@@ -172,6 +172,11 @@ body {
 .virtual-tour__navigation {
   gap: 20px;
 }
+@media (max-width: 780px) {
+  .virtual-tour__navigation {
+    justify-content: flex-start;
+  }
+}
 .virtual-tour__navigation .wp-block-button.current-menu-item {
   background-color: var(--wp--preset--color--light-gray);
 }
