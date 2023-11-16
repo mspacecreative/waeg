@@ -1,49 +1,64 @@
 .wp-block-navigation .wp-block-navigation-item {
-    // margin-right: 20px;
+  // margin-right: 20px;
 
-    &:last-of-type {
-        margin-right: 0;
-    }
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .wp-block-navigation__responsive-container.is-menu-open {
-    padding-top: var(--wp--preset--spacing--40);
+  padding-top: var(--wp--preset--spacing--40);
 }
 
-.nav-icon>button {
-    position: relative;
-    padding-left: 60px;
-    align-items: center;
+.nav-icon > button {
+  position: relative;
+  padding-left: 60px;
+  align-items: center;
 
-    &::before {
-        position: absolute;
-        left: 0;
-        content: "MENU";
-        top: 0;
-        font-size: 18px;
-        line-height: 25.5px;
-    }
+  &::before {
+    position: absolute;
+    left: 0;
+    content: "MENU";
+    top: 0;
+    font-size: 18px;
+    line-height: 25.5px;
+  }
 }
 
 .splash-header {
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 .wp-block-navigation__responsive-close {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content,
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
-    align-items: center;
-    text-align: center;
-    gap: var(--wp--preset--spacing--30);
+.wp-block-navigation__responsive-container.is-menu-open
+  .wp-block-navigation__responsive-container-content,
+.wp-block-navigation__responsive-container.is-menu-open
+  .wp-block-navigation__responsive-container-content
+  .wp-block-navigation__container {
+  align-items: center;
+  text-align: center;
+  gap: var(--wp--preset--spacing--30);
 }
 
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-    background-color: var(--wp--preset--color--light-green);
-    color: #fff;
-    font-size: 24px;
+.wp-block-navigation:not(.has-background)
+  .wp-block-navigation__responsive-container.is-menu-open {
+  background-color: var(--wp--preset--color--light-green);
+  color: #fff;
+  font-size: 24px;
+}
+
+// VIRTUAL TOUR NAVIGATION
+.virtual-tour__navigation {
+  .wp-block-button {
+    margin-inline: 10px;
+    a {
+      padding: 6px 16px;
+      text-transform: uppercase;
+    }
+  }
 }

@@ -169,6 +169,14 @@ body {
   font-size: 24px;
 }
 
+.virtual-tour__navigation .wp-block-button {
+  margin-inline: 10px;
+}
+.virtual-tour__navigation .wp-block-button a {
+  padding: 6px 16px;
+  text-transform: uppercase;
+}
+
 .home .partnership-logos {
   position: absolute;
   bottom: 2em;
