@@ -170,7 +170,7 @@ body {
 }
 
 .virtual-tour__navigation.wp-block-navigation__container {
-  gap: 20px;
+  gap: 15px;
   flex: 0 1 auto;
   padding: 20px;
   background: #e3e3e3;
