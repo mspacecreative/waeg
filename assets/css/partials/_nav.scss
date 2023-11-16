@@ -55,6 +55,7 @@
 // VIRTUAL TOUR NAVIGATION
 .virtual-tour__navigation {
   .wp-block-button {
+    @extend %smooth-transition-25;
     margin-inline: 10px;
     &.current-menu-item {
       background-color: $lightGrey;
@@ -66,7 +67,6 @@
       position: relative;
       padding: 6px 16px;
       text-transform: uppercase;
-      @extend %smooth-transition-25;
       text-decoration: none;
 
       &::before {
