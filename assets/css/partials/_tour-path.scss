@@ -149,7 +149,7 @@
         justify-content: flex-end;
       }
     }
-    &:nth-of-type(odd):last-of-type {
+    &:last-of-type:nth-child(odd) {
       .tour-path-content-container {
         &::after {
           display: none;
