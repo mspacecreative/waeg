@@ -164,9 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const mediaQuery = window.matchMedia('(min-width: 1150px)');
 
 // Register event listener
-mediaQuery.addEventListener("change", () => {
-  handleTabletChange
-});
+mediaQuery.addListener(handleTabletChange);
 
 function handleTabletChange(e) {
   if (e.matches) {
