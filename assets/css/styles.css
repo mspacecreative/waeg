@@ -179,6 +179,10 @@ body {
 }
 
 .virtual-tour__navigation-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  z-index: 1;
   background: #e3e3e3;
   box-shadow: 0 2px 3px #999;
   border-radius: 23px;
