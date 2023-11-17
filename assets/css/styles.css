@@ -171,6 +171,14 @@ body {
 
 .virtual-tour-navigation__toggle {
   padding-block: 10px;
+}
+@media (min-width: 1024px) {
+  .virtual-tour-navigation__toggle {
+    display: none;
+  }
+}
+
+.virtual-tour__navigation-container {
   background: #e3e3e3;
   box-shadow: 0 2px 3px #999;
   border-radius: 23px;
@@ -179,12 +187,6 @@ body {
   -ms-border-radius: 23px;
   -o-border-radius: 23px;
 }
-@media (min-width: 1024px) {
-  .virtual-tour-navigation__toggle {
-    display: none;
-  }
-}
-
 @media (min-width: 1024px) {
   .virtual-tour__navigation-container {
     position: -webkit-sticky;
