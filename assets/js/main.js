@@ -165,9 +165,6 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
-  // if (navToggle.style.display === 'none') {
-  //   virtualTourNav.style.display = 'block';
-  // }
 });
 
 function fadeInPage() {
@@ -177,15 +174,6 @@ function fadeInPage() {
 
 window.onload = () => {
   setTimeout(fadeInPage, 500);
-  if (window.matchMedia("(min-width: 1150px)").matches) {
-    window.addEventListener("resize", () => {
-      navToggle.style.display = 'none';
-    });
-  } else if (window.matchMedia("(max-width: 1149px)").matches) {
-    window.addEventListener("resize", () => {
-      navToggle.style.display = 'block';
-    });
-  }
 };
 
 // HIDE MODAL ON NAV LINK CLICK
