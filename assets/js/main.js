@@ -172,6 +172,10 @@ function fadeInPage() {
   document.body.classList.add("fade-in");
 }
 
+if (window.matchMedia("(min-width: 1150px)").matches) {
+  virtualTourNav.classList.toggle = 'show';
+}
+
 window.onload = () => {
   setTimeout(fadeInPage, 500);
 };
