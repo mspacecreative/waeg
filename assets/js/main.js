@@ -165,7 +165,7 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
-  if (window.width > 1149) {
+  if (window.innerWidth > 1149) {
     virtualTourNav.classList.toggle('show');
   }
 });
