@@ -179,6 +179,8 @@ window.onload = () => {
   setTimeout(fadeInPage, 500);
   if (window.matchMedia("(min-width: 1150px)").matches) {
     navToggle.style.display = 'none';
+  } else {
+    navToggle.style.display = 'block';
   }
 };
 
