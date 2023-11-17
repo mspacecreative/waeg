@@ -1,3 +1,11 @@
+// VIRTUAL TOUR NAVIGATION
+const navToggle = document.querySelector('.virtual-tour-navigation__toggle');
+const virtualTourNav = document.querySelector('nav.virtual-tour__navigation');
+
+navToggle.addEventListener('click', function() {
+  virtualTourNav.classList.toggle('show');
+});
+
 // POST MODAL
 // BIO MODAL FUNCTIONALITY
 let bioButton = document.querySelectorAll(".post-modal-link");
