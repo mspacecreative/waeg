@@ -64,10 +64,6 @@ var slideToggle = (target, duration = 500) => {
   }
 }
 
-if (window.matchMedia("(min-width: 1150px)").matches) {
-  virtualTourNav.style.display = 'block';
-}
-
 // VIRTUAL TOUR NAVIGATION
 const navToggle = document.querySelector('.virtual-tour-navigation__toggle');
 const virtualTourNav = document.querySelector('nav.virtual-tour__navigation');
@@ -178,6 +174,9 @@ function fadeInPage() {
 
 window.onload = () => {
   setTimeout(fadeInPage, 500);
+  if (window.matchMedia("(min-width: 1150px)").matches) {
+    virtualTourNav.style.display = 'block';
+  }
 };
 
 // HIDE MODAL ON NAV LINK CLICK
