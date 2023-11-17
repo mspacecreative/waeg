@@ -18,16 +18,16 @@ $args = array(
 
 $query = new WP_Query($args);
 
-if ($query->have_posts()) {
+if (count($query->posts)) {
     echo
     '<div class="modal-backdrop"></div>
     <div class="modal">
         <div class="modal_table">
             <div class="modal_table_cell">';
-            while ($query->have_posts()) {
-                $query->the_post();
+            foreach ($query->posts as $nested_post) {
+                // $query->the_post();
                 $term_id = get_queried_object_id();
-                $title = get_the_title($query->ID);
+                $title = get_the_title($nested_post->ID);
                 $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
                 echo
                 '<div id="bio-' . $count++ . '" class="post-modal-content">
