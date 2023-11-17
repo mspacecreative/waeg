@@ -53,7 +53,7 @@
 }
 
 .virtual-tour-navigation__toggle {
-  @media (min-width: 1024px) {
+  @media (min-width: 1150px) {
     display: none;
   }
   padding: 5px 25px;
@@ -68,12 +68,12 @@
 
 .virtual-tour__navigation-container {
   @extend %smooth-transition-25;
-  @media (min-width: 1024px) {
+  @media (min-width: 1150px) {
     position: sticky;
     top: 2em;
     z-index: 1;
   }
-  @media (max-width: 1023px) {
+  @media (max-width: 1149px) {
     background: #e3e3e3;
     box-shadow: 0 2px 3px #999;
     border-radius: 23px;
@@ -88,7 +88,7 @@
 // VIRTUAL TOUR NAVIGATION
 nav.virtual-tour__navigation {
   margin-block-start: 0;
-  @media (max-width: 1023px) {
+  @media (max-width: 1149px) {
     display: none;
     &.show {
       display: block;
@@ -97,7 +97,7 @@ nav.virtual-tour__navigation {
 }
 .scroll-up ~ main {
   .virtual-tour__navigation-container {
-    @media (min-width: 1024px) {
+    @media (min-width: 1150px) {
       top: 7em;
     }
   }
@@ -106,7 +106,7 @@ nav.virtual-tour__navigation {
   gap: 15px;
   flex: 0 1 auto;
   padding: 20px;
-  @media (min-width: 1024px) {
+  @media (min-width: 1150px) {
     background: #e3e3e3;
     border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -115,7 +115,7 @@ nav.virtual-tour__navigation {
     -o-border-radius: 50px;
     box-shadow: 0 2px 3px #999;
   }
-  @media (max-width: 1023px) {
+  @media (max-width: 1149px) {
     padding: 15px 10px 10px;
   }
   @media (max-width: 780px) {
