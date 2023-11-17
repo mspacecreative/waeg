@@ -182,6 +182,10 @@ window.addEventListener("resize", () => {
   }
 });
 
+if (navToggle.innerHTML === "CLOSE") {
+  virtualTourNav.style.display = 'block';
+}
+
 function fadeInPage() {
   document.body.classList.remove("fade-out");
   document.body.classList.add("fade-in");
