@@ -196,6 +196,11 @@ nav.virtual-tour__navigation {
     z-index: 1;
   }
 }
+@media (max-width: 1023px) {
+  nav.virtual-tour__navigation {
+    display: none;
+  }
+}
 
 @media (min-width: 1024px) {
   .scroll-up ~ main nav.virtual-tour__navigation {
