@@ -163,26 +163,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const mediaQuery = window.matchMedia('(min-width: 1150px)');
 
-window.addEventListener("resize", () => {
-  if (!document.body.classList.contains("home")) {
-    mainTag.style.marginTop = headerHeight.clientHeight + "px";
-  }
-});
-
-function handleTabletChange(e) {
-  // Check if the media query is true
-  if (e.matches) {
-    virtualTourNav.style.display = 'block';
-  }
-}
-
 // Register event listener
 mediaQuery.addEventListener("change", () => {
   handleTabletChange
 });
 
-// Initial check
+function handleTabletChange(e) {
+  if (e.matches)
+    virtualTourNav.style.display = 'block';
+}
+
 handleTabletChange(mediaQuery);
+
+window.addEventListener("resize", () => {
+  if (!document.body.classList.contains("home")) {
+    mainTag.style.marginTop = headerHeight.clientHeight + "px";
+  }
+});
 
 function fadeInPage() {
   document.body.classList.remove("fade-out");
