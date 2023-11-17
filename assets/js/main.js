@@ -165,7 +165,7 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
-  if (window.matchMedia("(min-width: 1150px)").matches) {
+  if (window.matchMedia("(max-width: 1149px)").matches) {
     navToggle.style.display = 'none';
   }
   if (navToggle.style.display === 'none') {
