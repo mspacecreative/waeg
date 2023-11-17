@@ -9,17 +9,17 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-        while (have_rows('botanical_name')) {
-            the_row();
-            $name_array[] = get_sub_field('name');
-            $designation_array[] = get_sub_field('designation');
-            $combined_array = array_combine($name_array, $designation_array);
+    while (have_rows('botanical_name')) {
+        the_row();
+        $name_array[] = get_sub_field('name');
+        $designation_array[] = get_sub_field('designation');
+        $combined_array = array_combine($name_array, $designation_array);
 
-            foreach($combined_array as $k => $v)
-                $v_check = $v ? ' ' . $v : '';
-                
+        foreach($combined_array as $k => $v)
+            $v_check = $v ? ' ' . $v : '';
+            
         $names_array[] = ' <i>' . $k . '</i>' . $v_check;
-        }
+    }
 }
         echo implode('; ', $names_array);
 
