@@ -165,9 +165,9 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
-  if (navToggle.style.display === 'none') {
-    virtualTourNav.style.display = 'block';
-  }
+  // if (navToggle.style.display === 'none') {
+  //   virtualTourNav.style.display = 'block';
+  // }
 });
 
 function fadeInPage() {
