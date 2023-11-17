@@ -180,11 +180,11 @@ window.onload = () => {
   if (window.matchMedia("(min-width: 1150px)").matches) {
     window.addEventListener("resize", () => {
       navToggle.style.display = 'none';
-    }
+    });
   } else if (window.matchMedia("(max-width: 1149px)").matches) {
     window.addEventListener("resize", () => {
       navToggle.style.display = 'block';
-    }
+    });
   }
 };
 
