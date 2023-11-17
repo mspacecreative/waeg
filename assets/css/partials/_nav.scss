@@ -67,7 +67,6 @@
     z-index: 1;
   }
   @media (max-width: 1023px) {
-    padding-inline-start: 10px;
     background: #e3e3e3;
     box-shadow: 0 2px 3px #999;
     border-radius: 23px;
@@ -107,6 +106,9 @@ nav.virtual-tour__navigation {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     box-shadow: 0 2px 3px #999;
+  }
+  @media (max-width: 1023px) {
+    padding-inline-start: 10px;
   }
   @media (max-width: 780px) {
     justify-content: flex-start;
