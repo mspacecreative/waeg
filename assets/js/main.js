@@ -180,11 +180,10 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
+  if (navToggle.innerHTML === "CLOSE") {
+    virtualTourNav.style.display = 'block';
+  }
 });
-
-if (navToggle.innerHTML === "CLOSE") {
-  virtualTourNav.style.display = 'block';
-}
 
 function fadeInPage() {
   document.body.classList.remove("fade-out");
