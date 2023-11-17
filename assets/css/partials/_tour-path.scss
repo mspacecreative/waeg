@@ -29,6 +29,13 @@
         }
       }
     }
+    &:last-of-type {
+      .tour-path-content-container {
+        &::after {
+          display: none;
+        }
+      }
+    }
     .tour-path-content-container {
       position: relative;
       background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
@@ -149,7 +156,7 @@
         justify-content: flex-end;
       }
     }
-    &:last-of-type:nth-child(odd) {
+    &:last-of-type {
       .tour-path-content-container {
         &::after {
           display: none;

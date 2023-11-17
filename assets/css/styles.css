@@ -1047,6 +1047,9 @@ html.fslightbox-open {
     left: 50%;
   }
 }
+.entry-content .tour-path-wrapper:last-of-type .tour-path-content-container::after {
+  display: none;
+}
 .entry-content .tour-path-wrapper .tour-path-content-container {
   position: relative;
   background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
@@ -1163,7 +1166,7 @@ html.fslightbox-open {
     justify-content: flex-end;
   }
 }
-.entry-content .tour-path-wrapper:last-of-type:nth-child(odd) .tour-path-content-container::after {
+.entry-content .tour-path-wrapper:last-of-type .tour-path-content-container::after {
   display: none;
 }
 
