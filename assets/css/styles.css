@@ -1031,14 +1031,6 @@ html.fslightbox-open {
   .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container {
     flex-flow: row-reverse;
   }
-  .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
-    background-size: cover;
-    transform: scaleX(-1) rotate(270deg);
-    -webkit-transform: scaleX(-1) rotate(270deg);
-    -moz-transform: scaleX(-1) rotate(270deg);
-    -ms-transform: scaleX(-1) rotate(270deg);
-    -o-transform: scaleX(-1) rotate(270deg);
-  }
 }
 @media (min-width: 981px) {
   .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container {
@@ -1076,6 +1068,16 @@ html.fslightbox-open {
 @media (min-width: 1024px) {
   .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
     left: 50%;
+  }
+}
+@media (max-width: 980px) {
+  .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
+    background-size: cover;
+    transform: scaleX(-1) rotate(270deg);
+    -webkit-transform: scaleX(-1) rotate(270deg);
+    -moz-transform: scaleX(-1) rotate(270deg);
+    -ms-transform: scaleX(-1) rotate(270deg);
+    -o-transform: scaleX(-1) rotate(270deg);
   }
 }
 .entry-content .tour-path-wrapper:nth-last-of-type(3) .tour-path-content-container::after {
