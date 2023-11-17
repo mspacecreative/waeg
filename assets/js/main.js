@@ -184,7 +184,7 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
-  if (navToggle.innerHTML === "CLOSE") {
+  if (navToggle && navToggle.innerHTML === "CLOSE") {
     virtualTourNav.style.display = 'block';
   }
 });
