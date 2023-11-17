@@ -78,6 +78,14 @@ if (navToggle) {
       this.innerHTML="NAVIGATION";
     }
   });
+
+  function handleTabletChange(e) {
+    if (e.matches) {
+      virtualTourNav.style.display = 'block';
+    } else {
+      virtualTourNav.style.display = 'none';
+    }
+  }
 }
 
 // POST MODAL
@@ -167,16 +175,6 @@ const mediaQuery = window.matchMedia('(min-width: 1150px)');
 
 // Register event listener
 mediaQuery.addEventListener("change", handleTabletChange);
-
-function handleTabletChange(e) {
-  if (virtualTourNav) {
-    if (e.matches) {
-      virtualTourNav.style.display = 'block';
-    } else {
-      virtualTourNav.style.display = 'none';
-    }
-  }
-}
 
 handleTabletChange(mediaQuery);
 
