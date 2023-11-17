@@ -170,7 +170,9 @@ body {
 }
 
 .virtual-tour-navigation__toggle {
-  padding-block: 10px;
+  padding: 5px 25px;
+  background-color: var(--wp--preset--color--light-green);
+  color: #fff;
 }
 @media (min-width: 1024px) {
   .virtual-tour-navigation__toggle {
@@ -195,6 +197,7 @@ body {
     -moz-border-radius: 23px;
     -ms-border-radius: 23px;
     -o-border-radius: 23px;
+    padding: 10px;
   }
 }
 
