@@ -73,9 +73,9 @@ var slideToggle = (target, duration = 500) => {
 //   slideDown(document.getElementById("target"), 200);
 // });
 
-document.getElementById("triggerToggle").addEventListener('click', function() {
-  slideToggle(document.getElementById("target"), 200);
-});
+// document.getElementById("triggerToggle").addEventListener('click', function() {
+//   slideToggle(document.getElementById("target"), 200);
+// });
 
 // VIRTUAL TOUR NAVIGATION
 const navToggle = document.querySelector('.virtual-tour-navigation__toggle');
