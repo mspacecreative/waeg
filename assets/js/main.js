@@ -68,15 +68,17 @@ var slideToggle = (target, duration = 500) => {
 const navToggle = document.querySelector('.virtual-tour-navigation__toggle');
 const virtualTourNav = document.querySelector('nav.virtual-tour__navigation');
 
-navToggle.addEventListener('click', function() {
-  // virtualTourNav.classList.toggle('show');
-  slideToggle(virtualTourNav, 200);
-  if (this.innerHTML === "NAVIGATION") {
-    this.innerHTML="CLOSE";
-  } else {
-    this.innerHTML="NAVIGATION";
-  }
-});
+if (navToggle) {
+  navToggle.addEventListener('click', function() {
+    // virtualTourNav.classList.toggle('show');
+    slideToggle(virtualTourNav, 200);
+    if (this.innerHTML === "NAVIGATION") {
+      this.innerHTML="CLOSE";
+    } else {
+      this.innerHTML="NAVIGATION";
+    }
+  });
+}
 
 // POST MODAL
 // BIO MODAL FUNCTIONALITY
