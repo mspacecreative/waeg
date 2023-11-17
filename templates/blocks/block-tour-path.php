@@ -79,4 +79,4 @@ $loop = new WP_Query( array(
         '</div>
     </div>';
     
-endwhile; ?>
+endwhile; wp_reset_postdata(); ?>
