@@ -165,6 +165,9 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
+  if (window.width > 1149) {
+    virtualTourNav.classList.toggle('show');
+  }
 });
 
 function fadeInPage() {
@@ -174,10 +177,6 @@ function fadeInPage() {
 
 window.onload = () => {
   setTimeout(fadeInPage, 500);
-
-  if (window.matchMedia("(min-width: 1150px)").matches) {
-    virtualTourNav.classList.toggle = 'show';
-  }
 };
 
 // HIDE MODAL ON NAV LINK CLICK
