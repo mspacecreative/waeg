@@ -65,15 +65,18 @@
   -o-border-radius: 30px;
 }
 
-// VIRTUAL TOUR NAVIGATION
-nav.virtual-tour__navigation {
-  margin-block-start: 0;
+.virtual-tour__navigation-container {
   @extend %smooth-transition-25;
   @media (min-width: 1024px) {
     position: sticky;
     top: 2em;
     z-index: 1;
   }
+}
+
+// VIRTUAL TOUR NAVIGATION
+nav.virtual-tour__navigation {
+  margin-block-start: 0;
   @media (max-width: 1023px) {
     display: none;
   }
