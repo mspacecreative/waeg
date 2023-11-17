@@ -59,9 +59,9 @@ if ($loop->have_posts()) {
                         </div>
                     </div>
                 </div>';
-            } wp_reset_postdata();
+            }
             echo
             '</div>
         </div>
     </div>';
-}
+} wp_reset_postdata();
