@@ -18,7 +18,7 @@ $args = array(
 
 $query = new WP_Query($args);
 
-if (count($query->posts)) {
+if ($query->posts) {
     echo
     '<div class="modal-backdrop"></div>
     <div class="modal">
