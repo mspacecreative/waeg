@@ -165,8 +165,10 @@ window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
-  if (window.matchMedia("(min-width: 1151px)").matches) {
+  if (window.matchMedia("(min-width: 1150px)").matches) {
     virtualTourNav.style.display = 'block';
+  } else {
+    virtualTourNav.style.display = 'none';
   }
 });
 
