@@ -1028,14 +1028,14 @@ html.fslightbox-open {
     -webkit-margin-after: 3rem;
             margin-block-end: 3rem;
   }
-  .entry-content .tour-path-wrapper:nth-child(even) .tour-path-content-container {
+  .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container {
     flex-flow: row-reverse;
   }
 }
-.entry-content .tour-path-wrapper:nth-child(odd) .tour-path-content-container::after {
+.entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
   right: 50%;
 }
-.entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
+.entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
@@ -1043,7 +1043,7 @@ html.fslightbox-open {
   -o-transform: scaleX(-1);
 }
 @media (min-width: 1024px) {
-  .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
+  .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
     left: 50%;
   }
 }
@@ -1159,7 +1159,7 @@ html.fslightbox-open {
   -o-transform: translate(-50%, -50%);
 }
 @media (min-width: 981px) {
-  .entry-content .tour-path-wrapper:nth-of-type(odd) {
+  .entry-content .tour-path-wrapper:nth-of-type(even) {
     justify-content: flex-end;
   }
 }

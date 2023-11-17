@@ -2,20 +2,20 @@
   .tour-path-wrapper {
     @media (max-width: 980px) {
       margin-block-end: 3rem;
-      &:nth-child(even) {
+      &:nth-of-type(odd) {
         .tour-path-content-container {
           flex-flow: row-reverse;
         }
       }
     }
-    &:nth-child(odd) {
+    &:nth-of-type(even) {
       .tour-path-content-container {
         &::after {
           right: 50%;
         }
       }
     }
-    &:nth-of-type(even) {
+    &:nth-of-type(odd) {
       .tour-path-content-container {
         &::after {
           @media (min-width: 1024px) {
@@ -144,7 +144,7 @@
         -o-transform: translate(-50%, -50%);
       }
     }
-    &:nth-of-type(odd) {
+    &:nth-of-type(even) {
       @media (min-width: 981px) {
         justify-content: flex-end;
       }
