@@ -4,6 +4,7 @@ const virtualTourNav = document.querySelector('nav.virtual-tour__navigation');
 
 navToggle.addEventListener('click', function() {
   virtualTourNav.classList.toggle('show');
+  this.innerHTML="CLOSE";
 });
 
 // POST MODAL
