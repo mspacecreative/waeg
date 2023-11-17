@@ -9,10 +9,10 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-        while (have_rows('botanical_name', get_the_ID($query->ID))) {
+        while (have_rows('botanical_name', get_the_ID($query))) {
             the_row();
-            $name_array[] = get_sub_field('name', get_the_ID($query->ID));
-            $designation_array[] = get_sub_field('designation', get_the_ID($query->ID));
+            $name_array[] = get_sub_field('name', get_the_ID($query));
+            $designation_array[] = get_sub_field('designation', get_the_ID($query));
             $combined_array = array_combine($name_array, $designation_array);
 
             foreach($combined_array as $k => $v) {
