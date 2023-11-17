@@ -4,7 +4,7 @@ const virtualTourNav = document.querySelector('nav.virtual-tour__navigation');
 
 navToggle.addEventListener('click', function() {
   virtualTourNav.classList.toggle('show');
-  if (this.innerHTML="NAVIGATION") {
+  if (this.innerHTML === "NAVIGATION") {
     this.innerHTML="CLOSE";
   } else {
     this.innerHTML="NAVIGATION";
