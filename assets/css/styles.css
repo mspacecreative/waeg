@@ -1028,11 +1028,11 @@ html.fslightbox-open {
     -webkit-margin-after: 3rem;
             margin-block-end: 3rem;
   }
-  .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container {
+  .entry-content .tour-path-wrapper:nth-child(even) .tour-path-content-container {
     flex-flow: row-reverse;
   }
 }
-.entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
+.entry-content .tour-path-wrapper:nth-child(odd) .tour-path-content-container::after {
   right: 50%;
 }
 .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
