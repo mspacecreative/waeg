@@ -25,7 +25,7 @@ if ($query->posts) {
         <div class="modal_table">
             <div class="modal_table_cell">';
             foreach ($query->posts as $nested_post) {
-                wp_setup_postdata($nested_post);
+                setup_postdata($nested_post);
                 $term_id = get_queried_object_id();
                 $title = get_the_title($nested_post->ID);
                 $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
