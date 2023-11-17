@@ -22,7 +22,6 @@ let slideUp = (target, duration=500) => {
     target.style.removeProperty('overflow');
     target.style.removeProperty('transition-duration');
     target.style.removeProperty('transition-property');
-    //alert("!");
   }, duration);
 }
 
@@ -64,18 +63,6 @@ var slideToggle = (target, duration = 500) => {
     return slideUp(target, duration);
   }
 }
-
-// document.getElementById("triggerUp").addEventListener('click', function() {
-//   slideUp(document.getElementById("target"), 200);
-// });
-
-// document.getElementById("triggerDown").addEventListener('click', function() {
-//   slideDown(document.getElementById("target"), 200);
-// });
-
-// document.getElementById("triggerToggle").addEventListener('click', function() {
-//   slideToggle(document.getElementById("target"), 200);
-// });
 
 // VIRTUAL TOUR NAVIGATION
 const navToggle = document.querySelector('.virtual-tour-navigation__toggle');
