@@ -1047,7 +1047,7 @@ html.fslightbox-open {
     left: 50%;
   }
 }
-.entry-content .tour-path-wrapper:last-of-type .tour-path-content-container::after {
+.entry-content .tour-path-wrapper:nth-last-of-type(3) .tour-path-content-container::after {
   display: none;
 }
 .entry-content .tour-path-wrapper .tour-path-content-container {

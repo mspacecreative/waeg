@@ -29,7 +29,7 @@
         }
       }
     }
-    &:last-of-type {
+    &:nth-last-of-type(3) {
       .tour-path-content-container {
         &::after {
           display: none;
