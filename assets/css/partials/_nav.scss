@@ -82,7 +82,7 @@ nav.virtual-tour__navigation {
   }
 }
 .scroll-up ~ main {
-  nav.virtual-tour__navigation {
+  .virtual-tour__navigation-container {
     @media (min-width: 1024px) {
       top: 7em;
     }

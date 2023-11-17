@@ -204,7 +204,7 @@ nav.virtual-tour__navigation {
 }
 
 @media (min-width: 1024px) {
-  .scroll-up ~ main nav.virtual-tour__navigation {
+  .scroll-up ~ main .virtual-tour__navigation-container {
     top: 7em;
   }
 }
