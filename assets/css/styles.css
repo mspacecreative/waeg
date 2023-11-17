@@ -1032,8 +1032,20 @@ html.fslightbox-open {
     flex-flow: row-reverse;
   }
 }
+@media (min-width: 1024px) {
+  .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container {
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
+  }
+}
 .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
   right: 50%;
+}
+@media (min-width: 1024px) {
+  .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
 }
 .entry-content .tour-path-wrapper:nth-of-type(odd) .tour-path-content-container::after {
   transform: scaleX(-1);

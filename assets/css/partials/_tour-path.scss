@@ -10,6 +10,9 @@
     }
     &:nth-of-type(even) {
       .tour-path-content-container {
+        @media (min-width: 1024px) {
+          padding-inline-end: 0;
+        }
         &::after {
           right: 50%;
         }
@@ -17,6 +20,9 @@
     }
     &:nth-of-type(odd) {
       .tour-path-content-container {
+        @media (min-width: 1024px) {
+          padding-inline-start: 0;
+        }
         &::after {
           @media (min-width: 1024px) {
             left: 50%;
