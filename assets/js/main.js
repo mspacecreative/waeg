@@ -161,12 +161,11 @@ document.addEventListener("DOMContentLoaded", () => {
 //   mainTag.style.marginTop = headerHeight.clientHeight + "px";
 // });
 
+const mediaQuery = window.matchMedia('(min-width: 1150px)');
+
 window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
-  }
-  if (virtualTourNav.classList.contains('show')) {
-    virtualTourNav.style.display = 'block';
   }
 });
 
@@ -175,12 +174,12 @@ function fadeInPage() {
   document.body.classList.add("fade-in");
 }
 
+if (mediaQuery.matches) {
+  virtualTourNav.style.display = 'block';
+}
+
 window.onload = () => {
   setTimeout(fadeInPage, 500);
-  
-  if (window.innerWidth > 1149) {
-    virtualTourNav.classList.toggle('show');
-  }
 };
 
 // HIDE MODAL ON NAV LINK CLICK
