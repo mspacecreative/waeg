@@ -166,7 +166,7 @@ window.addEventListener("resize", () => {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
   if (virtualTourNav.classList.contains('show')) {
-    this.style.display = 'block';
+    virtualTourNav.style.display = 'block';
   }
 });
 
