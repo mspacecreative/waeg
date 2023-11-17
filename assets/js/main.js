@@ -178,9 +178,13 @@ function fadeInPage() {
 window.onload = () => {
   setTimeout(fadeInPage, 500);
   if (window.matchMedia("(min-width: 1150px)").matches) {
-    navToggle.style.display = 'none';
+    window.addEventListener("resize", () => {
+      navToggle.style.display = 'none';
+    }
   } else if (window.matchMedia("(max-width: 1149px)").matches) {
-    navToggle.style.display = 'block';
+    window.addEventListener("resize", () => {
+      navToggle.style.display = 'block';
+    }
   }
 };
 
