@@ -1163,6 +1163,9 @@ html.fslightbox-open {
     justify-content: flex-end;
   }
 }
+.entry-content .tour-path-wrapper:nth-of-type(odd):last-of-type .tour-path-content-container::after {
+  display: none;
+}
 
 .modal-backdrop {
   position: fixed;

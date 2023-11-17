@@ -149,5 +149,12 @@
         justify-content: flex-end;
       }
     }
+    &:nth-of-type(odd):last-of-type {
+      .tour-path-content-container {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 }
