@@ -168,15 +168,14 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 1149) {
     virtualTourNav.classList.toggle('show');
   }
+  if (virtualTourNav.classList.contains('show')) {
+    this.style.display = 'block';
+  }
 });
 
 function fadeInPage() {
   document.body.classList.remove("fade-out");
   document.body.classList.add("fade-in");
-}
-
-if (virtualTourNav.classList.contains('show')) {
-  virtualTourNav.style.display = 'block';
 }
 
 window.onload = () => {
