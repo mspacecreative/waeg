@@ -175,6 +175,10 @@ function fadeInPage() {
   document.body.classList.add("fade-in");
 }
 
+if (virtualTourNav.classList.contains('show')) {
+  virtualTourNav.style.display = 'block';
+}
+
 window.onload = () => {
   setTimeout(fadeInPage, 500);
 };
