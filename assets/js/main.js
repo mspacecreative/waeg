@@ -169,8 +169,11 @@ mediaQuery.addEventListener("change", () => {
 });
 
 function handleTabletChange(e) {
-  if (e.matches)
+  if (e.matches) {
     virtualTourNav.style.display = 'block';
+  } else {
+    virtualTourNav.style.display = 'none';
+  }
 }
 
 handleTabletChange(mediaQuery);
