@@ -169,10 +169,12 @@ const mediaQuery = window.matchMedia('(min-width: 1150px)');
 mediaQuery.addEventListener("change", handleTabletChange);
 
 function handleTabletChange(e) {
-  if (e.matches) {
-    virtualTourNav.style.display = 'block';
-  } else {
-    virtualTourNav.style.display = 'none';
+  if (virtualTourNav) {
+    if (e.matches) {
+      virtualTourNav.style.display = 'block';
+    } else {
+      virtualTourNav.style.display = 'none';
+    }
   }
 }
 
