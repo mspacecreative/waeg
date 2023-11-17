@@ -59,7 +59,7 @@ if ($loop->have_posts()) {
                         </div>
                     </div>
                 </div>';
-            } rewind_posts();
+            } wp_reset_postdata();
             echo
             '</div>
         </div>

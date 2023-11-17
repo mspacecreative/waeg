@@ -79,4 +79,4 @@ $loop = new WP_Query( array(
         '</div>
     </div>';
     
-endwhile; rewind_posts(); ?>
+endwhile; ?>
