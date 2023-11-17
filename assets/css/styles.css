@@ -202,6 +202,9 @@ nav.virtual-tour__navigation {
   nav.virtual-tour__navigation {
     display: none;
   }
+  nav.virtual-tour__navigation.show {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
