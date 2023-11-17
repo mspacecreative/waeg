@@ -169,14 +169,29 @@ window.addEventListener("resize", () => {
   }
 });
 
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    virtualTourNav.style.display = 'block';
+  }
+}
+
+// Register event listener
+mediaQuery.addEventListener("change", () => {
+  handleTabletChange
+});
+
+// Initial check
+handleTabletChange(mediaQuery);
+
 function fadeInPage() {
   document.body.classList.remove("fade-out");
   document.body.classList.add("fade-in");
 }
 
-if (mediaQuery.matches) {
-  virtualTourNav.style.display = 'block';
-}
+// if (mediaQuery.matches) {
+//   virtualTourNav.style.display = 'block';
+// }
 
 window.onload = () => {
   setTimeout(fadeInPage, 500);
