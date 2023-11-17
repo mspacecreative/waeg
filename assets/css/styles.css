@@ -169,6 +169,21 @@ body {
   font-size: 24px;
 }
 
+.virtual-tour-navigation__toggle {
+  background: #e3e3e3;
+  box-shadow: 0 2px 3px #999;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+@media (min-width: 1024px) {
+  .virtual-tour-navigation__toggle {
+    display: none;
+  }
+}
+
 nav.virtual-tour__navigation {
   -webkit-margin-before: 0;
           margin-block-start: 0;

@@ -52,6 +52,19 @@
   font-size: 24px;
 }
 
+.virtual-tour-navigation__toggle {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  background: #e3e3e3;
+  box-shadow: 0 2px 3px #999;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
 // VIRTUAL TOUR NAVIGATION
 nav.virtual-tour__navigation {
   margin-block-start: 0;
