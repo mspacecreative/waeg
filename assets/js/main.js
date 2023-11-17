@@ -67,6 +67,10 @@ var slideToggle = (target, duration = 500) => {
 // VIRTUAL TOUR NAVIGATION
 const navToggle = document.querySelector('.virtual-tour-navigation__toggle');
 const virtualTourNav = document.querySelector('nav.virtual-tour__navigation');
+const mediaQuery = window.matchMedia('(min-width: 1150px)');
+
+// Register event listener
+mediaQuery.addEventListener("change", handleTabletChange);
 
 if (navToggle) {
   navToggle.addEventListener('click', function() {
@@ -86,6 +90,8 @@ if (navToggle) {
       virtualTourNav.style.display = 'none';
     }
   }
+
+  handleTabletChange(mediaQuery);
 }
 
 // POST MODAL
@@ -166,17 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mainTag.style.marginTop = headerHeight.clientHeight + "px";
   }
 });
-
-// window.addEventListener("orientationchange load resize", () => {
-//   mainTag.style.marginTop = headerHeight.clientHeight + "px";
-// });
-
-const mediaQuery = window.matchMedia('(min-width: 1150px)');
-
-// Register event listener
-mediaQuery.addEventListener("change", handleTabletChange);
-
-handleTabletChange(mediaQuery);
 
 window.addEventListener("resize", () => {
   if (!document.body.classList.contains("home")) {
