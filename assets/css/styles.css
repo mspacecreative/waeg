@@ -241,12 +241,6 @@ nav.virtual-tour__navigation {
     box-shadow: 0 2px 3px #999;
   }
 }
-@media (max-width: 1023px) {
-  .virtual-tour__navigation.wp-block-navigation__container {
-    -webkit-padding-before: 10px;
-            padding-block-start: 10px;
-  }
-}
 @media (max-width: 780px) {
   .virtual-tour__navigation.wp-block-navigation__container {
     justify-content: flex-start;
