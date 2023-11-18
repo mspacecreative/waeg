@@ -6,15 +6,13 @@ echo
 '<div class="botanical-names">
     <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
 
-foreach ($query->posts as $nested_post) {
-
-    while (have_rows('botanical_names', get_the_ID($nested_post))) {
+while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
     while (have_rows('botanical_name', get_the_ID())) {
         the_row();
 
-        $name_rows = get_row(get_the_ID($nested_post));
+        $name_rows = get_row(get_the_ID($term_id));
 
         foreach ($name_rows as $name_row) {
             $names = get_sub_field('name');
@@ -29,9 +27,10 @@ foreach ($query->posts as $nested_post) {
         $v_check = $v ? ' ' . $v : '';
     
     $names_array[] = ' <i>' . $k . '</i>' . $v_check;
-    }      
-}
+}      
+    foreach ($query->posts as $nested_post) {
         echo implode('; ', $names_array);
+    }
 echo
     '</h2>
 </div>';
