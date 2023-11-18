@@ -6,10 +6,10 @@ echo
 '<div class="botanical-names">
     <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
 
-while (have_rows('botanical_names', get_the_ID())) {
+while (have_rows('botanical_names', get_the_ID($nested_post))) {
     the_row();
 
-    $name_rows = get_row(get_the_ID($query->ID));
+    $name_rows = get_row(get_the_ID($nested_post));
 
     foreach ($name_rows as $name_row) {
         $names = $name_row['name'];
