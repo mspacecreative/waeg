@@ -9,7 +9,7 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-    reset_rows('botanical_name', get_the_ID($term_id));
+    // reset_rows('botanical_name', get_the_ID($term_id));
     while (have_rows('botanical_name', get_the_ID())) {
         the_row();
 
@@ -26,11 +26,11 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 
     foreach($combined_array as $k => $v)
         $v_check = $v ? ' ' . $v : '';
+        break;
     
     $names_array[] = ' <i>' . $k . '</i>' . $v_check;
 }      
         echo implode('; ', $names_array);
-        break;
 echo
     '</h2>
 </div>';
