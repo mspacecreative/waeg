@@ -16,11 +16,10 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $designations = $name_row['designation'];
         $name_array[] = $names;
         $designation_array[] = $designations;
-
-        while (have_rows('botanical_name')) {
-            the_row();
-            $combined_array = array_combine($name_array, $designation_array);
-        }
+    }
+    while (have_rows('botanical_name')) {
+        the_row();
+        $combined_array = array_combine($name_array, $designation_array);
     }
     foreach($combined_array as $k => $v)
     $v_check = $v ? ' ' . $v : '';
