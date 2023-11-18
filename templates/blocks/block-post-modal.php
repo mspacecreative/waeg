@@ -41,9 +41,7 @@ if ($query->have_posts()) {
                                 <h1 class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
                             </div>
                             <div class="wp-block-column is-layout-flex is-content-justification-right">';
-                                foreach ($query->posts as $nested_post) {
-                                    include 'includes/template-botanical-names.php';
-                                }
+                                include 'includes/template-botanical-names.php';
                             echo
                             '</div>
                         </div>
