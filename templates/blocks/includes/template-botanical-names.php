@@ -24,9 +24,8 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     }
 }      
         // echo implode('; ', $names_array);
+        print_r($names_array);
 
 echo
     '</h2>
 </div>';
-
-echo implode('; ', $names_array);
