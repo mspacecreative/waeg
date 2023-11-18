@@ -10,6 +10,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
     while (have_rows('botanical_name')) {
+        the_row();
 
         $name_rows = get_row(get_the_ID($term_id));
 
