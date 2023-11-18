@@ -8,7 +8,7 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-    $repeaters = get_row(get_the_ID($term_id));
+    $repeaters = get_field('botanical_names', get_the_ID($term_id));
     foreach ($repeaters as $repeater) {
         if (have_rows($repeater)) {
             while (have_rows($repeater)) {
