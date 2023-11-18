@@ -19,11 +19,11 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
             $designation_array[] = get_sub_field('designation');
             $combined_array = array_combine($name_array, $designation_array);
         }
-        foreach($combined_array as $k => $v)
-                $v_check = $v ? ' ' . $v : '';
-                
-            $names_array[] = ' <i>' . $k . '</i>' . $v_check;
     }
+    foreach($combined_array as $k => $v)
+    $v_check = $v ? ' ' . $v : '';
+    
+    $names_array[] = ' <i>' . $k . '</i>' . $v_check;
 }  
         print_r($combined_array);
         // echo implode('; ', $names_array);
@@ -31,4 +31,3 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 echo
     '</h2>
 </div>';
-
