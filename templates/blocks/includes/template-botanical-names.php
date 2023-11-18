@@ -28,9 +28,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     
     $names_array[] = ' <i>' . $k . '</i>' . $v_check;
 }      
-    foreach ($query->posts as $nested_post) {
         echo implode('; ', $names_array);
-    }
 echo
     '</h2>
 </div>';
