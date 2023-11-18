@@ -19,11 +19,11 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         //     $v_check = $v ? ' ' . $v : '';
             
         // $names_array[] = ' <i>' . $k . '</i>' . $v_check;
+        echo $name_array;
     }
 }  
         // echo implode('; ', $names_array);
         print_r($name_count);
-        echo $name_array;
 
 echo
     '</h2>
