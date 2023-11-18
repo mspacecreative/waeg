@@ -13,7 +13,7 @@ echo
     // while (have_rows('botanical_name', get_the_ID())) {
     //     the_row();
 
-        $name_rows = get_row($repeater_field);
+        $name_rows = $repeater_field;
 
         foreach ($name_rows as $name_row) {
             setup_postdata($name_row);
