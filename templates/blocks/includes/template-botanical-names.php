@@ -9,7 +9,7 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-    reset_rows('botanical_names', get_the_ID($term_id));
+    reset_rows('botanical_name', get_the_ID($term_id));
     while (have_rows('botanical_name', get_the_ID())) {
         the_row();
 
