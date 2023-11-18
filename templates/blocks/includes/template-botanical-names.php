@@ -15,8 +15,8 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $name_rows = get_row(get_the_ID($term_id));
 
         foreach ($name_rows as $name_row) {
-            $names = $name_row['name'];
-            $designations = $name_row['designation'];
+            $names = get_sub_field('name');
+            $designations = get_sub_field('designation');
         }
         
         $name_array[] = $names;
