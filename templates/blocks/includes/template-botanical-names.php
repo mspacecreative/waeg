@@ -16,8 +16,8 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 
         foreach ($name_rows as $name_row) {
             setup_postdata($name_row);
-            $names = get_sub_field('name', $name_row->ID);
-            $designations = get_sub_field('designation', $name_row->ID);
+            $names = get_sub_field('name', get_the_ID($name_row));
+            $designations = get_sub_field('designation', get_the_ID($name_row));
         }
     }
     $name_array[] = $names;
@@ -29,7 +29,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     
     $names_array[] = ' <i>' . $k . '</i>' . $v_check;
 }      
-        echo implode('; ', $names_array); wp_reset_postdata();
+        echo implode('; ', $names_array);
 echo
     '</h2>
 </div>';
