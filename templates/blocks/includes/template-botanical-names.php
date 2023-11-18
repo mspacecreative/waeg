@@ -9,28 +9,22 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-    // reset_rows('botanical_name', get_the_ID($term_id));
-    while (have_rows('botanical_name', get_the_ID())) {
+    while (have_rows('botanical_name')) {
         the_row();
+        $name_array[] = get_sub_field('name');
+        $designation_array[] = get_sub_field('designation');
+        $combined_array = array_combine($name_array, $designation_array);
 
-        $name_rows = get_row(get_the_ID($term_id));
-
-        foreach ($name_rows as $name_row) {
-            $names = get_sub_field('name');
-            $designations = get_sub_field('designation');
-            $name_array[] = $names;
-            $designation_array[] = $designations;
-        }
+        foreach($combined_array as $k => $v)
+            $v_check = $v ? ' ' . $v : '';
+            
+        $names_array[] = ' <i>' . $k . '</i>' . $v_check;
     }
-    $combined_array = array_combine($name_array, $designation_array);
+}  
+        // echo implode('; ', $names_array);
+        print_r($name_count);
 
-    foreach($combined_array as $k => $v)
-        $v_check = $v ? ' ' . $v : '';
-    
-    $names_array[] = ' <i>' . $k . '</i>' . $v_check;
-    break;
-}      
-        echo implode('; ', $names_array);
 echo
     '</h2>
 </div>';
+
