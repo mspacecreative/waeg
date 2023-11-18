@@ -18,7 +18,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
             setup_postdata($name_row);
             $names = get_sub_field('name', $name_row->ID);
             $designations = get_sub_field('designation', $name_row->ID);
-        }
+        } wp_reset_postdata ();
     }
     $name_array[] = $names;
     $designation_array[] = $designations;
