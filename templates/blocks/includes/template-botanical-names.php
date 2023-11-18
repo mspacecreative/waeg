@@ -9,7 +9,7 @@ echo
 while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
-    $name_rows = get_row(get_the_ID($term_id));
+    $name_rows = get_row(get_the_ID($query->ID));
 
     foreach ($name_rows as $name_row) {
         $names = $name_row['name'];
