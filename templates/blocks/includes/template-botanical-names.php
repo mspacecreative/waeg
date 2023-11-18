@@ -30,6 +30,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     $names_array[] = ' <i>' . $k . '</i>' . $v_check;
 }      
         echo implode('; ', $names_array);
+        break;
 echo
     '</h2>
 </div>';
