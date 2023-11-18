@@ -23,6 +23,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 }  
         // echo implode('; ', $names_array);
         print_r($name_count);
+        print_r($name_array);
 
 echo
     '</h2>
