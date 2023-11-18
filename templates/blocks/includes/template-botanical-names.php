@@ -12,11 +12,11 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     $name_rows = get_row(get_the_ID($term_id));
 
     foreach ($name_rows as $name_row) {
+        $name_array[] = get_sub_field('name', $name_row);
+        $designation_array[] = get_sub_field('designation', $name_row);
 
         while (have_rows('botanical_name')) {
             the_row();
-            $name_array[] = get_sub_field('name');
-            $designation_array[] = get_sub_field('designation');
             $combined_array = array_combine($name_array, $designation_array);
         }
     }
