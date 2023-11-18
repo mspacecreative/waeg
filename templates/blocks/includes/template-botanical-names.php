@@ -11,14 +11,12 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 
     while (have_rows('botanical_name', get_the_ID())) {
         the_row();
-
         $name_rows = get_row(get_the_ID($term_id));
-
-        foreach ($name_rows as $name_row) {
-            setup_postdata($name_row);
-            $names = get_sub_field('name', get_the_ID($name_row));
-            $designations = get_sub_field('designation', get_the_ID($name_row));
-        }
+    }
+    foreach ($name_rows as $name_row) {
+        setup_postdata($name_row);
+        $names = get_sub_field('name', get_the_ID($name_row));
+        $designations = get_sub_field('designation', get_the_ID($name_row));
     }
     $name_array[] = $names;
     $designation_array[] = $designations;
