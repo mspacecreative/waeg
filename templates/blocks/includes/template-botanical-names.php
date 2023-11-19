@@ -34,8 +34,13 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    $names_array = explode(", ", $names_array);
-    $names_array = array_merge(...$names_array);
+    function flatten(array $array) {
+        $return = array();
+        array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
+        return $return;
+    }
+    
+    $finalResult = flatten($names_array);
     print_r($names_array);
 }
 
