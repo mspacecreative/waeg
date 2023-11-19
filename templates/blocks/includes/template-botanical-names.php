@@ -2,6 +2,12 @@
 $name_count = count(get_field('botanical_names', get_the_ID($term_id)));
 $check_plural = $name_count > 1 ? 's' : '';
 
+function flatten(array $array) {
+    $return = array();
+    array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
+    return $return;
+}
+
 echo
 '<div class="botanical-names">
     <h2 class="has-medium-font-size"><strong>' . esc_html_x('Botanical name', 'waeg') . $check_plural . ':</strong>';
@@ -35,12 +41,6 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // print_r($merged_array);
     }
     $names_array = explode(", ", $names_array);
-    function flatten(array $array) {
-        $return = array();
-        array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
-        return $return;
-    }
-    
     $finalResult = flatten($names_array);
     print_r($names_array);
 }
