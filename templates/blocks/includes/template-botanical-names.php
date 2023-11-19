@@ -25,14 +25,14 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $names_array = [];   
         $names_array = ' <i>' . $k . '</i>' . $v_check;
         $names_array = explode(", ", $names_array);
-        $names_array = array_merge("",...$names_array);
+        $name_array = array_merge(...$names_array);
         // echo implode("; ", $names_array);
         // print_r($names_array);
 
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    print_r($names_array);
+    print_r($name_array);
 }
 
 echo
