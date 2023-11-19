@@ -17,7 +17,9 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $row = get_row(get_the_ID());
         $names = get_sub_field('name', get_the_ID($term_id));
         $names_array = [];
-        $names_array = explode(", ", $names);
+        $designations_array = [];
+        // $names_array = explode(", ", $names);
+        $names_array = $names;
         // foreach ($names as $name)
 
         // $name = explode(',' $row);
