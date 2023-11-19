@@ -26,11 +26,11 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $names_array = ' <i>' . $k . '</i>' . $v_check;
         $name_array = explode(", ", $names_array);
         // print_r($names_array);
-        echo implode("; ", $name_array);
 
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
+    echo implode("; ", $name_array);
 }
 
 echo
