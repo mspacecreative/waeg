@@ -12,7 +12,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_name')) {
         the_row(get_the_ID($term_id));
 
-        $row = get_row();
+        $row = get_row(get_the_ID($term_id));
         $name = explode(',' $row);
         // foreach ($row as $single_row)
         //     $name_array = get_sub_field('name', get_the_ID($single_row));
