@@ -12,3 +12,9 @@ function add_image_size_to_media($sizes){
     return array_merge( $sizes, $custom_sizes );
 }
 add_filter('image_size_names_choose', 'add_image_size_to_media');
+
+function flatten(array $array) {
+    $return = array();
+    array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
+    return $return;
+}
