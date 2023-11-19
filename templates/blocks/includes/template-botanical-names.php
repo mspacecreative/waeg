@@ -32,10 +32,10 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $names_array = [];   
         $names_array = ' <i>' . $k . '</i>' . $v_check;
         $names_array = explode(" ", $names_array);
-        print_r($names_array);
+        // print_r($names_array);
     }
 }  
-        // echo implode('; ', $names_array);
+        echo implode('; ', $names_array);
 
 echo
     '</h2>
