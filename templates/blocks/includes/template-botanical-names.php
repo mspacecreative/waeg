@@ -10,7 +10,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     the_row();
 
     while (have_rows('botanical_name')) {
-        the_row();
+        the_row(get_the_ID($term_id));
 
         $row = get_row();
         $name = explode(',' $row);
