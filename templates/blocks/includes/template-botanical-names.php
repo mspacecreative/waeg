@@ -23,17 +23,16 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 
         // $name = explode(',' $row);
         // foreach ($row as $single_row)
-        //     $name_array = get_sub_field('name', get_the_ID($single_row));
+        // $name_array = get_sub_field('name', get_the_ID($single_row));
         // $designation_array[] = get_sub_field('designation');
         // $combined_array = array_combine($name_array, $designation_array);
-        $merge_array = array_merge(array($combined_array));
 
-        // foreach($combined_array as $k => $v)
-        //     $v_check = $v ? ' ' . $v : '';
-        // $names_array = [];   
-        // $names_array = ' <i>' . $k . '</i>' . $v_check;
-        // $names_array = explode(", ", $names_array);
-        print_r($merge_array);
+        foreach($combined_array as $k => $v)
+            $v_check = $v ? ' ' . $v : '';
+        $names_array = [];   
+        $names_array = ' <i>' . $k . '</i>' . $v_check;
+        $names_array = explode(", ", $names_array);
+        echo $names_array;
         // echo implode('; ', $names_array);
     }
 }
