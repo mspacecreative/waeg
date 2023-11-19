@@ -34,7 +34,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    $names_array = explode(", ", $names_array);
+    // $names_array = explode(", ", $names_array);
     $r = array_merge(...$names_array);
     $flat = call_user_func_array('array_merge', array($r));
 // $combine_arrays = array_merge(...$names_array);
