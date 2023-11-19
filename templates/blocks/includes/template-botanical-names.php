@@ -27,8 +27,12 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $names_array = explode(", ", $names_array);
         // print_r($names_array);
         // echo implode("; ", $names_array);
-        $merged_array = array_merge($combined_array);
-        print_r($merged_array);
+
+        foreach ($combined_array as $array)
+            print_r($array);
+
+        // $merged_array = array_merge($combined_array);
+        // print_r($merged_array);
     }
 }
 
