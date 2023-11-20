@@ -27,7 +27,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     $data = " <i>$k</i>$v_check$semicolon";
     // $data = explode(", ", $data);
     // $data = implode("; ", $data);
-    echo $data;
+    echo substr($data, 0, -1);
 }
 
 echo
