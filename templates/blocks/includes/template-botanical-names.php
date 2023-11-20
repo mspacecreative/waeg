@@ -22,7 +22,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $designations_array = explode(", ", $designations);
         $combined_array = array_combine($names_array, $designations_array);
         // $designations_array = array_merge(...array($designations_array));
-        print_r($combined_array);
+        print_r($names_array);
             
         // $names_array = [];   
         // $names_array = ' <i>' . $k . '</i>' . $v_check;
