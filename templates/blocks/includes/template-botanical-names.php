@@ -35,12 +35,12 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // print_r($merged_array);
     }
     $combined_array = ' <i>' . $k . '</i>' . $v_check;
-    $array = explode(", ", $combined_array);
+    $combined_array = explode(", ", $combined_array);
     // $r = array_merge(...array($names_array));
     // $flat = call_user_func_array('array_merge', array($r));
 // $combine_arrays = array_merge(...$names_array);
     // print_r($r);
-    echo implode("; ", $array);
+    echo implode("; ", array($combined_array));
 }
 
 echo
