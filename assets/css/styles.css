@@ -1369,3 +1369,7 @@ html.fslightbox-open {
   display: block;
   text-align: center;
 }
+
+.scroll-up .anchor-link__button {
+  top: 8em;
+}
