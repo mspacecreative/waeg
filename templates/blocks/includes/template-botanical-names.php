@@ -28,7 +28,8 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     // if (is_array($combined_array)) {
     //     echo 'yes';
     // }
-    echo implode("; ", $combined_array);
+    // echo implode("; ", $combined_array);
+    print_r($combined_array);
 }
 
 echo
