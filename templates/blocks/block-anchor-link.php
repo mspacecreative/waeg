@@ -5,7 +5,7 @@ $loop = new WP_Query( array(
 echo 
 '<a class="anchor-link__button" href="' . home_url('virtual-tour') . '#';
 while ( $loop->have_posts() ) : $loop->the_post();
-    $title = sanitize_title(get_the_title($loop->ID));
+    $title = sanitize_title(get_the_title());
     echo $title;
 endwhile;
 echo
