@@ -1,7 +1,7 @@
 <?php
 $term_id = get_the_terms(get_the_ID(), 'species');
-$term_slug = $term_id->slug;
-$slug = $term_slug;
+$term_slug = array_shift($term_id);
+$slug = $term_slug->slug;
 switch($slug) {
     case 'flowers-and-herbs':
         $slug = 'flowers-and-herbs';
