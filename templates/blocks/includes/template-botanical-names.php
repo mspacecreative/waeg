@@ -21,9 +21,9 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     }
     $data = [];
     foreach($combined_array as $k => $v) {
-        $v_check = $v ? ' ' . $v . ', ' : '';
+        $v_check = $v ? ' ' . $v : '';
     }
-    $data = " <i>$k</i>$v_check";
+    $data = " <i>$k</i>$v_check,";
     // $data = array_merge(array(), ...array_values(array($data)));
     // $data = explode(", ", $data);
     // $data = implode("; ", $data);
