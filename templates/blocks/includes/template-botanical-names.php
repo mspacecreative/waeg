@@ -19,17 +19,17 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $designations_array = explode(", ", $designations);
     }
     $combined_array = array_combine($names_array, $designations_array);
+    $new_array = array();
     foreach($combined_array as $k => $v)
         $v_check = $v ? ' ' . $v : '';
-    $combined_array = ' <i>' . $k . '</i>' . $v_check;
-    $combined_array = array_merge(...$combined_array);
-    $combined_array = explode(", ", $combined_array);
+    $new_array = ' <i>' . $k . '</i>' . $v_check;
+    $new_array = explode(", ", $new_array);
     // $combined_array = array_merge([],...array($combined_array));
     // if (is_array($combined_array)) {
     //     echo 'yes';
     // }
     // echo implode("; ", $combined_array);
-    print_r($combined_array);
+    print_r($new_array);
 }
 
 echo
