@@ -36,7 +36,7 @@ if ($query->have_posts()) {
                         <span style="background-color: #000;">&nbsp;</span>
                     </button>
                     <div class="post-modal-content-wrapper">
-                        <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title">
+                        <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;">
                             <div class="wp-block-column">
                                 <h1 class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
                             </div>
