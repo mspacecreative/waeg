@@ -38,8 +38,8 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     // $new_array = array_values($new_array, 'array_merge', array());
     // $merged_array = array_merge(...$combined_array);
     // $flattened_array = array_merge( array_keys($combined_array), ...array_values($combined_array) );
-    print_r($combined_array);
-    // echo implode("; ", $new_array);
+    // print_r($combined_array);
+    echo implode("; ", $combined_array);
 }
 
 echo
