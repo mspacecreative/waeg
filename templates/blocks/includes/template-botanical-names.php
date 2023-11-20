@@ -21,6 +21,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $combined_array = array_combine($names_array, $designations_array);
 
         foreach($combined_array as $k => $v)
+            $v_check = $v ? ' ' . $v : '';
             
         // $names_array = [];   
         // $names_array = ' <i>' . $k . '</i>' . $v_check;
@@ -33,8 +34,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    $v_check = $v ? ' ' . $v : '';
-        $names_array = ' <i>' . $k . '</i>' . $v_check;
+    $names_array = ' <i>' . $k . '</i>' . $v_check;
     $names_array = explode(", ", $names_array);
     $r = array_merge(...array($names_array));
     // $flat = call_user_func_array('array_merge', array($r));
