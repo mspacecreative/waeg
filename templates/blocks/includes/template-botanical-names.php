@@ -23,7 +23,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     foreach($combined_array as $k => $v) {
         $v_check = $v ? ' ' . $v : '';
     }
-    $semicolon = $name_count > 1 '; ' : '';
+    $semicolon = $name_count > 1 ? '; ' : '';
     $data = " <i>$k</i>$v_check$semicolon";
     // $data = explode(", ", $data);
     // $data = implode("; ", $data);
