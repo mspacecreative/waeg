@@ -1360,3 +1360,12 @@ html.fslightbox-open {
     justify-content: flex-end;
   }
 }
+.anchor-link__button {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3em;
+  -webkit-margin-before: 3em;
+          margin-block-start: 3em;
+  display: block;
+  text-align: center;
+}
