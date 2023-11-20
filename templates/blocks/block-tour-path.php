@@ -47,7 +47,7 @@ $loop = new WP_Query( array(
     $tour_url = get_field('tour_url', get_the_ID()) ? '<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button virtual-tour-link" href="' . esc_url(get_field('tour_url', get_the_ID())) . '">' . esc_html_x('View ', 'waeg') . esc_html_x($button_label, 'waeg') . '</a></div>' : '';
 
     echo 
-    '<div class="is-layout-flex tour-path-wrapper">
+    '<div id="' . sanitize_title($title) . '" class="is-layout-flex tour-path-wrapper">
         <div class="is-flex-container wp-block-post-template tour-path-content-container">';
 
         if ($line_drawing) {
