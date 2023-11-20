@@ -11,9 +11,9 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 
     while (have_rows('botanical_name', get_the_ID($term_id))) {
         the_row();
-        $names[] = get_sub_field('name', get_the_ID($term_id));
+        $names[] = get_sub_field('name');
         // $names_array = explode(", ", $names);
-        $designations[] = get_sub_field('designation', get_the_ID($term_id));
+        $designations[] = get_sub_field('designation');
         // $designations_array = [];
         // $designations_array = explode(", ", $designations);
         $combined_array = array_combine($names, $designations);
