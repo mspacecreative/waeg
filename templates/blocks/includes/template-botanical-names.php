@@ -23,7 +23,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         foreach($combined_array as $k => $v)
             $v_check = $v ? ' ' . $v : '';
         $new_array = ' <i>' . $k . '</i>' . $v_check;
-        $new_array = array_merge($new_array, $v_check);
+        $new_array = array_merge(array($new_array), $v_check);
             
         // $names_array = [];   
         // $names_array = ' <i>' . $k . '</i>' . $v_check;
