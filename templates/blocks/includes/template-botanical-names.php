@@ -12,18 +12,15 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     while (have_rows('botanical_name', get_the_ID($term_id))) {
         the_row();
         $names_array = [];
-        $names_array[] = get_sub_field('name', get_the_ID($term_id));
-        // $names_array = explode(", ", $names);
+        $names_array[] = get_sub_field('name');
         $designations_array = [];
-        $designations_array[] = get_sub_field('designation', get_the_ID($term_id));
-        // $designations_array = explode(", ", $designations);
+        $designations_array[] = get_sub_field('designation');
         $combined_array = array_combine($names_array, $designations_array);
     }
     $data = [];
     foreach($combined_array as $k => $v) {
         $v_check = $v ? ' ' . $v : '';
     }
-    // $semicolon = $name_count > 1 ? '; ' : '';
     $data = " <i>$k</i>$v_check";
     // $data = explode(", ", $data);
     // $data = implode("; ", $data);
