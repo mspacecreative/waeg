@@ -18,8 +18,8 @@ if (have_rows('botanical_names', get_the_ID())) {
             $designations = get_sub_field('designation', get_the_ID($term_id));
             $designations_array = [];
             $designations_array = explode(", ", $designations);
-            $combined_array = array_combine($names_array, $designations_array);
         }
+        $combined_array = array_combine($names_array, $designations_array);
     }
             if ($combined_array) {
                 $data = array();
