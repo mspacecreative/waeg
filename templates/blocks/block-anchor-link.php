@@ -1,15 +1,6 @@
 <?php
 $loop = new WP_Query( array(
-    'post_type' => 'plant',
-    'orderby' => 'name',
-    'order' => 'ASC',
-    'tax_query' => array(
-        array(
-            'taxonomy' => 'species',
-            'field' => 'term_id',
-            'terms' => get_queried_object()->term_id
-        )
-    )
+    'post_type' => 'plant'
 ) );
 echo 
 '<a class="anchor-link__button" href="' . home_url('virtual-tour') . '#';
