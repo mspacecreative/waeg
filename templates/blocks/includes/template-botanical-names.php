@@ -33,14 +33,13 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     }
     foreach($combined_array as $k => $v)
         $v_check = $v ? ' ' . $v : '';
-    $new_array = ' <i>' . $k . '</i>' . $v_check;
-    $new_array = [];
-    $new_array = explode(", ", $new_array);
+    $combined_array = ' <i>' . $k . '</i>' . $v_check;
+    $combined_array = explode(", ", $combined_array);
     // $new_array = array_values($new_array, 'array_merge', array());
     // $r = array_merge(...array($names_array));
-    // $flat = call_user_func_array('array_merge', array($new_array));
+    $flatten_array = call_user_func_array('array_merge', array($combined_array));
 // $combine_arrays = array_merge(...$names_array);
-    print_r(array_merge(...$new_array));
+    print_r($flatten_array);
     // echo implode("; ", $new_array);
 }
 
