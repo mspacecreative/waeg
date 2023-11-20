@@ -19,9 +19,9 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $designations_array = explode(", ", $designations);
     }
     $combined_array = array_combine($names_array, $designations_array);
-    foreach($combined_array as $k => $v) {
-        $v_check = $v ? ' ' . $v : '';
-    }$combined_array = ' <i>' . $k . '</i>' . $v_check;
+    // foreach($combined_array as $k => $v)
+    //     $v_check = $v ? ' ' . $v : '';
+    // $combined_array = ' <i>' . $k . '</i>' . $v_check;
     $combined_array = explode(", ", $combined_array);
     $combined_array = array_merge([],...array($combined_array));
     // if (is_array($combined_array)) {
