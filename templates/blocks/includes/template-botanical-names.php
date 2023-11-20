@@ -27,7 +27,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $data = explode(",", $data);
     }
     
-    echo substr(implode(";", $data), 0, -1);
+    echo substr(trim(implode(";", $data)), 0, -1);
 }
 
 echo
