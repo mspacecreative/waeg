@@ -20,7 +20,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $combined_array = array_combine($names_array, $designations_array);
     }
     if ($combined_array) {
-        $data = array();
+        // $data = array();
         foreach($combined_array as $k => $v) {
             $v_check = $v ? ' ' . $v : '';
             $data[] = " <i>$k</i>$v_check";
