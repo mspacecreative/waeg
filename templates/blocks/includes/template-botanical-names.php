@@ -11,12 +11,13 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
 
     while (have_rows('botanical_name', get_the_ID($term_id))) {
         the_row();
-        $names[] = get_sub_field('name');
+        $names_array = [];
+        $names_array = get_sub_field('name', get_the_ID($term_id));
         // $names_array = explode(", ", $names);
-        $designations[] = get_sub_field('designation');
-        // $designations_array = [];
+        $designations_array = [];
+        $designations_array = get_sub_field('designation', get_the_ID($term_id));
         // $designations_array = explode(", ", $designations);
-        $combined_array = array_combine($names, $designations);
+        $combined_array = array_combine($names_array, $designations_array);
     }
     $data = [];
     foreach($combined_array as $k => $v) {
@@ -25,7 +26,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     $data[] = " <i>$k</i>$v_check;";
     // $data = explode(", ", $data);
     $data = implode("; ", $data);
-    echo substr($data, 0, -1);
+    print_r($data);
 }
 
 echo
