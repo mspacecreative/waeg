@@ -17,7 +17,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $names_array = [];
         $names_array = explode(", ", $names);
         $designations_array = [];
-        $designations_array[] = explode(", ", $designations);
+        $designations_array = explode(", ", $designations);
         $combined_array = array_combine($names_array, $designations_array);
             
         // $names_array = [];   
@@ -31,16 +31,15 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    // $combined_array = [];
-    // foreach($combined_array as $k => $v)
-    //         $v_check = $v ? ' ' . $v : '';
-    // $combined_array = ' <i>' . $k . '</i>' . $v_check;
-    // $combined_array = explode(" ", $combined_array);
-    // // $r = array_merge(...array($names_array));
-    // // $flat = call_user_func_array('array_merge', array($r));
-    // $combined_array = array_merge(...array($combined_array));
-    print_r($combined_array);
-    // echo implode("; ", $combined_array);
+    foreach($combined_array as $k => $v)
+            $v_check = $v ? ' ' . $v : '';
+    $combined_array = ' <i>' . $k . '</i>' . $v_check;
+    $combined_array = explode(" ", $combined_array);
+    // $r = array_merge(...array($names_array));
+    // $flat = call_user_func_array('array_merge', array($r));
+// $combine_arrays = array_merge(...$names_array);
+    // print_r($r);
+    echo implode("; ", $combined_array);
 }
 
 echo
