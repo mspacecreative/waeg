@@ -1,7 +1,7 @@
 <?php
 $term_id = get_term(get_the_ID(), 'species');
 $term_slug = $term_id->slug;
-$slug = '';
+$slug = $term_slug;
 switch($slug) {
     case 'flowers-and-herbs':
         $slug = 'flowers-and-herbs';
@@ -17,6 +17,7 @@ switch($slug) {
         break;
     default:
         $slug = '';
+        break;
 }
 echo 
 '<a class="anchor-link__button" href="' . home_url('virtual-tour') . $slug . '#';
