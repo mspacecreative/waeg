@@ -22,12 +22,11 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     $data = '';
 
     foreach($combined_array as $k => $v) {
-        $v_check = $v ? ' ' . $v : '';
-        $data = " <i>$k</i>$v_check,";
-    }
-    $data = rtrim($data, ',');
+        $v_check = $v ? ' ' . $v . ',' : ',';
+        $data = " <i>$k</i>$v_check";
         $data = explode(",", $data);
         echo implode(";", $data);
+    }
 }
 
 echo
