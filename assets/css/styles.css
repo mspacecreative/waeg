@@ -1103,8 +1103,7 @@ html.fslightbox-open {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-size: cover;
   content: "";
   z-index: 0;
   opacity: 0.2;
