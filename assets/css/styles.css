@@ -1351,3 +1351,9 @@ html.fslightbox-open {
 .closeModalButton span:nth-child(2) {
   transform: rotate(-45deg);
 }
+
+@media (min-width: 980px) {
+  .is-content-justification-right {
+    justify-content: flex-end;
+  }
+}

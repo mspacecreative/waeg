@@ -151,3 +151,9 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: 980px) {
+  .is-content-justification-right {
+    justify-content: flex-end;
+  }
+}
