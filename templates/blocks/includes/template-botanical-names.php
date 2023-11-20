@@ -34,13 +34,13 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    $names_array = ' <i>' . $k . '</i>' . $v_check;
-    $names_array = explode(", ", $names_array);
-    $r = array_merge(...array($names_array));
+    $combined_array = ' <i>' . $k . '</i>' . $v_check;
+    $array = explode(", ", $combined_array);
+    // $r = array_merge(...array($names_array));
     // $flat = call_user_func_array('array_merge', array($r));
 // $combine_arrays = array_merge(...$names_array);
     // print_r($r);
-    echo implode("; ", $names_array);
+    echo implode("; ", $combine_array);
 }
 
 echo
