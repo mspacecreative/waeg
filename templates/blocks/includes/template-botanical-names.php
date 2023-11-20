@@ -30,7 +30,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         // $merged_array = array_merge($combined_array);
         // print_r($merged_array);
     }
-    print_r($names_array);
+    // print_r($names_array);
     // foreach($combined_array as $k => $v)
     //     $v_check = $v ? ' ' . $v : '';
     // $combined_array = ' <i>' . $k . '</i>' . $v_check;
@@ -41,6 +41,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     // // print_r($combined_array);
     // echo implode("; ", $combined_array);
 }
+print_r($names_array);
 
 echo
     '</h2>
