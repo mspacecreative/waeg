@@ -18,15 +18,14 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     }
     
     $combined_array = array_combine($names_array, $designations_array);
-    // $data = [];
+    $data = [];
 
-    // foreach($combined_array as $k => $v)
-    //     $v_check = $v ? ' ' . $v : '';
+    foreach($combined_array as $v)
+        $v_check = $v ? ' ' . $v : '';
 
-    // $data = " <i>$k</i>$v_check";
-    $combined_array = array_combine($combined_array[0], $combined_array[1], $combined_array[2], $combined_array[3], $combined_array[4]);
+    $data = " <i>$k</i>$v_check";
     
-    print_r($combined_array);
+    echo $data;
 }
 
 echo
