@@ -37,8 +37,8 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     $combined_array = explode(", ", $combined_array);
     // $new_array = array_values($new_array, 'array_merge', array());
     // $r = array_merge(...array($names_array));
-    $flattened_array = array_merge(array_keys($combined_array), ...array_values($combined_array));
-    print_r(array($flattened_array));
+    // $flattened_array = array_merge( array_keys($combined_array), ...array_values($combined_array) );
+    print_r(array($combined_array));
     // echo implode("; ", $new_array);
 }
 
