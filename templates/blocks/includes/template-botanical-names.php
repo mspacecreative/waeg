@@ -19,7 +19,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $designations_array = [];
         $designations_array = explode(", ", $designations);
         $combined_array = array_combine($names_array, $designations_array);
-
+        $designations_array = array_merge(...$designations_array);
         print_r($designations_array);
             
         // $names_array = [];   
