@@ -302,6 +302,23 @@ function my_acf_init() {
 			]
 		));
 
+		// register terms block
+		acf_register_block(array(
+			'name'				=> 'anchor-link',
+			'title'				=> __('Virtual Tour Anchor Link Block'),
+			'description'		=> __('A button that brings user to virtual tour for chosen species'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'button',
+			'keywords'			=> array( 'button', 'anchor', 'anchor link', 'virtual tour' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+                'mode' => true,
+			]
+		));
+
 	}
 }
 
