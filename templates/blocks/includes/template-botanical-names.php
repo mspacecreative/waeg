@@ -20,6 +20,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $combined_array = array_combine($names_array, $designations_array);
         // $data = array();
     }
+    $data = [];
     foreach($combined_array as $k => $v) {
         $k = str_replace(' ', '-', $k);
         $v_check = $v ? ' ' . $v : '';
