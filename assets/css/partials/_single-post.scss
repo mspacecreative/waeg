@@ -1,4 +1,5 @@
 .anchor-link__button {
+  @extend %smooth-transition-25;
   position: sticky;
   top: 3em;
   margin-block-start: 3em;
@@ -8,6 +9,6 @@
 
 .scroll-up ~ main {
   .anchor-link__button {
-    top: 8em;
+    top: 10em;
   }
 }
