@@ -35,6 +35,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     //     $v_check = $v ? ' ' . $v : '';
     $combined_array = ' <i>' . $k . '</i>' . $v_check;
     $combined_array = explode(", ", $combined_array);
+    $combined_array = array_merge($combined_array[0], $combined_array[1]);
     // $combined_array = [];
     // $combined_array[] = array_merge(array_keys($combined_array), ...array_values($combined_array));
     // // $new_array = array_values($new_array, 'array_merge', array());
