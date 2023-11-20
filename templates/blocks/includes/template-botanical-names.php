@@ -19,14 +19,14 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $designations_array = explode(", ", $designations);
         $combined_array = array_combine($names_array, $designations_array);
     }
+    $data = [];
     if ($combined_array) {
-        $data = [];
         foreach($combined_array as $k => $v) {
             $v_check = $v ? ' ' . $v : '';
             $data[] = " <i>$k</i>$v_check";
         }
     }
-    echo implode('; ', $data); 
+    echo implode('; ', $data);
 }
 
 echo
