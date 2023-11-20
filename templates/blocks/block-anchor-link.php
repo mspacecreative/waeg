@@ -1,5 +1,5 @@
 <?php
-$term_id = get_term(get_the_ID(), 'species');
+$term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = $term_id->slug;
 $slug = $term_slug;
 switch($slug) {
