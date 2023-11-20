@@ -13,7 +13,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         the_row();
         // $row = get_row(get_the_ID());
         // $names = array();
-        $names[] = get_sub_field('name', get_the_ID($term_id));
+        $names[] = get_sub_field('name');
         // $designations = array();
         $designations[] = get_sub_field('designation', get_the_ID($term_id));
         // $names_array = [];
