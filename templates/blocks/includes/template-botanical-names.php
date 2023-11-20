@@ -21,7 +21,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
         $data = array();
     }
     foreach($combined_array as $k => $v) {
-        $combined_array[$k] = str_replace(' ', '-', $k);
+        $k = str_replace(' ', '-', $k);
         $v_check = $v ? ' ' . $v : '';
         $data[] = " <i>$k</i>$v_check";
     }
