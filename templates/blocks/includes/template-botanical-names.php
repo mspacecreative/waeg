@@ -40,7 +40,7 @@ while (have_rows('botanical_names', get_the_ID($term_id))) {
     // $r = array_merge(...array($names_array));
     // $flat = call_user_func_array('array_merge', array($new_array));
 // $combine_arrays = array_merge(...$names_array);
-    print_r(array_merge(...$new_array);
+    print_r(array_merge(...$new_array));
     // echo implode("; ", $new_array);
 }
 
