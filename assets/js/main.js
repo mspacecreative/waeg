@@ -162,6 +162,7 @@ for (i = 0; i < bioButton.length; i++) {
 for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
     modal.classList.remove('show');
+    toggleModal();
     modalBackdrop.classList.remove('show');
     htmlTag.classList.remove('fixed');
     this.parentElement.classList.remove('show');
@@ -171,6 +172,7 @@ for (i = 0; i < closeModalButton.length; i++) {
 if (modal) {
   modal.addEventListener('click', function() {
     this.classList.remove('show');
+    toggleModal();
     modalBackdrop.classList.toggle('show');
     htmlTag.classList.remove('fixed');
     for (i = 0; i < postModalContent.length; i++) {
@@ -195,6 +197,7 @@ document.addEventListener('keydown', (event) => {
       const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
       if (isNotCombinedKey) {
         modal.classList.remove('show');
+        toggleModal();
         modalBackdrop.classList.remove('show');
         htmlTag.classList.remove('fixed');
         for (i = 0; i < postModalContent.length; i++) {
