@@ -1368,8 +1368,9 @@ html.fslightbox-open {
           margin-block-start: 3em;
   display: block;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .scroll-up ~ main .anchor-link__button {
-  top: 10em;
+  top: 8em;
 }
