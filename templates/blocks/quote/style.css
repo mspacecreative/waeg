@@ -1,5 +1,4 @@
-body .is-layout-constrained .quote-container,
-.modal .quote-container {
+body .is-layout-constrained .quote-container {
   padding: var(--wp--preset--spacing--30);
   background-color: var(--wp--preset--color--dark-green);
   -webkit-margin-before: var(--wp--preset--spacing--30);
@@ -12,25 +11,21 @@ body .is-layout-constrained .quote-container,
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-body .is-layout-constrained .quote-container h2,
-.modal .quote-container h2 {
+body .is-layout-constrained .quote-container h2 {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
-body .is-layout-constrained .quote-container h3,
-.modal .quote-container h3 {
+body .is-layout-constrained .quote-container h3 {
   color: var(--wp--preset--color--base);
 }
-body .is-layout-constrained .quote-container blockquote,
-.modal .quote-container blockquote {
+body .is-layout-constrained .quote-container blockquote {
   font-style: italic;
   position: relative;
   color: var(--wp--preset--color--pale-gold);
   margin-left: var(--wp--preset--spacing--30);
   margin-right: 0;
 }
-body .is-layout-constrained .quote-container blockquote::before,
-.modal .quote-container blockquote::before {
+body .is-layout-constrained .quote-container blockquote::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,30 +37,24 @@ body .is-layout-constrained .quote-container blockquote::before,
   line-height: 1;
   font-style: normal;
 }
-body .is-layout-constrained .quote-container blockquote p,
-.modal .quote-container blockquote p {
+body .is-layout-constrained .quote-container blockquote p {
   margin-left: 45px;
 }
-body .is-layout-constrained .quote-container blockquote .author,
-.modal .quote-container blockquote .author {
+body .is-layout-constrained .quote-container blockquote .author {
   display: block;
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
   font-style: normal;
   color: var(--wp--preset--color--base);
 }
-body .is-layout-constrained .quote-container blockquote .font-style--normal,
-.modal .quote-container blockquote .font-style--normal {
+body .is-layout-constrained .quote-container blockquote .font-style--normal {
   font-style: normal;
 }
-body .is-layout-constrained .quote-container blockquote p:last-child, body .is-layout-constrained .quote-container blockquote:last-child,
-.modal .quote-container blockquote p:last-child,
-.modal .quote-container blockquote:last-child {
+body .is-layout-constrained .quote-container blockquote p:last-child, body .is-layout-constrained .quote-container blockquote:last-child {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
-body .is-layout-constrained .quote-container p:last-child,
-.modal .quote-container p:last-child {
+body .is-layout-constrained .quote-container p:last-child {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
