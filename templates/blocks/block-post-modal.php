@@ -21,7 +21,7 @@ $query = new WP_Query($args);
 if ($query->have_posts()) {
     echo
     '<div class="modal-backdrop"></div>
-    <div class="modal" autofocus>
+    <div class="modal" tabindex=-1 role="dialog">
         <div class="modal_table">
             <div class="modal_table_cell">';
             while ($query->have_posts()) {
