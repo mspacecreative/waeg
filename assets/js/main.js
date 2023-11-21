@@ -137,8 +137,6 @@ function keyPress (e) {
   }
 }
 
-keyPress;
-
 // JQUERY Version
 // $(this).click(function (e) {
 //   e.preventDefault();
@@ -217,6 +215,7 @@ function fadeInPage() {
 
 window.onload = () => {
   setTimeout(fadeInPage, 500);
+  keyPress();
 };
 
 // HIDE MODAL ON NAV LINK CLICK
