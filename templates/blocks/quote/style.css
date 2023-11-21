@@ -1,5 +1,5 @@
 body .is-layout-constrained .quote-container,
-.modal .quote-containers {
+.modal .quote-container {
   padding: var(--wp--preset--spacing--30);
   background-color: var(--wp--preset--color--dark-green);
   -webkit-margin-before: var(--wp--preset--spacing--30);
@@ -13,16 +13,16 @@ body .is-layout-constrained .quote-container,
   -o-border-radius: 10px;
 }
 body .is-layout-constrained .quote-container h2,
-.modal .quote-containers h2 {
+.modal .quote-container h2 {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
 body .is-layout-constrained .quote-container h3,
-.modal .quote-containers h3 {
+.modal .quote-container h3 {
   color: var(--wp--preset--color--base);
 }
 body .is-layout-constrained .quote-container blockquote,
-.modal .quote-containers blockquote {
+.modal .quote-container blockquote {
   font-style: italic;
   position: relative;
   color: var(--wp--preset--color--pale-gold);
@@ -30,7 +30,7 @@ body .is-layout-constrained .quote-container blockquote,
   margin-right: 0;
 }
 body .is-layout-constrained .quote-container blockquote::before,
-.modal .quote-containers blockquote::before {
+.modal .quote-container blockquote::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,11 +43,11 @@ body .is-layout-constrained .quote-container blockquote::before,
   font-style: normal;
 }
 body .is-layout-constrained .quote-container blockquote p,
-.modal .quote-containers blockquote p {
+.modal .quote-container blockquote p {
   margin-left: 45px;
 }
 body .is-layout-constrained .quote-container blockquote .author,
-.modal .quote-containers blockquote .author {
+.modal .quote-container blockquote .author {
   display: block;
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
@@ -55,17 +55,17 @@ body .is-layout-constrained .quote-container blockquote .author,
   color: var(--wp--preset--color--base);
 }
 body .is-layout-constrained .quote-container blockquote .font-style--normal,
-.modal .quote-containers blockquote .font-style--normal {
+.modal .quote-container blockquote .font-style--normal {
   font-style: normal;
 }
 body .is-layout-constrained .quote-container blockquote p:last-child, body .is-layout-constrained .quote-container blockquote:last-child,
-.modal .quote-containers blockquote p:last-child,
-.modal .quote-containers blockquote:last-child {
+.modal .quote-container blockquote p:last-child,
+.modal .quote-container blockquote:last-child {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 body .is-layout-constrained .quote-container p:last-child,
-.modal .quote-containers p:last-child {
+.modal .quote-container p:last-child {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
