@@ -1,11 +1,5 @@
-var isDialogSupported = true;
-if (!window.HTMLDialogElement) {
-  document.body.classList.add("no-dialog");
-  isDialogSupported = false;
-}
-
 modal.addEventListener("transitionend", e => {
-  modal.querySelector("input").focus();
+  modal.querySelector("a").focus();
 });
 
 // REMOVE EXTRA SEMICOLON FROM STRING
@@ -107,13 +101,8 @@ let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
-    if (isDialogSupported) {
-      modal.querySelector("input").focus();
-      modal.classList.toggle('show');
-      modal.focus();
-    } else {
-      modal.setAttribute("open", "");
-    }
+    modal.classList.toggle('show');
+    modal.focus();
     htmlTag.classList.add('fixed');
     modalBackdrop.classList.toggle('show');
     const buttonId = this.getAttribute('data-id');
