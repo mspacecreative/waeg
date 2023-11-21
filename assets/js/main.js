@@ -133,6 +133,9 @@ for (i = 0; i < bioButton.length; i++) {
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
   });
 }
+
+trapFocus(bioButton);
+
 for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
     modal.classList.remove('show');
