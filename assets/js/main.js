@@ -98,13 +98,11 @@ for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
     modal.classList.toggle('show');
+    modal.focus();
     htmlTag.classList.add('fixed');
     modalBackdrop.classList.toggle('show');
     const buttonId = this.getAttribute('data-id');
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
-    if (document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.contains('show')) {
-      document.querySelector('.post-modal-content[id="' + buttonId + '"').focus();
-    }
   });
 }
 for (i = 0; i < closeModalButton.length; i++) {
