@@ -137,7 +137,11 @@ document.addEventListener('keydown', (event) => {
       if (isNotCombinedKey) {
         modal.classList.remove('show');
         modalBackdrop.classList.remove('show');
-        closeModalButton.parentElement.classList.remove('show');
+        for (i = 0; i < postModalContent.length; i++) {
+          if (postModalContent[i].classList.contains('show')) {
+            postModalContent[i].classList.remove('show');
+          }
+        }
       }
   }
 });
