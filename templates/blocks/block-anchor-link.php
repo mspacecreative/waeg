@@ -20,8 +20,8 @@ switch($slug) {
         break;
 }
 echo 
-'<div class="wp-block-button wp-element-button">
-    <a class="wp-block-button__link anchor-link__button" href="' . home_url('virtual-tour') . $slug . '#';
+'<div class="wp-block-button anchor-link__button">
+    <a class="wp-element-button wp-block-button__link" href="' . home_url('virtual-tour') . $slug . '#';
     $title = sanitize_title(get_the_title());
     echo $title;
     echo
