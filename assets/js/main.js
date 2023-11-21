@@ -45,7 +45,7 @@ const trapFocus = (element, prevFocusableElement = document.activeElement) => {
 const toggleModal = ((e) => {
 if (!modal.classList.contains('show')) {
   trapped = trapFocus(modal);
-} else {
+} else if (modal.classList.contains('show')) {
   trapped.onClose();
 } 
 });
