@@ -97,11 +97,7 @@ let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
-    for (i = 0; i < postModalContent.length; i++) {
-      if (postModalContent[i].classList.contains('show')) {
-        postModalContent[i].focus();
-      }
-    } 
+    postModalContent.focus();
     modal.classList.toggle('show');
     htmlTag.classList.add('fixed');
     modalBackdrop.classList.toggle('show');
