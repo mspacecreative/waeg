@@ -54,6 +54,7 @@ if ($query->have_posts()) {
                                 include 'includes/template-carousel.php';
                                 include 'includes/template-notes.php';
                                 include 'includes/template-traditional-uses.php';
+                                include 'includes/template-people-and-plants.php';
                             echo
                             '</div>
                         </div>
