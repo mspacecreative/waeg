@@ -134,7 +134,7 @@ for (i = 0; i < bioButton.length; i++) {
   });
 }
 
-trapFocus(bioButton);
+trapFocus();
 
 for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
