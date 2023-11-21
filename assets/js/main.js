@@ -1,7 +1,3 @@
-modal.addEventListener("transitionend", e => {
-  modal.querySelector("a").focus();
-});
-
 // REMOVE EXTRA SEMICOLON FROM STRING
 const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
 for (i=0; i < botanicalNames.length; i++) {
@@ -109,6 +105,10 @@ for (i = 0; i < bioButton.length; i++) {
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
   });
 }
+
+modal.addEventListener("transitionend", e => {
+  modal.querySelector("a").focus();
+});
 
 for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
