@@ -46,7 +46,6 @@ const toggleModal = ((e) => {
 if (modal.classList.contains !== "show") {
   trapped = trapFocus(modal);
 } else {
-  modal.classList.contains('show');
   trapped.onClose();
 } 
 });
