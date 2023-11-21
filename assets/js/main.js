@@ -1,30 +1,12 @@
-// TRAP FOCUS IN MODAL
-function trapFocus(element) {
-  var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
-  var firstFocusableEl = focusableEls[0];  
-  var lastFocusableEl = focusableEls[focusableEls.length - 1];
-  var KEYCODE_TAB = 9;
-
-  element.addEventListener('keydown', function(e) {
-    var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-
-    if (!isTabPressed) { 
-      return; 
-    }
-
-    if ( e.shiftKey ) /* shift + tab */ {
-      if (document.activeElement === firstFocusableEl) {
-        lastFocusableEl.focus();
-          e.preventDefault();
-        }
-      } else /* tab */ {
-      if (document.activeElement === lastFocusableEl) {
-        firstFocusableEl.focus();
-          e.preventDefault();
-        }
-      }
-  });
+var isDialogSupported = true;
+if (!window.HTMLDialogElement) {
+  document.body.classList.add("no-dialog");
+  isDialogSupported = false;
 }
+
+modal.addEventListener("transitionend", e => {
+  modal.querySelector("input").focus();
+});
 
 // REMOVE EXTRA SEMICOLON FROM STRING
 const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
@@ -125,16 +107,19 @@ let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
-    modal.classList.toggle('show');
-    modal.focus();
+    if (isDialogSupported) {
+      modal.querySelector("input").focus();
+      modal.classList.toggle('show');
+      modal.focus();
+    } else {
+      modal.setAttribute("open", "");
+    }
     htmlTag.classList.add('fixed');
     modalBackdrop.classList.toggle('show');
     const buttonId = this.getAttribute('data-id');
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
   });
 }
-
-trapFocus();
 
 for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
