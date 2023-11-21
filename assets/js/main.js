@@ -128,6 +128,17 @@ for (i = 0; i < postModalContent.length; i++) {
   });
 }
 
+// ESCAPE BUTTON CLICK TO CLOSE MODAL
+function keyPress (e) {
+  if(e.key === "Escape") {
+    modal.classList.remove('show');
+    modalBackdrop.classList.remove('show');
+    closeModalButton.parentElement.classList.remove('show');
+  }
+}
+
+keyPress;
+
 // JQUERY Version
 // $(this).click(function (e) {
 //   e.preventDefault();
