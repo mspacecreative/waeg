@@ -21,7 +21,7 @@ $query = new WP_Query($args);
 if ($query->have_posts()) {
     echo
     '<div class="modal-backdrop"></div>
-    <div class="modal" tabindex=-1 role="dialog">
+    <div class="modal" tabindex=-1 role="dialog" aria-hidden="true" aria-labelledby="modalTitle">
         <div class="modal_table">
             <div class="modal_table_cell">';
             while ($query->have_posts()) {
@@ -38,7 +38,7 @@ if ($query->have_posts()) {
                     <div class="post-modal-content-wrapper">
                         <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
                             <div class="wp-block-column">
-                                <h1 class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
+                                <h1 id="modalTitle" class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
                             </div>
                             <div class="wp-block-column is-layout-flex is-content-justification-right">';
                                 include 'includes/template-botanical-names.php';
