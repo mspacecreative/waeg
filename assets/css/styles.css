@@ -490,6 +490,9 @@ html {
   min-height: 100%;
   position: relative;
 }
+html.fixed {
+  overflow: hidden;
+}
 
 body {
   min-height: 100%;

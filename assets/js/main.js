@@ -92,12 +92,14 @@ let bioButton = document.querySelectorAll(".post-modal-link");
 const modal = document.querySelector(".modal");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 const closeModalButton = document.querySelectorAll('.closeModalButton');
+const htmlTag = document.querySelector('html');
 let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
     e.preventDefault();
     modal.classList.toggle('show');
     modal.focus();
+    htmlTag.classList.add('fixed');
     modalBackdrop.classList.toggle('show');
     const buttonId = this.getAttribute('data-id');
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
@@ -107,6 +109,7 @@ for (i = 0; i < closeModalButton.length; i++) {
   closeModalButton[i].addEventListener('click', function() {
     modal.classList.remove('show');
     modalBackdrop.classList.remove('show');
+    htmlTag.classList.remove('fixed');
     this.parentElement.classList.remove('show');
   });
 }
@@ -115,6 +118,7 @@ if (modal) {
   modal.addEventListener('click', function() {
     this.classList.remove('show');
     modalBackdrop.classList.toggle('show');
+    htmlTag.classList.remove('fixed');
     for (i = 0; i < postModalContent.length; i++) {
       if (postModalContent[i].classList.contains('show')) {
         postModalContent[i].classList.remove('show');
@@ -138,6 +142,7 @@ document.addEventListener('keydown', (event) => {
       if (isNotCombinedKey) {
         modal.classList.remove('show');
         modalBackdrop.classList.remove('show');
+        htmlTag.classList.remove('fixed');
         for (i = 0; i < postModalContent.length; i++) {
           if (postModalContent[i].classList.contains('show')) {
             postModalContent[i].classList.remove('show');
