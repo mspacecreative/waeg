@@ -103,7 +103,7 @@ for (i = 0; i < bioButton.length; i++) {
     const buttonId = this.getAttribute('data-id');
     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
     if (document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.contains('show')) {
-      (document.querySelector('.post-modal-content[id="' + buttonId + '"').focus();
+      document.querySelector('.post-modal-content[id="' + buttonId + '"').focus();
     }
   });
 }
