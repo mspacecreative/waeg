@@ -1363,7 +1363,7 @@ html.fslightbox-open {
     justify-content: flex-end;
   }
 }
-.modal[open]:not(:focus-within) {
+.modal[visibility=visible]:not(:focus-within) {
   background-color: rgb(255, 255, 254);
   transition: background-color 0.01s;
 }

@@ -99,7 +99,7 @@ for (i = 0; i < bioButton.length; i++) {
     e.preventDefault();
     modal.classList.toggle('show');
     modal.focus();
-    modal.setAttribute('open', 'open');
+    modal.setAttribute('visibility', 'visible');
     htmlTag.classList.add('fixed');
     modalBackdrop.classList.toggle('show');
     const buttonId = this.getAttribute('data-id');
