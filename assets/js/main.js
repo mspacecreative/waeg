@@ -96,8 +96,8 @@ const htmlTag = document.querySelector('html');
 let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
-    toggleModal();
     e.preventDefault();
+    toggleModal();
     modal.classList.toggle('show');
     modal.focus();
     htmlTag.classList.add('fixed');
