@@ -326,9 +326,11 @@ window.onscroll = function () {
 };
 
 const toggleModal = ((e) => {
-  if (!modal.classList.contains('show')) {
-    trapped = trapFocus(modal);
-  } else {
-    trapped.onClose();
-  } 
+  for (i = 0; i < postModalContent.length; i++) {
+    if (!postModalContent[i].contains('show')) {
+      trapped = trapFocus(modal);
+    } else {
+      trapped.onClose();
+    }
+  }
 });
