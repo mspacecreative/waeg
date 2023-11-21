@@ -42,14 +42,6 @@ const trapFocus = (element, prevFocusableElement = document.activeElement) => {
   };
 };
 
-const toggleModal = ((e) => {
-if (!modal.classList.contains('show')) {
-  trapped = trapFocus(modal);
-} else if (modal.classList.contains('show')) {
-  trapped.onClose();
-} 
-});
-
 // REMOVE EXTRA SEMICOLON FROM STRING
 const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
 for (i=0; i < botanicalNames.length; i++) {
@@ -332,3 +324,11 @@ window.onscroll = function () {
     header.classList.add("reset");
   }
 };
+
+const toggleModal = ((e) => {
+  if (!modal.classList.contains('show')) {
+    trapped = trapFocus(modal);
+  } else {
+    trapped.onClose();
+  } 
+  });
