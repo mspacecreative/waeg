@@ -326,7 +326,7 @@ window.onscroll = function () {
 };
 
 const toggleModal = ((e) => {
-  if (modal.classList.contains('show')) {
+  if (!modal.classList.contains('show')) {
     trapped = trapFocus(modal);
   } else {
     trapped.onClose();
