@@ -96,6 +96,7 @@ const htmlTag = document.querySelector('html');
 let postModalContent = document.querySelectorAll('.post-modal-content');
 for (i = 0; i < bioButton.length; i++) {
   bioButton[i].addEventListener('click', function(e) {
+    toggleModal();
     e.preventDefault();
     modal.classList.toggle('show');
     modal.focus();
@@ -321,11 +322,10 @@ const trapFocus = (element, prevFocusableElement = document.activeElement) => {
 };
 
 const toggleModal = ((e) => {
-if (modal.style.display === "none") {
-  modal.style.display = "block";
+if (!modal.classList.contains === "show") {
   trapped = trapFocus(modal);
 } else {
-  modal.style.display = "none";
+  modal.classList.contains('show');
   trapped.onClose();
 } 
 });
