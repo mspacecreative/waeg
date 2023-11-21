@@ -326,11 +326,9 @@ window.onscroll = function () {
 };
 
 const toggleModal = ((e) => {
-  for (i = 0; i < postModalContent.length; i++) {
-    if (!postModalContent[i].classList.contains('show')) {
-      trapped = trapFocus(modal);
-    } else {
-      trapped.onClose();
-    }
+  if (!document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.contains('show')) {
+    trapped = trapFocus(modal);
+  } else {
+    trapped.onClose();
   }
 });
