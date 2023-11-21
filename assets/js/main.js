@@ -129,13 +129,15 @@ for (i = 0; i < postModalContent.length; i++) {
 }
 
 // ESCAPE BUTTON CLICK TO CLOSE MODAL
-function keyPress (e) {
-  if(e.key === "Escape") {
+document.onkeydown = function(evt) {
+  evt = evt || window.event;
+  if (evt.key == 27) {
     modal.classList.remove('show');
     modalBackdrop.classList.remove('show');
     closeModalButton.parentElement.classList.remove('show');
   }
-}
+};
+
 
 // JQUERY Version
 // $(this).click(function (e) {
@@ -215,7 +217,6 @@ function fadeInPage() {
 
 window.onload = () => {
   setTimeout(fadeInPage, 500);
-  keyPress();
 };
 
 // HIDE MODAL ON NAV LINK CLICK
