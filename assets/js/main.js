@@ -1,8 +1,8 @@
 // REMOVE EXTRA SEMICOLON FROM STRING
-// const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
-// for (i=0; i < botanicalNames.length; i++) {
-//   botanicalNames[i].innerHTML = botanicalNames[i].innerHTML.substring(0,botanicalNames[i].innerHTML.length-1);
-// }
+const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
+for (i=0; i < botanicalNames.length; i++) {
+  botanicalNames[i].innerHTML = botanicalNames[i].innerHTML.substring(0,botanicalNames[i].innerHTML.length-1);
+}
 
 // SLIDE TOGGLE
 
