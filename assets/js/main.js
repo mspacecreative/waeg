@@ -1,46 +1,46 @@
 // TRAP FOCUS IN MODAL
-const trapFocus = (element, prevFocusableElement = document.activeElement) => {
-  const focusableEls = Array.from(
-    element.querySelectorAll(
-      'a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'
-    )
-  );
-  const firstFocusableEl = focusableEls[0];
-  const lastFocusableEl = focusableEls[focusableEls.length - 1];
-  let currentFocus = null;
+// const trapFocus = (element, prevFocusableElement = document.activeElement) => {
+//   const focusableEls = Array.from(
+//     element.querySelectorAll(
+//       'a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'
+//     )
+//   );
+//   const firstFocusableEl = focusableEls[0];
+//   const lastFocusableEl = focusableEls[focusableEls.length - 1];
+//   let currentFocus = null;
 
-  firstFocusableEl.focus();
-  currentFocus = firstFocusableEl;
+//   firstFocusableEl.focus();
+//   currentFocus = firstFocusableEl;
 
-  const handleFocus = e => {
-    e.preventDefault();
-    // if the focused element "lives" in your modal container then just focus it
-    if (focusableEls.includes(e.target)) {
-      currentFocus = e.target;
-    } else {
-      // you're out of the container
-      // if previously the focused element was the first element then focus the last 
-      // element - means you were using the shift key
-      if (currentFocus === firstFocusableEl) {
-        lastFocusableEl.focus();
-      } else {
-        // you previously were focused on the last element so just focus the first one
-        firstFocusableEl.focus();
-      }
-      // update the current focus var
-      currentFocus = document.activeElement;
-    }
-  };
+//   const handleFocus = e => {
+//     e.preventDefault();
+//     // if the focused element "lives" in your modal container then just focus it
+//     if (focusableEls.includes(e.target)) {
+//       currentFocus = e.target;
+//     } else {
+//       // you're out of the container
+//       // if previously the focused element was the first element then focus the last 
+//       // element - means you were using the shift key
+//       if (currentFocus === firstFocusableEl) {
+//         lastFocusableEl.focus();
+//       } else {
+//         // you previously were focused on the last element so just focus the first one
+//         firstFocusableEl.focus();
+//       }
+//       // update the current focus var
+//       currentFocus = document.activeElement;
+//     }
+//   };
 
-  document.addEventListener("focus", handleFocus, true);
+//   document.addEventListener("focus", handleFocus, true);
 
-  return {
-    onClose: () => {
-      document.removeEventListener("focus", handleFocus, true);
-      prevFocusableElement.focus();
-    }
-  };
-};
+//   return {
+//     onClose: () => {
+//       document.removeEventListener("focus", handleFocus, true);
+//       prevFocusableElement.focus();
+//     }
+//   };
+// };
 
 // REMOVE EXTRA SEMICOLON FROM STRING
 const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
@@ -132,82 +132,82 @@ if (navToggle) {
 
 // POST MODAL
 // BIO MODAL FUNCTIONALITY
-let bioButton = document.querySelectorAll(".post-modal-link");
-const modal = document.querySelector(".modal");
-const modalBackdrop = document.querySelector(".modal-backdrop");
-const closeModalButton = document.querySelectorAll('.closeModalButton');
-const htmlTag = document.querySelector('html');
-let postModalContent = document.querySelectorAll('.post-modal-content');
-for (i = 0; i < bioButton.length; i++) {
-  bioButton[i].addEventListener('click', function(e) {
-    e.preventDefault();
-    toggleModal();
-    modal.classList.toggle('show');
-    modal.focus();
-    htmlTag.classList.add('fixed');
-    modalBackdrop.classList.toggle('show');
-    const buttonId = this.getAttribute('data-id');
-    document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
-  });
-}
+// let bioButton = document.querySelectorAll(".post-modal-link");
+// const modal = document.querySelector(".modal");
+// const modalBackdrop = document.querySelector(".modal-backdrop");
+// const closeModalButton = document.querySelectorAll('.closeModalButton');
+// const htmlTag = document.querySelector('html');
+// let postModalContent = document.querySelectorAll('.post-modal-content');
+// for (i = 0; i < bioButton.length; i++) {
+//   bioButton[i].addEventListener('click', function(e) {
+//     e.preventDefault();
+//     toggleModal();
+//     modal.classList.toggle('show');
+//     modal.focus();
+//     htmlTag.classList.add('fixed');
+//     modalBackdrop.classList.toggle('show');
+//     const buttonId = this.getAttribute('data-id');
+//     document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.add('show');
+//   });
+// }
 
-for (i = 0; i < closeModalButton.length; i++) {
-  closeModalButton[i].addEventListener('click', function() {
-    modal.classList.remove('show');
-    toggleModal();
-    modalBackdrop.classList.remove('show');
-    htmlTag.classList.remove('fixed');
-    this.parentElement.classList.remove('show');
-  });
-}
+// for (i = 0; i < closeModalButton.length; i++) {
+//   closeModalButton[i].addEventListener('click', function() {
+//     modal.classList.remove('show');
+//     toggleModal();
+//     modalBackdrop.classList.remove('show');
+//     htmlTag.classList.remove('fixed');
+//     this.parentElement.classList.remove('show');
+//   });
+// }
 
-if (modal) {
-  modal.addEventListener('click', function() {
-    this.classList.remove('show');
-    toggleModal();
-    modalBackdrop.classList.toggle('show');
-    htmlTag.classList.remove('fixed');
-    for (i = 0; i < postModalContent.length; i++) {
-      if (postModalContent[i].classList.contains('show')) {
-        postModalContent[i].classList.remove('show');
-      }
-    } 
-  });
-}
+// if (modal) {
+//   modal.addEventListener('click', function() {
+//     this.classList.remove('show');
+//     toggleModal();
+//     modalBackdrop.classList.toggle('show');
+//     htmlTag.classList.remove('fixed');
+//     for (i = 0; i < postModalContent.length; i++) {
+//       if (postModalContent[i].classList.contains('show')) {
+//         postModalContent[i].classList.remove('show');
+//       }
+//     } 
+//   });
+// }
 
-for (i = 0; i < postModalContent.length; i++) {
-  postModalContent[i].addEventListener('click', function(e) {
-    e.stopPropagation();
-  });
-}
+// for (i = 0; i < postModalContent.length; i++) {
+//   postModalContent[i].addEventListener('click', function(e) {
+//     e.stopPropagation();
+//   });
+// }
 
-// ESCAPE BUTTON CLICK TO CLOSE MODAL
-document.addEventListener('keydown', (event) => {
+// // ESCAPE BUTTON CLICK TO CLOSE MODAL
+// document.addEventListener('keydown', (event) => {
         
-  if (event.key === 'Escape') {
-   //if esc key was not pressed in combination with ctrl or alt or shift
-      const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
-      if (isNotCombinedKey) {
-        modal.classList.remove('show');
-        toggleModal();
-        modalBackdrop.classList.remove('show');
-        htmlTag.classList.remove('fixed');
-        for (i = 0; i < postModalContent.length; i++) {
-          if (postModalContent[i].classList.contains('show')) {
-            postModalContent[i].classList.remove('show');
-          }
-        }
-      }
-  }
-});
+//   if (event.key === 'Escape') {
+//    //if esc key was not pressed in combination with ctrl or alt or shift
+//       const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
+//       if (isNotCombinedKey) {
+//         modal.classList.remove('show');
+//         toggleModal();
+//         modalBackdrop.classList.remove('show');
+//         htmlTag.classList.remove('fixed');
+//         for (i = 0; i < postModalContent.length; i++) {
+//           if (postModalContent[i].classList.contains('show')) {
+//             postModalContent[i].classList.remove('show');
+//           }
+//         }
+//       }
+//   }
+// });
 
-const toggleModal = ((e) => {
-  if (!modal.classList.contains('show')) {
-    trapped = trapFocus(modal);
-  } else {
-    trapped.onClose();
-  }
-});
+// const toggleModal = ((e) => {
+//   if (!modal.classList.contains('show')) {
+//     trapped = trapFocus(modal);
+//   } else {
+//     trapped.onClose();
+//   }
+// });
 // JQUERY Version
 // $(this).click(function (e) {
 //   e.preventDefault();
