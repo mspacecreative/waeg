@@ -1,11 +1,4 @@
 <?php
-/**
- * Title: Post Modal
- * Slug: waeg/post-modal
- * Categories: modal
- * Block Types: core/template-part/post-modal
- */
-$term = get_field('species_type');
 $modal_counter = 1;
 $aria_counter = 1;
 $id_counter = 1;
@@ -18,7 +11,7 @@ $args = array(
         array(
             'taxonomy' => 'species',
             'field' => 'term_id',
-            'terms' => $term
+            'terms' => 'berries'
         )
     )
 
