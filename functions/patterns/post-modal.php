@@ -58,4 +58,4 @@ if ($query->have_posts()) {
         </div>
     </div>';
     }
-} wp_reset_postdata();
+}
