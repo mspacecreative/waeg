@@ -30,33 +30,31 @@ if ($query->have_posts()) {
     '<div id="post-modal-' . $modal_counter++ . '" class="modal" tabindex="-1" aria-labelledby="post-title-' . $aria_counter++ . '" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
-                <div class="post-modal-content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="post-modal-content-wrapper">
-                        <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
-                            <div class="wp-block-column">
-                                <div class="modal-header">
-                                    <h1 id="post-title-' . $id_counter++ . '" class="modal-title has-large-font-size" style="margin: 0;">' . $title . '</h1>
-                                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="post-modal-content-wrapper">
+                    <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
+                        <div class="wp-block-column">
+                            <div class="modal-header">
+                                <h1 id="post-title-' . $id_counter++ . '" class="modal-title has-large-font-size" style="margin: 0;">' . $title . '</h1>
                             </div>
-                            <div class="wp-block-column is-layout-flex is-content-justification-right">';
-                                include 'includes/template-botanical-names.php';
-                            echo
-                            '</div>
                         </div>
-                        <div class="is-layout-flex">
-                            <div class="line-drawing-container">'
-                                . $line_drawing .
-                            '</div>
-                            <div class="post-content">';
-                                include 'includes/template-traditional-names.php';
-                                include 'includes/template-carousel.php';
-                                include 'includes/template-notes.php';
-                                include 'includes/template-traditional-uses.php';
-                                include 'includes/template-people-and-plants.php';
-                            echo
-                            '</div>
-                        </div>
+                        <div class="wp-block-column is-layout-flex is-content-justification-right">';
+                            include 'includes/template-botanical-names.php';
+                        echo
+                        '</div>
+                    </div>
+                    <div class="is-layout-flex">
+                        <div class="line-drawing-container">'
+                            . $line_drawing .
+                        '</div>
+                        <div class="post-content">';
+                            include 'includes/template-traditional-names.php';
+                            include 'includes/template-carousel.php';
+                            include 'includes/template-notes.php';
+                            include 'includes/template-traditional-uses.php';
+                            include 'includes/template-people-and-plants.php';
+                        echo
+                        '</div>
                     </div>
                 </div>
             </div>
