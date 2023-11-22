@@ -70,7 +70,7 @@ $loop = new WP_Query( array(
             '<div class="is-layout-flex wp-block-buttons">' 
                 . $tour_url . 
                 '<div class="wp-block-button is-style-outline">
-                    <button type="button" class="wp-block-button__link wp-element-button btn btn-primary" data-bs-toggle="modal" data-bs-target="#post-modal-' . $target_counter++ . '">' . esc_html_x('More Details', 'waeg') . '</button>
+                    <button type="button" class="wp-block-button__link wp-element-button" data-bs-toggle="modal" data-bs-target="#post-modal-' . $target_counter++ . '">' . esc_html_x('More Details', 'waeg') . '</button>
                 </div>
             </div>
         </div>';
