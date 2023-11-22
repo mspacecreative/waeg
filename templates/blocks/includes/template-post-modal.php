@@ -28,7 +28,7 @@ if ($query->have_posts()) {
     $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
     echo
     '<div id="post-modal-' . $modal_counter++ . '" class="modal" tabindex="-1" aria-labelledby="post-title-' . $aria_counter++ . '" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
@@ -38,7 +38,7 @@ if ($query->have_posts()) {
                         </div>
                     </div>
                     <div class="wp-block-column is-layout-flex is-content-justification-right">';
-                        include 'includes/template-botanical-names.php';
+                        include 'template-botanical-names.php';
                     echo
                     '</div>
                 </div>
@@ -47,11 +47,11 @@ if ($query->have_posts()) {
                         . $line_drawing .
                     '</div>
                     <div class="post-content">';
-                        include 'includes/template-traditional-names.php';
-                        include 'includes/template-carousel.php';
-                        include 'includes/template-notes.php';
-                        include 'includes/template-traditional-uses.php';
-                        include 'includes/template-people-and-plants.php';
+                        include 'template-traditional-names.php';
+                        include 'template-carousel.php';
+                        include 'template-notes.php';
+                        include 'template-traditional-uses.php';
+                        include 'template-people-and-plants.php';
                     echo
                     '</div>
                 </div>
