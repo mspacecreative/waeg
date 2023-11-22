@@ -1,6 +1,8 @@
 <?php
 $term = get_field('species_type');
-$count = 1;
+$modal_counter = 1;
+$aria_counter = 1;
+$id_counter = 1;
 $args = array(
     'post_type' => 'plant',
     'posts_per_page' => -1,
@@ -25,7 +27,7 @@ if ($query->have_posts()) {
     $title = get_the_title($query->ID);
     $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
     echo
-    '<div id="post-modal-' . $count++ . '" class="modal" tabindex="-1" aria-labelledby="post-title-' . $count++ . '" aria-hidden="true">
+    '<div id="post-modal-' . $modal_counter++ . '" class="modal" tabindex="-1" aria-labelledby="post-title-' . $aria_counter++ . '" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
                 <div class="post-modal-content">
@@ -34,7 +36,7 @@ if ($query->have_posts()) {
                         <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
                             <div class="wp-block-column">
                                 <div class="modal-header">
-                                    <h1 id="post-title-' . $count++ . '" class="modal-title has-large-font-size" style="margin: 0;">' . $title . '</h1>
+                                    <h1 id="post-title-' . $id_counter++ . '" class="modal-title has-large-font-size" style="margin: 0;">' . $title . '</h1>
                                 </div>
                             </div>
                             <div class="wp-block-column is-layout-flex is-content-justification-right">';
