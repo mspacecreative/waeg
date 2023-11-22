@@ -13,7 +13,7 @@ function post_modal() {
             array(
                 'taxonomy' => 'species',
                 'field' => 'term_id',
-                'terms' => $term
+                'terms' => 'berries'
             )
         )
 
