@@ -1,6 +1,6 @@
 <?php
 $term = get_field('species_type');
-$count = 1;
+$target_counter = 1;
 $loop = new WP_Query( array(
     'post_type' => 'plant',
     'orderby' => 'name',
@@ -70,7 +70,7 @@ $loop = new WP_Query( array(
             '<div class="is-layout-flex wp-block-buttons">' 
                 . $tour_url . 
                 '<div class="wp-block-button is-style-outline">
-                    <a class="wp-block-button__link wp-element-button post-modal-link" data-id="bio-' . $count++ . '" href="' . esc_url($permalink) . '">' . esc_html_x('More Details', 'waeg') . '</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#post-modal-' . $target_counter++ . '">' . esc_html_x('More Details', 'waeg') . '</button>
                 </div>
             </div>
         </div>';
