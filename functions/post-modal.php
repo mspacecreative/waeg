@@ -5,4 +5,4 @@ function post_modal() {
     // ob_clean();
     echo 'stuff';
 }
-add_action( 'wp_footer', 'post_modal' );
+add_action( 'wp_footer', 'post_modal', 1 );
