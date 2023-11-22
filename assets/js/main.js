@@ -201,7 +201,13 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-
+const toggleModal = ((e) => {
+  if (!modal.classList.contains('show')) {
+    trapped = trapFocus(modal);
+  } else {
+    trapped.onClose();
+  }
+});
 // JQUERY Version
 // $(this).click(function (e) {
 //   e.preventDefault();
@@ -324,11 +330,3 @@ window.onscroll = function () {
     header.classList.add("reset");
   }
 };
-
-const toggleModal = ((e) => {
-  if (!document.querySelector('.post-modal-content[id="' + buttonId + '"').classList.contains('show')) {
-    trapped = trapFocus(modal);
-  } else {
-    trapped.onClose();
-  }
-});

@@ -19,26 +19,23 @@ $args = array(
 $query = new WP_Query($args);
 
 if ($query->have_posts()) {
+    while ($query->have_posts()) {
+    $query->the_post();
+    $term_id = get_queried_object_id();
+    $title = get_the_title($query->ID);
+    $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
     echo
-    '<div class="modal-backdrop"></div>
-    <div class="modal" tabindex="0" role="dialog" aria-hidden="true" aria-labelledby="modalTitle" aria-modal="true">
-        <div class="modal_table">
-            <div class="modal_table_cell">';
-            while ($query->have_posts()) {
-                $query->the_post();
-                $term_id = get_queried_object_id();
-                $title = get_the_title($query->ID);
-                $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
-                echo
-                '<div id="bio-' . $count++ . '" class="post-modal-content">
-                    <button class="closeModalButton">
-                        <span style="background-color: #000;">&nbsp;</span>
-                        <span style="background-color: #000;">&nbsp;</span>
-                    </button>
+    '<div id="post-modal-' . $count++ . '" class="modal" tabindex="-1" aria-labelledby="post-title-' . $count++ . '" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="post-modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="post-modal-content-wrapper">
                         <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
                             <div class="wp-block-column">
-                                <h1 id="modalTitle" class="has-large-font-size" style="margin: 0;">' . $title . '</h1>
+                                <div class="modal-header">
+                                    <h1 id="post-title-' . $count++ . '" class="modal-title has-large-font-size" style="margin: 0;">' . $title . '</h1>
+                                </div>
                             </div>
                             <div class="wp-block-column is-layout-flex is-content-justification-right">';
                                 include 'includes/template-botanical-names.php';
@@ -59,10 +56,9 @@ if ($query->have_posts()) {
                             '</div>
                         </div>
                     </div>
-                </div>';
-            }
-            echo
-            '</div>
+                </div>
+            </div>
         </div>
     </div>';
+    }
 } wp_reset_postdata();

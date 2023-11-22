@@ -22,6 +22,12 @@ function waeg_styles() {
         // LIGHTBOX JS
         wp_register_script( 'lightbox', get_template_directory_uri() . '/assets/js/lightbox.js', array(), null, true );
         wp_enqueue_script( 'lightbox' );
+
+        // BOOTSTRAP STYLES AND SCRIPTS
+        wp_register_style('bootstrapcss', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', array(), null);
+        wp_enqueue_style('bootstrapcss');
+        wp_register_script( 'bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', array(), null, true );
+        wp_enqueue_script( 'bootstrapjs' );
     }
 
     // FONTAWESOME
