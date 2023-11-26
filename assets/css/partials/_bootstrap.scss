@@ -62,12 +62,16 @@ body .modal {
   -o-transition: opacity 0.3s ease-out;
 }
 .modal.show .modal-dialog {
-  @extend%smooth-transition-25;
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
+  transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
 }
 .modal-open .modal {
   overflow-x: hidden;
