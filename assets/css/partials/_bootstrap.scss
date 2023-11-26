@@ -52,7 +52,7 @@ body .modal {
   transform: translate(0, -25%);
   @extend %smooth-transition-25s;
 }
-.modal.fade .modal-dialog {
+.modal.show .modal-dialog {
   @extend %smooth-transition-25s;
 }
 .modal-open .modal {
@@ -91,7 +91,7 @@ body .modal {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.modal-backdrop.fade {
+.modal-backdrop.show {
   opacity: 0.5;
   filter: alpha(opacity=50);
   @extend %smooth-transition-25s;
