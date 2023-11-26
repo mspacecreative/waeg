@@ -1,5 +1,6 @@
 <?php
 function post_modal() {
-    include 'patterns/post-modal-loop.php';
+    // include 'patterns/post-modal-loop.php';
+    echo 'test';
 }
-add_action( 'wp_body_open', 'post_modal' );
+add_action( 'wp_head', 'post_modal' );
