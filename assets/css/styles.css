@@ -1340,12 +1340,12 @@ body .modal .post-content {
   outline: 0;
 }
 
-.modal.fade .modal-dialog {
+.modal .modal-dialog {
   transform: translate(0, -25%);
   transition: transform 0.3s ease-out;
 }
 
-.modal.in .modal-dialog {
+.modal.fade .modal-dialog {
   transform: translate(0, 0);
 }
 
@@ -1383,12 +1383,12 @@ body .modal .post-content {
   opacity: 0.75;
 }
 
-.modal-backdrop.fade {
+.modal-backdrop {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-.modal-backdrop.in {
+.modal-backdrop.fade {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
