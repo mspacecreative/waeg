@@ -2,9 +2,8 @@
 function waeg_styles() {
 
     $rand_num = rand();
-        wp_register_style( 'main', get_template_directory_uri() . '/assets/css/styles.css?ver=' . $rand_num, array(), null );
-	    wp_enqueue_style( 'main' );
     global $post;
+
     $virtual_tour_page_id = '1677';
     if ( is_singular(array('plant', 'habitat')) || is_page('virtual-tour') || $post->post_parent == $virtual_tour_page_id ) {
         // SWIPER CSS
@@ -29,6 +28,9 @@ function waeg_styles() {
         wp_register_script( 'bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', array(), null, true );
         wp_enqueue_script( 'bootstrapjs' );
     }
+
+    wp_register_style( 'main', get_template_directory_uri() . '/assets/css/styles.css?ver=' . $rand_num, array(), null );
+    wp_enqueue_style( 'main' );
 
     // FONTAWESOME
     // wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css?ver=' . $rand_num, array(), null );
