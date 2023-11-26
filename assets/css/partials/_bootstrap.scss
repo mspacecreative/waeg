@@ -20,6 +20,8 @@ body .modal {
     align-items: flex-start;
   }
   .post-content {
+    display: flex;
+    flex-direction: column;
     flex: 1;
   }
   .is-layout-flex,
