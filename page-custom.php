@@ -7,6 +7,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
         <?php
         $block_content = do_blocks( '
+        <div class="wp-site-blocks">
         <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
         <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
@@ -21,7 +22,8 @@
         </main>
         <!-- /wp:group -->
         
-        <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->'
+        <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+        </div>'
         );
         ?>
         <?php wp_head(); ?>
@@ -30,11 +32,7 @@
     <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-        <div class="wp-site-blocks">
-
-            <?php echo $block_content; ?>
-
-        </div>
+        <?php echo $block_content; ?>
 
         <?php include 'functions/patterns/post-modal-loop.php'; ?>
         
