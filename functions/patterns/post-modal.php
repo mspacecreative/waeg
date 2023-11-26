@@ -1,9 +1,4 @@
 <?php
-/**
- * Title: Post Modal Loop
- * Slug: waeg/post-modal
- * Inserter: no
- */
 // $term = get_field('species_type');
 $modal_counter = 1;
 $aria_counter = 1;
