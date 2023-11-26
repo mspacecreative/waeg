@@ -2,4 +2,12 @@
   .modal-dialog {
     max-width: 980px;
   }
+  .modal-content {
+    padding: 2rem;
+  }
+  .line-drawing-container {
+    @media (min-width: 1024px) {
+      flex-basis: 250px;
+    }
+  }
 }
