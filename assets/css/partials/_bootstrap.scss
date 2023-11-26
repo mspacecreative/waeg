@@ -45,8 +45,9 @@ body .modal {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
-.modal.fade {
-  @extend %smooth-transition-25;
+.fade {
+  // @extend %smooth-transition-25;
+  transition: opacity 0.15s linear;
 }
 .modal .modal-dialog {
   @extend%smooth-transition-25;
@@ -99,9 +100,6 @@ body .modal {
 .modal-backdrop {
   opacity: 0;
   filter: alpha(opacity=0);
-}
-.modal-backdrop.fade {
-  @extend %smooth-transition-25;
 }
 .modal-backdrop.show {
   opacity: 0.5;

@@ -16,7 +16,7 @@
   -o-border-radius: 50%;
 }
 
-.modal-backdrop.fade, .modal-backdrop, .modal.show .modal-dialog, .modal .modal-dialog, .modal.fade, .anchor-link__button, body:not(.home) header.scroll-down, body:not(.home) header, .wp-block-cover.cover--link:hover img, .wp-block-cover.cover--link:hover, .wp-block-cover.cover--link img, .wp-block-cover.cover--link, .language-toggle .btn a:hover,
+.modal-backdrop, .modal.show .modal-dialog, .modal .modal-dialog, .anchor-link__button, body:not(.home) header.scroll-down, body:not(.home) header, .wp-block-cover.cover--link:hover img, .wp-block-cover.cover--link:hover, .wp-block-cover.cover--link img, .wp-block-cover.cover--link, .language-toggle .btn a:hover,
 .language-toggle li a:hover,
 .wpml-language-switcher-block ul.horizontal-list li a:hover, .language-toggle .btn a,
 .language-toggle li a,
@@ -1338,6 +1338,10 @@ body .modal .post-content {
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
 }
 
 .modal .modal-dialog {
