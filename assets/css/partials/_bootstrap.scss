@@ -89,6 +89,7 @@ body .modal {
   left: 0;
   z-index: 1040;
   background-color: #000000;
+  opacity: 0.75;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -154,7 +155,7 @@ body .modal {
 }
 @media (min-width: 992px) {
   .modal-lg {
-    width: 900px;
+    width: 990px;
   }
 }
 .clearfix:before,
