@@ -65,7 +65,7 @@ $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {
     $label = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? $posttype['label'] : $custom_term->name;
-    $cardclass = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? ' wp-block-other-habitats' : ' wp-block-other-term-posts flex-nowrap';
+    $cardclass = $posttype['value'] == 'habitat' || $posttype['value'] == 'species' ? ' wp-block-other-habitats' : ' wp-block-other-term-posts';
     echo
     '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other ', 'waeg');
         if ($custom_term->slug == 'des-arbres') {
