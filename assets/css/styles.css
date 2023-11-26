@@ -1296,3 +1296,6 @@ html.fslightbox-open {
     flex-basis: 250px;
   }
 }
+.modal .line-drawing-container img {
+  width: 100%;
+}
