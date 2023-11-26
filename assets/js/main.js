@@ -199,11 +199,7 @@ if (navToggle) {
 document.addEventListener('keydown', (event) => {
         
   if (event.key === 'Escape') {
-   //if esc key was not pressed in combination with ctrl or alt or shift
-      const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
-      if (isNotCombinedKey) {
-        modal.classList.remove('show');
-      }
+    modal.classList.remove('show');
   }
 });
 
