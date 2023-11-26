@@ -50,15 +50,10 @@ body .modal {
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+  @extend %smooth-transition-25s;
 }
 .modal.fade .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
+  @extend %smooth-transition-25s;
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -90,6 +85,7 @@ body .modal {
   z-index: 1040;
   background-color: #000000;
   opacity: 0.75;
+  @extend %smooth-transition-25s;
 }
 .modal-backdrop {
   opacity: 0;
@@ -98,6 +94,7 @@ body .modal {
 .modal-backdrop.fade {
   opacity: 0.5;
   filter: alpha(opacity=50);
+  @extend %smooth-transition-25s;
 }
 .modal-header {
   padding: 15px;
