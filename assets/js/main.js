@@ -46,10 +46,10 @@ const modalPostsContainer = document.querySelector('.post-modal-posts-container'
 const modal = document.querySelector(".modal");
 
 // ESCAPE BUTTON CLICK TO CLOSE MODAL
-document.addEventListener('keydown', (event) => {
-  if (modal.classList.contains('show')) {
-    if (event.key === 'Escape') {
-      modal.classList.add('show');
+document.addEventListener('keydown', (event) => {       
+  if (event.key === 'Escape') {
+    if (modal.classList.contains('show')) {
+      modal.stopPropagation();
     }
   }
 });
