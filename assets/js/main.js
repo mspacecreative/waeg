@@ -42,7 +42,9 @@
 //   };
 // };
 const wpBlockContainer = document.querySelector('.wp-site-blocks');
-document.querySelector('.post-modal-posts-container').after(wpBlockContainer);
+const modalPostsContainer = document.querySelector('.post-modal-posts-container');
+
+wpBlockContainer.after(modalPostsContainer);
 
 // REMOVE EXTRA SEMICOLON FROM STRING
 const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
