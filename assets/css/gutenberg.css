@@ -117,6 +117,9 @@
   line-height: 1.4;
   letter-spacing: normal;
 }
+.editor-styles-wrapper a {
+  color: var(--wp--preset--color--dark-green);
+}
 .editor-styles-wrapper .page-title {
   padding: 10px 0;
   border-top: 1px solid var(--wp--preset--color--light-green);

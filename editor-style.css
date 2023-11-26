@@ -18,6 +18,9 @@ body:not(#tinymce) h6 {
   line-height: 1.4;
   letter-spacing: normal;
 }
+body:not(#tinymce) a {
+  color: var(--wp--preset--color--dark-green);
+}
 body:not(#tinymce) .page-title {
   padding: 10px 0;
   border-top: 1px solid var(--wp--preset--color--light-green);
