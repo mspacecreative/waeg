@@ -1285,17 +1285,21 @@ html.fslightbox-open {
           margin-block-end: 0;
 }
 
-.modal .modal-dialog {
+body .modal .modal-dialog {
   max-width: 980px;
 }
-.modal .modal-content {
+body .modal .modal-content {
   padding: 2rem;
 }
 @media (min-width: 1024px) {
-  .modal .line-drawing-container {
+  body .modal .line-drawing-container {
     flex-basis: 250px;
   }
 }
-.modal .line-drawing-container img {
+body .modal .line-drawing-container img {
   width: 100%;
+}
+body .modal .is-layout-flex,
+body .modal .post-content {
+  gap: 2rem;
 }

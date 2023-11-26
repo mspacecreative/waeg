@@ -1,4 +1,4 @@
-.modal {
+body .modal {
   .modal-dialog {
     max-width: 980px;
   }
@@ -12,5 +12,9 @@
     img {
       width: 100%;
     }
+  }
+  .is-layout-flex,
+  .post-content {
+    gap: 2rem;
   }
 }
