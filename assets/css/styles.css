@@ -1341,7 +1341,11 @@ body .modal .post-content {
 }
 
 .modal .modal-dialog {
-  transform: translate(0, -25%);
+  transform: translate(0, -25px);
+  -webkit-transform: translate(0, -25px);
+  -moz-transform: translate(0, -25px);
+  -ms-transform: translate(0, -25px);
+  -o-transform: translate(0, -25px);
 }
 
 .modal.show .modal-dialog {
