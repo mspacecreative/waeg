@@ -43,6 +43,18 @@
 // };
 const wpBlockContainer = document.querySelector('.wp-site-blocks');
 const modalPostsContainer = document.querySelector('.post-modal-posts-container');
+const modal = document.querySelector(".modal");
+
+// ESCAPE BUTTON CLICK TO CLOSE MODAL
+document.addEventListener('keydown', (event) => {
+        
+  if (event.key === 'Escape') {
+   //if esc key was not pressed in combination with ctrl or alt or shift
+    if (modal.classList.contains('show')) {
+      modal.classList.add('show');
+    }
+  }
+});
 
 wpBlockContainer.after(modalPostsContainer);
 
