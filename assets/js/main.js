@@ -42,6 +42,8 @@
 //   };
 // };
 
+document.body.appendChild(document.querySelector('post-modal-posts-container'));
+
 // REMOVE EXTRA SEMICOLON FROM STRING
 const botanicalNames = document.querySelectorAll('.modal .botanical-names h2');
 for (i=0; i < botanicalNames.length; i++) {

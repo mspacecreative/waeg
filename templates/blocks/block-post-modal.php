@@ -21,6 +21,8 @@ $args = array(
 $query = new WP_Query($args);
 
 if ($query->have_posts()) {
+    echo
+    '<div class="post-modal-posts-container">';
     while ($query->have_posts()) {
     $query->the_post();
     $term_id = get_queried_object_id();
@@ -59,4 +61,6 @@ if ($query->have_posts()) {
         </div>
     </div>';
     }
+    echo
+    '</div>';
 } wp_reset_postdata();
