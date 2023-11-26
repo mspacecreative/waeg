@@ -50,13 +50,14 @@ body .modal {
 }
 .modal .modal-dialog {
   @extend%smooth-transition-25;
-  transform: translate(0, -25px);
-  -webkit-transform: translate(0, -25px);
-  -moz-transform: translate(0, -25px);
-  -ms-transform: translate(0, -25px);
-  -o-transform: translate(0, -25px);
+  transform: translate(0, -50px);
+  -webkit-transform: translate(0, -50px);
+  -moz-transform: translate(0, -50px);
+  -ms-transform: translate(0, -50px);
+  -o-transform: translate(0, -50px);
 }
 .modal.show .modal-dialog {
+  @extend%smooth-transition-25;
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
