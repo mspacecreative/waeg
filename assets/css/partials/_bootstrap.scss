@@ -61,17 +61,11 @@ body .modal {
   -ms-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
 }
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
 .modal.show .modal-dialog {
-  transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transition: opacity 0.3s ease-in;
-  -webkit-transition: opacity 0.3s ease-in;
-  -moz-transition: opacity 0.3s ease-in;
-  -ms-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
+  transform: none;
 }
 .modal-open .modal {
   overflow-x: hidden;
