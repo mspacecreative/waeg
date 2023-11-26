@@ -46,14 +46,14 @@ body .modal {
   outline: 0;
 }
 .modal.fade {
-  @extend %smooth-transition-25s;
+  @extend %smooth-transition-25;
 }
 .modal .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  @extend %smooth-transition-25s;
+  @extend %smooth-transition-25;
 }
 .modal.show .modal-dialog {
   transform: translate(0, 0);
@@ -92,14 +92,14 @@ body .modal {
   z-index: 1040;
   background-color: #000000;
   opacity: 0.75;
-  @extend %smooth-transition-25s;
+  @extend %smooth-transition-25;
 }
 .modal-backdrop {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .modal-backdrop.fade {
-  @extend %smooth-transition-25s;
+  @extend %smooth-transition-25;
 }
 .modal-backdrop.show {
   opacity: 0.5;
@@ -201,9 +201,6 @@ body .modal {
   text-shadow: none;
   background-color: transparent;
   border: 0;
-}
-.hidden {
-  display: none !important;
 }
 .affix {
   position: fixed;
