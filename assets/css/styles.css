@@ -1299,6 +1299,9 @@ body .modal .modal-content {
 body .modal .line-drawing-container img {
   width: 100%;
 }
+body .modal .is-layout-flex {
+  align-items: flex-start;
+}
 body .modal .is-layout-flex,
 body .modal .post-content {
   gap: 2rem;

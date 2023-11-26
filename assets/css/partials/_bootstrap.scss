@@ -13,6 +13,9 @@ body .modal {
       width: 100%;
     }
   }
+  .is-layout-flex {
+    align-items: flex-start;
+  }
   .is-layout-flex,
   .post-content {
     gap: 2rem;
