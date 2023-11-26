@@ -1285,6 +1285,9 @@ html.fslightbox-open {
           margin-block-end: 0;
 }
 
+body .modal .btn-close {
+  align-self: flex-end;
+}
 body .modal .modal-dialog {
   max-width: 980px;
 }
@@ -1301,6 +1304,9 @@ body .modal .line-drawing-container img {
 }
 body .modal .is-layout-flex {
   align-items: flex-start;
+}
+body .modal .post-content {
+  flex: 1;
 }
 body .modal .is-layout-flex,
 body .modal .post-content {

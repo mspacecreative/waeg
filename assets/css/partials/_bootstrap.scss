@@ -1,4 +1,7 @@
 body .modal {
+  .btn-close {
+    align-self: flex-end;
+  }
   .modal-dialog {
     max-width: 980px;
   }
@@ -15,6 +18,9 @@ body .modal {
   }
   .is-layout-flex {
     align-items: flex-start;
+  }
+  .post-content {
+    flex: 1;
   }
   .is-layout-flex,
   .post-content {
