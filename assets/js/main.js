@@ -47,10 +47,8 @@ const modal = document.querySelector(".modal");
 
 // ESCAPE BUTTON CLICK TO CLOSE MODAL
 document.addEventListener('keydown', (event) => {
-        
-  if (event.key === 'Escape') {
-   //if esc key was not pressed in combination with ctrl or alt or shift
-    if (modal.classList.contains('show')) {
+  if (modal.classList.contains('show')) {
+    if (event.key === 'Escape') {
       modal.classList.add('show');
     }
   }
