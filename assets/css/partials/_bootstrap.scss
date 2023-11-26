@@ -45,6 +45,9 @@ body .modal {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+.modal.fade {
+  @extend %smooth-transition-25s;
+}
 .modal .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
@@ -53,7 +56,11 @@ body .modal {
   @extend %smooth-transition-25s;
 }
 .modal.show .modal-dialog {
-  @extend %smooth-transition-25s;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -91,10 +98,12 @@ body .modal {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+.modal-backdrop.fade {
+  @extend %smooth-transition-25s;
+}
 .modal-backdrop.show {
   opacity: 0.5;
   filter: alpha(opacity=50);
-  @extend %smooth-transition-25s;
 }
 .modal-header {
   padding: 15px;
