@@ -195,13 +195,25 @@ if (navToggle) {
 //   });
 // }
 
-// ESCAPE BUTTON CLICK TO CLOSE MODAL
-document.addEventListener('keydown', (event) => {
+// // ESCAPE BUTTON CLICK TO CLOSE MODAL
+// document.addEventListener('keydown', (event) => {
         
-  if (event.key === 'Escape') {
-    modal.classList.remove('show');
-  }
-});
+//   if (event.key === 'Escape') {
+//    //if esc key was not pressed in combination with ctrl or alt or shift
+//       const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
+//       if (isNotCombinedKey) {
+//         modal.classList.remove('show');
+//         toggleModal();
+//         modalBackdrop.classList.remove('show');
+//         htmlTag.classList.remove('fixed');
+//         for (i = 0; i < postModalContent.length; i++) {
+//           if (postModalContent[i].classList.contains('show')) {
+//             postModalContent[i].classList.remove('show');
+//           }
+//         }
+//       }
+//   }
+// });
 
 // const toggleModal = ((e) => {
 //   if (!modal.classList.contains('show')) {
