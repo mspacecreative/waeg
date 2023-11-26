@@ -33,10 +33,10 @@
     <?php wp_body_open(); ?>
 
         <?php echo $block_content; ?>
-
-        <?php include 'functions/patterns/post-modal-loop.php'; ?>
         
         <?php wp_footer(); ?>
+
+<?php include 'functions/patterns/post-modal-loop.php'; ?>
 
     </body>
 </html>
