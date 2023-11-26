@@ -1284,3 +1284,7 @@ html.fslightbox-open {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
+
+.modal .modal-dialog {
+  max-width: 980px;
+}
