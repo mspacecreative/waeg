@@ -7,11 +7,21 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
         <?php
         $block_content = do_blocks( '
+        <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+        <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
+        <main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)">
             <!-- wp:group {"layout":{"type":"constrained"}} -->
             <div class="wp-block-group">
-            <!-- wp:post-content /-->
+                <!-- wp:template-part {"slug":"post-title"} /-->
             </div>
-            <!-- /wp:group -->'
+            <!-- /wp:group -->
+        
+            <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+        </main>
+        <!-- /wp:group -->
+        
+        <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->'
         );
         ?>
         <?php wp_head(); ?>
@@ -22,15 +32,7 @@
 
         <div class="wp-site-blocks">
 
-            <header class="wp-block-template-part site-header">
-                <?php block_header_area(); ?>
-            </header>
-
             <?php echo $block_content; ?>
-
-            <footer class="wp-block-template-part site-footer">
-            <?php block_footer_area(); ?>
-            </footer>
 
         </div>
 
