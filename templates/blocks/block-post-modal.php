@@ -29,7 +29,7 @@ if ($query->have_posts()) {
     $title = get_the_title($query->ID);
     $line_drawing = !empty(get_field('drawing', get_the_ID($term_id))) ? '<img src="' . get_field('drawing', get_the_ID($term_id))['url'] . '" alt="' . get_field('drawing', get_the_ID($term_id))['alt'] . '">' : '';
     echo
-    '<div id="post-modal-' . $modal_counter++ . '" class="modal fade" tabindex="-1" aria-labelledby="post-title-' . $aria_counter++ . '" aria-hidden="true">
+    '<div id="post-modal-' . $modal_counter++ . '" class="modal fade in" tabindex="-1" aria-labelledby="post-title-' . $aria_counter++ . '" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
