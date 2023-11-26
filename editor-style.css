@@ -5,6 +5,9 @@ body:not(#tinymce) {
 body:not(#tinymce) body {
   --wp--preset--color--pale-gold: palegoldenrod;
 }
+body:not(#tinymce) body {
+  font-family: var(--wp--preset--font-family--montserrat);
+}
 body:not(#tinymce) h1,
 body:not(#tinymce) h2,
 body:not(#tinymce) h3,
