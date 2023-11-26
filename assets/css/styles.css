@@ -1363,11 +1363,11 @@ body .modal .post-content {
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
-  transition: opacity 0.3s ease-out;
-  -webkit-transition: opacity 0.3s ease-out;
-  -moz-transition: opacity 0.3s ease-out;
-  -ms-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-in;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -ms-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
 }
 
 .modal-open .modal {
