@@ -193,6 +193,11 @@ body {
     z-index: 1;
   }
 }
+@media (min-width: 1150px) {
+  .virtual-tour__navigation-container .virtual-tour__navigation {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 1149px) {
   .virtual-tour__navigation-container {
     background: #e3e3e3;
@@ -216,11 +221,6 @@ nav.virtual-tour__navigation {
   }
   nav.virtual-tour__navigation.show {
     display: block;
-  }
-}
-@media (min-width: 1150px) {
-  nav.virtual-tour__navigation {
-    justify-content: space-around;
   }
 }
 

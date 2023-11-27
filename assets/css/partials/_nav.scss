@@ -73,6 +73,11 @@
     top: 2em;
     z-index: 1;
   }
+  .virtual-tour__navigation {
+    @media (min-width: 1150px) {
+      justify-content: space-around;
+    }
+  }
   @media (max-width: 1149px) {
     background: #e3e3e3;
     box-shadow: 0 2px 3px #999;
@@ -93,9 +98,6 @@ nav.virtual-tour__navigation {
     &.show {
       display: block;
     }
-  }
-  @media (min-width: 1150px) {
-    justify-content: space-around;
   }
 }
 .scroll-up ~ main {
