@@ -7,7 +7,7 @@ if ( $images ): ?>
     <div class="swiper-wrapper">
         <?
         foreach ($images as $image) : ?>
-        <div class="swiper-slide"><a href="<?php echo esc_url($image['sizes']['large']); ?>" data-fslightbox="lightbox-<?php echo $title ?>" data-type="image"><img src="<?php echo esc_url($image['sizes']['swiper-thumb']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a></div>
+        <div class="swiper-slide"><a href="<?php echo esc_url($image['sizes']['large']); ?>" data-fslightbox="lightbox-<?php echo sanitize_title($title); ?>" data-type="image"><img src="<?php echo esc_url($image['sizes']['swiper-thumb']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a></div>
         <?php
         endforeach; ?>
     </div>
