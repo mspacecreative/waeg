@@ -768,6 +768,12 @@ body .is-layout-flow > .wp-block-separator {
   background: var(--wp--preset--color--dark-green);
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 h1,
 h2,
 h3,

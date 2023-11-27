@@ -5,6 +5,11 @@ body:not(#tinymce) {
 body:not(#tinymce) body {
   --wp--preset--color--pale-gold: palegoldenrod;
 }
+body:not(#tinymce) html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 body:not(#tinymce) h1,
 body:not(#tinymce) h2,
 body:not(#tinymce) h3,

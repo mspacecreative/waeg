@@ -104,6 +104,11 @@
   flex-grow: 1;
   flex-grow: inherit;
 }
+.editor-styles-wrapper html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
 .editor-styles-wrapper h3,
