@@ -47,11 +47,15 @@ if ($query->have_posts()) {
                     echo
                     '</div>
                 </div>
-                <div class="is-layout-flex">
-                    <div class="line-drawing-container">'
+                <div class="is-layout-flex">';
+                    if (!empty($line_drawing)) {
+                    echo
+                    '<div class="line-drawing-container">'
                         . $line_drawing .
-                    '</div>
-                    <div class="post-content">';
+                    '</div>';
+                    }
+                    echo
+                    '<div class="post-content">';
                         include 'includes/template-traditional-names.php';
                         include 'includes/template-carousel.php';
                         include 'includes/template-notes.php';
