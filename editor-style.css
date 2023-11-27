@@ -5,9 +5,6 @@ body:not(#tinymce) {
 body:not(#tinymce) body {
   --wp--preset--color--pale-gold: palegoldenrod;
 }
-body:not(#tinymce) body {
-  font-family: var(--wp--preset--font-family--montserrat);
-}
 body:not(#tinymce) h1,
 body:not(#tinymce) h2,
 body:not(#tinymce) h3,
@@ -17,9 +14,6 @@ body:not(#tinymce) h6 {
   font-family: var(--wp--preset--font-family--montserrat);
   line-height: 1.4;
   letter-spacing: normal;
-}
-body:not(#tinymce) a {
-  color: var(--wp--preset--color--dark-green);
 }
 body:not(#tinymce) .page-title {
   padding: 10px 0;

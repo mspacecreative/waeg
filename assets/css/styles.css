@@ -768,10 +768,6 @@ body .is-layout-flow > .wp-block-separator {
   background: var(--wp--preset--color--dark-green);
 }
 
-body {
-  font-family: var(--wp--preset--font-family--montserrat);
-}
-
 h1,
 h2,
 h3,
@@ -781,10 +777,6 @@ h6 {
   font-family: var(--wp--preset--font-family--montserrat);
   line-height: 1.4;
   letter-spacing: normal;
-}
-
-a {
-  color: var(--wp--preset--color--dark-green);
 }
 
 .page-title {

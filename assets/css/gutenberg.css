@@ -104,9 +104,6 @@
   flex-grow: 1;
   flex-grow: inherit;
 }
-.editor-styles-wrapper body {
-  font-family: var(--wp--preset--font-family--montserrat);
-}
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
 .editor-styles-wrapper h3,
@@ -116,9 +113,6 @@
   font-family: var(--wp--preset--font-family--montserrat);
   line-height: 1.4;
   letter-spacing: normal;
-}
-.editor-styles-wrapper a {
-  color: var(--wp--preset--color--dark-green);
 }
 .editor-styles-wrapper .page-title {
   padding: 10px 0;
