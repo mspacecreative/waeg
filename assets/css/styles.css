@@ -219,7 +219,7 @@ nav.virtual-tour__navigation {
   }
 }
 @media (min-width: 1150px) {
-  nav.virtual-tour__navigation .virtual-tour__navigation.items-justified-left {
+  nav.virtual-tour__navigation .virtual-tour__navigation.items-justified-center {
     justify-content: space-around;
   }
 }
