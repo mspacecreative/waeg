@@ -28,4 +28,3 @@ include 'functions/audio-loop.php';
 include 'functions/body-class.php';
 include 'functions/admin-styles.php';
 include 'functions/excerpt-to-post-type.php';
-include 'functions/post-modal.php';
