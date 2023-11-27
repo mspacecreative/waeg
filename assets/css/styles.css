@@ -788,7 +788,7 @@ body .is-layout-flow > .wp-block-separator {
 
 @media (max-width: 980px) {
   .inline-carousel {
-    padding-inline: 0;
+    padding-inline: 0 !important;
   }
   .inline-carousel .wp-block-heading {
     -webkit-padding-start: var(--wp--preset--spacing--30);
