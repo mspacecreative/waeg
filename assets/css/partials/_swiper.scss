@@ -42,3 +42,13 @@
     }
   }
 }
+
+@media (max-width: 980px) {
+  .inline-carousel {
+    padding-inline: 0;
+
+    .wp-block-heading {
+      padding-inline-start: var(--wp--preset--spacing--30);
+    }
+  }
+}
