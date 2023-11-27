@@ -53,13 +53,13 @@
         }
       }
     }
-    &:nth-last-of-type(3) {
-      .tour-path-content-container {
-        &::after {
-          display: none;
-        }
-      }
-    }
+    // &:nth-last-of-type(3) {
+    //   .tour-path-content-container {
+    //     &::after {
+    //       display: none;
+    //     }
+    //   }
+    // }
     .tour-path-content-container {
       position: relative;
       background-image: url(../img/backgrounds/watercolor-green-bg.jpg);

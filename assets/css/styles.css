@@ -1117,9 +1117,6 @@ html.fslightbox-open {
     -o-transform: scaleX(-1) rotate(270deg);
   }
 }
-.entry-content .tour-path-wrapper:nth-last-of-type(3) .tour-path-content-container::after {
-  display: none;
-}
 .entry-content .tour-path-wrapper .tour-path-content-container {
   position: relative;
   background-image: url(../img/backgrounds/watercolor-green-bg.jpg);
