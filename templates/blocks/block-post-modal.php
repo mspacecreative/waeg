@@ -58,8 +58,14 @@ if ($query->have_posts()) {
                     '<div class="post-content">';
                         include 'includes/template-traditional-names.php';
                         include 'includes/template-carousel.php';
-                        include 'includes/template-notes.php';
-                        include 'includes/template-traditional-uses.php';
+                        if (empty($line_drawing)) {
+                            echo '<div class="is-layout-flex">';
+                        }
+                            include 'includes/template-notes.php';
+                            include 'includes/template-traditional-uses.php';
+                        if (empty($line_drawing)) {
+                            echo '</div>';
+                        }
                         include 'includes/template-people-and-plants.php';
                     echo
                     '</div>
