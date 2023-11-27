@@ -1481,3 +1481,9 @@ body .modal .btn-close span:nth-child(2) {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 }
+@media (min-width: 980px) {
+  .split-layout .notes,
+.split-layout .notes ~ div {
+    flex-basis: calc(50% - 1rem);
+  }
+}

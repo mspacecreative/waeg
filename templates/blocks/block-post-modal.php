@@ -59,7 +59,7 @@ if ($query->have_posts()) {
                         include 'includes/template-traditional-names.php';
                         include 'includes/template-carousel.php';
                         if (empty($line_drawing)) {
-                            echo '<div class="is-layout-flex">';
+                            echo '<div class="is-layout-flex split-layout">';
                         }
                             include 'includes/template-notes.php';
                             include 'includes/template-traditional-uses.php';
