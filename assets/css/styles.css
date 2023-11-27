@@ -1294,6 +1294,11 @@ body .modal .modal-dialog {
 body .modal .modal-content {
   padding: 2rem;
 }
+@media (max-width: 767px) {
+  body .modal .modal-content {
+    padding: 2rem 1rem 1rem;
+  }
+}
 @media (min-width: 1024px) {
   body .modal .line-drawing-container {
     flex-basis: 250px;
@@ -1448,25 +1453,6 @@ body .modal .btn-close span:nth-child(2) {
 .modal-body {
   position: relative;
   padding: 15px;
-}
-
-.modal-footer {
-  padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-}
-
-.modal-footer .btn + .btn {
-  margin-left: 5px;
-  margin-bottom: 0;
-}
-
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
 }
 
 .modal-scrollbar-measure {
