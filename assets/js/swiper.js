@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  loop: true,
+  // loop: true,
   autoHeight: true,
 
   // If we need pagination
