@@ -32,7 +32,10 @@ if ($query->have_posts()) {
     '<div id="post-modal-' . $modal_counter++ . '" class="modal fade in" tabindex="-1" aria-labelledby="post-title-' . $aria_counter++ . '" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="wp-block-columns is-layout-flex are-vertically-aligned-center page-title" style="align-items: center!important;margin-block-start: 1em;">
                     <div class="wp-block-column">
                         <div class="modal-header">
