@@ -5,7 +5,8 @@ function waeg_styles() {
     global $post;
 
     $virtual_tour_page_id = '1677';
-    if ( is_singular(array('plant', 'habitat')) || is_page('virtual-tour') || $post->post_parent == $virtual_tour_page_id ) {
+    $virtual_tour_page_id_fre = '2153';
+    if ( is_singular(array('plant', 'habitat')) || is_page('virtual-tour') || is_page($virtual_tour_page_id_fre) || $post->post_parent == $virtual_tour_page_id || $post->post_parent == $virtual_tour_page_id_fre ) {
         // SWIPER CSS
         wp_register_style( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', array(), null );
         wp_enqueue_style( 'swiper' );
