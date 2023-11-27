@@ -28,6 +28,33 @@ body .modal {
   .post-content {
     gap: 2rem;
   }
+  .btn-close {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+    z-index: 999;
+    span {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #000;
+      transform: rotate(45deg);
+      top: 50%;
+      left: 50%;
+      margin-left: -10px;
+    }
+    span:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .modal-open {
@@ -111,33 +138,6 @@ body .modal {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
   min-height: 16.42857143px;
-}
-.btn-close {
-  border: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  outline: none;
-  right: 1em;
-  top: 1em;
-  cursor: pointer;
-  z-index: 999;
-  span {
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    top: 50%;
-    left: 50%;
-    margin-left: -10px;
-  }
-  span:nth-child(2) {
-    transform: rotate(-45deg);
-  }
 }
 .modal-header .close {
   margin-top: -2px;
