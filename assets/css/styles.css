@@ -1294,7 +1294,7 @@ body .modal .modal-dialog {
 body .modal .modal-content {
   padding: 2rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   body .modal .modal-content {
     padding: 2rem 1rem 1rem;
   }
