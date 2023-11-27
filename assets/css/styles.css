@@ -1407,7 +1407,7 @@ body .modal .post-content {
   min-height: 16.42857143px;
 }
 
-.closeModalButton {
+.btn-close {
   border: none;
   margin: 0;
   padding: 0;
@@ -1421,7 +1421,7 @@ body .modal .post-content {
   cursor: pointer;
   z-index: 999;
 }
-.closeModalButton span {
+.btn-close span {
   position: absolute;
   width: 20px;
   height: 2px;
@@ -1431,7 +1431,7 @@ body .modal .post-content {
   left: 50%;
   margin-left: -10px;
 }
-.closeModalButton span:nth-child(2) {
+.btn-close span:nth-child(2) {
   transform: rotate(-45deg);
 }
 
