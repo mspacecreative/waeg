@@ -12,13 +12,14 @@ body .modal {
     @media (min-width: 1024px) {
       flex-basis: 250px;
     }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
     img {
       width: 100%;
       @media (max-width: 767px) {
         max-height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
+        object-fit: contain;
       }
     }
   }
