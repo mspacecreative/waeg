@@ -14,6 +14,12 @@ body .modal {
     }
     img {
       width: 100%;
+      @media (max-width: 767px) {
+        max-height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
     }
   }
   .is-layout-flex {
@@ -56,7 +62,6 @@ body .modal {
     }
   }
 }
-
 .modal-open {
   overflow: hidden;
 }
@@ -73,7 +78,6 @@ body .modal {
   outline: 0;
 }
 .fade {
-  // @extend %smooth-transition-25;
   transition: opacity 0.15s linear;
 }
 .modal .modal-dialog {
@@ -169,60 +173,10 @@ body .modal {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    // width: 600px;
     margin: 30px auto;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-  .modal-sm {
-    width: 300px;
-  }
-}
-@media (min-width: 992px) {
-  .modal-lg {
-    width: 990px;
-  }
-}
-.clearfix:before,
-.clearfix:after,
-.modal-footer:before,
-.modal-footer:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after,
-.modal-footer:after {
-  clear: both;
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
-// .hide {
-//   display: none !important;
-// }
-// .show {
-//   display: block !important;
-// }
-.invisible {
-  visibility: hidden;
-}
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.affix {
-  position: fixed;
 }
