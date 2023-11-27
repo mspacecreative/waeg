@@ -77,7 +77,7 @@ if ($loop->have_posts()) {
         }
     echo
     '</h2>
-    <ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . $cardclass . '">';
+    <ul class="is-flex-container horizontal-slider columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . $cardclass . '">';
     while ($loop->have_posts()) {
         $loop->the_post();
         $featured_img = get_the_post_thumbnail(get_the_ID(), 'swiper-thumb');
