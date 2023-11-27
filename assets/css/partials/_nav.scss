@@ -94,6 +94,9 @@ nav.virtual-tour__navigation {
       display: block;
     }
   }
+  @media (min-width: 1150px) {
+    justify-content: space-around;
+  }
 }
 .scroll-up ~ main {
   .virtual-tour__navigation-container {

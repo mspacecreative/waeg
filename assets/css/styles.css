@@ -218,6 +218,11 @@ nav.virtual-tour__navigation {
     display: block;
   }
 }
+@media (min-width: 1150px) {
+  nav.virtual-tour__navigation {
+    justify-content: space-around;
+  }
+}
 
 @media (min-width: 1150px) {
   .scroll-up ~ main .virtual-tour__navigation-container {
