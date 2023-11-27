@@ -17,7 +17,7 @@
         &::after {
           right: 50%;
           @media (max-width: 980px) {
-            right: 0;
+            right: 25%;
             background-size: cover;
             transform: rotate(270deg);
             -webkit-transform: rotate(270deg);

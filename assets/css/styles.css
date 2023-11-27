@@ -1050,7 +1050,7 @@ html.fslightbox-open {
 }
 @media (max-width: 980px) {
   .entry-content .tour-path-wrapper:nth-of-type(even) .tour-path-content-container::after {
-    right: 0;
+    right: 25%;
     background-size: cover;
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
