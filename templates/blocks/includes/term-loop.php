@@ -1,7 +1,7 @@
 <?php
 $conditionclass = !empty($heading) ? ' wp-block-other-habitats' : '';
 echo
-'<ul class="is-flex-container columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . $conditionclass . esc_attr($className) . '">';
+'<ul class="is-flex-container horizontal-slider columns-' . $cols . ' wp-block-post-template-container wp-block-post-template' . $conditionclass . esc_attr($className) . '">';
 
 foreach( $terms as $term ) {
 
