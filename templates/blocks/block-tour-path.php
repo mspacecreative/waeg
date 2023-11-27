@@ -28,6 +28,9 @@ $loop = new WP_Query( array(
         case 'berries':
             $button_label = 'Berry';
             break;
+        case 'baies':
+            $button_label = 'Baie';
+            break;
         case 'flowers-and-herbs':
             $button_label = 'Plant';
             break;
