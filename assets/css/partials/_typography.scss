@@ -92,3 +92,12 @@ ul:not(
 .font-weight-normal {
   font-weight: normal;
 }
+
+p,
+ol,
+ul,
+span {
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}

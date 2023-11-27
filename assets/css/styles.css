@@ -868,6 +868,15 @@ ul:not(.wp-block-post-template,
   font-weight: normal;
 }
 
+@media (max-width: 767px) {
+  p,
+ol,
+ul,
+span {
+    font-size: 16px;
+  }
+}
+
 body,
 body.fade-out {
   opacity: 0;

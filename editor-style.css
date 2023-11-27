@@ -95,6 +95,14 @@ body:not(#tinymce) .font-size-22 {
 body:not(#tinymce) .font-weight-normal {
   font-weight: normal;
 }
+@media (max-width: 767px) {
+  body:not(#tinymce) p,
+body:not(#tinymce) ol,
+body:not(#tinymce) ul,
+body:not(#tinymce) span {
+    font-size: 16px;
+  }
+}
 
 .featured-img.-r0 {
   display: none;
