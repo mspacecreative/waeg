@@ -874,16 +874,6 @@ ul:not(.wp-block-post-template,
   font-weight: normal;
 }
 
-@media (max-width: 767px) {
-  p,
-ol,
-ul,
-span,
-.has-medium-font-size {
-    font-size: 16px !important;
-  }
-}
-
 body,
 body.fade-out {
   opacity: 0;

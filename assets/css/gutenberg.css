@@ -199,15 +199,6 @@
 .editor-styles-wrapper .font-weight-normal {
   font-weight: normal;
 }
-@media (max-width: 767px) {
-  .editor-styles-wrapper p,
-.editor-styles-wrapper ol,
-.editor-styles-wrapper ul,
-.editor-styles-wrapper span,
-.editor-styles-wrapper .has-medium-font-size {
-    font-size: 16px !important;
-  }
-}
 .editor-styles-wrapper .featured-img.-r0 {
   display: none;
 }
