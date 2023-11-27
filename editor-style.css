@@ -99,8 +99,9 @@ body:not(#tinymce) .font-weight-normal {
   body:not(#tinymce) p,
 body:not(#tinymce) ol,
 body:not(#tinymce) ul,
-body:not(#tinymce) span {
-    font-size: 16px;
+body:not(#tinymce) span,
+body:not(#tinymce) .has-medium-font-size {
+    font-size: 16px !important;
   }
 }
 

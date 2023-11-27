@@ -872,8 +872,9 @@ ul:not(.wp-block-post-template,
   p,
 ol,
 ul,
-span {
-    font-size: 16px;
+span,
+.has-medium-font-size {
+    font-size: 16px !important;
   }
 }
 

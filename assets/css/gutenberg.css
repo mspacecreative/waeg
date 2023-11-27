@@ -198,8 +198,9 @@
   .editor-styles-wrapper p,
 .editor-styles-wrapper ol,
 .editor-styles-wrapper ul,
-.editor-styles-wrapper span {
-    font-size: 16px;
+.editor-styles-wrapper span,
+.editor-styles-wrapper .has-medium-font-size {
+    font-size: 16px !important;
   }
 }
 .editor-styles-wrapper .featured-img.-r0 {

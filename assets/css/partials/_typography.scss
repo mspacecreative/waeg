@@ -96,8 +96,9 @@ ul:not(
 p,
 ol,
 ul,
-span {
+span,
+.has-medium-font-size {
   @media (max-width: 767px) {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
