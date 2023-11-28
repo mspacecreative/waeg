@@ -1275,7 +1275,7 @@ html.fslightbox-open {
   font-style: italic;
   position: relative;
   color: var(--wp--preset--color--pale-gold);
-  margin-left: var(--wp--preset--spacing--30);
+  margin-left: 0;
   margin-right: 0;
 }
 .modal .quote-container blockquote::before {
