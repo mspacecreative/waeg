@@ -45,6 +45,16 @@ const wpBlockContainer = document.querySelector('.wp-site-blocks');
 const modalPostsContainer = document.querySelector('.post-modal-posts-container');
 const modal = document.querySelector(".modal");
 
+// ADD CURRENT MENU ITEM CLASS TO NAV ITEM ON FRENCH SIDE
+current = 0;
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href.split("#")[0] === document.URL.split("#")[0]) {
+        current = i; 
+        if(document.links[current].parentElement.classList.contains('wp-block-navigation-item') ) break;
+    }
+}
+document.links[current].parentElement.classList.add("current-menu-item");
+
 // ESCAPE BUTTON CLICK TO CLOSE MODAL
 document.addEventListener('keydown', (event) => {       
   if (event.key === 'Escape') {
