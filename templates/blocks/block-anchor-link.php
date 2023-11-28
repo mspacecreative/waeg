@@ -37,7 +37,7 @@ switch($slug) {
         $slug = '';
         break;
 }
-$berry_check = $slug !== 'berry' || $slug !== 'baies' ? $slug : '';
+$berry_check = $slug !== 'berries' || $slug !== 'baies' ? $slug : '';
 $language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' . '/' . $berry_check : 'virtual-tour' . '/' . $berry_check;
 echo 
 '<div class="wp-block-button anchor-link__button">
