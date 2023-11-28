@@ -4,8 +4,8 @@ $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
 $language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' . '/' . $slug : 'virtual-tour' . '/' . $slug;
 switch($slug) {
-    case 'flowers-and-herbs':
-        $slug = 'flowers-and-herbs';
+    case 'flowering-plants':
+        $slug = 'flowering-plants';
         break;
     case 'shrubs':
         $slug = 'shrubs';
