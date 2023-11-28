@@ -3,17 +3,35 @@ $term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
 switch($slug) {
+    case 'berries':
+        $slug = 'berries';
+        break;
+    case 'baies':
+        $slug = 'baies';
+        break;
     case 'flowering-plants':
         $slug = 'flowering-plants';
+        break;
+    case 'plantes-a-fleurs':
+        $slug = 'plantes-a-fleurs';
         break;
     case 'shrubs':
         $slug = 'shrubs';
         break;
+    case 'arbustes':
+        $slug = 'arbustes';
+        break;
     case 'trees':
         $slug = 'trees';
         break;
-    case 'other-important-plants-and-species':
-        $slug = 'other-important-plants-and-species';
+    case 'des-arbres':
+        $slug = 'des-arbres';
+        break;
+    case 'other-important-plants':
+        $slug = 'other-important-plants';
+        break;
+    case 'autres-plantes-importantes':
+        $slug = 'autres-plantes-importantes';
         break;
     default:
         $slug = '';
