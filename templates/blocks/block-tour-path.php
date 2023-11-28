@@ -40,6 +40,9 @@ $loop = new WP_Query( array(
         case 'other-important-plants':
             $button_label = 'Plant';
             break;
+        case 'autres-plantes-importantes':
+            $button_label = 'La plante';
+            break;
         case 'shrubs':
             $button_label = 'Shrub';
             break;
