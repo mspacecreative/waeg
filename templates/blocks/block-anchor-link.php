@@ -37,7 +37,7 @@ switch($slug) {
         $slug = '';
         break;
 }
-$language_check = (ICL_LANGUAGE_CODE == 'fr') ? 'visite-virtuelle' . '/' . $slug : 'virtual-tour' . '/' . $slug : '';
+$language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' . '/' . $slug : 'virtual-tour' . '/' . $slug;
 echo 
 '<div class="wp-block-button anchor-link__button">
     <a class="wp-element-button wp-block-button__link" href="' . home_url($language_check) . '#';
