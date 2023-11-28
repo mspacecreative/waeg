@@ -1,9 +1,8 @@
 <?php
-$term_lang_check = ICL_LANGUAGE_CODE == 'fr' ? 'especes' : 'species';
-$term_id = get_the_terms(get_the_ID(), $term_lang_check);
+$term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
-$language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' : 'virtual-tour';
+$language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' . $slug : 'virtual-tour' . $slug;
 switch($slug) {
     case 'flowers-and-herbs':
         $slug = 'flowers-and-herbs';
@@ -23,7 +22,7 @@ switch($slug) {
 }
 echo 
 '<div class="wp-block-button anchor-link__button">
-    <a class="wp-element-button wp-block-button__link" href="' . home_url($language_check) . $slug . '#';
+    <a class="wp-element-button wp-block-button__link" href="' . home_url($language_check) . '#';
     $title = sanitize_title(get_the_title());
     echo $title;
     echo
