@@ -2,7 +2,7 @@
 $term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
-$language_check = ICL_LANGUAGE_CODE == 'fr' && $slug !== 'baies' ? 'visite-virtuelle' . '/' . $slug : ICL_LANGUAGE_CODE == 'fr' && $slug == 'baies' ? 'visite-virtuelle' . '/' : $slug !== 'berries' ? 'virtual-tour' . '/' . $slug : 'virtual-tour' . '/';
+$language_check = ICL_LANGUAGE_CODE == 'fr' && $slug !== 'baies' ? 'visite-virtuelle' . '/' . $slug : ICL_LANGUAGE_CODE == 'fr' && $slug == 'baies' ? 'visite-virtuelle' . '/' : ICL_LANGUAGE_CODE == 'en' && $slug !== 'berries' ? 'virtual-tour' . '/' . $slug : ICL_LANGUAGE_CODE == 'en' && $slug == 'berries' ? 'virtual-tour' . '/' : '';
 switch($slug) {
     case 'flowering-plants':
         $slug = 'flowering-plants';
