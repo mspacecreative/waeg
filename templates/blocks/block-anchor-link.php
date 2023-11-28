@@ -2,7 +2,6 @@
 $term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
-$language_check = ICL_LANGUAGE_CODE == 'fr' && $slug !== 'baies' ? 'visite-virtuelle' . '/' . $slug : ICL_LANGUAGE_CODE == 'fr' && $slug == 'baies' ? 'visite-virtuelle' . '/' : ICL_LANGUAGE_CODE == 'en' && $slug !== 'berries' ? 'virtual-tour' . '/' . $slug : ICL_LANGUAGE_CODE == 'en' && $slug == 'berries' ? 'virtual-tour' . '/' : '';
 switch($slug) {
     case 'flowering-plants':
         $slug = 'flowering-plants';
@@ -20,6 +19,7 @@ switch($slug) {
         $slug = '';
         break;
 }
+$language_check = (ICL_LANGUAGE_CODE == 'fr' && $slug !== 'baies') ? 'visite-virtuelle' . '/' . $slug : (ICL_LANGUAGE_CODE == 'fr') ? 'visite-virtuelle' . '/' : $slug !== 'berries' ? 'virtual-tour' . '/' . $slug : 'virtual-tour' . '/';
 echo 
 '<div class="wp-block-button anchor-link__button">
     <a class="wp-element-button wp-block-button__link" href="' . home_url($language_check) . '#';
