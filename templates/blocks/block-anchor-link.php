@@ -1,6 +1,5 @@
 <?php
-$term_lang_check = ICL_LANGUAGE_CODE == 'fr' ? 'especes' : 'species';
-$term_id = get_the_terms(get_the_ID(), $term_lang_check);
+$term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
 $language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' : 'virtual-tour';
