@@ -34,6 +34,9 @@ $loop = new WP_Query( array(
         case 'flowers-and-herbs':
             $button_label = 'Plant';
             break;
+        case 'fleurs-et-herbes':
+            $button_label = 'La plante';
+            break;
         case 'other-important-plants':
             $button_label = 'Plant';
             break;
