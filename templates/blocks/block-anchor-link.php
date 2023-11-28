@@ -37,7 +37,7 @@ switch($slug) {
         $slug = '';
         break;
 }
-$language_check = (ICL_LANGUAGE_CODE == 'fr' && $slug !== 'baies') ? 'visite-virtuelle' . '/' . $slug : (ICL_LANGUAGE_CODE == 'fr') ? 'visite-virtuelle' . '/' : $slug !== 'berries' ? 'virtual-tour' . '/' . $slug : 'virtual-tour' . '/';
+$language_check = (ICL_LANGUAGE_CODE == 'fr' && $slug !== 'baies') ? 'visite-virtuelle' . '/' . $slug : (ICL_LANGUAGE_CODE == 'en' $slug !== 'berries') ? 'virtual-tour' . '/' . $slug : (ICL_LANGUAGE_CODE == 'fr') ? 'visite-virtuelle' . '/' : 'virtual-tour' . '/';
 echo 
 '<div class="wp-block-button anchor-link__button">
     <a class="wp-element-button wp-block-button__link" href="' . home_url($language_check) . '#';
