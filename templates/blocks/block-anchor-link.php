@@ -2,6 +2,7 @@
 $term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
+$berry_check = $slug !== 'berries' || $slug !== 'baies' ? $slug : '';
 switch($slug) {
     case 'berries':
         $slug = 'berries';
@@ -37,7 +38,6 @@ switch($slug) {
         $slug = '';
         break;
 }
-$berry_check = $slug !== 'berries' || $slug !== 'baies' ? $slug : '';
 $language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' . '/' . $berry_check : 'virtual-tour' . '/' . $berry_check;
 echo 
 '<div class="wp-block-button anchor-link__button">
