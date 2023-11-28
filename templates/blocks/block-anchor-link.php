@@ -2,6 +2,7 @@
 $term_id = get_the_terms(get_the_ID(), 'species');
 $term_slug = array_shift($term_id);
 $slug = $term_slug->slug;
+$language_check = ICL_LANGUAGE_CODE == 'fr' ? 'visite-virtuelle' : 'virtual-tour';
 switch($slug) {
     case 'flowers-and-herbs':
         $slug = 'flowers-and-herbs';
@@ -21,7 +22,7 @@ switch($slug) {
 }
 echo 
 '<div class="wp-block-button anchor-link__button">
-    <a class="wp-element-button wp-block-button__link" href="' . home_url('virtual-tour') . $slug . '#';
+    <a class="wp-element-button wp-block-button__link" href="' . home_url($language_check) . $slug . '#';
     $title = sanitize_title(get_the_title());
     echo $title;
     echo
