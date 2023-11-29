@@ -70,7 +70,7 @@ if ($loop->have_posts()) {
     '<h2 class="wp-block-heading has-large-font-size">' . esc_html_x('Other ', 'waeg');
         if ($custom_term->slug == 'des-arbres') {
             echo ltrim(strtolower($label), 'des ');
-        } elseif ($custom_term->slug == 'other-important-plants-and-species') {
+        } elseif ($custom_term->slug == 'other-important-plants') {
             echo ltrim(strtolower($label), 'other ');
         } else {
             echo strtolower($label);
