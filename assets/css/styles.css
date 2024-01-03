@@ -921,6 +921,11 @@ body.fade-in {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
+@media (min-width: 768px) {
+  .features .feature {
+    flex-basis: calc(33.333% - 2em);
+  }
+}
 
 .simple-sitemap-container ul {
   margin-left: 0;

@@ -1,19 +1,24 @@
 .features {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: var(--wp--preset--spacing--30);
-    @extend %border-radius-10px;
-    gap: 2em;
-    border: 2px solid var(--wp--preset--color--light-green);
-    text-align: center;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: var(--wp--preset--spacing--30);
+  @extend %border-radius-10px;
+  gap: 2em;
+  border: 2px solid var(--wp--preset--color--light-green);
+  text-align: center;
 
-    .feature__icon {
-        width: 50px;
-    }
+  .feature__icon {
+    width: 50px;
+  }
 
-    p {
-        margin-block-end: 0;
+  p {
+    margin-block-end: 0;
+  }
+  .feature {
+    @media (min-width: 768px) {
+      flex-basis: calc(33.333% - 2em);
     }
+  }
 }
