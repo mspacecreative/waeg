@@ -130,10 +130,6 @@
   margin-bottom: 10px;
   color: var(--wp--preset--color--dark-green);
 }
-.editor-styles-wrapper p {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-}
 .editor-styles-wrapper .display-block {
   display: block;
 }

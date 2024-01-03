@@ -31,10 +31,6 @@ body:not(#tinymce) h3 {
   margin-bottom: 10px;
   color: var(--wp--preset--color--dark-green);
 }
-body:not(#tinymce) p {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-}
 body:not(#tinymce) .display-block {
   display: block;
 }
